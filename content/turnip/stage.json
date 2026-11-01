@@ -3,10 +3,10 @@
  "boxes": {
   "garden": {
    "layers": {
-    "far": "art/turnip/garden_far.svg",
-    "mid": "art/turnip/garden_mid.svg",
-    "near": "art/turnip/garden_near.svg",
-    "frame": "art/turnip/garden_frame.svg"
+    "far": "art/turnip/garden_far.webp",
+    "mid": "art/turnip/garden_mid.webp",
+    "near": "art/turnip/garden_near.webp",
+    "frame": "art/turnip/garden_frame.webp"
    },
    "glowAt": [
     82,
@@ -16,10 +16,10 @@
   },
   "kitchen": {
    "layers": {
-    "far": "art/turnip/kitchen_far.svg",
-    "mid": "art/turnip/kitchen_mid.svg",
-    "near": "art/turnip/kitchen_near.svg",
-    "frame": "art/turnip/kitchen_frame.svg"
+    "far": "art/turnip/kitchen_far.webp",
+    "mid": "art/turnip/kitchen_mid.webp",
+    "near": "art/turnip/kitchen_near.webp",
+    "frame": "art/turnip/kitchen_frame.webp"
    },
    "glowAt": [
     76,
@@ -37,52 +37,52 @@
  "dolls": {
   "grandpa": {
    "poses": {
-    "stand": "art/dolls/grandpa_stand.svg",
-    "pull": "art/dolls/grandpa_pull.svg"
+    "stand": "art/dolls/grandpa_stand.webp",
+    "pull": "art/dolls/grandpa_pull.webp"
    },
    "w": 15.5
   },
   "grandma": {
    "poses": {
-    "stand": "art/dolls/grandma.svg"
+    "stand": "art/dolls/grandma.webp"
    },
    "w": 15.5
   },
   "girl": {
    "poses": {
-    "stand": "art/dolls/girl.svg"
+    "stand": "art/dolls/girl.webp"
    },
    "w": 12.4
   },
   "dog": {
    "poses": {
-    "stand": "art/dolls/dog.svg"
+    "stand": "art/dolls/dog.webp"
    },
    "w": 14.0
   },
   "cat": {
    "poses": {
-    "sit": "art/dolls/cat_sit.svg",
-    "pull": "art/dolls/cat_pull.svg"
+    "sit": "art/dolls/cat_sit.webp",
+    "pull": "art/dolls/cat_pull.webp"
    },
    "w": 12.4
   },
   "mouse": {
    "poses": {
-    "stand": "art/dolls/mouse.svg"
+    "stand": "art/dolls/mouse.webp"
    },
    "w": 7.8
   },
   "turnip": {
    "poses": {
-    "sprout": "art/dolls/turnip_sprout.svg",
-    "big": "art/dolls/turnip_big.svg"
+    "sprout": "art/dolls/turnip_sprout.webp",
+    "big": "art/dolls/turnip_big.webp"
    },
    "w": 31.0
   },
   "pot": {
    "poses": {
-    "one": "art/dolls/pot.svg"
+    "one": "art/dolls/pot.webp"
    },
    "w": 17.1
   }

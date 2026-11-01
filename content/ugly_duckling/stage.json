@@ -3,10 +3,10 @@
  "boxes": {
   "farm": {
    "layers": {
-    "far": "art/ugly_duckling/farm_far.svg",
-    "mid": "art/ugly_duckling/farm_mid.svg",
-    "near": "art/ugly_duckling/farm_near.svg",
-    "frame": "art/ugly_duckling/farm_frame.svg"
+    "far": "art/ugly_duckling/farm_far.webp",
+    "mid": "art/ugly_duckling/farm_mid.webp",
+    "near": "art/ugly_duckling/farm_near.webp",
+    "frame": "art/ugly_duckling/farm_frame.webp"
    },
    "glowAt": [
     22,
@@ -16,10 +16,10 @@
   },
   "swamp": {
    "layers": {
-    "far": "art/ugly_duckling/swamp_far.svg",
-    "mid": "art/ugly_duckling/swamp_mid.svg",
-    "near": "art/ugly_duckling/swamp_near.svg",
-    "frame": "art/ugly_duckling/swamp_frame.svg"
+    "far": "art/ugly_duckling/swamp_far.webp",
+    "mid": "art/ugly_duckling/swamp_mid.webp",
+    "near": "art/ugly_duckling/swamp_near.webp",
+    "frame": "art/ugly_duckling/swamp_frame.webp"
    },
    "glowAt": [
     64,
@@ -29,10 +29,10 @@
   },
   "lake": {
    "layers": {
-    "far": "art/ugly_duckling/lake_far.svg",
-    "mid": "art/ugly_duckling/lake_mid.svg",
-    "near": "art/ugly_duckling/lake_near.svg",
-    "frame": "art/ugly_duckling/lake_frame.svg"
+    "far": "art/ugly_duckling/lake_far.webp",
+    "mid": "art/ugly_duckling/lake_mid.webp",
+    "near": "art/ugly_duckling/lake_near.webp",
+    "frame": "art/ugly_duckling/lake_frame.webp"
    },
    "glowAt": [
     70,
@@ -42,10 +42,10 @@
   },
   "cabin": {
    "layers": {
-    "far": "art/ugly_duckling/cabin_far.svg",
-    "mid": "art/ugly_duckling/cabin_mid.svg",
-    "near": "art/ugly_duckling/cabin_near.svg",
-    "frame": "art/ugly_duckling/cabin_frame.svg"
+    "far": "art/ugly_duckling/cabin_far.webp",
+    "mid": "art/ugly_duckling/cabin_mid.webp",
+    "near": "art/ugly_duckling/cabin_near.webp",
+    "frame": "art/ugly_duckling/cabin_frame.webp"
    },
    "glowAt": [
     22,
@@ -63,80 +63,80 @@
  "dolls": {
   "mom": {
    "poses": {
-    "stand": "art/dolls/duck_mom.svg"
+    "stand": "art/dolls/duck_mom.webp"
    },
    "w": 16.2
   },
   "babies": {
    "poses": {
-    "stand": "art/dolls/ducklings.svg"
+    "stand": "art/dolls/ducklings.webp"
    },
    "w": 27.0,
    "aspect": 0.5
   },
   "hero": {
    "poses": {
-    "gray": "art/dolls/duck_gray.svg",
-    "young": "art/dolls/duck_young.svg",
-    "swan": "art/dolls/swan.svg"
+    "gray": "art/dolls/duck_gray.webp",
+    "young": "art/dolls/duck_young.webp",
+    "swan": "art/dolls/swan.webp"
    },
    "w": 16.2
   },
   "nest": {
    "poses": {
-    "one": "art/dolls/nest.svg"
+    "one": "art/dolls/nest.webp"
    },
    "w": 35.1,
    "aspect": 0.5
   },
   "rooster": {
    "poses": {
-    "stand": "art/dolls/rooster.svg"
+    "stand": "art/dolls/rooster.webp"
    },
    "w": 13.5
   },
   "ducks": {
    "poses": {
-    "stand": "art/dolls/ducks.svg"
+    "stand": "art/dolls/ducks.webp"
    },
    "w": 29.7,
    "aspect": 0.5
   },
   "geese": {
    "poses": {
-    "stand": "art/dolls/geese.svg"
+    "stand": "art/dolls/geese.webp"
    },
    "w": 40.5,
    "aspect": 0.5
   },
   "flock": {
    "poses": {
-    "fly": "art/dolls/geese.svg"
+    "fly": "art/dolls/geese.webp"
    },
    "w": 40.5,
    "aspect": 0.5
   },
   "farmer": {
    "poses": {
-    "stand": "art/dolls/farmer.svg"
+    "stand": "art/dolls/farmer.webp"
    },
    "w": 14.9
   },
   "cat": {
    "poses": {
-    "sit": "art/dolls/cat_sit.svg"
+    "sit": "art/dolls/cat_sit.webp"
    },
    "w": 10.8
   },
   "hen": {
    "poses": {
-    "stand": "art/dolls/hen.svg"
+    "stand": "art/dolls/hen.webp"
    },
    "w": 12.2
   },
   "swans": {
    "poses": {
-    "stand": "art/dolls/swans.svg"
+    "stand": "art/dolls/swans.webp"
    },
    "w": 40.5,
    "aspect": 0.5

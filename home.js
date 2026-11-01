@@ -10,7 +10,7 @@
   let seen = false; try { seen = sessionStorage.getItem('kulkul.splash'); sessionStorage.setItem('kulkul.splash', 1); } catch (e) { /* 무시 */ }
   if (!seen) {
     const sp = $('splash'); sp.hidden = false;
-    const lb = new Lightbox($('splashStage'), { stage: { boxes: { app: { layers: { far: 'art/app/stage_far.svg', mid: 'art/app/stage_mid.svg', near: 'art/app/stage_near.svg', frame: 'art/app/curtain_frame.svg' }, glowAt: [50, 22] } }, dolls: {} } });
+    const lb = new Lightbox($('splashStage'), { stage: { boxes: { app: { layers: { far: 'art/app/stage_far.webp', mid: 'art/app/stage_mid.webp', near: 'art/app/stage_near.webp', frame: 'art/app/curtain_frame.webp' }, glowAt: [50, 22] } }, dolls: {} } });
     lb.root.style.setProperty('--room-dim', .05);
     await lb.apply({ box: 'app', light: 'night_forest', power: 1, fx: 'fireflies', dolls: {} }, {}, { instant: true });
     const done = () => { sp.classList.add('out'); setTimeout(() => { sp.hidden = true; lb.destroy(); }, 900); };

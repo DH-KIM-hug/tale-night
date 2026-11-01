@@ -52,8 +52,7 @@
   function media(meta, handlers) {
     if (!('mediaSession' in navigator)) return;
     try {
-      navigator.mediaSession.metadata = new MediaMetadata({ title: meta.title, artist: '쿨쿨 그림자극장', album: meta.album || '잠자리 동화',
-        artwork: [{ src: BASE + 'assets/icon-512.png', sizes: '512x512', type: 'image/png' }] });
+      navigator.mediaSession.metadata = new MediaMetadata({ title: meta.title, artist: '쿨쿨 그림자극장', album: meta.album || '잠자리 동화' });
       for (const [a, fn] of Object.entries(handlers)) navigator.mediaSession.setActionHandler(a, fn);
       navigator.mediaSession.playbackState = 'playing';
     } catch (e) { /* 무시 */ }

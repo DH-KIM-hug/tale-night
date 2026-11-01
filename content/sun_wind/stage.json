@@ -3,10 +3,10 @@
  "boxes": {
   "sky": {
    "layers": {
-    "far": "art/sun_wind/sky_far.svg",
-    "mid": "art/sun_wind/sky_mid.svg",
-    "near": "art/sun_wind/sky_near.svg",
-    "frame": "art/sun_wind/sky_frame.svg"
+    "far": "art/sun_wind/sky_far.webp",
+    "mid": "art/sun_wind/sky_mid.webp",
+    "near": "art/sun_wind/sky_near.webp",
+    "frame": "art/sun_wind/sky_frame.webp"
    },
    "glowAt": [
     50,
@@ -17,10 +17,10 @@
   },
   "field": {
    "layers": {
-    "far": "art/sun_wind/field_far.svg",
-    "mid": "art/sun_wind/field_mid.svg",
-    "near": "art/sun_wind/field_near.svg",
-    "frame": "art/sun_wind/field_frame.svg"
+    "far": "art/sun_wind/field_far.webp",
+    "mid": "art/sun_wind/field_mid.webp",
+    "near": "art/sun_wind/field_near.webp",
+    "frame": "art/sun_wind/field_frame.webp"
    },
    "glowAt": [
     50,
@@ -33,25 +33,25 @@
  "dolls": {
   "sun": {
    "poses": {
-    "smile": "art/dolls/sun_smile.svg",
-    "wide": "art/dolls/sun_wide.svg"
+    "smile": "art/dolls/sun_smile.webp",
+    "wide": "art/dolls/sun_wide.webp"
    },
    "w": 20.0,
    "dk": 0.12
   },
   "wind": {
    "poses": {
-    "calm": "art/dolls/wind_calm.svg",
-    "blow": "art/dolls/wind_blow.svg"
+    "calm": "art/dolls/wind_calm.webp",
+    "blow": "art/dolls/wind_blow.webp"
    },
    "w": 22.0,
    "dk": 0.35
   },
   "man": {
    "poses": {
-    "coat": "art/dolls/traveler_coat.svg",
-    "fan": "art/dolls/traveler_fan.svg",
-    "carry": "art/dolls/traveler_carry.svg"
+    "coat": "art/dolls/traveler_coat.webp",
+    "fan": "art/dolls/traveler_fan.webp",
+    "carry": "art/dolls/traveler_carry.webp"
    },
    "w": 15.9
   }

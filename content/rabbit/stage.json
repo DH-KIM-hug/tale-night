@@ -3,10 +3,10 @@
  "boxes": {
   "village": {
    "layers": {
-    "far": "art/rabbit/village_far.svg",
-    "mid": "art/rabbit/village_mid.svg",
-    "near": "art/rabbit/village_near.svg",
-    "frame": "art/rabbit/village_frame.svg"
+    "far": "art/rabbit/village_far.webp",
+    "mid": "art/rabbit/village_mid.webp",
+    "near": "art/rabbit/village_near.webp",
+    "frame": "art/rabbit/village_frame.webp"
    },
    "glowAt": [
     72,
@@ -16,10 +16,10 @@
   },
   "hill": {
    "layers": {
-    "far": "art/rabbit/hill_far.svg",
-    "mid": "art/rabbit/hill_mid.svg",
-    "near": "art/rabbit/hill_near.svg",
-    "frame": "art/rabbit/hill_frame.svg"
+    "far": "art/rabbit/hill_far.webp",
+    "mid": "art/rabbit/hill_mid.webp",
+    "near": "art/rabbit/hill_near.webp",
+    "frame": "art/rabbit/hill_frame.webp"
    },
    "glowAt": [
     80,
@@ -29,10 +29,10 @@
   },
   "shade": {
    "layers": {
-    "far": "art/rabbit/shade_far.svg",
-    "mid": "art/rabbit/shade_mid.svg",
-    "near": "art/rabbit/shade_near.svg",
-    "frame": "art/rabbit/shade_frame.svg"
+    "far": "art/rabbit/shade_far.webp",
+    "mid": "art/rabbit/shade_mid.webp",
+    "near": "art/rabbit/shade_near.webp",
+    "frame": "art/rabbit/shade_frame.webp"
    },
    "glowAt": [
     24,
@@ -42,10 +42,10 @@
   },
   "finish": {
    "layers": {
-    "far": "art/rabbit/finish_far.svg",
-    "mid": "art/rabbit/finish_mid.svg",
-    "near": "art/rabbit/finish_near.svg",
-    "frame": "art/rabbit/finish_frame.svg"
+    "far": "art/rabbit/finish_far.webp",
+    "mid": "art/rabbit/finish_mid.webp",
+    "near": "art/rabbit/finish_near.webp",
+    "frame": "art/rabbit/finish_frame.webp"
    },
    "glowAt": [
     50,
@@ -57,22 +57,22 @@
  "dolls": {
   "rabbit": {
    "poses": {
-    "stand": "art/dolls/rabbit_stand.svg",
-    "run": "art/dolls/rabbit_run.svg",
-    "sleep": "art/dolls/rabbit_sleep.svg"
+    "stand": "art/dolls/rabbit_stand.webp",
+    "run": "art/dolls/rabbit_run.webp",
+    "sleep": "art/dolls/rabbit_sleep.webp"
    },
    "w": 17.6
   },
   "turtle": {
    "poses": {
-    "walk": "art/dolls/turtle_walk.svg",
-    "stand": "art/dolls/turtle_stand.svg"
+    "walk": "art/dolls/turtle_walk.webp",
+    "stand": "art/dolls/turtle_stand.webp"
    },
    "w": 17.6
   },
   "owl": {
    "poses": {
-    "perch": "art/dolls/owl.svg"
+    "perch": "art/dolls/owl.webp"
    },
    "w": 9.1
   }

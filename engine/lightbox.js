@@ -23,9 +23,12 @@
   function el(tag, cls, parent) { const e = document.createElement(tag); if (cls) e.className = cls; if (parent) parent.appendChild(e); return e; }
   function paper(parent, src, dk) {
     const sh = el('div', 'lb-sheet', parent);
-    const off = el('div', 'lb-off', sh), on = el('div', 'lb-on', sh);
-    for (const x of [off, on]) { x.style.webkitMaskImage = x.style.maskImage = `url("${url(src)}")`; }
-    on.style.setProperty('--dk', dk);
+    // 시안과 같은 방식: 꺼짐 = 그림 그대로(흰 종이), 켜짐 = 그림 모양으로 오린 빛 + 그림의 종이결(multiply)
+    const off = el('img', 'lb-off', sh); off.src = url(src); off.alt = ''; off.decoding = 'async';
+    off.onerror = () => sh.classList.add('lb-missing'); // 그림이 아직 없으면 그 층은 비워 둔다(대신 그리지 않음)
+    const on = el('div', 'lb-on', sh);
+    on.style.webkitMaskImage = on.style.maskImage = `url("${url(src)}")`;
+    on.style.setProperty('--dk', dk); on.style.setProperty('--tex', `url("${url(src)}")`);
     return sh;
   }
 

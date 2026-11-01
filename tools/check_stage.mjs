@@ -19,8 +19,9 @@ const has = p => fs.existsSync(path.join(ROOT, p));
 for (const id of ids) {
   const script = JSON.parse(fs.readFileSync(path.join(ROOT, `content/${id}/script.json`)));
   const stage = JSON.parse(fs.readFileSync(path.join(ROOT, `content/${id}/stage.json`)));
-  for (const [k, b] of Object.entries(stage.boxes)) for (const f of Object.values(b.layers)) if (!has(f)) err(id, `상자 ${k} 그림 없음 ${f}`);
-  for (const [k, d] of Object.entries(stage.dolls)) for (const f of Object.values(d.poses)) if (!has(f)) err(id, `인형 ${k} 그림 없음 ${f}`);
+  let noArt = 0; // 그림은 이미지 생성으로 따로 만든다(docs/ART_LIST.md). 없는 그림은 실패가 아니라 '대기'로 센다
+  for (const b of Object.values(stage.boxes)) for (const f of Object.values(b.layers)) if (!has(f)) noArt++;
+  for (const d of Object.values(stage.dolls)) for (const f of Object.values(d.poses)) if (!has(f)) noArt++;
   const keys = new Set(script.scenes.map(s => s.key));
   for (const k of Object.keys(stage.scenes)) if (!keys.has(k)) err(id, `대본에 없는 장면이 stage 에 있음: ${k}`);
   let lines = 0;
@@ -48,6 +49,6 @@ for (const id of ids) {
     }
   }
   const stand = script.scenes.flatMap(s => s.lines).filter(l => l.stand_in);
-  console.log(`· ${id}: ${script.scenes.length}장면 ${lines}줄${stand.length ? ` · 새 줄 녹음 대기 1줄(지금은 기존 녹음 ${stand.length}줄로 대신)` : ''}`);
+  console.log(`· ${id}: ${script.scenes.length}장면 ${lines}줄${noArt ? ` · 그림 대기 ${noArt}장` : ''}${stand.length ? ` · 새 줄 녹음 대기 1줄(지금은 기존 녹음 ${stand.length}줄로 대신)` : ''}`);
 }
 if (bad) { console.log(`문제 ${bad}개`); process.exit(1); } else console.log('통과');

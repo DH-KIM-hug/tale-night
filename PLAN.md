@@ -277,9 +277,9 @@ content/<id>/script.json          동화극장 read_script_el.json 에 edit.json
 content/<id>/edit.json            잠자리 다듬기(빼기·자르기·새 줄·장면 합치기·카드 글자) — docs/STORY_EDIT.md §6
 content/<id>/clips.js             동화극장 read_narration_el.js 사본(경로만 바꿈)
 content/<id>/stage.json           새로 씀: 상자·장면별 빛·인형 (docs/STAGE_FORMAT.md)
-art/<id>/<상자>_<층>.svg            흰 종이 층 (tools/art/build.mjs 가 만듦. 이미지 생성 그림으로 바꿔 끼울 수 있음)
-art/dolls/*.svg                   종이 인형
-art/app/*.svg                     스플래시 극장 틀·홈 머리 상자
+art/<id>/<상자>_<층>.webp           흰 종이 층 (이미지 생성으로 만듦, docs/ART_LIST.md. 코드로 그리지 않는다)
+art/dolls/*.webp                  종이 인형
+art/app/*.webp                    스플래시 극장 틀·홈 머리 상자
 audio/<id>/*.mp3                  동화극장 audio/el/<id>/ 에서 쓰는 것만
 tools/sync_from_theater.mjs       동화극장 레포 경로를 받아 위 content·audio 를 채우고 검사
 tools/rec_night.py                새 줄·꼬리 자르기 녹음(동화극장 도구를 불러 씀, 동화극장 레포에는 쓰지 않음)
@@ -318,7 +318,7 @@ tools/bake_covers.mjs             앱 아이콘·잠금 화면 표지·스토어
 6. 영어 스토어 이름: "Kulkul Shadow Theater"(소리 그대로) / "Sleepy Shadow Theater"(뜻 옮김). 권장: 앞의 것(동화극장과 함께 한국어 이름을 그대로 알림).
 7. 잔잔한 배경음. 권장: 첫 출시 없음.
 8. '잘 자' 마무리 새 녹음. 권장: 넣지 않음(빛이 꺼지는 것이 끝).
-9. 그림 제작 방식: 층마다 따로 생성 vs 한 장 생성 후 층 분리 — 시범 1편으로 정한다.
+9. 그림 제작 방식: 동화극장처럼 이미지 생성 후 다듬기(코드로 그린 SVG 는 2026-11-01 사용자 결정으로 취소). 층마다 따로 생성 vs 한 장 생성 후 층 분리 — 시범 1편으로 정한다. 목록 `docs/ART_LIST.md`.
 10. 함께 읽기에 녹음 없는 동화도 낼지. 권장: 첫 출시는 두 모드 같은 동화만.
 
 ## 12. 진행 순서

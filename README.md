@@ -24,13 +24,13 @@ python3 -m http.server 8765
 - **자동으로 읽어 줘요**: 녹음이 읽고, 장면마다 빛 색·종이 인형이 바뀌고, 끝나면 빛이 8초에 걸쳐 꺼진다. '아무 이야기나 이어 듣기'(1·2·3·5편), 멈춤·건너뛰기, 잠금 화면 조작, 60초 뒤 어두운 덮개, 잠드는 화면.
 - **함께 읽어요**: 글 판에 지금 줄만 밝게, → / 무대 오른쪽 끝 톡으로 넘김, ← 앞 줄(무대도 그 줄 상태로 되돌아감), 읽는 동안 화면 꺼짐 막기, 이어 읽기.
 - **보호자 설정**(홈의 달 1초 꾹): 편 수, 자막, 빛 세기, 움직임 줄이기, 글자 크기, 인물 대사만 녹음, 무대 어디든 톡으로 넘기기.
-- 그림은 모두 빛 상자 방식: 상자 12벌 × 4층 + 종이 인형 36장 + 스플래시·앱 아이콘. `tools/art/` 가 흰 종이 모양(SVG)을 만들고 빛은 앱이 입힌다.
+- **그림은 아직 없다.** 무대·빛·인형 움직임은 모두 들어 있고, 그림(흰 종이 층·종이 인형 88장)을 이미지 생성으로 만들어 `art/` 에 넣으면 바로 보인다. 목록과 규칙: [`docs/ART_LIST.md`](docs/ART_LIST.md). 그림이 없는 동안 상자에는 빛(그라데이션·광원)만 보인다.
 
 ## 아직 남은 것
 
 - **커다란 순무 새 줄 1줄(24자) 녹음.** 이 환경에는 ElevenLabs 키가 없어, 지금은 원래 녹음 두 줄("어? 강아지랑 고양이가 서로 째려봐요." / "그래도 고양이가 강아지 꼬리를 꼭 잡았어요.")로 잠시 대신한다. 키가 있는 곳에서:
   `python3 tools/rec_night.py <동화극장 경로> turnip` → `node tools/sync_from_theater.mjs <동화극장 경로>`
-- 그림은 코드로 만든 첫 판이다. 동화극장처럼 이미지 생성으로 흰 종이 층을 다시 그리면 같은 `stage.json` 그대로 바꿔 끼울 수 있다(PLAN §11-9).
+- 그림 88장(docs/ART_LIST.md), 앱 아이콘(그림을 받은 뒤 빛 상자로 찍기).
 - 우리 재생목록(순서 고르기), 구매·잠금, Capacitor 앱 감싸기, 실기기(아이폰 잠금 화면) 확인.
 
 ## 도구
@@ -38,10 +38,9 @@ python3 -m http.server 8765
 | 명령 | 하는 일 |
 |---|---|
 | `node tools/sync_from_theater.mjs <동화극장 경로>` | 대본·녹음 가져오기 + `edit.json` 덮기 + 꼬리 자르기 |
-| `node tools/art/build.mjs` | 빛 상자 그림(흰 종이 SVG) 만들기 |
+| `node tools/art_list.mjs` | 그림 있는 것·없는 것 |
 | `node tools/check_stage.mjs` | 대본·무대·그림·녹음 맞물림 점검 |
 | `python3 tools/rec_night.py <동화극장 경로> [--dry]` | 새 줄 녹음(ElevenLabs 키 필요) |
-| `node tools/bake_icon.cjs` | 앱 아이콘 굽기(서버 켠 뒤, Playwright) |
 | `tools/dev/scenes.html?id=rabbit` | 장면마다 불 켠 모습 한눈에 보기 |
 
 ## 문서
@@ -49,6 +48,7 @@ python3 -m http.server 8765
 - [`PLAN.md`](PLAN.md): 앱 기획서 — 두 읽기 모드, 화면, 무대 체계, 동화 고르기, 기술 구성, 판단 필요 항목, 진행 순서
 - [`docs/REUSE.md`](docs/REUSE.md): 동화극장에서 가져오는 대본·녹음·재생 엔진과 동기화 방법
 - [`docs/STORY_EDIT.md`](docs/STORY_EDIT.md): 잠자리 대본 다듬기 — 놀이에서 온 사족 빼기, 첫 출시 4편의 줄별 결정
+- [`docs/ART_LIST.md`](docs/ART_LIST.md): 그림 목록 — 상자 12벌·종이 인형, 크기·규칙
 - [`docs/STAGE_FORMAT.md`](docs/STAGE_FORMAT.md): 장면별 상자·빛·종이 인형을 적는 `stage.json` 형식과 「토끼와 거북이」 예시
 
 ## 저작권
