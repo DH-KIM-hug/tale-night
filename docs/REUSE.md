@@ -12,7 +12,7 @@ node tools/sync_from_theater.mjs ../paper-tale-theater rabbit sun_wind ugly_duck
 ```
 
 도구가 하는 일
-1. `tales/<id>/read_script_el.json` → `content/<id>/script.json` (영어가 있으면 `read_script_en.json` → `script_en.json`)
+1. `tales/<id>/read_script_el.json` 에 이 레포의 `content/<id>/edit.json`(잠자리 다듬기, [`STORY_EDIT.md`](STORY_EDIT.md))을 덮어 → `content/<id>/script.json` (영어가 있으면 `read_script_en.json` → `script_en.json`)
 2. `tales/<id>/read_narration_el.js` 를 읽어 `"줄 글": "audio/el/<id>/<배역>_<해시>.mp3"` 맵을 만들고, 경로를 `audio/<id>/<배역>_<해시>.mp3` 로 바꿔 `content/<id>/clips.js` 로 쓴다. 값이 배열(이어 붙이기)인 줄도 그대로 둔다.
 3. 맵이 가리키는 mp3 만 `audio/<id>/` 로 복사한다(놀이판 전용 클립은 안 가져옴).
 4. `home_narration_el.js` 에서 그 동화 제목 클립 하나를 `audio/titles/<id>.mp3` 로.
@@ -68,7 +68,7 @@ node tools/sync_from_theater.mjs ../paper-tale-theater rabbit sun_wind ugly_duck
 
 ## 5. 새 녹음이 필요할 때
 
-원칙은 "없음"이다. 그래도 필요해지면(예: PLAN §11-8 '잘 자' 한 줄, 대본의 오탈자):
+잠자리 다듬기의 새 줄·꼬리 자르기는 [`STORY_EDIT.md`](STORY_EDIT.md) §6-2(`tools/rec_night.py`, 동화극장 레포에 쓰지 않음). 그 밖에 원본 자체를 고쳐야 하면(예: PLAN §11-8 '잘 자' 한 줄, 대본의 오탈자):
 1. 동화극장 레포에서 `read_script_el.json` 을 고치거나 홈 문구를 더한다.
 2. 동화극장 레포에서 `python3 tools/elevenlabs/gen_tale.py <id> --read`(또는 `gen_home.py`)로 만든다. API 키는 `~/.config/elevenlabs/key`(어느 레포에도 두지 않음). 배역 목소리는 그 동화 `voice_script_el.json` 의 `voices` 그대로라 목소리가 섞이지 않는다.
 3. 이 레포에서 `sync_from_theater.mjs` 를 다시 돌린다.

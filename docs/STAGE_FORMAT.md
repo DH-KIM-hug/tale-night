@@ -60,38 +60,37 @@
 
 함께 읽기에서 앞 줄로 돌아가면 동사를 거꾸로 실행하지 않고, 엔진이 줄마다 쌓아 둔 무대 스냅숏(빛·세기·인형 자리·자세·등불)으로 0.6초에 옮긴다. 그래서 동사는 '되돌리기'를 따로 적지 않는다.
 
-## 2. 예: 토끼와 거북이 (`rabbit`, 11장면 84줄)
+## 2. 예: 토끼와 거북이 (`rabbit`, 잠자리 다듬기 후 9장면 53줄)
+
+대본은 [`STORY_EDIT.md`](STORY_EDIT.md) §2대로 다듬은 것이다(응원석 장면 뺌, 나무 그늘 + 토끼의 꿈 합침). `cues` 의 `line` 은 **다듬은 대본** 기준 번호다.
 
 ### 상자 4벌
 | 상자 | far | mid | near | frame | 쓰는 장면 |
 |---|---|---|---|---|---|
-| `village` 숲속 마을 | 먼 산 둘 | 버섯 지붕 집 셋 · 응원석 나무 의자 | 풀숲 · 꽃 | 나무 터널 | R01~R04 |
-| `hill` 언덕길 | 먼 산 | 굽은 언덕길 · 돌멩이 · 개울 | 갈대 | 가지 틀 | R05, R08 |
-| `shade` 나무 그늘 | 먼 언덕 | 큰 나무 한 그루(잎에 오린 구멍) | 풀 | 잎 틀 | R06, R07, R09 |
-| `finish` 결승선 | 먼 산 | 결승 깃발 줄 · 시상대 | 응원하는 친구들 실루엣 한 장(오리·소·돼지·강아지·양) | 나무 터널 | R10, R11 |
+| `village` 숲속 마을 | 먼 산 둘 | 버섯 지붕 집 셋 · 출발선 | 풀숲 · 꽃 | 나무 터널 | R01, R02, R04 |
+| `hill` 언덕길 | 먼 산 | 굽은 언덕길 | 갈대 | 가지 틀 | R05, R08 |
+| `shade` 나무 그늘 | 먼 언덕 | 큰 나무 한 그루(잎에 오린 구멍) | 풀 | 잎 틀 | R06(+꿈), R09 |
+| `finish` 결승선 | 먼 산 | 결승 깃발 줄 | 구경하는 친구들 실루엣 한 장(오리·소·돼지·강아지·양) | 나무 터널 | R10, R11 |
 
 ### 인형
 | 인형 | 자세 | 비고 |
 |---|---|---|
 | `rabbit` | stand · run · sleep | 귀 안쪽을 오려 빛이 샘 |
-| `turtle` | walk · swim · stand | 등딱지 무늬를 오린 구멍 |
-| `owl` | fly · perch | 부엉이 우체부·자장가 |
-| `carrot` | — | 꿈속 상(소품, 얼굴 없음) |
+| `turtle` | walk · stand | 등딱지 무늬를 오린 구멍 |
+| `owl` | perch | 자장가 부엉이(우체부 장면은 뺐으므로 나는 자세 없음) |
 
 ### 장면별 빛
 | 장면 | card | 상자 | 빛 | 세기 | 인형·큐 |
 |---|---|---|---|---|---|
 | R01_morning | 숲속 아침 | village | dawn | 1.0 | 거북이 in(줄 2), 토끼 in(줄 4) |
 | R02_challenge | 달리기 약속 | village | dusk | 1.0 | 둘이 마주 섬 |
-| R03_stands | 응원석 | village | dusk | 1.0 | 부엉이 fly 가로지름(줄 0) |
-| R04_start | 요이~ 땅! | village | dusk | 1.0 | 줄 8 "토끼는 쌩~" 에서 토끼 run out:right, 거북이 walk |
+| R04_start | 요이~ 땅! | village | dusk | 1.0 | 줄 3 "토끼는 쌩~" 에서 토끼 run out:right, 거북이 walk |
 | R05_dash | 쌩쌩 토끼 | hill | dusk | 1.0 | 토끼 run 왼→오른 |
-| R06_shade | 나무 그늘 | shade | dusk → moon(줄 4 "구름도 뭉게뭉게") | 0.8 | 토끼 sleep, 부엉이 perch |
-| R07_dream | 토끼의 꿈 | shade | **dream** | 1.0 | 당근 위에서 내려옴, 줄 3 "진짜 토끼는" 에서 light:moon |
-| R08_turtle | 엉금엉금 거북이 | hill | dusk | 1.0 | 거북이 walk, 줄 5 개울에서 pose:swim, fx:bubbles |
-| R09_tiptoe | 쉿, 살금살금 | shade | night_forest | 0.9 | 거북이 walk 지나감, 줄 4 "해가 뉘엿뉘엿" light:night_forest:0.8 |
+| R06_shade | 나무 그늘 | shade | dusk → moon(줄 3) → **dream**(줄 5) → moon(줄 6) | 0.8 | 토끼 sleep, 부엉이 perch |
+| R08_turtle | 엉금엉금 거북이 | hill | dusk | 1.0 | 거북이 walk, 줄 3 언덕에서 walk 위로 |
+| R09_tiptoe | 쉿, 살금살금 | shade | night_forest | 0.9 | 거북이 walk 지나감, 줄 3 "해가 뉘엿뉘엿" light:night_forest:0.8 |
 | R10_finish | 마지막 한 발 | finish | night_forest | 1.0 | 거북이 walk 결승선, 토끼 run |
-| R11_party | 시상식과 잔치 | finish | hearth | 1.0 | 둘 다 stand, 거북이 lantern:on → 끝에 빛 8초 꺼짐 |
+| R11_party | 숲속 잔치 | finish | hearth | 1.0 | 둘 다 stand, 거북이 lantern:on → 끝에 빛 8초 꺼짐 |
 
 ### stage.json 일부
 
@@ -108,21 +107,16 @@
   "dolls": {
     "rabbit": { "poses": { "stand": "art/rabbit/rabbit_stand.webp", "run": "art/rabbit/rabbit_run.webp",
                            "sleep": "art/rabbit/rabbit_sleep.webp" }, "w": 15 },
-    "owl":    { "poses": { "fly": "art/rabbit/owl_fly.webp", "perch": "art/rabbit/owl_perch.webp" }, "w": 8 },
-    "carrot": { "poses": { "one": "art/rabbit/carrot.webp" }, "w": 10 }
+    "owl":    { "poses": { "perch": "art/rabbit/owl_perch.webp" }, "w": 8 }
   },
   "scenes": {
     "R06_shade": {
       "box": "shade", "light": "dusk", "power": 0.8,
       "place": { "rabbit": "sleep@42,10", "owl": "perch@64,58" },
-      "cues": [ { "line": 4, "match": "구름도 뭉게뭉게", "do": ["light:moon:0.8"] } ]
-    },
-    "R07_dream": {
-      "box": "shade", "light": "dream",
-      "place": { "rabbit": "sleep@42,10" },
       "cues": [
-        { "line": 1, "match": "상으로 커다란 당근", "do": ["carrot:in:top"] },
-        { "line": 3, "match": "하지만 진짜 토끼는", "do": ["carrot:out:top", "light:moon:0.8"] }
+        { "line": 3, "match": "구름도 뭉게뭉게",      "do": ["light:moon:0.8"] },
+        { "line": 5, "match": "토끼가 꿈을 꿔요",      "do": ["light:dream"] },
+        { "line": 6, "match": "하지만 진짜 토끼는",    "do": ["light:moon:0.8"] }
       ]
     }
   },
@@ -140,5 +134,5 @@
 - 층은 4:3 한 판 안에서 아래쪽을 꽉 채운다(앞 층일수록 위로 덜 올라온다). frame 은 가운데를 크게 비운 틀.
 - 인형은 정사각 캔버스, 발이 아래 가운데. 같은 인형은 자세가 달라도 같은 부위 폭을 맞춘다.
 - 인물·누르는 대상이 없는 대신, **인형 주변은 앞 층이 가리지 않게** 비운다(동화극장 §7-5-1 "앞 실루엣 층이 인물을 가리지 않게").
-- 상자 한 벌 = 4장, 인형 한 자세 = 1장, 제목 오린 글자 1장. 토끼와 거북이 기준 상자 4벌(16장) + 인형 9장 + 제목 1장 = 26장.
+- 상자 한 벌 = 4장, 인형 한 자세 = 1장, 제목 오린 글자 1장. 토끼와 거북이 기준 상자 4벌(16장) + 인형 6장 + 제목 1장 = 23장.
 - 제목 글자: 흰 종이 띠에 글자를 **구멍으로 오린** 것(글자 모양으로 빛이 샌다). 표지에서 frame 위에 얹는다.

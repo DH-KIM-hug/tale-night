@@ -7,6 +7,7 @@
 
 - [`PLAN.md`](PLAN.md): 앱 기획서 — 두 읽기 모드, 화면, 무대 체계, 동화 고르기, 기술 구성, 판단 필요 항목, 진행 순서
 - [`docs/REUSE.md`](docs/REUSE.md): 동화극장에서 가져오는 대본·녹음·재생 엔진과 동기화 방법
+- [`docs/STORY_EDIT.md`](docs/STORY_EDIT.md): 잠자리 대본 다듬기 — 놀이에서 온 사족 빼기, 첫 출시 4편의 줄별 결정
 - [`docs/STAGE_FORMAT.md`](docs/STAGE_FORMAT.md): 장면별 상자·빛·종이 인형을 적는 `stage.json` 형식과 「토끼와 거북이」 예시
 
 ## 저작권
