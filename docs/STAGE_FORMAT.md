@@ -94,6 +94,8 @@
 
 ### stage.json 일부
 
+(형식 설명용. 실제 값은 `content/rabbit/stage.json` — 인형 크기·높이는 화면에서 보고 맞춘 값이 들어 있다.)
+
 ```json
 {
   "tale": "rabbit",

@@ -1,0 +1,561 @@
+{
+ "tale": "turnip",
+ "boxes": {
+  "garden": {
+   "layers": {
+    "far": "art/turnip/garden_far.svg",
+    "mid": "art/turnip/garden_mid.svg",
+    "near": "art/turnip/garden_near.svg",
+    "frame": "art/turnip/garden_frame.svg"
+   },
+   "glowAt": [
+    82,
+    16
+   ],
+   "fx": "fireflies"
+  },
+  "kitchen": {
+   "layers": {
+    "far": "art/turnip/kitchen_far.svg",
+    "mid": "art/turnip/kitchen_mid.svg",
+    "near": "art/turnip/kitchen_near.svg",
+    "frame": "art/turnip/kitchen_frame.svg"
+   },
+   "glowAt": [
+    76,
+    34
+   ],
+   "fx": "fireflies",
+   "dk": {
+    "far": 0.55,
+    "mid": 0.6,
+    "near": 0.75,
+    "frame": 0.86
+   }
+  }
+ },
+ "dolls": {
+  "grandpa": {
+   "poses": {
+    "stand": "art/dolls/grandpa_stand.svg",
+    "pull": "art/dolls/grandpa_pull.svg"
+   },
+   "w": 15.5
+  },
+  "grandma": {
+   "poses": {
+    "stand": "art/dolls/grandma.svg"
+   },
+   "w": 15.5
+  },
+  "girl": {
+   "poses": {
+    "stand": "art/dolls/girl.svg"
+   },
+   "w": 12.4
+  },
+  "dog": {
+   "poses": {
+    "stand": "art/dolls/dog.svg"
+   },
+   "w": 14.0
+  },
+  "cat": {
+   "poses": {
+    "sit": "art/dolls/cat_sit.svg",
+    "pull": "art/dolls/cat_pull.svg"
+   },
+   "w": 12.4
+  },
+  "mouse": {
+   "poses": {
+    "stand": "art/dolls/mouse.svg"
+   },
+   "w": 7.8
+  },
+  "turnip": {
+   "poses": {
+    "sprout": "art/dolls/turnip_sprout.svg",
+    "big": "art/dolls/turnip_big.svg"
+   },
+   "w": 31.0
+  },
+  "pot": {
+   "poses": {
+    "one": "art/dolls/pot.svg"
+   },
+   "w": 17.1
+  }
+ },
+ "scenes": {
+  "R01_seed": {
+   "box": "garden",
+   "light": "dawn",
+   "place": {
+    "grandpa": {
+     "pose": "stand",
+     "x": 56,
+     "y": 15
+    }
+   },
+   "cues": [
+    {
+     "line": 4,
+     "match": "할아버지는 흙을",
+     "do": [
+      "grandpa:out:left"
+     ]
+    }
+   ]
+  },
+  "R02_grow": {
+   "box": "garden",
+   "light": "dawn",
+   "place": {
+    "turnip": {
+     "pose": "sprout",
+     "x": 72,
+     "y": 13
+    },
+    "grandpa": {
+     "pose": "stand",
+     "x": 58,
+     "y": 15,
+     "vis": false
+    }
+   },
+   "cues": [
+    {
+     "line": 0,
+     "match": "며칠 뒤",
+     "do": [
+      "grandpa:in:left"
+     ]
+    },
+    {
+     "line": 1,
+     "match": "파란 싹이",
+     "do": [
+      "light:dusk:1"
+     ]
+    },
+    {
+     "line": 4,
+     "match": "여름이 되었어요",
+     "do": [
+      "turnip:pose:big"
+     ]
+    }
+   ]
+  },
+  "R03_grandpa": {
+   "box": "garden",
+   "light": "dusk",
+   "place": {
+    "turnip": {
+     "pose": "big",
+     "x": 72,
+     "y": 13
+    },
+    "grandpa": {
+     "pose": "stand",
+     "x": 58,
+     "y": 15
+    },
+    "grandma": {
+     "pose": "stand",
+     "x": 18,
+     "y": 15,
+     "vis": false
+    }
+   },
+   "cues": [
+    {
+     "line": 2,
+     "match": "할아버지가 순무 잎",
+     "do": [
+      "grandpa:pose:pull"
+     ]
+    },
+    {
+     "line": 5,
+     "match": "아이코!",
+     "do": [
+      "grandpa:pose:stand"
+     ]
+    },
+    {
+     "line": 7,
+     "match": "할머니는 앞치마",
+     "do": [
+      "grandma:in:left"
+     ]
+    }
+   ]
+  },
+  "R04_grandma": {
+   "box": "garden",
+   "light": "dusk",
+   "place": {
+    "turnip": {
+     "pose": "big",
+     "x": 72,
+     "y": 13
+    },
+    "grandpa": {
+     "pose": "pull",
+     "x": 58,
+     "y": 15
+    },
+    "grandma": {
+     "pose": "stand",
+     "x": 30,
+     "y": 15
+    }
+   },
+   "cues": [
+    {
+     "line": 0,
+     "match": "할머니가 달려왔어요",
+     "do": [
+      "grandma:walk:49,15:3"
+     ]
+    },
+    {
+     "line": 2,
+     "match": "순무가 한 뼘",
+     "do": [
+      "turnip:at:72,15"
+     ]
+    }
+   ]
+  },
+  "R05_girl": {
+   "box": "garden",
+   "light": "dusk",
+   "place": {
+    "turnip": {
+     "pose": "big",
+     "x": 72,
+     "y": 15
+    },
+    "grandpa": {
+     "pose": "pull",
+     "x": 58,
+     "y": 15
+    },
+    "grandma": {
+     "pose": "stand",
+     "x": 49,
+     "y": 15
+    },
+    "girl": {
+     "pose": "stand",
+     "x": 41,
+     "y": 15,
+     "vis": false
+    }
+   },
+   "cues": [
+    {
+     "line": 0,
+     "match": "마당에서 놀던",
+     "do": [
+      "girl:in:left"
+     ]
+    },
+    {
+     "line": 2,
+     "match": "조금 더",
+     "do": [
+      "turnip:at:72,16"
+     ]
+    }
+   ]
+  },
+  "R06_dog": {
+   "box": "garden",
+   "light": "dusk",
+   "place": {
+    "turnip": {
+     "pose": "big",
+     "x": 72,
+     "y": 16
+    },
+    "grandpa": {
+     "pose": "pull",
+     "x": 58,
+     "y": 15
+    },
+    "grandma": {
+     "pose": "stand",
+     "x": 49,
+     "y": 15
+    },
+    "girl": {
+     "pose": "stand",
+     "x": 41,
+     "y": 15
+    },
+    "dog": {
+     "pose": "stand",
+     "x": 33,
+     "y": 15,
+     "vis": false
+    }
+   },
+   "cues": [
+    {
+     "line": 1,
+     "match": "강아지가 뛰어나왔어요",
+     "do": [
+      "dog:in:left"
+     ]
+    },
+    {
+     "line": 4,
+     "match": "순무가 꿈틀",
+     "do": [
+      "turnip:at:72,17"
+     ]
+    }
+   ]
+  },
+  "R07_cat": {
+   "box": "garden",
+   "light": "dusk",
+   "power": 0.9,
+   "place": {
+    "turnip": {
+     "pose": "big",
+     "x": 72,
+     "y": 17
+    },
+    "grandpa": {
+     "pose": "pull",
+     "x": 58,
+     "y": 15
+    },
+    "grandma": {
+     "pose": "stand",
+     "x": 49,
+     "y": 15
+    },
+    "girl": {
+     "pose": "stand",
+     "x": 41,
+     "y": 15
+    },
+    "dog": {
+     "pose": "stand",
+     "x": 33,
+     "y": 15
+    },
+    "cat": {
+     "pose": "sit",
+     "x": 25,
+     "y": 15,
+     "vis": false
+    }
+   },
+   "cues": [
+    {
+     "line": 1,
+     "match": "고양이가 지붕에서",
+     "do": [
+      "cat:in:top"
+     ]
+    },
+    {
+     "line": 3,
+     "match": "그래도 고양이가",
+     "do": [
+      "cat:pose:pull"
+     ]
+    },
+    {
+     "line": 5,
+     "match": "휴우, 모두 지쳐서",
+     "do": [
+      "grandpa:pose:stand"
+     ]
+    }
+   ]
+  },
+  "R08_mouse": {
+   "box": "garden",
+   "light": "night_forest",
+   "power": 0.9,
+   "place": {
+    "turnip": {
+     "pose": "big",
+     "x": 72,
+     "y": 17
+    },
+    "grandpa": {
+     "pose": "stand",
+     "x": 58,
+     "y": 15
+    },
+    "grandma": {
+     "pose": "stand",
+     "x": 49,
+     "y": 15
+    },
+    "girl": {
+     "pose": "stand",
+     "x": 41,
+     "y": 15
+    },
+    "dog": {
+     "pose": "stand",
+     "x": 33,
+     "y": 15
+    },
+    "cat": {
+     "pose": "pull",
+     "x": 25,
+     "y": 15
+    },
+    "mouse": {
+     "pose": "stand",
+     "x": 18,
+     "y": 14,
+     "vis": false
+    }
+   },
+   "cues": [
+    {
+     "line": 1,
+     "match": "아주 작은 생쥐",
+     "do": [
+      "mouse:in:left"
+     ]
+    },
+    {
+     "line": 4,
+     "match": "모두 벌떡",
+     "do": [
+      "grandpa:pose:pull"
+     ]
+    }
+   ]
+  },
+  "R09_pop": {
+   "box": "garden",
+   "light": "night_forest",
+   "place": {
+    "turnip": {
+     "pose": "big",
+     "x": 72,
+     "y": 17
+    },
+    "grandpa": {
+     "pose": "pull",
+     "x": 58,
+     "y": 15
+    },
+    "grandma": {
+     "pose": "stand",
+     "x": 49,
+     "y": 15
+    },
+    "girl": {
+     "pose": "stand",
+     "x": 41,
+     "y": 15
+    },
+    "dog": {
+     "pose": "stand",
+     "x": 33,
+     "y": 15
+    },
+    "cat": {
+     "pose": "pull",
+     "x": 25,
+     "y": 15
+    },
+    "mouse": {
+     "pose": "stand",
+     "x": 18,
+     "y": 14
+    }
+   },
+   "cues": [
+    {
+     "line": 1,
+     "match": "영차, 영차",
+     "do": [
+      "turnip:at:72,19"
+     ]
+    },
+    {
+     "line": 2,
+     "match": "쑥!",
+     "do": [
+      "turnip:walk:80,30:1",
+      "grandpa:pose:stand",
+      "cat:pose:sit",
+      "light:night_forest:1"
+     ]
+    }
+   ]
+  },
+  "R10_feast": {
+   "box": "kitchen",
+   "light": "hearth",
+   "place": {
+    "pot": {
+     "pose": "one",
+     "x": 50,
+     "y": 36
+    },
+    "grandpa": {
+     "pose": "stand",
+     "x": 33,
+     "y": 10
+    },
+    "dog": {
+     "pose": "stand",
+     "x": 40,
+     "y": 10
+    },
+    "cat": {
+     "pose": "sit",
+     "x": 46,
+     "y": 10
+    },
+    "mouse": {
+     "pose": "stand",
+     "x": 54,
+     "y": 10,
+     "flip": true
+    },
+    "girl": {
+     "pose": "stand",
+     "x": 60,
+     "y": 10,
+     "flip": true
+    },
+    "grandma": {
+     "pose": "stand",
+     "x": 67,
+     "y": 10,
+     "flip": true
+    }
+   },
+   "cues": [
+    {
+     "line": 1,
+     "match": "맛있는 순무국",
+     "do": [
+      "pot:lantern:on"
+     ]
+    }
+   ]
+  }
+ },
+ "end": {
+  "fadeOut": 8000
+ }
+}

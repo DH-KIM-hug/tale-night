@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#18213f">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>쿨쿨 그림자극장</title>
+<link rel="icon" href="assets/icon-512.png">
+<link rel="apple-touch-icon" href="assets/icon-512.png">
+<link rel="stylesheet" href="app.css">
+<link rel="stylesheet" href="engine/lightbox.css">
+<style>
+  body { min-height: 100%; }
+  .page { max-width: 1180px; margin: 0 auto; padding: calc(12px + env(safe-area-inset-top, 0px)) var(--gutter) calc(32px + env(safe-area-inset-bottom, 0px)); display: grid; gap: 18px; }
+  header { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  header h1 { margin: 0; font-size: clamp(20px, 3.4vw, 28px); letter-spacing: .08em; font-weight: 700; }
+  header h1 small { display: block; font-size: 12px; letter-spacing: .04em; color: var(--muted); font-weight: 400; margin-top: 2px; }
+  .moonbtn { width: 52px; height: 52px; border-radius: 50%; display: grid; place-items: center; }
+  .moonbtn span { width: 30px; height: 30px; border-radius: 50%; box-shadow: inset -9px -2px 0 0 #e9e2d2; transform: rotate(-20deg); }
+  .modes { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 720px) { .modes { grid-template-columns: 1fr; } }
+  .mode { background: var(--night); border: 1px solid var(--line); border-radius: 18px; padding: 18px; display: grid; gap: 12px; align-content: start; }
+  .mode h2 { margin: 0; font-size: 19px; letter-spacing: .04em; display: flex; align-items: center; gap: 10px; }
+  .mode h2 svg { width: 22px; height: 22px; fill: var(--cream); }
+  .mode p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.5; }
+  .mode .act { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .count { display: flex; gap: 6px; align-items: center; font-size: 13px; color: var(--muted); }
+  .count .pill { min-height: 36px; padding: 0 12px; font-size: 13px; }
+  .shelf h2 { font-size: 16px; margin: 6px 0 10px; color: var(--muted); font-weight: 500; letter-spacing: .04em; }
+  .tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 16px; }
+  .tile { text-align: left; display: grid; gap: 8px; }
+  .tile .lb { width: 100%; border-radius: 12px; box-shadow: 0 6px 22px rgba(0,0,0,.45); }
+  .tile .lb .lb-box::after { --room-dim: .18; }
+  .tile b { font-size: 16px; font-weight: 600; letter-spacing: .02em; }
+  .tile span { font-size: 12.5px; color: var(--muted); line-height: 1.45; }
+  .tile i { font-style: normal; font-size: 12px; color: var(--muted); }
+  /* 동화 고르기 시트 */
+  .pick { position: fixed; inset: 0; z-index: 40; background: rgba(5,4,12,.66); display: none; place-items: center; padding: var(--gutter); }
+  .pick.open { display: grid; }
+  .pick .card { width: min(520px, 100%); background: var(--night); border-radius: 18px; padding: 16px; display: grid; gap: 14px; }
+  .pick .card .lb { width: 100%; }
+  .pick .row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .pick .row .pill { min-height: 56px; font-size: 16px; }
+  .pick h3 { margin: 0; font-size: 20px; display: flex; justify-content: space-between; align-items: center; }
+  .pick p { margin: 0; color: var(--muted); font-size: 14px; }
+  /* 스플래시 */
+  .splash { position: fixed; inset: 0; z-index: 60; background: #0d1124; display: grid; place-items: center; transition: opacity .8s; }
+  .splash.out { opacity: 0; pointer-events: none; }
+  .splash .lb { width: min(92vw, calc(88vh * 4 / 3)); }
+  .splash .title { position: absolute; left: 50%; top: 56%; transform: translate(-50%, -50%); z-index: 8; text-align: center; opacity: 0; transition: opacity 1.6s ease 1s;
+    font-size: clamp(26px, 6vw, 60px); letter-spacing: .12em; font-weight: 800; color: #fff6e6; text-shadow: 0 2px 0 rgba(46,36,28,.35), 0 0 30px rgba(255,220,150,.55); white-space: nowrap; }
+  .splash.lit .title { opacity: 1; }
+</style>
+</head>
+<body>
+<div class="splash" id="splash" hidden><div id="splashStage"></div><div class="title">쿨쿨 그림자극장</div></div>
+<div class="page">
+  <header>
+    <h1>쿨쿨 그림자극장<small>불을 켜면 빛과 그림자 속에서 동화가 펼쳐져요</small></h1>
+    <button class="moonbtn hold-ring" id="moon" aria-label="보호자 설정 (1초 꾹)"><span></span></button>
+  </header>
+  <section class="modes">
+    <div class="mode">
+      <h2><svg viewBox="0 0 24 24"><path d="M12 3v10.6A4 4 0 1 0 14 17V7h4V3z"/></svg>자동으로 읽어 줘요</h2>
+      <p>녹음된 목소리가 읽어 주고, 끝나면 조용히 불이 꺼져요. 화면을 꺼도 끝까지 읽어요.</p>
+      <div class="act">
+        <button class="pill primary" id="random">아무 이야기나 이어 듣기</button>
+        <div class="count" id="count"></div>
+      </div>
+    </div>
+    <div class="mode">
+      <h2><svg viewBox="0 0 24 24"><path d="M3 5c3-1 6-1 9 1 3-2 6-2 9-1v14c-3-1-6-1-9 1-3-2-6-2-9-1z"/></svg>함께 읽어요</h2>
+      <p>어른이 소리 내어 읽고 → 를 누르면, 그 줄에 맞춰 빛과 그림자가 움직여요.</p>
+      <div class="act" id="resume"></div>
+    </div>
+  </section>
+  <section class="shelf">
+    <h2>오늘 밤 이야기</h2>
+    <div class="tiles" id="tiles"></div>
+  </section>
+</div>
+<div class="pick" id="pick"><div class="card">
+  <h3><span id="pickTitle"></span><button class="pill" id="pickClose">닫기</button></h3>
+  <div id="pickStage"></div>
+  <p id="pickLine"></p>
+  <div class="row"><button class="pill primary" id="pickAuto">▶ 읽어 줘요</button><button class="pill" id="pickTogether">📖 함께 읽어요</button></div>
+</div></div>
+<script src="engine/settings.js"></script>
+<script src="engine/lightbox.js"></script>
+<script src="engine/story.js"></script>
+<script src="home.js"></script>
+</body>
+</html>

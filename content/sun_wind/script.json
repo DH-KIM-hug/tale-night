@@ -1,0 +1,714 @@
+{
+ "tale": "sun_wind",
+ "title": "해와 바람",
+ "source": "paper-tale-theater@aaf8049e7f tales/sun_wind/read_script_el.json + content/sun_wind/edit.json",
+ "scenes": [
+  {
+   "key": "R01_sky",
+   "card": "하늘 높이",
+   "lines": [
+    {
+     "text": "하늘 높이 해님과 바람이 살았어요.",
+     "clips": [
+      "audio/sun_wind/nar_26c6e135a3.mp3"
+     ],
+     "dur": 3.63,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R01_sky#0"
+    },
+    {
+     "text": "구름은 두둥실, 새들은 짹짹 하늘을 날아다녔어요.",
+     "clips": [
+      "audio/sun_wind/nar_05a77bab0d.mp3"
+     ],
+     "dur": 4.75,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R01_sky#1"
+    },
+    {
+     "text": "해님은 방긋방긋 웃고, 바람은 볼을 빵빵하게 부풀렸어요.",
+     "clips": [
+      "audio/sun_wind/nar_8edc9be45d.mp3"
+     ],
+     "dur": 5.25,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R01_sky#2"
+    },
+    {
+     "text": "해님이 바람에게 말했어요.",
+     "clips": [
+      "audio/sun_wind/nar_6b65bc9a73.mp3"
+     ],
+     "dur": 2.27,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R01_sky#3"
+    },
+    {
+     "text": "\"내가 제일 따뜻해!\"",
+     "clips": [
+      "audio/sun_wind/sun_7e5a139312.mp3"
+     ],
+     "dur": 1.96,
+     "roles": [
+      "sun"
+     ],
+     "segRoles": [
+      "sun"
+     ],
+     "from": "R01_sky#4"
+    },
+    {
+     "text": "바람도 해님에게 큰 소리로 말했어요.",
+     "clips": [
+      "audio/sun_wind/nar_7b56ed291b.mp3"
+     ],
+     "dur": 3,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R01_sky#5"
+    },
+    {
+     "text": "\"아니야, 내가 제일 세!\"",
+     "clips": [
+      "audio/sun_wind/wind_991dec3324.mp3"
+     ],
+     "dur": 2.19,
+     "roles": [
+      "wind"
+     ],
+     "segRoles": [
+      "wind"
+     ],
+     "from": "R01_sky#6"
+    },
+    {
+     "text": "해님과 바람은 서로 자기가 최고래요.",
+     "clips": [
+      "audio/sun_wind/nar_c74ec3cc63.mp3"
+     ],
+     "dur": 3.08,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R01_sky#7"
+    }
+   ]
+  },
+  {
+   "key": "R02_bet",
+   "card": "내기",
+   "lines": [
+    {
+     "text": "해님과 바람은 하늘에서 아래를 내려다보았어요.",
+     "clips": [
+      "audio/sun_wind/nar_1b174e4c09.mp3"
+     ],
+     "dur": 3.71,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R02_bet#0"
+    },
+    {
+     "text": "저 아래 길로 나그네가 걸어가요.",
+     "clips": [
+      "audio/sun_wind/nar_784b3e5eeb.mp3"
+     ],
+     "dur": 2.69,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R02_bet#1"
+    },
+    {
+     "text": "나그네는 터벅터벅, 느릿느릿 길을 걸었어요.",
+     "clips": [
+      "audio/sun_wind/nar_a3312d0506.mp3"
+     ],
+     "dur": 4.44,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R02_bet#2"
+    },
+    {
+     "text": "나그네는 두툼한 외투를 입었어요.",
+     "clips": [
+      "audio/sun_wind/nar_e189698744.mp3"
+     ],
+     "dur": 2.85,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R02_bet#3"
+    },
+    {
+     "text": "바람이 말했어요. \"저 외투를 먼저 벗기는 쪽이 이기기!\"",
+     "clips": [
+      "audio/sun_wind/nar_929d93a99b.mp3",
+      "audio/sun_wind/wind_fdee0bb123.mp3"
+     ],
+     "dur": 4.34,
+     "roles": [
+      "nar",
+      "wind"
+     ],
+     "segRoles": [
+      "nar",
+      "wind"
+     ],
+     "from": "R02_bet#4"
+    },
+    {
+     "text": "\"저 외투쯤은 내가 휙 한 방에 날려 버릴걸!\"",
+     "clips": [
+      "audio/sun_wind/wind_9c30cde85c.mp3"
+     ],
+     "dur": 3.47,
+     "roles": [
+      "wind"
+     ],
+     "segRoles": [
+      "wind"
+     ],
+     "from": "R02_bet#5"
+    },
+    {
+     "text": "해님이 웃었어요. \"좋아. 바람아, 너 먼저 해 봐.\"",
+     "clips": [
+      "audio/sun_wind/nar_e17289225f.mp3",
+      "audio/sun_wind/sun_10b90fc0f2.mp3"
+     ],
+     "dur": 4.41,
+     "roles": [
+      "nar",
+      "sun"
+     ],
+     "segRoles": [
+      "nar",
+      "sun"
+     ],
+     "from": "R02_bet#6"
+    }
+   ]
+  },
+  {
+   "key": "R03_wind",
+   "card": "바람 차례",
+   "lines": [
+    {
+     "text": "나그네가 걷는 들판으로 바람이 불어왔어요.",
+     "clips": [
+      "audio/sun_wind/nar_2262a38c69.mp3"
+     ],
+     "dur": 3.32,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R03_wind#0"
+    },
+    {
+     "text": "바람이 볼을 빵빵하게 부풀렸어요.",
+     "clips": [
+      "audio/sun_wind/nar_5782294768.mp3"
+     ],
+     "dur": 2.93,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R03_wind#1"
+    },
+    {
+     "text": "후우! 바람이 힘껏 불자 풀잎이 휘청휘청 흔들렸어요.",
+     "clips": [
+      "audio/sun_wind/nar_3c33e6d5d4.mp3"
+     ],
+     "dur": 6.35,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R03_wind#2"
+    },
+    {
+     "text": "휘잉~ 나뭇잎이 날아가요!",
+     "clips": [
+      "audio/sun_wind/nar_7d48a914fa.mp3"
+     ],
+     "dur": 2.85,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R03_wind#3"
+    },
+    {
+     "text": "\"앗, 내 모자!\" 모자가 훨훨 날아갔어요.",
+     "clips": [
+      "audio/sun_wind/man_14bc1668c9.mp3",
+      "audio/sun_wind/nar_113bd78933.mp3"
+     ],
+     "dur": 4.47,
+     "roles": [
+      "man",
+      "nar"
+     ],
+     "segRoles": [
+      "man",
+      "nar"
+     ],
+     "from": "R03_wind#4"
+    },
+    {
+     "text": "외투 자락이 펄럭펄럭!",
+     "clips": [
+      "audio/sun_wind/nar_9a41773a1b.mp3"
+     ],
+     "dur": 2.19,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R03_wind#5"
+    },
+    {
+     "text": "\"으으, 추워!\" 나그네는 외투를 꽉 여몄어요.",
+     "clips": [
+      "audio/sun_wind/man_64fd341b7c.mp3",
+      "audio/sun_wind/nar_a5cff03367.mp3"
+     ],
+     "dur": 5.93,
+     "roles": [
+      "man",
+      "nar"
+     ],
+     "segRoles": [
+      "man",
+      "nar"
+     ],
+     "from": "R03_wind#6"
+    },
+    {
+     "text": "단추까지 꼭꼭 채웠어요. 외투는 꼼짝도 안 해요!",
+     "clips": [
+      "audio/sun_wind/nar_318f652479.mp3"
+     ],
+     "dur": 4.28,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R03_wind#7"
+    },
+    {
+     "text": "나그네는 몸을 웅크리고 비틀비틀 걸어갔어요.",
+     "clips": [
+      "audio/sun_wind/nar_ffe9752281.mp3"
+     ],
+     "dur": 4.13,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R03_wind#8"
+    }
+   ]
+  },
+  {
+   "key": "R04_pant",
+   "card": "헉헉",
+   "lines": [
+    {
+     "text": "바람은 더 세게 불었어요. 쓱!",
+     "clips": [
+      "audio/sun_wind/nar_8446bc3ae6.mp3"
+     ],
+     "dur": 3.32,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R04_pant#1"
+    },
+    {
+     "text": "하지만 나그네는 외투를 꼭 붙잡고 끄떡도 하지 않았어요.",
+     "clips": [
+      "audio/sun_wind/nar_fca953020f.mp3"
+     ],
+     "dur": 4.52,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R04_pant#2"
+    },
+    {
+     "text": "바람은 숨이 차서 헉헉, 볼이 쭈글쭈글해졌어요.",
+     "clips": [
+      "audio/sun_wind/nar_bae6a463c6.mp3"
+     ],
+     "dur": 5.15,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R04_pant#3"
+    },
+    {
+     "text": "\"에이, 안 되네!\"",
+     "clips": [
+      "audio/sun_wind/wind_fe6ecaa865.mp3"
+     ],
+     "dur": 3.55,
+     "roles": [
+      "wind"
+     ],
+     "segRoles": [
+      "wind"
+     ],
+     "from": "R04_pant#4"
+    }
+   ]
+  },
+  {
+   "key": "R05_sun",
+   "card": "해님 차례",
+   "lines": [
+    {
+     "text": "이번엔 해님 차례예요.",
+     "clips": [
+      "audio/sun_wind/nar_61da3b8cdf.mp3"
+     ],
+     "dur": 1.88,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R05_sun#0"
+    },
+    {
+     "text": "해님이 방긋 웃으며 따스한 햇살을 반짝반짝 쏟아 주었어요.",
+     "clips": [
+      "audio/sun_wind/nar_d1a078587b.mp3"
+     ],
+     "dur": 5.07,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R05_sun#2"
+    },
+    {
+     "text": "\"아, 따뜻하다~\" 나그네가 단추를 풀었어요.",
+     "clips": [
+      "audio/sun_wind/man_1826f5e666.mp3",
+      "audio/sun_wind/nar_3d77fc90f2.mp3"
+     ],
+     "dur": 7.18,
+     "roles": [
+      "man",
+      "nar"
+     ],
+     "segRoles": [
+      "man",
+      "nar"
+     ],
+     "from": "R05_sun#3"
+    },
+    {
+     "text": "햇살이 점점 쨍쨍, 나그네 이마에 땀이 송골송골 맺혔어요.",
+     "clips": [
+      "audio/sun_wind/nar_7fdbf1fdd6.mp3"
+     ],
+     "dur": 5.64,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R05_sun#4"
+    },
+    {
+     "text": "\"아이, 더워!\" 모자로 부채질을 해요.",
+     "clips": [
+      "audio/sun_wind/man_7112792135.mp3",
+      "audio/sun_wind/nar_19fa188393.mp3"
+     ],
+     "dur": 7.84,
+     "roles": [
+      "man",
+      "nar"
+     ],
+     "segRoles": [
+      "man",
+      "nar"
+     ],
+     "from": "R05_sun#5"
+    },
+    {
+     "text": "\"휴우, 햇볕이 쨍쨍하니 외투는 필요 없겠네.\"",
+     "clips": [
+      "audio/sun_wind/man_3655e68a42.mp3"
+     ],
+     "dur": 5.15,
+     "roles": [
+      "man"
+     ],
+     "segRoles": [
+      "man"
+     ],
+     "from": "R05_sun#6"
+    },
+    {
+     "text": "훌러덩! 나그네가 외투를 벗었어요!",
+     "clips": [
+      "audio/sun_wind/nar_a8aab41f40.mp3"
+     ],
+     "dur": 3.4,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R05_sun#7"
+    },
+    {
+     "text": "바람이 깜짝 놀랐어요. \"우와, 해님이 해냈네!\"",
+     "clips": [
+      "audio/sun_wind/nar_6cd1b27292.mp3",
+      "audio/sun_wind/wind_b438f4b3f4.mp3"
+     ],
+     "dur": 6.14,
+     "roles": [
+      "nar",
+      "wind"
+     ],
+     "segRoles": [
+      "nar",
+      "wind"
+     ],
+     "from": "R05_sun#8"
+    }
+   ]
+  },
+  {
+   "key": "R06_who",
+   "card": "해님이 이겼어요",
+   "lines": [
+    {
+     "text": "외투를 벗은 나그네 위로 해님과 바람이 내려다보았어요.",
+     "clips": [
+      "audio/sun_wind/nar_dd67a68e58.mp3"
+     ],
+     "dur": 4.36,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R06_who#0"
+    },
+    {
+     "text": "바람은 머리를 긁적긁적, 해님은 싱글벙글 웃었어요.",
+     "clips": [
+      "audio/sun_wind/nar_81b09eb474.mp3"
+     ],
+     "dur": 5.15,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R06_who#3"
+    },
+    {
+     "text": "세게 미는 것보다 다정한 게 더 힘이 세요.",
+     "clips": [
+      "audio/sun_wind/nar_f6b71e3762.mp3"
+     ],
+     "dur": 3.63,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R06_who#4"
+    },
+    {
+     "text": "나그네는 해님을 올려다보며 방긋 웃었어요.",
+     "clips": [
+      "audio/sun_wind/nar_0386fcfacb.mp3"
+     ],
+     "dur": 3.79,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R06_who#5"
+    }
+   ]
+  },
+  {
+   "key": "R08_friends",
+   "card": "사이좋게",
+   "lines": [
+    {
+     "text": "해님과 바람이 마주 보고 웃었어요.",
+     "clips": [
+      "audio/sun_wind/nar_cacace9582.mp3"
+     ],
+     "dur": 3.08,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R08_friends#1"
+    },
+    {
+     "text": "둘은 손을 꼭 잡고 흔들흔들, 악수를 했어요.",
+     "clips": [
+      "audio/sun_wind/nar_21342dac4b.mp3"
+     ],
+     "dur": 4.28,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R08_friends#2"
+    },
+    {
+     "text": "\"우리, 사이좋게 지내자!\"",
+     "clips": [
+      "audio/sun_wind/wind_cdb5957342.mp3"
+     ],
+     "dur": 2.35,
+     "roles": [
+      "wind"
+     ],
+     "segRoles": [
+      "wind"
+     ],
+     "from": "R08_friends#3"
+    },
+    {
+     "text": "\"그래! 둘이 함께라면 더 좋아!\"",
+     "clips": [
+      "audio/sun_wind/sun_ab8c70e377.mp3"
+     ],
+     "dur": 3,
+     "roles": [
+      "sun"
+     ],
+     "segRoles": [
+      "sun"
+     ],
+     "from": "R08_friends#4"
+    },
+    {
+     "text": "해님은 반짝반짝, 바람은 살랑살랑, 하늘이 환해졌어요.",
+     "clips": [
+      "audio/sun_wind/nar_5f64c576f8.mp3"
+     ],
+     "dur": 5.8,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R08_friends#5"
+    },
+    {
+     "text": "해님과 바람은 오늘도 사이좋게 하늘을 지켜요.",
+     "clips": [
+      "audio/sun_wind/nar_d7c351c26b.mp3"
+     ],
+     "dur": 3.71,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R08_friends#6"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,327 @@
+{
+ "tale": "sun_wind",
+ "boxes": {
+  "sky": {
+   "layers": {
+    "far": "art/sun_wind/sky_far.svg",
+    "mid": "art/sun_wind/sky_mid.svg",
+    "near": "art/sun_wind/sky_near.svg",
+    "frame": "art/sun_wind/sky_frame.svg"
+   },
+   "glowAt": [
+    50,
+    20
+   ],
+   "fx": "fireflies",
+   "noMoon": true
+  },
+  "field": {
+   "layers": {
+    "far": "art/sun_wind/field_far.svg",
+    "mid": "art/sun_wind/field_mid.svg",
+    "near": "art/sun_wind/field_near.svg",
+    "frame": "art/sun_wind/field_frame.svg"
+   },
+   "glowAt": [
+    50,
+    20
+   ],
+   "fx": "fireflies",
+   "noMoon": true
+  }
+ },
+ "dolls": {
+  "sun": {
+   "poses": {
+    "smile": "art/dolls/sun_smile.svg",
+    "wide": "art/dolls/sun_wide.svg"
+   },
+   "w": 20.0,
+   "dk": 0.12
+  },
+  "wind": {
+   "poses": {
+    "calm": "art/dolls/wind_calm.svg",
+    "blow": "art/dolls/wind_blow.svg"
+   },
+   "w": 22.0,
+   "dk": 0.35
+  },
+  "man": {
+   "poses": {
+    "coat": "art/dolls/traveler_coat.svg",
+    "fan": "art/dolls/traveler_fan.svg",
+    "carry": "art/dolls/traveler_carry.svg"
+   },
+   "w": 15.9
+  }
+ },
+ "scenes": {
+  "R01_sky": {
+   "box": "sky",
+   "light": "dusk",
+   "place": {
+    "sun": {
+     "pose": "smile",
+     "x": 30,
+     "y": 52
+    },
+    "wind": {
+     "pose": "calm",
+     "x": 70,
+     "y": 50,
+     "flip": true
+    }
+   },
+   "cues": [
+    {
+     "line": 2,
+     "match": "해님은 방긋",
+     "do": [
+      "wind:pose:blow"
+     ]
+    },
+    {
+     "line": 7,
+     "match": "해님과 바람은 서로",
+     "do": [
+      "wind:pose:calm"
+     ]
+    }
+   ]
+  },
+  "R02_bet": {
+   "box": "field",
+   "light": "dusk",
+   "place": {
+    "sun": {
+     "pose": "wide",
+     "x": 20,
+     "y": 70
+    },
+    "wind": {
+     "pose": "calm",
+     "x": 80,
+     "y": 68,
+     "flip": true
+    },
+    "man": {
+     "pose": "coat",
+     "x": 30,
+     "y": 22,
+     "vis": false
+    }
+   },
+   "cues": [
+    {
+     "line": 1,
+     "match": "저 아래 길로",
+     "do": [
+      "man:in:left"
+     ]
+    },
+    {
+     "line": 2,
+     "match": "나그네는 터벅",
+     "do": [
+      "man:walk:42,22:9"
+     ]
+    },
+    {
+     "line": 4,
+     "match": "바람이 말했어요",
+     "do": [
+      "wind:pose:blow"
+     ]
+    }
+   ]
+  },
+  "R03_wind": {
+   "box": "field",
+   "light": "moon",
+   "power": 0.9,
+   "place": {
+    "sun": {
+     "pose": "smile",
+     "x": 14,
+     "y": 74
+    },
+    "wind": {
+     "pose": "blow",
+     "x": 72,
+     "y": 66,
+     "flip": true
+    },
+    "man": {
+     "pose": "coat",
+     "x": 42,
+     "y": 22
+    }
+   },
+   "cues": [
+    {
+     "line": 2,
+     "match": "후우! 바람이",
+     "do": [
+      "fx:leaves"
+     ]
+    },
+    {
+     "line": 8,
+     "match": "나그네는 몸을",
+     "do": [
+      "man:walk:50,22:9"
+     ]
+    }
+   ]
+  },
+  "R04_pant": {
+   "box": "field",
+   "light": "moon",
+   "power": 0.85,
+   "fx": "leaves",
+   "place": {
+    "sun": {
+     "pose": "smile",
+     "x": 14,
+     "y": 74
+    },
+    "wind": {
+     "pose": "blow",
+     "x": 72,
+     "y": 66,
+     "flip": true
+    },
+    "man": {
+     "pose": "coat",
+     "x": 50,
+     "y": 22
+    }
+   },
+   "cues": [
+    {
+     "line": 2,
+     "match": "바람은 숨이 차서",
+     "do": [
+      "wind:pose:calm",
+      "fx:fireflies",
+      "light:moon:0.8"
+     ]
+    }
+   ]
+  },
+  "R05_sun": {
+   "box": "field",
+   "light": "dusk",
+   "place": {
+    "sun": {
+     "pose": "wide",
+     "x": 24,
+     "y": 70
+    },
+    "wind": {
+     "pose": "calm",
+     "x": 82,
+     "y": 70,
+     "flip": true
+    },
+    "man": {
+     "pose": "coat",
+     "x": 50,
+     "y": 22
+    }
+   },
+   "cues": [
+    {
+     "line": 1,
+     "match": "해님이 방긋",
+     "do": [
+      "sun:walk:36,72:3",
+      "light:dusk:1"
+     ]
+    },
+    {
+     "line": 3,
+     "match": "햇살이 점점",
+     "do": [
+      "light:hearth:1"
+     ]
+    },
+    {
+     "line": 4,
+     "match": "\"아이, 더워!\"",
+     "do": [
+      "man:pose:fan"
+     ]
+    },
+    {
+     "line": 6,
+     "match": "훌러덩!",
+     "do": [
+      "man:pose:carry",
+      "light:dusk:1"
+     ]
+    }
+   ]
+  },
+  "R06_who": {
+   "box": "field",
+   "light": "dusk",
+   "place": {
+    "sun": {
+     "pose": "smile",
+     "x": 34,
+     "y": 70
+    },
+    "wind": {
+     "pose": "calm",
+     "x": 70,
+     "y": 70,
+     "flip": true
+    },
+    "man": {
+     "pose": "carry",
+     "x": 50,
+     "y": 22
+    }
+   }
+  },
+  "R08_friends": {
+   "box": "sky",
+   "light": "dusk",
+   "place": {
+    "sun": {
+     "pose": "smile",
+     "x": 38,
+     "y": 54
+    },
+    "wind": {
+     "pose": "calm",
+     "x": 62,
+     "y": 52,
+     "flip": true
+    }
+   },
+   "cues": [
+    {
+     "line": 1,
+     "match": "둘은 손을",
+     "do": [
+      "sun:walk:43,54:2",
+      "wind:walk:57,52:2"
+     ]
+    },
+    {
+     "line": 5,
+     "match": "해님과 바람은 오늘도",
+     "do": [
+      "light:night_forest:0.9"
+     ]
+    }
+   ]
+  }
+ },
+ "end": {
+  "fadeOut": 8000
+ }
+}

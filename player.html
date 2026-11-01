@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#18213f">
+<title>쿨쿨 그림자극장</title>
+<link rel="stylesheet" href="app.css">
+<link rel="stylesheet" href="engine/lightbox.css">
+<style>
+  body { overflow: hidden; }
+  .wrap { height: 100%; display: grid; grid-template-rows: auto 1fr auto; padding: calc(8px + env(safe-area-inset-top, 0px)) var(--gutter) calc(10px + env(safe-area-inset-bottom, 0px)); gap: 8px; }
+  header { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 48px; }
+  header .info { font-size: 13px; color: var(--muted); text-align: right; letter-spacing: .02em; }
+  .main { min-height: 0; display: grid; gap: 14px; align-items: center; justify-items: center; }
+  .stage-box { position: relative; width: min(100%, calc((100dvh - 210px) * 4 / 3)); }
+  .lb { width: 100%; box-shadow: 0 10px 40px rgba(0,0,0,.55); }
+  .start { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 9; min-height: 56px; padding: 0 28px; border-radius: 999px;
+    background: rgba(40,30,22,.82); color: #fff4e0; font-size: clamp(16px, 2.4vw, 20px); letter-spacing: .05em; box-shadow: 0 6px 24px rgba(0,0,0,.35); }
+  .start .t { display: block; }
+  .start small { display: block; font-size: 12px; opacity: .7; margin-top: 2px; }
+  .hand { position: absolute; left: 50%; top: 64%; width: 44px; height: 44px; z-index: 9; pointer-events: none; opacity: 0; transition: opacity .6s;
+    border-radius: 50%; border: 3px solid rgba(255,244,224,.8); animation: tapme 1.4s ease-in-out infinite; }
+  .hand.show { opacity: 1; }
+  @keyframes tapme { 0%,100% { transform: translate(-50%, 0) scale(1); } 50% { transform: translate(-50%, -6px) scale(.85); } }
+  .controls { display: flex; justify-content: center; gap: 32px; transition: opacity .8s; min-height: 72px; }
+  .controls.hide { opacity: 0; pointer-events: none; }
+  .caption { min-height: 2.6em; max-width: 46em; text-align: center; font-size: 17px; line-height: 1.5; color: var(--cream); opacity: .9; }
+  .caption:empty { display: none; }
+  /* 함께 읽기 */
+  .together .main { grid-template-columns: 1fr; }
+  .read-panel { width: min(100%, 860px); display: grid; grid-template-rows: 1fr auto; gap: 10px; min-height: 0; }
+  .lines { overflow: auto; padding: 4px 6px; font-size: var(--fs, 22px); line-height: 1.6; scroll-behavior: smooth; }
+  .lines p { margin: 0 0 .45em; color: var(--cream); opacity: .3; transition: opacity .4s; }
+  .lines p.done { opacity: .5; }
+  .lines p.now { opacity: 1; }
+  .lines p.now::before { content: ""; display: inline-block; width: .5em; height: .5em; border-radius: 50%; background: var(--ember); margin: 0 .45em .12em 0; vertical-align: middle; }
+  .turn { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+  .turn .where { font-size: 13px; color: var(--muted); }
+  .next-band { position: absolute; right: 0; top: 0; bottom: 0; width: 20%; z-index: 8; }
+  .next-band::after { content: ""; position: absolute; right: 10px; top: 50%; width: 14px; height: 14px; border-top: 3px solid rgba(255,244,224,.5); border-right: 3px solid rgba(255,244,224,.5); transform: translateY(-50%) rotate(45deg); }
+  .together.reading .next-band { display: block; }
+  .next-band { display: none; }
+  @media (min-aspect-ratio: 5/4) and (min-width: 900px) {
+    .together .main { grid-template-columns: 62fr 38fr; align-items: stretch; }
+    .together .stage-box { width: 100%; align-self: center; }
+    .together .read-panel { height: 100%; max-height: calc(100dvh - 120px); }
+  }
+  @media (max-aspect-ratio: 5/4) { .together .stage-box { width: min(100%, calc((100dvh - 330px) * 4 / 3)); } .together .main { align-content: start; grid-template-rows: auto 1fr; } .together .read-panel { height: 100%; } }
+  /* 잠드는 화면 */
+  .night { position: fixed; inset: 0; z-index: 30; background: #0b0f22; opacity: 0; pointer-events: none; transition: opacity 3s ease; display: grid; place-items: center; text-align: center; }
+  .night.show { opacity: .9; pointer-events: auto; }
+  .night.end { opacity: 1; }
+  .night .moon { width: 64px; height: 64px; border-radius: 50%; background: #e6dfd2; opacity: .35; margin: 0 auto 18px; box-shadow: 0 0 40px rgba(238,230,210,.25); }
+  .night p { color: #8f8aa6; font-size: 15px; margin: 0 0 18px; }
+  .night .hidden { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap" id="app">
+  <header>
+    <button class="icon-btn" id="home" aria-label="집으로"><svg viewBox="0 0 24 24"><path d="M12 3 2 11h3v9h5v-6h4v6h5v-9h3z"/></svg></button>
+    <div class="info" id="info"></div>
+  </header>
+  <div class="main" id="main">
+    <div class="stage-box" id="stageBox">
+      <div id="stage"></div>
+      <div class="next-band" id="nextBand" aria-hidden="true"></div>
+      <button class="start" id="start"><span class="t">톡 눌러서 불을 켜요</span><small id="startSub"></small></button>
+      <div class="hand" id="hand"></div>
+    </div>
+    <div class="caption" id="caption"></div>
+    <div class="read-panel" id="readPanel" hidden>
+      <div class="lines" id="lines"></div>
+      <div class="turn">
+        <button class="round" id="prev" aria-label="앞 줄"><svg viewBox="0 0 24 24"><path d="M15.5 4 7 12l8.5 8 1.5-1.5L10 12l7-6.5z"/></svg></button>
+        <span class="where" id="where"></span>
+        <button class="round" id="next" aria-label="다음 줄" style="background:var(--ember);border-color:var(--ember)"><svg viewBox="0 0 24 24"><path d="M8.5 4 17 12l-8.5 8L7 18.5 14 12 7 5.5z"/></svg></button>
+      </div>
+    </div>
+  </div>
+  <div class="controls" id="controls">
+    <button class="round" id="pause" aria-label="멈춤"><svg viewBox="0 0 24 24"><path id="pauseIcon" d="M6 4h4v16H6zm8 0h4v16h-4z"/></svg></button>
+    <button class="round" id="skip" aria-label="다음 이야기로 건너뛰기"><svg viewBox="0 0 24 24"><path d="M5 5v14l9-7zm10 0h3v14h-3z"/></svg></button>
+  </div>
+</div>
+<div class="night" id="night"><div><div class="moon"></div><p>잘 자요</p><button class="pill" id="nightHome">집으로</button></div></div>
+<script src="engine/settings.js"></script>
+<script src="engine/audio.js"></script>
+<script src="engine/lightbox.js"></script>
+<script src="engine/story.js"></script>
+<script src="player.js"></script>
+</body>
+</html>

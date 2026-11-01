@@ -1,0 +1,838 @@
+{
+ "tale": "turnip",
+ "title": "커다란 순무",
+ "source": "paper-tale-theater@aaf8049e7f tales/turnip/read_script_el.json + content/turnip/edit.json",
+ "scenes": [
+  {
+   "key": "R01_seed",
+   "card": "봄",
+   "lines": [
+    {
+     "text": "봄이 왔어요. 할아버지가 텃밭에 구멍을 팠어요.",
+     "clips": [
+      "audio/turnip/nar_b8838b91a9.mp3"
+     ],
+     "dur": 4.28,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R01_seed#0"
+    },
+    {
+     "text": "할아버지 손바닥 위에 작은 씨앗 하나가 또르르 굴렀어요.",
+     "clips": [
+      "audio/turnip/nar_aaa897bdc9.mp3"
+     ],
+     "dur": 4.83,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R01_seed#1"
+    },
+    {
+     "text": "\"순무야, 크게 자라라.\"",
+     "clips": [
+      "audio/turnip/grandpa_15b923d90a.mp3"
+     ],
+     "dur": 2.77,
+     "roles": [
+      "grandpa"
+     ],
+     "segRoles": [
+      "grandpa"
+     ],
+     "from": "R01_seed#2"
+    },
+    {
+     "text": "씨앗이 흙 속으로 쏙 들어갔어요.",
+     "clips": [
+      "audio/turnip/nar_a574f05455.mp3"
+     ],
+     "dur": 2.93,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R01_seed#3"
+    },
+    {
+     "text": "할아버지는 흙을 토닥토닥 덮어 주고 집으로 돌아갔어요.",
+     "clips": [
+      "audio/turnip/nar_f1e73e829b.mp3"
+     ],
+     "dur": 4.68,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R01_seed#4"
+    }
+   ]
+  },
+  {
+   "key": "R02_grow",
+   "card": "무럭무럭",
+   "lines": [
+    {
+     "text": "며칠 뒤, 할아버지가 씨앗을 심은 텃밭에 나왔어요.",
+     "clips": [
+      "audio/turnip/nar_9393251763.mp3"
+     ],
+     "dur": 4.44,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R02_grow#0"
+    },
+    {
+     "text": "파란 싹이 났어요! 물도 주고 햇볕도 줘요.",
+     "clips": [
+      "audio/turnip/nar_f43ccefd11.mp3"
+     ],
+     "dur": 3.74,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R02_grow#1"
+    },
+    {
+     "text": "할아버지는 날마다 텃밭에 나와 싹을 요리조리 들여다보았어요.",
+     "clips": [
+      "audio/turnip/nar_25b60ee4b6.mp3"
+     ],
+     "dur": 5.07,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R02_grow#2"
+    },
+    {
+     "text": "싹은 쑥쑥, 잎은 넓적넓적 자라났지요.",
+     "clips": [
+      "audio/turnip/nar_1ce4e90fcb.mp3"
+     ],
+     "dur": 4.44,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R02_grow#3"
+    },
+    {
+     "text": "여름이 되었어요. 순무 잎이 할아버지 키만큼 자랐어요!",
+     "clips": [
+      "audio/turnip/nar_55919334e8.mp3"
+     ],
+     "dur": 4.83,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R02_grow#4"
+    },
+    {
+     "text": "땅속 뿌리도 무럭무럭, 커다랗게 자랐지요.",
+     "clips": [
+      "audio/turnip/nar_31a71bdab0.mp3"
+     ],
+     "dur": 4.21,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R02_grow#5"
+    }
+   ]
+  },
+  {
+   "key": "R03_grandpa",
+   "card": "영차!",
+   "lines": [
+    {
+     "text": "여름날, 할아버지가 커다란 순무 앞에 섰어요.",
+     "clips": [
+      "audio/turnip/nar_a7d304835e.mp3"
+     ],
+     "dur": 4.05,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R03_grandpa#0"
+    },
+    {
+     "text": "\"이제 뽑을 때가 되었구나.\" 할아버지가 손바닥을 탁탁 쳤어요.",
+     "clips": [
+      "audio/turnip/nar_d9e9ab2f23.mp3"
+     ],
+     "dur": 5.49,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R03_grandpa#1"
+    },
+    {
+     "text": "할아버지가 순무 잎을 꽉 잡았어요.",
+     "clips": [
+      "audio/turnip/nar_f370ea5e4f.mp3"
+     ],
+     "dur": 3.06,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R03_grandpa#2"
+    },
+    {
+     "text": "영차! 할아버지가 잎을 힘껏 당겼어요.",
+     "clips": [
+      "audio/turnip/nar_46d6fe0772.mp3"
+     ],
+     "dur": 4.05,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R03_grandpa#3"
+    },
+    {
+     "text": "순무는 꿈쩍도 안 해요.",
+     "clips": [
+      "audio/turnip/nar_ad6379c47e.mp3"
+     ],
+     "dur": 2.35,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R03_grandpa#4"
+    },
+    {
+     "text": "아이코! 할아버지가 엉덩방아를 찧었어요.",
+     "clips": [
+      "audio/turnip/grandpa_19ce1315cb.mp3",
+      "audio/turnip/nar_91554e1ea4.mp3"
+     ],
+     "dur": 6.64,
+     "roles": [
+      "grandpa",
+      "nar"
+     ],
+     "segRoles": [
+      "grandpa",
+      "nar"
+     ],
+     "from": "R03_grandpa#5"
+    },
+    {
+     "text": "혼자서는 안 되겠어요. 할아버지가 할머니를 불러요!",
+     "clips": [
+      "audio/turnip/nar_8992ec1f04.mp3"
+     ],
+     "dur": 4.28,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R03_grandpa#6"
+    },
+    {
+     "text": "할머니는 앞치마를 두른 채 부엌에서 후다닥 뛰어나왔어요.",
+     "clips": [
+      "audio/turnip/nar_b70b40b29e.mp3"
+     ],
+     "dur": 4.6,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R03_grandpa#7"
+    }
+   ]
+  },
+  {
+   "key": "R04_grandma",
+   "card": "할머니~!",
+   "lines": [
+    {
+     "text": "할머니가 달려왔어요. \"같이 해 봐요!\"",
+     "clips": [
+      "audio/turnip/nar_62247242d1.mp3",
+      "audio/turnip/grandma_2ef20b4dbc.mp3"
+     ],
+     "dur": 3.27,
+     "roles": [
+      "nar",
+      "grandma"
+     ],
+     "segRoles": [
+      "nar",
+      "grandma"
+     ],
+     "from": "R04_grandma#1"
+    },
+    {
+     "text": "할머니가 할아버지 허리를 꽉 잡았어요. 영차!",
+     "clips": [
+      "audio/turnip/nar_0107bfde1a.mp3"
+     ],
+     "dur": 4.6,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R04_grandma#2"
+    },
+    {
+     "text": "순무가 한 뼘 올라왔어요! 그래도 안 뽑혀요.",
+     "clips": [
+      "audio/turnip/nar_1393390fe1.mp3"
+     ],
+     "dur": 3.87,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R04_grandma#3"
+    },
+    {
+     "text": "\"손녀야, 이리 와서 좀 도와주렴!\"",
+     "clips": [
+      "audio/turnip/grandma_39f80bbe44.mp3"
+     ],
+     "dur": 2.69,
+     "roles": [
+      "grandma"
+     ],
+     "segRoles": [
+      "grandma"
+     ],
+     "from": "R04_grandma#4"
+    }
+   ]
+  },
+  {
+   "key": "R05_girl",
+   "card": "손녀",
+   "lines": [
+    {
+     "text": "마당에서 놀던 손녀가 깡충깡충 달려왔어요.",
+     "clips": [
+      "audio/turnip/nar_d6997bc7ad.mp3"
+     ],
+     "dur": 4.05,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R05_girl#1"
+    },
+    {
+     "text": "\"손녀야~!\" 손녀가 할머니 허리를 잡았어요. 영차!",
+     "clips": [
+      "audio/turnip/grandma_e294f371a7.mp3",
+      "audio/turnip/nar_7151c2afee.mp3"
+     ],
+     "dur": 5.28,
+     "roles": [
+      "grandma",
+      "nar"
+     ],
+     "segRoles": [
+      "grandma",
+      "nar"
+     ],
+     "from": "R05_girl#2"
+    },
+    {
+     "text": "조금 더 올라왔어요!",
+     "clips": [
+      "audio/turnip/nar_d3deba1187.mp3"
+     ],
+     "dur": 1.67,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R05_girl#3"
+    },
+    {
+     "text": "세 사람이 영차영차 당겨도 순무는 땅속에 꼭 박혀 있었어요.",
+     "clips": [
+      "audio/turnip/nar_39e3b261f8.mp3"
+     ],
+     "dur": 5.8,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R05_girl#4"
+    }
+   ]
+  },
+  {
+   "key": "R06_dog",
+   "card": "멍멍!",
+   "lines": [
+    {
+     "text": "덤불 뒤에서 멍멍!",
+     "clips": [
+      "audio/turnip/nar_d7495ca7b7.mp3"
+     ],
+     "dur": 1.91,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R06_dog#1"
+    },
+    {
+     "text": "강아지가 뛰어나왔어요. \"나도 도울게요!\"",
+     "clips": [
+      "audio/turnip/nar_923b617162.mp3",
+      "audio/turnip/dog_3541de2275.mp3"
+     ],
+     "dur": 7.44,
+     "roles": [
+      "nar",
+      "dog"
+     ],
+     "segRoles": [
+      "nar",
+      "dog"
+     ],
+     "from": "R06_dog#2"
+    },
+    {
+     "text": "\"멍멍! 저도 힘이 아주 세요!\"",
+     "clips": [
+      "audio/turnip/dog_3e5abf3127.mp3"
+     ],
+     "dur": 3.16,
+     "roles": [
+      "dog"
+     ],
+     "segRoles": [
+      "dog"
+     ],
+     "from": "R06_dog#3"
+    },
+    {
+     "text": "강아지가 손녀 치마를 꼭 붙잡았어요. 영차!",
+     "clips": [
+      "audio/turnip/nar_8acbb11652.mp3"
+     ],
+     "dur": 4.21,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R06_dog#4"
+    },
+    {
+     "text": "순무가 꿈틀, 조금 더 올라왔지만 아직도 뽑히지 않았어요.",
+     "clips": [
+      "audio/turnip/nar_b5712cfad8.mp3"
+     ],
+     "dur": 5.41,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R06_dog#5"
+    }
+   ]
+  },
+  {
+   "key": "R07_cat",
+   "card": "야옹!",
+   "lines": [
+    {
+     "text": "헛간 지붕에서 야옹!",
+     "clips": [
+      "audio/turnip/nar_5261dae3bc.mp3"
+     ],
+     "dur": 2.06,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R07_cat#1"
+    },
+    {
+     "text": "고양이가 지붕에서 폴짝 내려왔어요.",
+     "clips": [
+      "audio/turnip/nar_780bdf6fcc.mp3"
+     ],
+     "dur": 3.47,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R07_cat#2"
+    },
+    {
+     "text": "어? 강아지랑 고양이가 서로 째려봐요.",
+     "clips": [
+      "audio/turnip/nar_719af83d16.mp3"
+     ],
+     "dur": 3.87,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "stand_in": "고양이도 강아지 꼬리를 꼭 잡았어요. 영차!"
+    },
+    {
+     "text": "그래도 고양이가 강아지 꼬리를 꼭 잡았어요.",
+     "clips": [
+      "audio/turnip/nar_3fd9b6c780.mp3"
+     ],
+     "dur": 3.87,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "stand_in": "고양이도 강아지 꼬리를 꼭 잡았어요. 영차!"
+    },
+    {
+     "text": "다섯이 영차영차 당겨도 순무는 꼼짝하지 않았어요.",
+     "clips": [
+      "audio/turnip/nar_d0ae96d97a.mp3"
+     ],
+     "dur": 4.75,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R07_cat#5"
+    },
+    {
+     "text": "휴우, 모두 지쳐서 털썩 주저앉았어요.",
+     "clips": [
+      "audio/turnip/nar_fa06987608.mp3"
+     ],
+     "dur": 4.05,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R07_cat#6"
+    }
+   ]
+  },
+  {
+   "key": "R08_mouse",
+   "card": "아주 작은 생쥐",
+   "lines": [
+    {
+     "text": "흙구멍에서 찍찍 소리가 나요.",
+     "clips": [
+      "audio/turnip/nar_66ee52dc6b.mp3"
+     ],
+     "dur": 2.46,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R08_mouse#1"
+    },
+    {
+     "text": "아주 작은 생쥐가 쪼르르 나왔어요.",
+     "clips": [
+      "audio/turnip/nar_aa55b57cf4.mp3"
+     ],
+     "dur": 3.47,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R08_mouse#2"
+    },
+    {
+     "text": "\"너무 작아서 안 될 거야~\"",
+     "clips": [
+      "audio/turnip/cat_a3f0d3e578.mp3"
+     ],
+     "dur": 3.16,
+     "roles": [
+      "cat"
+     ],
+     "segRoles": [
+      "cat"
+     ],
+     "from": "R08_mouse#3"
+    },
+    {
+     "text": "\"나도 할래요!\" 생쥐가 고양이 꼬리를 꼭 잡았어요.",
+     "clips": [
+      "audio/turnip/mouse_78407df3c6.mp3",
+      "audio/turnip/nar_db1a63a8de.mp3"
+     ],
+     "dur": 4.78,
+     "roles": [
+      "mouse",
+      "nar"
+     ],
+     "segRoles": [
+      "mouse",
+      "nar"
+     ],
+     "from": "R08_mouse#4"
+    },
+    {
+     "text": "모두 벌떡 일어나 앞사람을 꼭 붙잡았어요.",
+     "clips": [
+      "audio/turnip/nar_80eef66fb2.mp3"
+     ],
+     "dur": 3.55,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R08_mouse#5"
+    }
+   ]
+  },
+  {
+   "key": "R09_pop",
+   "card": "다 함께 영차!",
+   "lines": [
+    {
+     "text": "이번엔 여섯이 다 함께!",
+     "clips": [
+      "audio/turnip/nar_f8e20ae530.mp3"
+     ],
+     "dur": 3.11,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R09_pop#1"
+    },
+    {
+     "text": "영차, 영차! 순무가 흔들흔들 움직이기 시작했어요.",
+     "clips": [
+      "audio/turnip/nar_b9ff76f98d.mp3"
+     ],
+     "dur": 5.33,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R09_pop#2"
+    },
+    {
+     "text": "쑥! 커다란 순무가 뽑혔어요! 모두 벌렁 넘어졌어요.",
+     "clips": [
+      "audio/turnip/nar_08637dc7c9.mp3"
+     ],
+     "dur": 5.33,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R09_pop#3"
+    },
+    {
+     "text": "작은 생쥐까지 모두 힘을 모았더니 뽑혔어요!",
+     "clips": [
+      "audio/turnip/nar_088330846e.mp3"
+     ],
+     "dur": 3.79,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R09_pop#4"
+    },
+    {
+     "text": "\"고맙다, 얘들아! 생쥐야, 너도 정말 고맙구나.\"",
+     "clips": [
+      "audio/turnip/grandpa_7fb2595866.mp3"
+     ],
+     "dur": 4.36,
+     "roles": [
+      "grandpa"
+     ],
+     "segRoles": [
+      "grandpa"
+     ],
+     "from": "R09_pop#5"
+    }
+   ]
+  },
+  {
+   "key": "R10_feast",
+   "card": "순무 잔치",
+   "lines": [
+    {
+     "text": "할아버지는 순무를 숭덩숭덩 썰고, 할머니는 커다란 냄비를 꺼냈어요.",
+     "clips": [
+      "audio/turnip/nar_54e7f71abc.mp3"
+     ],
+     "dur": 6.35,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R10_feast#1"
+    },
+    {
+     "text": "맛있는 순무국을 끓였어요.",
+     "clips": [
+      "audio/turnip/nar_4aaf80c65f.mp3"
+     ],
+     "dur": 2.51,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R10_feast#2"
+    },
+    {
+     "text": "보글보글, 구수한 냄새가 온 집 안에 퍼졌어요.",
+     "clips": [
+      "audio/turnip/nar_137ba36727.mp3"
+     ],
+     "dur": 4.75,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R10_feast#3"
+    },
+    {
+     "text": "순무국을 한 그릇씩 나눠 줘요.",
+     "clips": [
+      "audio/turnip/nar_9f7135452b.mp3"
+     ],
+     "dur": 2.53,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R10_feast#4"
+    },
+    {
+     "text": "모두 함께 맛있게 먹었답니다.",
+     "clips": [
+      "audio/turnip/nar_dd0d34e4d1.mp3"
+     ],
+     "dur": 2.85,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R10_feast#6"
+    },
+    {
+     "text": "작은 힘도 모이면 커다란 힘이 된답니다.",
+     "clips": [
+      "audio/turnip/nar_1e702d6e7e.mp3"
+     ],
+     "dur": 3.4,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R10_feast#7"
+    }
+   ]
+  }
+ ]
+}

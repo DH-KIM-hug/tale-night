@@ -3,7 +3,7 @@
 > 근거: 빛 상자 시안(https://claude.ai/artifact/DMJNhAQjy1wXayrYa5B18t, 「빛 상자 잠자리 동화 · 움직이는 시안」),
 > 페이퍼테일씨어터 레포(`DH-KIM-hug/paper-tale-theater`)의 `CLAUDE.md` §7-5-1, `docs/READ_MODE.md`, `docs/BEDTIME_PLAN.md`,
 > `docs/MONETIZATION.md`, `audio.js`, `tales/<id>/read_script_el.json`, `tools/elevenlabs/gen_tale.py`.
-> 이 문서는 기획서입니다. 코드는 아직 없습니다. 확정이 필요한 부분은 §11에 모았습니다.
+> 이 문서는 기획서입니다. 첫 출시 4편이 들어간 첫 판이 있습니다(README '지금 들어 있는 것'). 확정이 필요한 부분은 §11에 모았습니다.
 
 ## 확정 사항 (2026-11-01 사용자 결정)
 - **앱 이름: 쿨쿨 그림자극장**(2026-11-01 사용자 결정). 낮의 놀이 앱 '톡톡 동화극장'과 짝이 되는 밤의 잠자리 앱 이름.
@@ -277,8 +277,9 @@ content/<id>/script.json          동화극장 read_script_el.json 에 edit.json
 content/<id>/edit.json            잠자리 다듬기(빼기·자르기·새 줄·장면 합치기·카드 글자) — docs/STORY_EDIT.md §6
 content/<id>/clips.js             동화극장 read_narration_el.js 사본(경로만 바꿈)
 content/<id>/stage.json           새로 씀: 상자·장면별 빛·인형 (docs/STAGE_FORMAT.md)
-art/<id>/*.webp                   흰 종이 층·인형·제목 글자
-art/app/*.webp                    스플래시 극장 틀·오린 앱 이름 글자
+art/<id>/<상자>_<층>.svg            흰 종이 층 (tools/art/build.mjs 가 만듦. 이미지 생성 그림으로 바꿔 끼울 수 있음)
+art/dolls/*.svg                   종이 인형
+art/app/*.svg                     스플래시 극장 틀·홈 머리 상자
 audio/<id>/*.mp3                  동화극장 audio/el/<id>/ 에서 쓰는 것만
 tools/sync_from_theater.mjs       동화극장 레포 경로를 받아 위 content·audio 를 채우고 검사
 tools/rec_night.py                새 줄·꼬리 자르기 녹음(동화극장 도구를 불러 씀, 동화극장 레포에는 쓰지 않음)

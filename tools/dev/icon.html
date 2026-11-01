@@ -1,0 +1,16 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>아이콘</title>
+<link rel="stylesheet" href="../../engine/lightbox.css">
+<style>html,body{margin:0;background:#18213f}#s{width:1365px}.lb{border-radius:0}</style></head>
+<body><div id="s"></div>
+<script src="../../engine/lightbox.js"></script>
+<script>
+/* 앱 아이콘·잠금 화면 표지: 빛 상자를 같은 코드로 그려 굳힌다(PLAN §5-5). tools/bake_icon.cjs 가 찍는다. */
+(async () => {
+  const stage = { boxes: { app: { layers: { far: 'art/app/stage_far.svg', mid: 'art/app/stage_mid.svg', frame: 'art/app/curtain_frame.svg' }, glowAt: [50, 30] } },
+    dolls: { rabbit: { poses: { sleep: 'art/dolls/rabbit_sleep.svg' }, w: 30 } } };
+  const lb = new Lightbox(document.getElementById('s'), { static: true, stage });
+  await lb.apply({ box: 'app', light: 'night_forest', power: 1, fx: 'none', dolls: { rabbit: { pose: 'sleep', x: 50, y: 20, vis: true } } }, {}, { instant: true });
+  lb.root.classList.add('lb-instant'); lb.setLit(true); void lb.root.offsetWidth; lb.root.classList.remove('lb-instant');
+  document.body.dataset.ready = 1;
+})();
+</script></body></html>

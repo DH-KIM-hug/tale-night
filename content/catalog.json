@@ -1,0 +1,41 @@
+{
+ "source": "paper-tale-theater@aaf8049e7f",
+ "tales": [
+  {
+   "id": "rabbit",
+   "title": "토끼와 거북이",
+   "line": "깡충 토끼는 낮잠을 자고, 엉금엉금 거북이는 쉬지 않고 걸어요.",
+   "scenes": 9,
+   "lines": 53,
+   "readMin": 5,
+   "standIn": false
+  },
+  {
+   "id": "sun_wind",
+   "title": "해와 바람",
+   "line": "세게 부는 바람과 따뜻한 해님, 누가 나그네의 외투를 벗길까요?",
+   "scenes": 7,
+   "lines": 46,
+   "readMin": 4,
+   "standIn": false
+  },
+  {
+   "id": "ugly_duckling",
+   "title": "미운 아기 오리",
+   "line": "놀림받던 회색 아기 오리가 겨울을 지나 하얀 백조로 자라요.",
+   "scenes": 10,
+   "lines": 69,
+   "readMin": 7,
+   "standIn": false
+  },
+  {
+   "id": "turnip",
+   "title": "커다란 순무",
+   "line": "할아버지부터 아주 작은 생쥐까지, 다 함께 영차!",
+   "scenes": 10,
+   "lines": 54,
+   "readMin": 5,
+   "standIn": true
+  }
+ ]
+}

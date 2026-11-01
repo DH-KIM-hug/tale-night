@@ -1,0 +1,21 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>장면 점검</title>
+<link rel="stylesheet" href="../../app.css"><link rel="stylesheet" href="../../engine/lightbox.css">
+<style>body{padding:10px}.g{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.g div.c{font-size:12px;color:#ccc}.lb{width:100%}</style></head>
+<body><div class="g" id="g"></div>
+<script src="../../engine/settings.js"></script><script src="../../engine/lightbox.js"></script><script src="../../engine/story.js"></script>
+<script>
+/* 점검용: tools/dev/scenes.html?id=rabbit[&at=end|start] — 장면마다 불 켠 모습을 한 화면에 */
+(async () => {
+  const Q = new URLSearchParams(location.search), id = Q.get('id') || 'rabbit', at = Q.get('at') || 'end';
+  const story = await Story.load(id);
+  for (let si = 0; si < story.scenes.length; si++) {
+    const c = document.createElement('div'); c.className = 'c'; const s = document.createElement('div'); c.appendChild(s);
+    c.appendChild(document.createTextNode(`${si + 1}. ${story.scenes[si].key} ${story.scenes[si].card}`)); g.appendChild(c);
+    const lb = new Lightbox(s, { static: true, stage: story.stage });
+    const steps = story.steps.filter(x => x.sceneIdx === si);
+    await lb.apply(at === 'start' ? story.sceneStart[si] : steps.at(-1).state, {}, { instant: true });
+    lb.root.classList.add('lb-instant'); lb.setLit(true); void lb.root.offsetWidth; lb.root.classList.remove('lb-instant');
+  }
+  document.body.dataset.ready = 1;
+})();
+</script></body></html>

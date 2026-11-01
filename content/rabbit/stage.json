@@ -1,0 +1,434 @@
+{
+ "tale": "rabbit",
+ "boxes": {
+  "village": {
+   "layers": {
+    "far": "art/rabbit/village_far.svg",
+    "mid": "art/rabbit/village_mid.svg",
+    "near": "art/rabbit/village_near.svg",
+    "frame": "art/rabbit/village_frame.svg"
+   },
+   "glowAt": [
+    72,
+    20
+   ],
+   "fx": "fireflies"
+  },
+  "hill": {
+   "layers": {
+    "far": "art/rabbit/hill_far.svg",
+    "mid": "art/rabbit/hill_mid.svg",
+    "near": "art/rabbit/hill_near.svg",
+    "frame": "art/rabbit/hill_frame.svg"
+   },
+   "glowAt": [
+    80,
+    17
+   ],
+   "fx": "fireflies"
+  },
+  "shade": {
+   "layers": {
+    "far": "art/rabbit/shade_far.svg",
+    "mid": "art/rabbit/shade_mid.svg",
+    "near": "art/rabbit/shade_near.svg",
+    "frame": "art/rabbit/shade_frame.svg"
+   },
+   "glowAt": [
+    24,
+    18
+   ],
+   "fx": "fireflies"
+  },
+  "finish": {
+   "layers": {
+    "far": "art/rabbit/finish_far.svg",
+    "mid": "art/rabbit/finish_mid.svg",
+    "near": "art/rabbit/finish_near.svg",
+    "frame": "art/rabbit/finish_frame.svg"
+   },
+   "glowAt": [
+    50,
+    15
+   ],
+   "fx": "fireflies"
+  }
+ },
+ "dolls": {
+  "rabbit": {
+   "poses": {
+    "stand": "art/dolls/rabbit_stand.svg",
+    "run": "art/dolls/rabbit_run.svg",
+    "sleep": "art/dolls/rabbit_sleep.svg"
+   },
+   "w": 17.6
+  },
+  "turtle": {
+   "poses": {
+    "walk": "art/dolls/turtle_walk.svg",
+    "stand": "art/dolls/turtle_stand.svg"
+   },
+   "w": 17.6
+  },
+  "owl": {
+   "poses": {
+    "perch": "art/dolls/owl.svg"
+   },
+   "w": 9.1
+  }
+ },
+ "scenes": {
+  "R01_morning": {
+   "box": "village",
+   "light": "dawn",
+   "place": {
+    "turtle": {
+     "pose": "walk",
+     "x": 30,
+     "y": 22,
+     "vis": false
+    },
+    "rabbit": {
+     "pose": "stand",
+     "x": 66,
+     "y": 22,
+     "flip": true,
+     "vis": false
+    }
+   },
+   "cues": [
+    {
+     "line": 2,
+     "match": "거북이가 엉금",
+     "do": [
+      "turtle:in:left"
+     ]
+    },
+    {
+     "line": 4,
+     "match": "깡충깡충 토끼",
+     "do": [
+      "rabbit:in:right"
+     ]
+    }
+   ]
+  },
+  "R02_challenge": {
+   "box": "village",
+   "light": "dusk",
+   "place": {
+    "turtle": {
+     "pose": "stand",
+     "x": 38,
+     "y": 22
+    },
+    "rabbit": {
+     "pose": "stand",
+     "x": 60,
+     "y": 22,
+     "flip": true
+    }
+   }
+  },
+  "R04_start": {
+   "box": "village",
+   "light": "dusk",
+   "place": {
+    "turtle": {
+     "pose": "walk",
+     "x": 42,
+     "y": 22
+    },
+    "rabbit": {
+     "pose": "stand",
+     "x": 54,
+     "y": 22
+    }
+   },
+   "cues": [
+    {
+     "line": 3,
+     "match": "토끼는 쌩~",
+     "do": [
+      "rabbit:pose:run",
+      "rabbit:out:right",
+      "turtle:walk:52,22:10"
+     ]
+    }
+   ]
+  },
+  "R05_dash": {
+   "box": "hill",
+   "light": "dusk",
+   "place": {
+    "rabbit": {
+     "pose": "run",
+     "x": 40,
+     "y": 26,
+     "vis": false
+    }
+   },
+   "cues": [
+    {
+     "line": 0,
+     "match": "토끼는 쌩쌩",
+     "do": [
+      "rabbit:in:left"
+     ]
+    },
+    {
+     "line": 2,
+     "match": "금세 언덕",
+     "do": [
+      "rabbit:walk:66,35:4"
+     ]
+    },
+    {
+     "line": 3,
+     "match": "뒤를 돌아보니",
+     "do": [
+      "rabbit:pose:stand",
+      "rabbit:face:left"
+     ]
+    }
+   ]
+  },
+  "R06_shade": {
+   "box": "shade",
+   "light": "dusk",
+   "power": 0.85,
+   "place": {
+    "rabbit": {
+     "pose": "stand",
+     "x": 44,
+     "y": 21
+    },
+    "owl": {
+     "pose": "perch",
+     "x": 66,
+     "y": 80,
+     "vis": false
+    }
+   },
+   "cues": [
+    {
+     "line": 0,
+     "match": "토끼는 나무 아래",
+     "do": [
+      "rabbit:pose:sleep"
+     ]
+    },
+    {
+     "line": 1,
+     "match": "부엉이가 자장가",
+     "do": [
+      "owl:in:top"
+     ]
+    },
+    {
+     "line": 3,
+     "match": "구름도 뭉게뭉게",
+     "do": [
+      "light:moon:0.8"
+     ]
+    },
+    {
+     "line": 5,
+     "match": "토끼가 꿈을 꿔요",
+     "do": [
+      "light:dream:1",
+      "fx:stars"
+     ]
+    },
+    {
+     "line": 6,
+     "match": "하지만 진짜 토끼는",
+     "do": [
+      "light:moon:0.75",
+      "fx:fireflies"
+     ]
+    }
+   ]
+  },
+  "R08_turtle": {
+   "box": "hill",
+   "light": "dusk",
+   "place": {
+    "turtle": {
+     "pose": "walk",
+     "x": 10,
+     "y": 21
+    }
+   },
+   "cues": [
+    {
+     "line": 0,
+     "match": "토끼가 자는 동안",
+     "do": [
+      "turtle:walk:26,23:9"
+     ]
+    },
+    {
+     "line": 2,
+     "match": "엉금엉금, 한 발",
+     "do": [
+      "turtle:walk:42,27:9"
+     ]
+    },
+    {
+     "line": 4,
+     "match": "영차, 영차",
+     "do": [
+      "turtle:walk:64,35:10"
+     ]
+    },
+    {
+     "line": 5,
+     "match": "영차! 언덕",
+     "do": [
+      "turtle:pose:stand"
+     ]
+    }
+   ]
+  },
+  "R09_tiptoe": {
+   "box": "shade",
+   "light": "night_forest",
+   "power": 0.9,
+   "place": {
+    "rabbit": {
+     "pose": "sleep",
+     "x": 44,
+     "y": 21
+    },
+    "owl": {
+     "pose": "perch",
+     "x": 66,
+     "y": 80
+    },
+    "turtle": {
+     "pose": "walk",
+     "x": 20,
+     "y": 20,
+     "vis": false
+    }
+   },
+   "cues": [
+    {
+     "line": 0,
+     "match": "언덕을 오른",
+     "do": [
+      "turtle:in:left"
+     ]
+    },
+    {
+     "line": 1,
+     "match": "쉿, 조용히",
+     "do": [
+      "turtle:walk:64,20:9"
+     ]
+    },
+    {
+     "line": 2,
+     "match": "와, 거북이가",
+     "do": [
+      "turtle:walk:86,20:6"
+     ]
+    },
+    {
+     "line": 3,
+     "match": "해가 뉘엿뉘엿",
+     "do": [
+      "light:night_forest:0.75"
+     ]
+    },
+    {
+     "line": 5,
+     "match": "토끼가 벌떡",
+     "do": [
+      "rabbit:pose:stand"
+     ]
+    }
+   ]
+  },
+  "R10_finish": {
+   "box": "finish",
+   "light": "night_forest",
+   "place": {
+    "turtle": {
+     "pose": "walk",
+     "x": 40,
+     "y": 27
+    },
+    "rabbit": {
+     "pose": "run",
+     "x": 22,
+     "y": 27,
+     "vis": false
+    }
+   },
+   "cues": [
+    {
+     "line": 2,
+     "match": "토끼가 쌩쌩",
+     "do": [
+      "rabbit:in:left",
+      "turtle:walk:46,27:6"
+     ]
+    },
+    {
+     "line": 4,
+     "match": "거북이는 후우",
+     "do": [
+      "turtle:walk:52,27:3",
+      "rabbit:walk:40,27:3"
+     ]
+    },
+    {
+     "line": 5,
+     "match": "거북이가 1등",
+     "do": [
+      "turtle:pose:stand",
+      "rabbit:pose:stand"
+     ]
+    }
+   ]
+  },
+  "R11_party": {
+   "box": "finish",
+   "light": "hearth",
+   "place": {
+    "turtle": {
+     "pose": "stand",
+     "x": 44,
+     "y": 27
+    },
+    "rabbit": {
+     "pose": "stand",
+     "x": 60,
+     "y": 27,
+     "flip": true
+    }
+   },
+   "cues": [
+    {
+     "line": 2,
+     "match": "거북이도 말했어요",
+     "do": [
+      "turtle:lantern:on"
+     ]
+    },
+    {
+     "line": 3,
+     "match": "밤이 되었어요",
+     "do": [
+      "rabbit:lantern:on"
+     ]
+    }
+   ]
+  }
+ },
+ "end": {
+  "fadeOut": 8000
+ }
+}

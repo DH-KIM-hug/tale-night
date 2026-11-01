@@ -1,0 +1,819 @@
+{
+ "tale": "rabbit",
+ "title": "토끼와 거북이",
+ "source": "paper-tale-theater@aaf8049e7f tales/rabbit/read_script_el.json + content/rabbit/edit.json",
+ "scenes": [
+  {
+   "key": "R01_morning",
+   "card": "숲속 아침",
+   "lines": [
+    {
+     "text": "숲속 마을에 아침이 왔어요.",
+     "clips": [
+      "audio/rabbit/nar_1c1d4ad825.mp3"
+     ],
+     "dur": 2.59,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R01_morning#0"
+    },
+    {
+     "text": "해님이 방긋 떠오르고, 새들이 짹짹 노래했어요.",
+     "clips": [
+      "audio/rabbit/nar_de77d97e51.mp3"
+     ],
+     "dur": 4.52,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R01_morning#1"
+    },
+    {
+     "text": "거북이가 엉금엉금 산책해요.",
+     "clips": [
+      "audio/rabbit/nar_8c672a59f8.mp3"
+     ],
+     "dur": 3.08,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R01_morning#2"
+    },
+    {
+     "text": "\"안녕! 나는 거북이야.\"",
+     "clips": [
+      "audio/rabbit/turtle_c08eaa6bda.mp3"
+     ],
+     "dur": 2.93,
+     "roles": [
+      "turtle"
+     ],
+     "segRoles": [
+      "turtle"
+     ],
+     "from": "R01_morning#3"
+    },
+    {
+     "text": "깡충깡충 토끼도 왔어요.",
+     "clips": [
+      "audio/rabbit/nar_34036f0fcc.mp3"
+     ],
+     "dur": 2.59,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R01_morning#4"
+    },
+    {
+     "text": "\"안녕! 나는 깡충 토끼야!\"",
+     "clips": [
+      "audio/rabbit/rabbit_f46137db1b.mp3"
+     ],
+     "dur": 2.69,
+     "roles": [
+      "rabbit"
+     ],
+     "segRoles": [
+      "rabbit"
+     ],
+     "from": "R01_morning#5"
+    }
+   ]
+  },
+  {
+   "key": "R02_challenge",
+   "card": "달리기 약속",
+   "lines": [
+    {
+     "text": "숲속 길에서 토끼와 거북이가 마주 섰어요.",
+     "clips": [
+      "audio/rabbit/nar_1483881418.mp3"
+     ],
+     "dur": 3.97,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R02_challenge#0"
+    },
+    {
+     "text": "토끼는 거북이의 짧은 다리를 보고 킥킥 웃었어요.",
+     "clips": [
+      "audio/rabbit/nar_24a7e4b5f9.mp3"
+     ],
+     "dur": 4.6,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R02_challenge#1"
+    },
+    {
+     "text": "토끼가 말했어요. \"느림보야, 나랑 달리기 할래?\"",
+     "clips": [
+      "audio/rabbit/nar_1577161b63.mp3",
+      "audio/rabbit/rabbit_2644171f29.mp3"
+     ],
+     "dur": 4.23,
+     "roles": [
+      "nar",
+      "rabbit"
+     ],
+     "segRoles": [
+      "nar",
+      "rabbit"
+     ],
+     "from": "R02_challenge#2"
+    },
+    {
+     "text": "거북이가 방긋 웃었어요. \"좋아!\"",
+     "clips": [
+      "audio/rabbit/nar_19bbba6642.mp3",
+      "audio/rabbit/turtle_457d440d71.mp3"
+     ],
+     "dur": 3.42,
+     "roles": [
+      "nar",
+      "turtle"
+     ],
+     "segRoles": [
+      "nar",
+      "turtle"
+     ],
+     "from": "R02_challenge#3"
+    },
+    {
+     "text": "\"느려도 괜찮아. 나는 끝까지 갈 거야.\"",
+     "clips": [
+      "audio/rabbit/turtle_f65aae8891.mp3"
+     ],
+     "dur": 3.63,
+     "roles": [
+      "turtle"
+     ],
+     "segRoles": [
+      "turtle"
+     ],
+     "from": "R02_challenge#4"
+    },
+    {
+     "text": "거북이는 느릿느릿 걸어도 한 번 마음먹으면 끝까지 하는 친구였거든요.",
+     "clips": [
+      "audio/rabbit/nar_b3a4c93746.mp3"
+     ],
+     "dur": 6.03,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R02_challenge#5"
+    }
+   ]
+  },
+  {
+   "key": "R04_start",
+   "card": "요이~ 땅!",
+   "lines": [
+    {
+     "text": "토끼와 거북이는 친구들 앞 출발선에 나란히 섰어요.",
+     "clips": [
+      "audio/rabbit/nar_75dbfd1ff5.mp3"
+     ],
+     "dur": 4.68,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R04_start#0"
+    },
+    {
+     "text": "너구리 심판이 커다란 북을 가져왔어요.",
+     "clips": [
+      "audio/rabbit/nar_918d6f14c1.mp3"
+     ],
+     "dur": 3.47,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R04_start#5"
+    },
+    {
+     "text": "둥둥! 북소리가 쿵쿵 울리자 둘은 나란히 출발했어요.",
+     "clips": [
+      "audio/rabbit/nar_1245c77d84.mp3"
+     ],
+     "dur": 6.03,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R04_start#7"
+    },
+    {
+     "text": "토끼는 쌩~ 거북이는 엉금 한 발!",
+     "clips": [
+      "audio/rabbit/nar_369d528b9c.mp3"
+     ],
+     "dur": 4.28,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R04_start#8"
+    }
+   ]
+  },
+  {
+   "key": "R05_dash",
+   "card": "쌩쌩 토끼",
+   "lines": [
+    {
+     "text": "토끼는 쌩쌩 달려요!",
+     "clips": [
+      "audio/rabbit/nar_39e77bc6b2.mp3"
+     ],
+     "dur": 2.14,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R05_dash#0"
+    },
+    {
+     "text": "돌멩이도 개울도 폴짝폴짝, 눈 깜짝할 사이에 지나갔지요.",
+     "clips": [
+      "audio/rabbit/nar_3e680540d6.mp3"
+     ],
+     "dur": 5.64,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R05_dash#1"
+    },
+    {
+     "text": "금세 언덕 위 나무 그늘까지 왔어요.",
+     "clips": [
+      "audio/rabbit/nar_43cb9ddb94.mp3"
+     ],
+     "dur": 3.16,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R05_dash#2"
+    },
+    {
+     "text": "뒤를 돌아보니… 거북이는 안 보여요!",
+     "clips": [
+      "audio/rabbit/nar_be0769fee0.mp3"
+     ],
+     "dur": 3.71,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R05_dash#3"
+    },
+    {
+     "text": "\"거북이는 아직 한참 멀었겠지? 히히.\"",
+     "clips": [
+      "audio/rabbit/rabbit_e71f38cddf.mp3"
+     ],
+     "dur": 3.55,
+     "roles": [
+      "rabbit"
+     ],
+     "segRoles": [
+      "rabbit"
+     ],
+     "from": "R05_dash#4"
+    },
+    {
+     "text": "\"하암~ 한숨 자고 가도 되겠다~\"",
+     "clips": [
+      "audio/rabbit/rabbit_c632babeff.mp3"
+     ],
+     "dur": 9.25,
+     "roles": [
+      "rabbit"
+     ],
+     "segRoles": [
+      "rabbit"
+     ],
+     "from": "R05_dash#5"
+    }
+   ]
+  },
+  {
+   "key": "R06_shade",
+   "card": "나무 그늘",
+   "lines": [
+    {
+     "text": "토끼는 나무 아래에 벌렁 드러누워 하암~ 하품을 했어요.",
+     "clips": [
+      "audio/rabbit/nar_365bd0771c.mp3"
+     ],
+     "dur": 5.49,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R06_shade#0"
+    },
+    {
+     "text": "부엉이가 자장가를 불러 줘요.",
+     "clips": [
+      "audio/rabbit/nar_1d360614ba.mp3"
+     ],
+     "dur": 3.03,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R06_shade#2"
+    },
+    {
+     "text": "부엉 부엉~ 토끼 눈이 스르르 감겨요.",
+     "clips": [
+      "audio/rabbit/nar_a3defbcb14.mp3"
+     ],
+     "dur": 5.15,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R06_shade#3"
+    },
+    {
+     "text": "구름도 뭉게뭉게 다가와 해님을 살며시 가려 주었어요.",
+     "clips": [
+      "audio/rabbit/nar_4b7a403018.mp3"
+     ],
+     "dur": 5.07,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R06_shade#4"
+    },
+    {
+     "text": "토끼가 쿨쿨 잠이 들었어요.",
+     "clips": [
+      "audio/rabbit/nar_0423173d3e.mp3"
+     ],
+     "dur": 3.08,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R06_shade#5"
+    },
+    {
+     "text": "토끼가 꿈을 꿔요. 꿈속에서 1등을 했어요!",
+     "clips": [
+      "audio/rabbit/nar_a0519faa0f.mp3"
+     ],
+     "dur": 4.21,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R07_dream#0"
+    },
+    {
+     "text": "하지만 진짜 토끼는 나무 아래에서 드르렁 쿨쿨~",
+     "clips": [
+      "audio/rabbit/nar_310e068c07.mp3"
+     ],
+     "dur": 5.41,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R07_dream#3"
+    }
+   ],
+   "merged": "R07_dream"
+  },
+  {
+   "key": "R08_turtle",
+   "card": "엉금엉금 거북이",
+   "lines": [
+    {
+     "text": "토끼가 자는 동안, 거북이는 숲속 경주 길을 따라갔어요.",
+     "clips": [
+      "audio/rabbit/nar_e71f4cb56a.mp3"
+     ],
+     "dur": 4.91,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R08_turtle#0"
+    },
+    {
+     "text": "그동안 거북이는? 엉금엉금 걷고 있어요.",
+     "clips": [
+      "audio/rabbit/nar_c1e6c1022b.mp3"
+     ],
+     "dur": 4.44,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R08_turtle#1"
+    },
+    {
+     "text": "엉금엉금, 한 발 또 한 발. 거북이는 한 번도 쉬지 않았어요.",
+     "clips": [
+      "audio/rabbit/nar_c6239923f9.mp3"
+     ],
+     "dur": 6.53,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R08_turtle#2"
+    },
+    {
+     "text": "이번엔 높은 언덕이에요.",
+     "clips": [
+      "audio/rabbit/nar_af5dc13974.mp3"
+     ],
+     "dur": 2.43,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R08_turtle#8"
+    },
+    {
+     "text": "영차, 영차. 거북이는 느릿느릿, 그래도 멈추지 않고 올라갔어요.",
+     "clips": [
+      "audio/rabbit/nar_2306f56d5d.mp3"
+     ],
+     "dur": 7.24,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R08_turtle#9"
+    },
+    {
+     "text": "영차! 언덕 꼭대기에 올라왔어요.",
+     "clips": [
+      "audio/rabbit/turtle_b51dbfea93.mp3",
+      "audio/rabbit/nar_1c2583cbc1.mp3"
+     ],
+     "dur": 5.59,
+     "roles": [
+      "turtle",
+      "nar"
+     ],
+     "segRoles": [
+      "turtle",
+      "nar"
+     ],
+     "from": "R08_turtle#10"
+    }
+   ]
+  },
+  {
+   "key": "R09_tiptoe",
+   "card": "쉿, 살금살금",
+   "lines": [
+    {
+     "text": "언덕을 오른 거북이가 토끼가 자는 나무 곁에 왔어요.",
+     "clips": [
+      "audio/rabbit/nar_168f299584.mp3"
+     ],
+     "dur": 4.36,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R09_tiptoe#0"
+    },
+    {
+     "text": "쉿, 조용히 지나가요~ 살금살금.",
+     "clips": [
+      "audio/rabbit/nar_a4afb86068.mp3"
+     ],
+     "dur": 4.68,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R09_tiptoe#2"
+    },
+    {
+     "text": "와, 거북이가 토끼를 앞질렀어요!",
+     "clips": [
+      "audio/rabbit/nar_a3fc8b6669.mp3"
+     ],
+     "dur": 3.32,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R09_tiptoe#3"
+    },
+    {
+     "text": "해가 뉘엿뉘엿 지고 있어요.",
+     "clips": [
+      "audio/rabbit/nar_6667e3dc63.mp3"
+     ],
+     "dur": 2.85,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R09_tiptoe#4"
+    },
+    {
+     "text": "그때 닭이 큰 소리로 울었어요. 꼬끼오!",
+     "clips": [
+      "audio/rabbit/nar_6040c6cc2d.mp3"
+     ],
+     "dur": 4.28,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R09_tiptoe#5"
+    },
+    {
+     "text": "토끼가 벌떡 일어났어요! \"앗, 내가 잠들었네!\"",
+     "clips": [
+      "audio/rabbit/nar_35dcdb7f27.mp3",
+      "audio/rabbit/rabbit_315bc64a75.mp3"
+     ],
+     "dur": 5.67,
+     "roles": [
+      "nar",
+      "rabbit"
+     ],
+     "segRoles": [
+      "nar",
+      "rabbit"
+     ],
+     "from": "R09_tiptoe#6"
+    }
+   ]
+  },
+  {
+   "key": "R10_finish",
+   "card": "마지막 한 발",
+   "lines": [
+    {
+     "text": "거북이가 결승선 가까이 오자 친구들이 몸을 쭉 내밀었어요.",
+     "clips": [
+      "audio/rabbit/nar_626182556f.mp3"
+     ],
+     "dur": 5.33,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R10_finish#0"
+    },
+    {
+     "text": "응원하던 친구들이 모두 일어났어요!",
+     "clips": [
+      "audio/rabbit/nar_128373154c.mp3"
+     ],
+     "dur": 2.93,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R10_finish#1"
+    },
+    {
+     "text": "토끼가 쌩쌩 달려와요! 거북이는 딱 한 발 남았어요.",
+     "clips": [
+      "audio/rabbit/nar_738ed62eb3.mp3"
+     ],
+     "dur": 4.6,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R10_finish#2"
+    },
+    {
+     "text": "\"영차, 조금만 더. 조금만 더 가면 돼.\"",
+     "clips": [
+      "audio/rabbit/turtle_080f758bf2.mp3"
+     ],
+     "dur": 3.63,
+     "roles": [
+      "turtle"
+     ],
+     "segRoles": [
+      "turtle"
+     ],
+     "from": "R10_finish#3"
+    },
+    {
+     "text": "거북이는 후우 숨을 크게 쉬고 마지막 한 발을 쿵 내디뎠어요.",
+     "clips": [
+      "audio/rabbit/nar_db95a2d837.mp3"
+     ],
+     "dur": 6.53,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R10_finish#4"
+    },
+    {
+     "text": "거북이가 1등이에요!",
+     "clips": [
+      "audio/rabbit/nar_b93e6d3416.mp3"
+     ],
+     "dur": 2.27,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R10_finish#7"
+    }
+   ]
+  },
+  {
+   "key": "R11_party",
+   "card": "숲속 잔치",
+   "lines": [
+    {
+     "text": "토끼가 다가와 말했어요.",
+     "clips": [
+      "audio/rabbit/nar_a80eee5bf6.mp3"
+     ],
+     "dur": 2.12,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R11_party#4"
+    },
+    {
+     "text": "\"축하해! 다음엔 나도 쉬지 않고 열심히 할게.\"",
+     "clips": [
+      "audio/rabbit/rabbit_4bbed0c63c.mp3"
+     ],
+     "dur": 4.05,
+     "roles": [
+      "rabbit"
+     ],
+     "segRoles": [
+      "rabbit"
+     ],
+     "from": "R11_party#5"
+    },
+    {
+     "text": "거북이도 말했어요. \"고마워! 우리 또 같이 달리자!\"",
+     "clips": [
+      "audio/rabbit/nar_4e9a586f9a.mp3",
+      "audio/rabbit/turtle_3288d0fe06.mp3"
+     ],
+     "dur": 4.49,
+     "roles": [
+      "nar",
+      "turtle"
+     ],
+     "segRoles": [
+      "nar",
+      "turtle"
+     ],
+     "from": "R11_party#6"
+    },
+    {
+     "text": "밤이 되었어요. 숲속 잔치가 열렸어요!",
+     "clips": [
+      "audio/rabbit/nar_a50713cf23.mp3"
+     ],
+     "dur": 3.63,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R11_party#7"
+    },
+    {
+     "text": "모두 함께 신나는 잔치를 했답니다.",
+     "clips": [
+      "audio/rabbit/nar_6604c26c01.mp3"
+     ],
+     "dur": 3,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R11_party#9"
+    },
+    {
+     "text": "천천히 가도 끝까지 하면 해낼 수 있어요!",
+     "clips": [
+      "audio/rabbit/nar_cfab06b73b.mp3"
+     ],
+     "dur": 3.55,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R11_party#10"
+    }
+   ]
+  }
+ ]
+}

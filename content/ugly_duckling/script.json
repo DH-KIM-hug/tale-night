@@ -1,0 +1,1081 @@
+{
+ "tale": "ugly_duckling",
+ "title": "미운 아기 오리",
+ "source": "paper-tale-theater@aaf8049e7f tales/ugly_duckling/read_script_el.json + content/ugly_duckling/edit.json",
+ "scenes": [
+  {
+   "key": "R01_nest",
+   "card": "둥지",
+   "lines": [
+    {
+     "text": "따뜻한 여름날, 엄마 오리가 둥지에서 알을 품고 있었어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_00fb22ca33.mp3"
+     ],
+     "dur": 4.99,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R01_nest#0"
+    },
+    {
+     "text": "엄마 오리는 알을 토닥토닥 다독이며 노래를 불렀지요.",
+     "clips": [
+      "audio/ugly_duckling/nar_6c114aa3fc.mp3"
+     ],
+     "dur": 4.44,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R01_nest#1"
+    },
+    {
+     "text": "노란 아기 오리 넷이 나왔어요. 삐약삐약!",
+     "clips": [
+      "audio/ugly_duckling/nar_d148b36b86.mp3"
+     ],
+     "dur": 3.55,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R01_nest#2"
+    },
+    {
+     "text": "제일 큰 알은 꿈틀꿈틀, 한참을 흔들거렸어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_0b88b7138b.mp3"
+     ],
+     "dur": 4.28,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R01_nest#3"
+    },
+    {
+     "text": "크고 회색인 아기 오리가 나왔어요!",
+     "clips": [
+      "audio/ugly_duckling/trim_d7582ad931.mp3"
+     ],
+     "dur": 2.77,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R01_nest#4"
+    },
+    {
+     "text": "엄마 오리가 말했어요. \"어머, 이 아기는 크고 회색이구나. 그래도 괜찮아. 모두 내 아기란다!\"",
+     "clips": [
+      "audio/ugly_duckling/nar_8f54e9f430.mp3",
+      "audio/ugly_duckling/mom_3a5c88b68a.mp3"
+     ],
+     "dur": 7.92,
+     "roles": [
+      "nar",
+      "mom"
+     ],
+     "segRoles": [
+      "nar",
+      "mom"
+     ],
+     "from": "R01_nest#6"
+    }
+   ]
+  },
+  {
+   "key": "R02_pond",
+   "card": "연못",
+   "lines": [
+    {
+     "text": "엄마 오리가 아기들을 데리고 연못에 갔어요. 줄을 서서 헤엄쳐요.",
+     "clips": [
+      "audio/ugly_duckling/nar_630c095962.mp3"
+     ],
+     "dur": 5.33,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R02_pond#0"
+    },
+    {
+     "text": "엄마 오리가 앞장서고, 아기 오리들이 졸졸 따라갔어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_3e60d93b2f.mp3"
+     ],
+     "dur": 4.36,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R02_pond#1"
+    },
+    {
+     "text": "첨벙첨벙! 아기 오리들이 물장구를 쳤어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_6ef4e5a70e.mp3"
+     ],
+     "dur": 4.28,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R02_pond#2"
+    },
+    {
+     "text": "회색 아기 오리는 헤엄을 제일 잘해요! 쏙 들어갔다가 퐁!",
+     "clips": [
+      "audio/ugly_duckling/nar_5d3e4f1595.mp3"
+     ],
+     "dur": 4.91,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R02_pond#3"
+    },
+    {
+     "text": "그런데 늘 줄 맨 끝에서 혼자 따라가요.",
+     "clips": [
+      "audio/ugly_duckling/nar_709fc3224b.mp3"
+     ],
+     "dur": 3.71,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R02_pond#4"
+    }
+   ]
+  },
+  {
+   "key": "R03_yard",
+   "card": "농장 마당",
+   "lines": [
+    {
+     "text": "농장 마당에 닭이랑 오리들이 모여 있어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_580e78702a.mp3"
+     ],
+     "dur": 3.71,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R03_yard#0"
+    },
+    {
+     "text": "연못에서 나온 아기 오리가 마당으로 뒤뚱뒤뚱 왔어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_1f4d1ae85a.mp3"
+     ],
+     "dur": 4.36,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R03_yard#1"
+    },
+    {
+     "text": "수탉이 말했어요. \"꼬꼬댁! 너는 못생겼어!\"",
+     "clips": [
+      "audio/ugly_duckling/nar_5f8ca769a9.mp3",
+      "audio/ugly_duckling/rooster_1370925d7a.mp3"
+     ],
+     "dur": 4.73,
+     "roles": [
+      "nar",
+      "rooster"
+     ],
+     "segRoles": [
+      "nar",
+      "rooster"
+     ],
+     "from": "R03_yard#2"
+    },
+    {
+     "text": "오리들도 말했어요. \"꽥꽥! 너는 우리랑 달라!\"",
+     "clips": [
+      "audio/ugly_duckling/nar_6b66bb61d0.mp3",
+      "audio/ugly_duckling/ducks_474620d171.mp3"
+     ],
+     "dur": 4.86,
+     "roles": [
+      "nar",
+      "ducks"
+     ],
+     "segRoles": [
+      "nar",
+      "ducks"
+     ],
+     "from": "R03_yard#3"
+    },
+    {
+     "text": "아기 오리는 슬퍼서 고개를 푹 숙였어요. 눈물이 똑 떨어졌지요.",
+     "clips": [
+      "audio/ugly_duckling/nar_7ed3e3db2c.mp3"
+     ],
+     "dur": 5.64,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R03_yard#4"
+    },
+    {
+     "text": "엄마 오리가 뒤뚱뒤뚱 다가와 아기 오리를 포근히 안아 주었어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_c4316da14f.mp3"
+     ],
+     "dur": 5.15,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R03_yard#5"
+    },
+    {
+     "text": "엄마 오리도 말했어요. \"우리 아기는 헤엄을 제일 잘한단다!\"",
+     "clips": [
+      "audio/ugly_duckling/nar_f34db0cc21.mp3",
+      "audio/ugly_duckling/mom_7f3c60ea3c.mp3"
+     ],
+     "dur": 5.04,
+     "roles": [
+      "nar",
+      "mom"
+     ],
+     "segRoles": [
+      "nar",
+      "mom"
+     ],
+     "from": "R03_yard#6"
+    },
+    {
+     "text": "수탉과 오리들이 머쓱해서 말했어요. \"놀려서 미안해.\"",
+     "clips": [
+      "audio/ugly_duckling/nar_41533ca96f.mp3",
+      "audio/ugly_duckling/rooster_8a2f051dc9.mp3"
+     ],
+     "dur": 5.83,
+     "roles": [
+      "nar",
+      "rooster"
+     ],
+     "segRoles": [
+      "nar",
+      "rooster"
+     ],
+     "from": "R03_yard#7"
+    },
+    {
+     "text": "그래도 아기 오리는 마음이 쓸쓸했어요. 넓은 세상을 보러 길을 떠났어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_27f6b496da.mp3"
+     ],
+     "dur": 6.19,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R03_yard#8"
+    }
+   ]
+  },
+  {
+   "key": "R04_reeds",
+   "card": "갈대숲 지나 늪",
+   "lines": [
+    {
+     "text": "뒤뚱뒤뚱, 갈대숲을 지나 넓은 늪에 닿았어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_22b91a5b5c.mp3"
+     ],
+     "dur": 4.83,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R04_reeds#4"
+    },
+    {
+     "text": "늪에는 기러기들이 살고 있었어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_fe1eec31d7.mp3"
+     ],
+     "dur": 2.69,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R05_swamp#1"
+    },
+    {
+     "text": "기러기들이 말했어요. \"안녕! 우리랑 같이 놀자!\"",
+     "clips": [
+      "audio/ugly_duckling/nar_7cead67a96.mp3",
+      "audio/ugly_duckling/geese_3860fc973d.mp3"
+     ],
+     "dur": 5.59,
+     "roles": [
+      "nar",
+      "geese"
+     ],
+     "segRoles": [
+      "nar",
+      "geese"
+     ],
+     "from": "R05_swamp#2"
+    },
+    {
+     "text": "아기 오리는 기뻐서 폴짝폴짝 뛰었어요. 친구가 생겼거든요!",
+     "clips": [
+      "audio/ugly_duckling/nar_8ec95925e1.mp3"
+     ],
+     "dur": 4.99,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R05_swamp#3"
+    },
+    {
+     "text": "기러기들과 아기 오리는 신나게 놀았어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_f62db009f7.mp3"
+     ],
+     "dur": 3.24,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R05_swamp#4"
+    },
+    {
+     "text": "저 멀리서 큰 소리가 났어요. 깜짝 놀란 기러기들이 모두 날아가 버렸어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_e75a17775d.mp3"
+     ],
+     "dur": 5.56,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R05_swamp#5"
+    },
+    {
+     "text": "아기 오리는 무서워서 덜덜 떨며 갈대 속에 웅크렸어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_a3b7467f4f.mp3"
+     ],
+     "dur": 4.44,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R05_swamp#6"
+    },
+    {
+     "text": "쉿, 이제 조용해요. 아기 오리는 갈대 속에서 포근하게 쉬었어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_c7535bc7e8.mp3"
+     ],
+     "dur": 5.64,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R05_swamp#7"
+    }
+   ],
+   "merged": "R05_swamp"
+  },
+  {
+   "key": "R06_autumn",
+   "card": "가을",
+   "lines": [
+    {
+     "text": "어느덧 가을이 되었어요. 아기 오리는 조금 더 자라 어린 새가 되었어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_be54c4db7d.mp3"
+     ],
+     "dur": 5.56,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R06_autumn#0"
+    },
+    {
+     "text": "늪을 떠난 아기 오리는 가을 호숫가를 거닐었어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_14164780ba.mp3"
+     ],
+     "dur": 3.87,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R06_autumn#1"
+    },
+    {
+     "text": "알록달록 나뭇잎이 팔랑팔랑 떨어졌어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_4e046fc03e.mp3"
+     ],
+     "dur": 3.47,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R06_autumn#2"
+    },
+    {
+     "text": "하늘 높이 하얀 새들이 줄지어 날아가요.",
+     "clips": [
+      "audio/ugly_duckling/nar_70bfe54d61.mp3"
+     ],
+     "dur": 3.63,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R06_autumn#3"
+    },
+    {
+     "text": "뿌우~ 나팔 같은 소리! 백조들이에요.",
+     "clips": [
+      "audio/ugly_duckling/nar_58f464b756.mp3"
+     ],
+     "dur": 3.63,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R06_autumn#4"
+    },
+    {
+     "text": "아기 오리는 오래오래 하늘을 올려다보았어요. \"나도 저렇게 날고 싶다.\"",
+     "clips": [
+      "audio/ugly_duckling/nar_f65becba38.mp3",
+      "audio/ugly_duckling/hero_71781b2246.mp3"
+     ],
+     "dur": 5.98,
+     "roles": [
+      "nar",
+      "hero"
+     ],
+     "segRoles": [
+      "nar",
+      "hero"
+     ],
+     "from": "R06_autumn#5"
+    }
+   ]
+  },
+  {
+   "key": "R07_winter",
+   "card": "겨울",
+   "lines": [
+    {
+     "text": "호숫가에 혼자 남은 아기 오리 곁으로 눈이 내렸어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_77ef4b8250.mp3"
+     ],
+     "dur": 3.97,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R07_winter#0"
+    },
+    {
+     "text": "추운 겨울이 왔어요. 호수가 꽁꽁 얼어서 발이 얼음에 붙어 버렸어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_8f417bc2fb.mp3"
+     ],
+     "dur": 5.72,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R07_winter#1"
+    },
+    {
+     "text": "찬 바람이 쌩쌩 불고, 아기 오리는 오들오들 떨었어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_e137b08a08.mp3"
+     ],
+     "dur": 4.6,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R07_winter#2"
+    },
+    {
+     "text": "날개로 몸을 꼭 감쌌더니 조금 따뜻해졌어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_a359869b26.mp3"
+     ],
+     "dur": 3.87,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R07_winter#3"
+    },
+    {
+     "text": "그때 농부 할아버지가 지나가다 아기 오리를 보았어요. \"저런, 얼음에 발이 붙었구나!\"",
+     "clips": [
+      "audio/ugly_duckling/nar_5ad455cbe9.mp3",
+      "audio/ugly_duckling/farmer_be92906735.mp3"
+     ],
+     "dur": 7.52,
+     "roles": [
+      "nar",
+      "farmer"
+     ],
+     "segRoles": [
+      "nar",
+      "farmer"
+     ],
+     "from": "R07_winter#4"
+    },
+    {
+     "text": "할아버지는 얼음을 쿵쿵 두드렸어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_15d91b10e4.mp3"
+     ],
+     "dur": 3,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R07_winter#5"
+    },
+    {
+     "text": "쩍! 얼음이 깨졌어요. 발이 쏙 빠졌어요!",
+     "clips": [
+      "audio/ugly_duckling/nar_cae6eb8da2.mp3"
+     ],
+     "dur": 4.05,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R07_winter#6"
+    },
+    {
+     "text": "농부 할아버지가 아기 오리를 품에 폭 안았어요. 따뜻한 집으로 가요!",
+     "clips": [
+      "audio/ugly_duckling/nar_18822c9b73.mp3"
+     ],
+     "dur": 5.8,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R07_winter#7"
+    },
+    {
+     "text": "할아버지 품은 포근포근, 아기 오리는 스르르 눈을 감았어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_91ad0ddf72.mp3"
+     ],
+     "dur": 5.8,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R07_winter#8"
+    }
+   ]
+  },
+  {
+   "key": "R08_cabin",
+   "card": "할머니 집",
+   "lines": [
+    {
+     "text": "농부 할아버지는 아기 오리를 할머니가 있는 집에 데려다주었어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_16346f98eb.mp3"
+     ],
+     "dur": 4.52,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R08_cabin#0"
+    },
+    {
+     "text": "할머니 집은 난로가 있어 따뜻했어요. 고양이와 암탉도 함께 살았어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_ba761af831.mp3"
+     ],
+     "dur": 5.8,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R08_cabin#1"
+    },
+    {
+     "text": "난로 불이 타닥타닥, 아기 오리 깃털이 보송보송 말랐어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_ef2e021cbc.mp3"
+     ],
+     "dur": 5.25,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R08_cabin#2"
+    },
+    {
+     "text": "고양이가 말했어요. \"야옹. 너, 가르릉 할 줄 아니?\"",
+     "clips": [
+      "audio/ugly_duckling/nar_03fc1c0ac2.mp3",
+      "audio/ugly_duckling/cat_791ecdd767.mp3"
+     ],
+     "dur": 5.2,
+     "roles": [
+      "nar",
+      "cat"
+     ],
+     "segRoles": [
+      "nar",
+      "cat"
+     ],
+     "from": "R08_cabin#3"
+    },
+    {
+     "text": "아기 오리가 흉내를 내 보았어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_93273e128d.mp3"
+     ],
+     "dur": 2.43,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R08_cabin#4"
+    },
+    {
+     "text": "가르릉이 아니라 꽥! 모두 깔깔 웃었어요. 아기 오리도 웃었어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_5eed4e52d9.mp3"
+     ],
+     "dur": 6.84,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R08_cabin#5"
+    },
+    {
+     "text": "암탉이 말했어요. \"꼬꼬. 그럼 알은 낳을 줄 아니?\" 아기 오리는 고개를 저었어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_6ce3421e2e.mp3",
+      "audio/ugly_duckling/hen_3519e65e1e.mp3",
+      "audio/ugly_duckling/nar_b10c20dd69.mp3"
+     ],
+     "dur": 7.31,
+     "roles": [
+      "nar",
+      "hen"
+     ],
+     "segRoles": [
+      "nar",
+      "hen",
+      "nar"
+     ],
+     "from": "R08_cabin#6"
+    },
+    {
+     "text": "\"그래도 헤엄은 내가 제일 잘해! 첨벙첨벙!\" 아기 오리가 자랑스럽게 말했어요.",
+     "clips": [
+      "audio/ugly_duckling/hero_a929076933.mp3",
+      "audio/ugly_duckling/nar_acb8adaedc.mp3"
+     ],
+     "dur": 8.54,
+     "roles": [
+      "hero",
+      "nar"
+     ],
+     "segRoles": [
+      "hero",
+      "nar"
+     ],
+     "from": "R08_cabin#7"
+    },
+    {
+     "text": "고양이와 암탉이 고개를 끄덕였어요. \"그렇구나! 모두 잘하는 게 다르구나.\"",
+     "clips": [
+      "audio/ugly_duckling/nar_0e63327634.mp3",
+      "audio/ugly_duckling/hen_93ccd2fa30.mp3"
+     ],
+     "dur": 6.56,
+     "roles": [
+      "nar",
+      "hen"
+     ],
+     "segRoles": [
+      "nar",
+      "hen"
+     ],
+     "from": "R08_cabin#8"
+    }
+   ]
+  },
+  {
+   "key": "R09_spring",
+   "card": "봄",
+   "lines": [
+    {
+     "text": "따뜻한 봄이 왔어요. 아기 오리는 몸이 부쩍 자랐어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_ae6df4a850.mp3"
+     ],
+     "dur": 4.83,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R09_spring#0"
+    },
+    {
+     "text": "집 밖으로 나온 아기 오리가 봄바람을 맞았어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_ab3dc4246b.mp3"
+     ],
+     "dur": 3.55,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R09_spring#1"
+    },
+    {
+     "text": "아기 오리는 기지개를 쭉 켜고 날개를 활짝 펼쳤어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_6ef3df1170.mp3"
+     ],
+     "dur": 4.44,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R09_spring#2"
+    },
+    {
+     "text": "와, 날개가 이렇게 커졌어요!",
+     "clips": [
+      "audio/ugly_duckling/nar_7836c0b430.mp3"
+     ],
+     "dur": 2.85,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R09_spring#3"
+    },
+    {
+     "text": "파닥파닥, 파닥파닥! 발이 땅에서 살짝 떠올랐어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_b4b9ad0d9c.mp3"
+     ],
+     "dur": 4.52,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R09_spring#4"
+    },
+    {
+     "text": "훨훨! 아기 오리가 하늘을 날아요!",
+     "clips": [
+      "audio/ugly_duckling/nar_ab14ac0f4b.mp3"
+     ],
+     "dur": 3.32,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R09_spring#5"
+    }
+   ]
+  },
+  {
+   "key": "R10_reflect",
+   "card": "물에 비친 나",
+   "lines": [
+    {
+     "text": "아기 오리가 호숫가에 내려앉았어요.",
+     "clips": [
+      "audio/ugly_duckling/trim_ee022c1441.mp3"
+     ],
+     "dur": 2.87,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R10_reflect#0"
+    },
+    {
+     "text": "물결이 찰랑찰랑 잔잔해지자, 하얀 새 한 마리가 보였어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_c1e377703e.mp3"
+     ],
+     "dur": 5.07,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R10_reflect#1"
+    },
+    {
+     "text": "길고 하얀 목, 커다란 하얀 날개…",
+     "clips": [
+      "audio/ugly_duckling/nar_6e4975a442.mp3"
+     ],
+     "dur": 3.87,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R10_reflect#2"
+    },
+    {
+     "text": "\"어? 이게 나야?\" 아기 오리는 하얀 백조였어요!",
+     "clips": [
+      "audio/ugly_duckling/hero_f6bb0007f0.mp3",
+      "audio/ugly_duckling/nar_e34437850f.mp3"
+     ],
+     "dur": 7.13,
+     "roles": [
+      "hero",
+      "nar"
+     ],
+     "segRoles": [
+      "hero",
+      "nar"
+     ],
+     "from": "R10_reflect#3"
+    }
+   ]
+  },
+  {
+   "key": "R11_family",
+   "card": "백조 가족",
+   "lines": [
+    {
+     "text": "물에 비친 모습을 보던 백조 곁으로 물결이 일렁였어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_a4baa53fc6.mp3"
+     ],
+     "dur": 4.13,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R11_family#0"
+    },
+    {
+     "text": "백조들이 헤엄쳐 왔어요. \"안녕! 너도 우리 친구야. 같이 살자!\"",
+     "clips": [
+      "audio/ugly_duckling/nar_50d9e408e2.mp3",
+      "audio/ugly_duckling/swan_b019146061.mp3"
+     ],
+     "dur": 5.67,
+     "roles": [
+      "nar",
+      "swan"
+     ],
+     "segRoles": [
+      "nar",
+      "swan"
+     ],
+     "from": "R11_family#1"
+    },
+    {
+     "text": "백조는 기뻐서 날개를 파닥파닥, 목을 쭉 뻗었어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_f84e51d290.mp3"
+     ],
+     "dur": 4.52,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R11_family#2"
+    },
+    {
+     "text": "저 멀리 엄마 오리와 형제들도 반갑게 날개를 흔들어요. \"잘 자랐구나!\"",
+     "clips": [
+      "audio/ugly_duckling/nar_878a3f4795.mp3",
+      "audio/ugly_duckling/mom_3c00a5afe1.mp3"
+     ],
+     "dur": 6.56,
+     "roles": [
+      "nar",
+      "mom"
+     ],
+     "segRoles": [
+      "nar",
+      "mom"
+     ],
+     "from": "R11_family#3"
+    },
+    {
+     "text": "백조들은 둥실둥실 물 위에서 함께 춤을 췄어요.",
+     "clips": [
+      "audio/ugly_duckling/nar_e83f3708b3.mp3"
+     ],
+     "dur": 4.36,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R11_family#4"
+    },
+    {
+     "text": "다르게 생겼던 아기 오리는 이렇게 멋진 백조로 자랐답니다.",
+     "clips": [
+      "audio/ugly_duckling/nar_929a75f714.mp3"
+     ],
+     "dur": 4.36,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R11_family#5"
+    },
+    {
+     "text": "달라도 괜찮아요. 모두 저마다 멋지게 자란답니다.",
+     "clips": [
+      "audio/ugly_duckling/nar_1f7d37d9a1.mp3"
+     ],
+     "dur": 4.13,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R11_family#6"
+    }
+   ]
+  }
+ ]
+}
