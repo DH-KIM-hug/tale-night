@@ -33,7 +33,8 @@ node tools/sync_from_theater.mjs ../paper-tale-theater rabbit sun_wind ugly_duck
 | `scenes[].lines[].text` | 씀 | 클립 찾기 열쇠·자막 |
 | `scenes[].lines[].simultaneous` | 씀 | 합창(여러 클립 동시) |
 | `scenes[].set`, `enter`, `lines[].before/after` | **버림** | 동화극장 동화 js 의 동사라 여기서는 뜻이 없다. 같은 역할을 `stage.json` 이 맡는다 |
-| `segs`, `src`, `from`, `voices_from`, `notes`, `acts` | 버림 | 녹음 만들 때만 쓰는 정보 |
+| `segs` | 배역만 씀 | 함께 읽기 '인물 대사는 녹음으로'에서 배역이 `nar` 가 아닌 줄을 고를 때 |
+| `src`, `from`, `voices_from`, `notes`, `acts` | 버림 | 녹음 만들 때만 쓰는 정보 |
 
 ## 3. 재생 엔진 (`audio.js` 에서 가져올 것)
 
@@ -54,20 +55,20 @@ node tools/sync_from_theater.mjs ../paper-tale-theater rabbit sun_wind ugly_duck
 
 줄 재생 루프는 동화극장 `engine/tale.js` 의 `readPlay` 규칙을 그대로 옮긴다: 줄 사이 700ms, 장면 끝 1500ms, 화면이 가려지면(`document.hidden`) 쉼 없이 `ended` 로 바로 잇기, 시간 제한 = 녹음 길이 + 3초(길이를 모르면 8초 + 글자당 0.25초).
 
-## 4. 이어 듣기 규칙 (`docs/BEDTIME_PLAN.md` 그대로)
+## 4. 이어 듣기 규칙 (자동 읽어 주기만, `docs/BEDTIME_PLAN.md` 그대로)
 
 - 한 페이지 플레이어에서 오디오 한 흐름으로 이어 재생(페이지 이동 없음).
 - 랜덤 후보: 잠기지 않은 동화, 같은 회차 중복 없음, 최근 들은 8편은 뒤로.
 - 편 수 1·2·3·5(기본 2). '○분 뒤 끄기'는 없음.
 - 동화 사이: 3초 쉼 → 다음 제목 녹음 → 1초 → 첫 줄. 넘김 효과음 없음.
 - 마지막 편 뒤 3초 쉼 → 오디오 세션 끄기(내레이션 `src` 비움, keepAlive 멈춤, Media Session `none`).
-- 저장: `localStorage` 키 `taleNight.bedtime = { count, playlist }`.
+- 저장: `localStorage` 키 `paperShadow.bedtime = { count, playlist }`, 함께 읽기 이어 읽기 위치는 `paperShadow.together = { id, scene }`.
 
 이 앱에서 더하는 것은 하나뿐이다: 동화가 바뀔 때 **빛 상자가 꺼졌다가 새 상자로 다시 켜지는 연출**(화면이 켜져 있을 때만; 꺼져 있으면 소리만 이어짐).
 
 ## 5. 새 녹음이 필요할 때
 
-원칙은 "없음"이다. 그래도 필요해지면(예: §10-8 '잘 자' 한 줄, 대본의 오탈자):
+원칙은 "없음"이다. 그래도 필요해지면(예: PLAN §11-8 '잘 자' 한 줄, 대본의 오탈자):
 1. 동화극장 레포에서 `read_script_el.json` 을 고치거나 홈 문구를 더한다.
 2. 동화극장 레포에서 `python3 tools/elevenlabs/gen_tale.py <id> --read`(또는 `gen_home.py`)로 만든다. API 키는 `~/.config/elevenlabs/key`(어느 레포에도 두지 않음). 배역 목소리는 그 동화 `voice_script_el.json` 의 `voices` 그대로라 목소리가 섞이지 않는다.
 3. 이 레포에서 `sync_from_theater.mjs` 를 다시 돌린다.
