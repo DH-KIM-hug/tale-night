@@ -62,7 +62,7 @@ node tools/sync_from_theater.mjs ../paper-tale-theater rabbit sun_wind ugly_duck
 - 편 수 1·2·3·5(기본 2). '○분 뒤 끄기'는 없음.
 - 동화 사이: 3초 쉼 → 다음 제목 녹음 → 1초 → 첫 줄. 넘김 효과음 없음.
 - 마지막 편 뒤 3초 쉼 → 오디오 세션 끄기(내레이션 `src` 비움, keepAlive 멈춤, Media Session `none`).
-- 저장: `localStorage` 키 `paperShadow.bedtime = { count, playlist }`, 함께 읽기 이어 읽기 위치는 `paperShadow.together = { id, scene }`.
+- 저장: `localStorage` 키 `kulkul.bedtime = { count, playlist }`, 함께 읽기 이어 읽기 위치는 `kulkul.together = { id, scene }`.
 
 이 앱에서 더하는 것은 하나뿐이다: 동화가 바뀔 때 **빛 상자가 꺼졌다가 새 상자로 다시 켜지는 연출**(화면이 켜져 있을 때만; 꺼져 있으면 소리만 이어짐).
 
