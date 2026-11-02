@@ -462,7 +462,8 @@
     "perch": "art/dolls/owl.webp"
    },
    "w": 11,
-   "v2": {
+   "front": true,
+    "v2": {
     "perch": "art/v2/dolls/owl.webp"
    }
   }
