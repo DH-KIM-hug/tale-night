@@ -17,12 +17,8 @@
   .lb { width: 100%; box-shadow: 0 10px 40px rgba(0,0,0,.55); }
   .start { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 9; min-height: 56px; padding: 0 28px; border-radius: 999px;
     background: rgba(40,30,22,.82); color: #fff4e0; font-size: clamp(16px, 2.4vw, 20px); letter-spacing: .05em; box-shadow: 0 6px 24px rgba(0,0,0,.35); }
-  .start .t { display: block; }
-  .start small { display: block; font-size: 12px; opacity: .7; margin-top: 2px; }
-  .hand { position: absolute; left: 50%; top: 64%; width: 44px; height: 44px; z-index: 9; pointer-events: none; opacity: 0; transition: opacity .6s;
-    border-radius: 50%; border: 3px solid rgba(255,244,224,.8); animation: tapme 1.4s ease-in-out infinite; }
-  .hand.show { opacity: 1; }
-  @keyframes tapme { 0%,100% { transform: translate(-50%, 0) scale(1); } 50% { transform: translate(-50%, -6px) scale(.85); } }
+  .start { display: inline-flex; align-items: center; gap: .5em; }
+  .start svg { width: 1.1em; height: 1.1em; fill: currentColor; }
   .controls { display: flex; justify-content: center; gap: 32px; transition: opacity .8s; min-height: 72px; }
   .controls.hide { opacity: 0; pointer-events: none; }
   .caption { min-height: 2.6em; max-width: 46em; text-align: center; font-size: 17px; line-height: 1.5; color: var(--cream); opacity: .9; }
@@ -66,8 +62,7 @@
     <div class="stage-box" id="stageBox">
       <div id="stage"></div>
       <div class="next-band" id="nextBand" aria-hidden="true"></div>
-      <button class="start" id="start"><span class="t">톡 눌러서 불을 켜요</span><small id="startSub"></small></button>
-      <div class="hand" id="hand"></div>
+      <button class="start" id="start" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg>읽어 줘요</button>
     </div>
     <div class="caption" id="caption"></div>
     <div class="read-panel" id="readPanel" hidden>

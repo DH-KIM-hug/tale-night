@@ -24,25 +24,28 @@
   $('home').onclick = goHome; $('nightHome').onclick = goHome;
   const roomDim = () => lb && lb.root.style.setProperty('--room-dim', Settings.ROOM_DIM[S.bright] ?? .08);
 
-  async function loadTale(id) {
+  async function loadTale(id, lit) {
     story = await Story.load(id);
     if (lb) lb.destroy();
     $('stage').replaceChildren();
     lb = new Lightbox($('stage'), { stage: story.stage, onTap: onStageTap });
     roomDim();
     await lb.apply(story.sceneStart[0], {}, { instant: true });
+    if (lit) lb.setLit(true, 0);
   }
   function recent(id) {
     const r = Settings.read('kulkul.recent', []).filter(x => x !== id); r.unshift(id); Settings.write('kulkul.recent', r.slice(0, 8));
   }
 
-  /* ---------- 시작(불 켜기) ---------- */
+  /* ---------- 시작: 불은 처음부터 켜져 있다. 브라우저가 소리를 막을 때만 한 번 눌러 달라고 한다 ---------- */
   let started = false, startResolve = null;
-  function waitStart(label, sub) {
-    $('start').querySelector('.t').textContent = label; $('startSub').textContent = sub || '';
-    $('start').hidden = false;
-    const hand = setTimeout(() => $('hand').classList.add('show'), 5000);
-    return new Promise(res => { startResolve = () => { clearTimeout(hand); $('hand').classList.remove('show'); $('start').hidden = true; started = true; Narr.unlock(); res(); }; });
+  async function waitStart() {
+    if (!FAST && !(await Narr.unlock())) {
+      $('controls').classList.add('hide');
+      $('start').hidden = false;
+      await new Promise(res => { startResolve = () => { $('start').hidden = true; Narr.unlock(); res(); }; });
+    }
+    started = true;
   }
   $('start').onclick = () => startResolve && startResolve();
 
@@ -92,11 +95,11 @@
     $('readPanel').hidden = true;
     for (let k = 0; k < ids.length; k++) {
       const id = ids[k];
-      await loadTale(id);
+      await loadTale(id, k === 0);
       $('info').textContent = ids.length > 1 ? `${ids.length}편 중 ${k + 1}편째 · 다음: ${ids[k + 1] ? T[ids[k + 1]].title : '없음'}` : story.title;
       document.title = `${story.title} · 쿨쿨 그림자극장`;
       if (k === 0) {
-        await waitStart('톡 눌러서 불을 켜요', ids.length > 1 ? ids.map(i => T[i].title).join(' → ') : '');
+        await waitStart();
         poke();
       } else {
         await wait(3000);
@@ -105,8 +108,7 @@
       }
       Narr.media({ title: story.title }, { play: () => setPaused(false), pause: () => setPaused(true), nexttrack: () => $('skip').onclick() });
       recent(id);
-      lb.setLit(true);
-      await wait(1600);
+      if (k > 0) { lb.setLit(true); await wait(1600); }
       skipTale = false;
       let scene = 0;
       for (let i = 0; i < story.steps.length && !skipTale; i++) {
@@ -187,23 +189,22 @@
       }
     } finally { busy = false; }
   }
-  function next() { if (!started || finished) return; if (queue.length < 6) queue.push(1); pump(); }
+  function next() { if (!started || finished) return; if (S.roles) Narr.unlock(); if (!wake) requestWake(); if (queue.length < 6) queue.push(1); pump(); }
   function prev() { if (!started || finished) return; if (queue.length < 6) queue.push(-1); pump(); }
   $('next').onclick = next; $('prev').onclick = prev; $('nextBand').onclick = next;
   document.addEventListener('keydown', e => { if (MODE !== 'together') return; if (e.key === 'ArrowRight' || e.key === ' ') next(); if (e.key === 'ArrowLeft') prev(); });
 
   async function together() {
     $('controls').style.display = 'none'; $('caption').style.display = 'none'; $('readPanel').hidden = false;
-    await loadTale(ids[0]);
+    await loadTale(ids[0], true);
     recent(ids[0]);
     const sc = Math.max(0, Math.min(+(Q.get('scene') || 0), story.scenes.length - 1));
     idx = story.steps.findIndex(s => s.sceneIdx === sc);
     await lb.apply(story.sceneStart[sc], {}, { instant: true });
     renderLines();
-    await waitStart('불을 켜고 함께 읽어요', sc ? `${story.scenes[sc].card}부터` : '');
+    started = true; // 소리 없이 읽으므로 바로 시작(인물 대사 녹음은 첫 넘김에서 허락받는다)
     app.classList.add('reading');
     requestWake();
-    lb.setLit(true);
     lb.showCard(story.scenes[sc].card);
     await lb.apply(story.steps[idx].state, story.steps[idx].hints);
   }

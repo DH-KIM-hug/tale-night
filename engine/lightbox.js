@@ -4,11 +4,11 @@
    무대 상태(state) 하나를 받아 그대로 그린다. 앞뒤로 오가도 상태만 바꾸면 된다(함께 읽기 '앞 줄'). */
 (function () {
   const PRESETS = {
-    night_forest: { c1: '#3b4bd6', c2: '#ff9a2e', glow: '#fff1c4' },
-    dusk:         { c1: '#ffb43a', c2: '#fff0a8', glow: '#fffbe6' },
+    night_forest: { c1: '#2b3bc4', c2: '#ff8f24', glow: '#fff1c4' },
+    dusk:         { c1: '#d9620c', c2: '#ffc21f', glow: '#fff8cf' },
     dream:        { c1: '#7b4fd8', c2: '#ff8fc0', glow: '#ffe6f4' },
-    moon:         { c1: '#1d3b8f', c2: '#7fc4ff', glow: '#eef6ff' },
-    dawn:         { c1: '#f3a6a0', c2: '#ffe2b8', glow: '#fff7ea' },
+    moon:         { c1: '#10256e', c2: '#3f8df0', glow: '#eaf4ff' },
+    dawn:         { c1: '#c9405f', c2: '#ffa45c', glow: '#fff0d4' },
     hearth:       { c1: '#7a2e1c', c2: '#ff9a4a', glow: '#ffd9a0' },
     sea:          { c1: '#0f3f6b', c2: '#3fb6b0', glow: '#d8fff6' },
     snow:         { c1: '#5a6fa8', c2: '#dfe8f5', glow: '#ffffff' },

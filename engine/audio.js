@@ -14,12 +14,14 @@
     nar = new Audio(); nar.preload = 'auto'; nar.setAttribute('playsinline', ''); nar.setAttribute('x-webkit-airplay', 'deny');
     if (isIOS) { keep = new Audio(SILENT); keep.loop = true; keep.volume = .01; keep.setAttribute('playsinline', ''); }
   }
-  /* 사용자 누름 안에서 불러야 한다 */
+  /* 소리를 틀 수 있으면 true. 브라우저가 막으면(아이폰 등 페이지를 옮긴 직후) false — 그때는 누름 안에서 다시 부른다 */
   function unlock() {
     make();
     try { if (navigator.audioSession) navigator.audioSession.type = 'playback'; } catch (e) { /* 무시 */ }
-    if (!unlocked) { nar.src = SILENT; nar.play().catch(() => {}); unlocked = true; }
     if (keep && keep.paused) keep.play().catch(() => {});
+    if (unlocked) return Promise.resolve(true);
+    nar.src = SILENT;
+    return Promise.resolve(nar.play()).then(() => (unlocked = true), () => false);
   }
   function playOne(src, my) {
     return new Promise(res => {

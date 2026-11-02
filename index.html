@@ -16,16 +16,10 @@
   header h1 small { display: block; font-size: 12px; letter-spacing: .04em; color: var(--muted); font-weight: 400; margin-top: 2px; }
   .moonbtn { width: 52px; height: 52px; border-radius: 50%; display: grid; place-items: center; }
   .moonbtn span { width: 30px; height: 30px; border-radius: 50%; box-shadow: inset -9px -2px 0 0 #e9e2d2; transform: rotate(-20deg); }
-  .modes { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-  @media (max-width: 720px) { .modes { grid-template-columns: 1fr; } }
-  .mode { background: var(--night); border: 1px solid var(--line); border-radius: 18px; padding: 18px; display: grid; gap: 12px; align-content: start; }
-  .mode h2 { margin: 0; font-size: 19px; letter-spacing: .04em; display: flex; align-items: center; gap: 10px; }
-  .mode h2 svg { width: 22px; height: 22px; fill: var(--cream); }
-  .mode p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.5; }
-  .mode .act { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-  .count { display: flex; gap: 6px; align-items: center; font-size: 13px; color: var(--muted); }
-  .count .pill { min-height: 36px; padding: 0 12px; font-size: 13px; }
-  .shelf h2 { font-size: 16px; margin: 6px 0 10px; color: var(--muted); font-weight: 500; letter-spacing: .04em; }
+  .shelf-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 12px; margin-bottom: 12px; }
+  .shelf-head .act { display: flex; flex-wrap: wrap; gap: 8px; }
+  .shelf-head .pill { min-height: 44px; padding: 0 16px; font-size: 14px; }
+  .shelf h2 { font-size: 16px; margin: 0; color: var(--muted); font-weight: 500; letter-spacing: .04em; }
   .tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 16px; }
   .tile { text-align: left; display: grid; gap: 8px; }
   .tile .lb { width: 100%; border-radius: 12px; box-shadow: 0 6px 22px rgba(0,0,0,.45); }
@@ -55,26 +49,14 @@
 <div class="splash" id="splash" hidden><div id="splashStage"></div><div class="title">쿨쿨 그림자극장</div></div>
 <div class="page">
   <header>
-    <h1>쿨쿨 그림자극장<small>불을 켜면 빛과 그림자 속에서 동화가 펼쳐져요</small></h1>
+    <h1>쿨쿨 그림자극장<small>빛과 그림자 속에서 동화가 펼쳐져요</small></h1>
     <button class="moonbtn hold-ring" id="moon" aria-label="보호자 설정 (1초 꾹)"><span></span></button>
   </header>
-  <section class="modes">
-    <div class="mode">
-      <h2><svg viewBox="0 0 24 24"><path d="M12 3v10.6A4 4 0 1 0 14 17V7h4V3z"/></svg>자동으로 읽어 줘요</h2>
-      <p>녹음된 목소리가 읽어 주고, 끝나면 조용히 불이 꺼져요. 화면을 꺼도 끝까지 읽어요.</p>
-      <div class="act">
-        <button class="pill primary" id="random">아무 이야기나 이어 듣기</button>
-        <div class="count" id="count"></div>
-      </div>
-    </div>
-    <div class="mode">
-      <h2><svg viewBox="0 0 24 24"><path d="M3 5c3-1 6-1 9 1 3-2 6-2 9-1v14c-3-1-6-1-9 1-3-2-6-2-9-1z"/></svg>함께 읽어요</h2>
-      <p>어른이 소리 내어 읽고 → 를 누르면, 그 줄에 맞춰 빛과 그림자가 움직여요.</p>
-      <div class="act" id="resume"></div>
-    </div>
-  </section>
   <section class="shelf">
-    <h2>오늘 밤 이야기</h2>
+    <div class="shelf-head">
+      <h2>오늘 밤 이야기</h2>
+      <div class="act"><span id="resume"></span><button class="pill" id="random">아무 이야기나</button></div>
+    </div>
     <div class="tiles" id="tiles"></div>
   </section>
 </div>

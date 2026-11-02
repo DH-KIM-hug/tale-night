@@ -14,20 +14,15 @@
     lb.root.style.setProperty('--room-dim', .05);
     await lb.apply({ box: 'app', light: 'night_forest', power: 1, fx: 'fireflies', dolls: {} }, {}, { instant: true });
     const done = () => { sp.classList.add('out'); setTimeout(() => { sp.hidden = true; lb.destroy(); }, 900); };
-    setTimeout(() => { lb.setLit(true, 1800); sp.classList.add('lit'); }, 350);
+    lb.setLit(true, 0); sp.classList.add('lit');
     const t = setTimeout(done, 3400);
     sp.onclick = () => { clearTimeout(t); done(); };
   }
 
   /* ---------- 보호자 설정: 달 1초 꾹 ---------- */
-  Settings.holdButton($('moon'), 1000, () => Settings.openSheet(s => { S = s; drawCount(); }));
+  Settings.holdButton($('moon'), 1000, () => Settings.openSheet(s => { S = s; }));
 
-  /* ---------- 자동으로 읽어 줘요: 아무 이야기나 이어 듣기 ---------- */
-  function drawCount() {
-    $('count').innerHTML = '듣고 끄기 ' + [1, 2, 3, 5].map(n => `<button class="pill" data-n="${n}" aria-pressed="${S.count === n}">${n}편</button>`).join('');
-    $('count').querySelectorAll('button').forEach(b => b.onclick = () => { S = Settings.set({ count: +b.dataset.n }); drawCount(); });
-  }
-  drawCount();
+  /* ---------- 아무 이야기나 이어 듣기(편 수는 보호자 설정) ---------- */
   $('random').onclick = () => {
     // 같은 회차 중복 없음, 최근 들은 편은 뒤로(BEDTIME_PLAN §5-1)
     const recent = Settings.read('kulkul.recent', []);
@@ -38,14 +33,14 @@
     location.href = `player.html?mode=auto&ids=${pick.join(',')}`;
   };
 
-  /* ---------- 함께 읽어요: 이어 읽기 ---------- */
+  /* ---------- 함께 읽기 이어 읽기 ---------- */
   const last = Settings.read('kulkul.together', null);
   if (last && T[last.id]) {
-    $('resume').innerHTML = `<button class="pill primary" id="resumeBtn">이어 읽기: ${T[last.id].title}${last.scene ? ` · ${last.scene + 1}장면부터` : ''}</button>`;
+    $('resume').innerHTML = `<button class="pill" id="resumeBtn">이어 읽기: ${T[last.id].title}${last.scene ? ` · ${last.scene + 1}장면부터` : ''}</button>`;
     $('resumeBtn').onclick = () => { location.href = `player.html?mode=together&id=${last.id}&scene=${last.scene || 0}`; };
-  } else $('resume').innerHTML = `<span class="muted" style="font-size:13px">아래에서 이야기를 골라 「함께 읽어요」를 눌러요.</span>`;
+  }
 
-  /* ---------- 오늘 밤 이야기: 꺼진 빛 상자 타일 ---------- */
+  /* ---------- 오늘 밤 이야기: 항상 켜져 있는 빛 상자 타일 ---------- */
   const boxes = {};
   for (const t of tales) {
     const b = document.createElement('button'); b.className = 'tile'; b.setAttribute('aria-label', t.title);
@@ -57,11 +52,8 @@
       const show = Math.min(1, story.sceneStart.length - 1); // 첫 장면보다 인물이 나와 있는 장면
       const st = story.steps.filter(s => s.sceneIdx === show).at(-1).state;
       await lb.apply(st, {}, { instant: true });
+      lb.setLit(true, 0);
       boxes[t.id] = { lb, story, st };
-      // 손가락이 지나가면 그 타일만 희미하게 불이 들어온다
-      b.addEventListener('pointerenter', () => lb.setLit(true, 900));
-      b.addEventListener('pointerleave', () => lb.setLit(false, 900));
-      b.addEventListener('focus', () => lb.setLit(true, 900)); b.addEventListener('blur', () => lb.setLit(false, 900));
     });
     b.onclick = () => openPick(t.id);
   }
@@ -77,7 +69,7 @@
       pickLb = new Lightbox($('pickStage'), { static: true, stage: box.story.stage });
       pickLb.root.style.setProperty('--room-dim', .08);
       await pickLb.apply(box.st, {}, { instant: true });
-      setTimeout(() => pickLb && pickLb.setLit(true, 1400), 60);
+      pickLb.setLit(true, 0);
     }
     $('pickAuto').onclick = () => { location.href = `player.html?mode=auto&ids=${id}`; };
     $('pickTogether').onclick = () => { location.href = `player.html?mode=together&id=${id}`; };

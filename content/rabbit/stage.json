@@ -9,8 +9,8 @@
     "frame": "art/rabbit/village_frame.webp"
    },
    "glowAt": [
-    72,
-    20
+    60,
+    26
    ],
    "fx": "fireflies"
   },
@@ -22,8 +22,8 @@
     "frame": "art/rabbit/hill_frame.webp"
    },
    "glowAt": [
-    80,
-    17
+    66,
+    26
    ],
    "fx": "fireflies"
   },
@@ -35,8 +35,8 @@
     "frame": "art/rabbit/shade_frame.webp"
    },
    "glowAt": [
-    24,
-    18
+    28,
+    24
    ],
    "fx": "fireflies"
   },
@@ -49,7 +49,7 @@
    },
    "glowAt": [
     50,
-    15
+    22
    ],
    "fx": "fireflies"
   }
