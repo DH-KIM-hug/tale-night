@@ -20,6 +20,7 @@
   if (MODE === 'together') ids = ids.slice(0, 1);
 
   let lb = null, story = null;
+  let paused = false, skipTale = false;
   const goHome = () => { Narr.end(); releaseWake(); location.href = 'index.html'; };
   $('home').onclick = goHome; $('nightHome').onclick = goHome;
   const roomDim = () => lb && lb.root.style.setProperty('--room-dim', Settings.ROOM_DIM[S.bright] ?? .08);
@@ -32,7 +33,11 @@
     roomDim();
     await lb.apply(story.sceneStart[0], {}, { instant: true });
     if (lit) lb.setLit(true, 0);
+    $('dots').innerHTML = story.scenes.map(() => '<i></i>').join('');
+    markScene(0);
   }
+  /* 장면 점: 어디쯤인지 머리줄에 조용히 */
+  function markScene(n) { [...$('dots').children].forEach((d, i) => { d.className = i < n ? 'past' : i === n ? 'now' : ''; }); }
   function recent(id) {
     const r = Settings.read('kulkul.recent', []).filter(x => x !== id); r.unshift(id); Settings.write('kulkul.recent', r.slice(0, 8));
   }
@@ -53,7 +58,6 @@
   let pressT = null;
   function onStageTap(e) {
     if (!started) { startResolve && startResolve(); return; }
-    poke();
     if (MODE === 'together' && S.tapAnywhere) { next(); return; }
     lb.sparkle(e.clientX, e.clientY);
     if (MODE === 'auto') { clearTimeout(pressT); pressT = setTimeout(() => Narr.stop(), 1000); } // 1초 꾹 = 지금 줄 건너뛰기(보호자용)
@@ -61,10 +65,15 @@
   $('stage').addEventListener('pointerup', () => clearTimeout(pressT));
   $('stage').addEventListener('pointerleave', () => clearTimeout(pressT));
 
+  document.addEventListener('pointerdown', () => { if (started) poke(); }, true);
+
   /* ---------- 60초 손대지 않으면 어두운 덮개(자동 읽기만) ---------- */
-  let idleT = null;
+  let idleT = null, quietT = null;
   function poke() {
     $('controls').classList.remove('hide');
+    app.classList.remove('quiet');
+    clearTimeout(quietT);
+    if (MODE === 'auto' && started && !paused) quietT = setTimeout(() => app.classList.add('quiet'), FAST ? 999999 : 6000);
     if (!$('night').classList.contains('end')) $('night').classList.remove('show');
     clearTimeout(idleT);
     if (MODE === 'auto' && started) idleT = setTimeout(() => { $('controls').classList.add('hide'); $('night').classList.add('show'); }, FAST ? 999999 : 60000);
@@ -80,7 +89,6 @@
   }
 
   /* =================== 자동 읽어 주기 =================== */
-  let paused = false, skipTale = false;
   const waitResume = async () => { while (paused) await wait(200); };
   function setPaused(v) {
     paused = v; Narr.hold(v); Narr.mediaState(v ? 'paused' : 'playing');
@@ -96,7 +104,7 @@
     for (let k = 0; k < ids.length; k++) {
       const id = ids[k];
       await loadTale(id, k === 0);
-      $('info').textContent = ids.length > 1 ? `${ids.length}편 중 ${k + 1}편째 · 다음: ${ids[k + 1] ? T[ids[k + 1]].title : '없음'}` : story.title;
+      $('info').textContent = ids.length > 1 ? `${story.title} · ${k + 1}/${ids.length}편` : story.title;
       document.title = `${story.title} · 쿨쿨 그림자극장`;
       if (k === 0) {
         await waitStart();
@@ -117,6 +125,7 @@
         if (st.sceneIdx !== scene) {
           await wait(1500);
           scene = st.sceneIdx;
+          markScene(scene);
           await lb.apply(story.sceneStart[scene]);
           lb.showCard(st.card);
           await wait(900);
@@ -128,6 +137,7 @@
         if (!document.hidden) await wait(700);
       }
       caption('');
+      lb.root.classList.add('spill-fade');
       // '잘 자': 빛이 천천히 꺼져 흰 종이로
       lb.setLit(false, (story.stage.end && story.stage.end.fadeOut) || 8000);
       await wait(document.hidden ? 2000 : ((story.stage.end && story.stage.end.fadeOut) || 8000));
@@ -152,7 +162,8 @@
     }
     [...$('lines').children].forEach((p, i) => { p.className = i < st.lineIdx ? 'done' : i === st.lineIdx ? 'now' : ''; });
     const now = $('lines').children[st.lineIdx]; if (now) now.scrollIntoView({ block: 'nearest' });
-    $('where').textContent = `${sc.card} (${st.sceneIdx + 1}/${story.scenes.length})`;
+    $('where').textContent = sc.card;
+    markScene(st.sceneIdx);
     $('info').textContent = story.title;
     $('prev').disabled = idx === 0; $('prev').style.opacity = idx === 0 ? .35 : 1;
     Settings.write('kulkul.together', { id: story.id, scene: st.sceneIdx });
@@ -183,6 +194,7 @@
           else {
             finished = true; queue.length = 0; Narr.stop();
             Settings.write('kulkul.together', null);
+            lb.root.classList.add('spill-fade');
             lb.setLit(false, 8000); await wait(8000); sleepScreen();
           }
         } else if (idx > 0) await go(idx - 1, false);

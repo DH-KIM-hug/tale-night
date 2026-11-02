@@ -33,7 +33,7 @@ python3 -m http.server 8765
 
 - **커다란 순무 새 줄 1줄(24자) 녹음.** 이 환경에는 ElevenLabs 키가 없어, 지금은 원래 녹음 두 줄("어? 강아지랑 고양이가 서로 째려봐요." / "그래도 고양이가 강아지 꼬리를 꼭 잡았어요.")로 잠시 대신한다. 키가 있는 곳에서:
   `python3 tools/rec_night.py <동화극장 경로> turnip` → `node tools/sync_from_theater.mjs <동화극장 경로>`
-- 그림 88장(docs/ART_LIST.md), 앱 아이콘(그림을 받은 뒤 빛 상자로 찍기).
+- 그림 88장(docs/ART_LIST.md).
 - 우리 재생목록(순서 고르기), 구매·잠금, Capacitor 앱 감싸기, 실기기(아이폰 잠금 화면) 확인.
 
 ## 도구

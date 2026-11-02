@@ -3,52 +3,89 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#18213f">
+<meta name="theme-color" content="#10132a">
 <title>쿨쿨 그림자극장</title>
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/icons/favicon-192.png">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
 <link rel="stylesheet" href="app.css">
 <link rel="stylesheet" href="engine/lightbox.css">
 <style>
   body { overflow: hidden; }
-  .wrap { height: 100%; display: grid; grid-template-rows: auto 1fr auto; padding: calc(8px + env(safe-area-inset-top, 0px)) var(--gutter) calc(10px + env(safe-area-inset-bottom, 0px)); gap: 8px; }
-  header { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 48px; }
-  header .info { font-size: 13px; color: var(--muted); text-align: right; letter-spacing: .02em; }
-  .main { min-height: 0; display: grid; gap: 14px; align-items: center; justify-items: center; }
-  .stage-box { position: relative; width: min(100%, calc((100dvh - 210px) * 4 / 3)); }
-  .lb { width: 100%; box-shadow: 0 10px 40px rgba(0,0,0,.55); }
-  .start { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 9; min-height: 56px; padding: 0 28px; border-radius: 999px;
-    background: rgba(40,30,22,.82); color: #fff4e0; font-size: clamp(16px, 2.4vw, 20px); letter-spacing: .05em; box-shadow: 0 6px 24px rgba(0,0,0,.35); }
-  .start { display: inline-flex; align-items: center; gap: .5em; }
+  .wrap { height: 100%; display: grid; grid-template-rows: auto minmax(0, 1fr) auto; padding: env(safe-area-inset-top, 0px) 0 calc(10px + env(safe-area-inset-bottom, 0px)); gap: 6px; }
+  /* 머리줄: 집 · 제목과 장면 점 · (자리 맞춤) */
+  header { display: grid; grid-template-columns: 48px minmax(0, 1fr) 48px; align-items: center; padding: 4px calc(var(--gutter) - 8px) 0; min-height: 52px; transition: opacity .6s; z-index: 10; }
+  .head-mid { display: grid; gap: 6px; justify-items: center; min-width: 0; }
+  header .info { font-size: 14px; font-weight: 600; color: var(--muted); text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
+  .dots { display: flex; gap: 5px; }
+  .dots i { width: 5px; height: 5px; border-radius: 50%; background: var(--cream); opacity: .18; transition: opacity .6s, background .6s; }
+  .dots i.past { opacity: .42; }
+  .dots i.now { opacity: 1; background: var(--lamp); }
+  .main { min-height: 0; display: grid; gap: 16px; align-items: center; justify-items: center; align-content: center; }
+  .stage-box { position: relative; width: min(100%, calc((100dvh - 230px) * 4 / 3)); }
+  /* 무대의 빛이 어두운 벽으로 새어 나온다. 장면 빛을 따라 색이 바뀌고, 불이 꺼지면 함께 꺼진다 */
+  .lb { width: 100%; border-radius: 0; box-shadow: 0 0 90px -14px color-mix(in srgb, var(--c2) 42%, transparent); }
+  .lb:not(.lit) { box-shadow: 0 0 90px -14px transparent; }
+  .lb.spill-fade { transition: box-shadow var(--lt) ease; }
+  .start { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 9; min-height: 60px; padding: 0 30px; border-radius: 999px;
+    background: var(--lamp); color: var(--on-lamp); font-weight: 700; font-size: 18px; display: inline-flex; align-items: center; gap: .5em; box-shadow: 0 6px 24px rgba(0,0,0,.35); }
   .start svg { width: 1.1em; height: 1.1em; fill: currentColor; }
-  .controls { display: flex; justify-content: center; gap: 32px; transition: opacity .8s; min-height: 72px; }
+  .controls { display: flex; justify-content: center; align-items: center; gap: 20px; transition: opacity .6s; min-height: 72px; }
   .controls.hide { opacity: 0; pointer-events: none; }
-  .caption { min-height: 2.6em; max-width: 46em; text-align: center; font-size: 17px; line-height: 1.5; color: var(--cream); opacity: .9; }
+  .controls #pause { width: 72px; height: 72px; }
+  .controls #pause svg { width: 30px; height: 30px; }
+  .controls #skip { width: 56px; height: 56px; background: none; }
+  .controls #skip svg { width: 24px; height: 24px; fill: var(--muted); }
+  .caption { min-height: 2.8em; max-width: 34em; padding: 0 var(--gutter); text-align: center; font-size: 18px; line-height: 1.5; color: var(--cream); word-break: keep-all; }
   .caption:empty { display: none; }
-  /* 함께 읽기 */
-  .together .main { grid-template-columns: 1fr; }
-  .read-panel { width: min(100%, 860px); display: grid; grid-template-rows: 1fr auto; gap: 10px; min-height: 0; }
-  .lines { overflow: auto; padding: 4px 6px; font-size: var(--fs, 22px); line-height: 1.6; scroll-behavior: smooth; }
-  .lines p { margin: 0 0 .45em; color: var(--cream); opacity: .3; transition: opacity .4s; }
-  .lines p.done { opacity: .5; }
-  .lines p.now { opacity: 1; }
-  .lines p.now::before { content: ""; display: inline-block; width: .5em; height: .5em; border-radius: 50%; background: var(--ember); margin: 0 .45em .12em 0; vertical-align: middle; }
-  .turn { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
-  .turn .where { font-size: 13px; color: var(--muted); }
-  .next-band { position: absolute; right: 0; top: 0; bottom: 0; width: 20%; z-index: 8; }
-  .next-band::after { content: ""; position: absolute; right: 10px; top: 50%; width: 14px; height: 14px; border-top: 3px solid rgba(255,244,224,.5); border-right: 3px solid rgba(255,244,224,.5); transform: translateY(-50%) rotate(45deg); }
-  .together.reading .next-band { display: block; }
-  .next-band { display: none; }
-  @media (min-aspect-ratio: 5/4) and (min-width: 900px) {
-    .together .main { grid-template-columns: 62fr 38fr; align-items: stretch; }
-    .together .stage-box { width: 100%; align-self: center; }
-    .together .read-panel { height: 100%; max-height: calc(100dvh - 120px); }
+  /* 듣는 동안은 조작부가 물러난다(톡 하면 다시) */
+  .quiet header, .quiet .controls { opacity: 0; pointer-events: none; }
+
+  /* 가로: 무대가 화면 높이를 다 쓰고, 머리줄·단추는 그 위에 뜬다 */
+  @media (min-aspect-ratio: 5/4) {
+    .auto.wrap { display: block; position: relative; padding: 0; }
+    .auto .main { height: 100%; }
+    .auto .stage-box { width: min(100vw, calc(100dvh * 4 / 3)); }
+    .auto header { position: absolute; left: 0; right: 0; top: 0; padding-top: calc(8px + env(safe-area-inset-top, 0px)); background: linear-gradient(rgba(8,8,20,.5), transparent); }
+    .auto header .info { color: var(--cream); }
+    .auto .icon-btn svg { fill: var(--cream); }
+    .auto .controls { position: absolute; left: 0; right: 0; bottom: calc(14px + env(safe-area-inset-bottom, 0px)); z-index: 10; }
+    .auto .controls .round { background: rgba(16,19,42,.72); }
+    .auto .controls #skip svg { fill: var(--cream); }
+    .auto .caption { position: absolute; left: 50%; bottom: calc(100px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); width: max-content; max-width: min(34em, 86vw); min-height: 0; z-index: 9;
+      background: rgba(16,19,42,.78); padding: .5em 1.1em; border-radius: 14px; transition: bottom .6s var(--ease); }
+    .auto.quiet .caption { bottom: calc(20px + env(safe-area-inset-bottom, 0px)); }
   }
-  @media (max-aspect-ratio: 5/4) { .together .stage-box { width: min(100%, calc((100dvh - 330px) * 4 / 3)); } .together .main { align-content: start; grid-template-rows: auto 1fr; } .together .read-panel { height: 100%; } }
+
+  /* 함께 읽기: 이 화면만은 글이 주인공 */
+  .read-panel { width: min(100%, 860px); display: grid; grid-template-rows: minmax(0, 1fr) auto; gap: 10px; min-height: 0; padding: 0 var(--gutter); }
+  .lines { overflow: auto; padding: 4px 0; font-size: var(--fs, 22px); line-height: 1.55; scroll-behavior: smooth; word-break: keep-all; }
+  .lines p { margin: 0 0 .5em; padding-left: 14px; color: var(--cream); opacity: .36; transition: opacity .4s; position: relative; }
+  .lines p.done { opacity: .56; }
+  .lines p.now { opacity: 1; font-weight: 600; }
+  .lines p.now::before { content: ""; position: absolute; left: 0; top: .22em; bottom: .22em; width: 4px; border-radius: 2px; background: var(--lamp); }
+  .turn { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+  .turn .where { font-size: 14px; color: var(--muted); text-align: center; min-width: 0; }
+  .turn #prev { background: none; }
+  .next-band { display: none; position: absolute; right: 0; top: 0; bottom: 0; width: 20%; z-index: 8; }
+  .next-band::after { content: ""; position: absolute; right: 12px; top: 50%; width: 12px; height: 12px; border-top: 2.5px solid rgba(255,244,224,.55); border-right: 2.5px solid rgba(255,244,224,.55); transform: translateY(-50%) rotate(45deg); }
+  .together.reading .next-band { display: block; }
+  .together .main { grid-template-columns: 1fr; }
+  @media (min-aspect-ratio: 5/4) {
+    .together .main { grid-template-columns: 62fr 38fr; align-items: stretch; align-content: stretch; gap: 0 clamp(20px, 3vw, 44px); padding-right: var(--gutter); }
+    .together .stage-box { width: 100%; align-self: center; }
+    .together .read-panel { height: 100%; padding: 8px 0 0; max-height: calc(100dvh - 90px); }
+    .together .stage-box { max-height: calc(100dvh - 76px); max-width: calc((100dvh - 76px) * 4 / 3); justify-self: end; }
+  }
+  @media (max-aspect-ratio: 5/4) { .together .stage-box { width: min(100%, calc((100dvh - 340px) * 4 / 3)); } .together .main { align-content: start; grid-template-rows: auto minmax(0, 1fr); } .together .read-panel { height: 100%; } }
+
   /* 잠드는 화면 */
-  .night { position: fixed; inset: 0; z-index: 30; background: #0b0f22; opacity: 0; pointer-events: none; transition: opacity 3s ease; display: grid; place-items: center; text-align: center; }
+  .night { position: fixed; inset: 0; z-index: 30; background: #090b1c; opacity: 0; pointer-events: none; transition: opacity 3s ease; display: grid; place-items: center; text-align: center; }
   .night.show { opacity: .9; pointer-events: auto; }
   .night.end { opacity: 1; }
-  .night .moon { width: 64px; height: 64px; border-radius: 50%; background: #e6dfd2; opacity: .35; margin: 0 auto 18px; box-shadow: 0 0 40px rgba(238,230,210,.25); }
-  .night p { color: #8f8aa6; font-size: 15px; margin: 0 0 18px; }
+  .night .crescent { width: 64px; height: 64px; margin: 0 auto 20px; box-shadow: inset -19px -4px 0 0 #6d6a80; }
+  .night p { color: #6d6a80; font-size: 17px; font-weight: 600; margin: 0 0 28px; }
+  .night .pill { background: none; color: #6d6a80; }
   .night .hidden { display: none; }
 </style>
 </head>
@@ -56,7 +93,7 @@
 <div class="wrap" id="app">
   <header>
     <button class="icon-btn" id="home" aria-label="집으로"><svg viewBox="0 0 24 24"><path d="M12 3 2 11h3v9h5v-6h4v6h5v-9h3z"/></svg></button>
-    <div class="info" id="info"></div>
+    <div class="head-mid"><div class="info" id="info"></div><div class="dots" id="dots" aria-hidden="true"></div></div>
   </header>
   <div class="main" id="main">
     <div class="stage-box" id="stageBox">
@@ -70,7 +107,7 @@
       <div class="turn">
         <button class="round" id="prev" aria-label="앞 줄"><svg viewBox="0 0 24 24"><path d="M15.5 4 7 12l8.5 8 1.5-1.5L10 12l7-6.5z"/></svg></button>
         <span class="where" id="where"></span>
-        <button class="round" id="next" aria-label="다음 줄" style="background:var(--ember);border-color:var(--ember)"><svg viewBox="0 0 24 24"><path d="M8.5 4 17 12l-8.5 8L7 18.5 14 12 7 5.5z"/></svg></button>
+        <button class="round go" id="next" aria-label="다음 줄"><svg viewBox="0 0 24 24"><path d="M8.5 4 17 12l-8.5 8L7 18.5 14 12 7 5.5z"/></svg></button>
       </div>
     </div>
   </div>
@@ -79,7 +116,7 @@
     <button class="round" id="skip" aria-label="다음 이야기로 건너뛰기"><svg viewBox="0 0 24 24"><path d="M5 5v14l9-7zm10 0h3v14h-3z"/></svg></button>
   </div>
 </div>
-<div class="night" id="night"><div><div class="moon"></div><p>잘 자요</p><button class="pill" id="nightHome">집으로</button></div></div>
+<div class="night" id="night"><div><span class="crescent"></span><p>잘 자요</p><button class="pill" id="nightHome">집으로</button></div></div>
 <script src="engine/settings.js"></script>
 <script src="engine/audio.js"></script>
 <script src="engine/lightbox.js"></script>

@@ -4,7 +4,9 @@
   "meadow": {
    "layers": {
     "far": "art/three_pigs/meadow_far.webp",
+    "far2": "art/three_pigs/meadow_far2.webp",
     "mid": "art/three_pigs/meadow_mid.webp",
+    "ground": "art/three_pigs/meadow_ground.webp",
     "near": "art/three_pigs/meadow_near.webp",
     "frame": "art/three_pigs/meadow_frame.webp"
    },
@@ -12,12 +14,23 @@
     62,
     26
    ],
-   "fx": "fireflies"
+   "fx": "fireflies",
+   "dk": {
+    "far": 0.12,
+    "far2": 0.2,
+    "mid": 0.32,
+    "ground": 0.62,
+    "dolls": 0.92,
+    "near": 0.84,
+    "frame": 0.93
+   }
   },
   "lot": {
    "layers": {
     "far": "art/three_pigs/lot_far.webp",
+    "far2": "art/three_pigs/lot_far2.webp",
     "mid": "art/three_pigs/lot_mid.webp",
+    "ground": "art/three_pigs/lot_ground.webp",
     "near": "art/three_pigs/lot_near.webp",
     "frame": "art/three_pigs/lot_frame.webp"
    },
@@ -25,12 +38,23 @@
     36,
     24
    ],
-   "fx": "fireflies"
+   "fx": "fireflies",
+   "dk": {
+    "far": 0.12,
+    "far2": 0.2,
+    "mid": 0.32,
+    "ground": 0.62,
+    "dolls": 0.92,
+    "near": 0.84,
+    "frame": 0.93
+   }
   },
   "brick_in": {
    "layers": {
     "far": "art/three_pigs/brick_in_far.webp",
+    "far2": "art/three_pigs/brick_in_far2.webp",
     "mid": "art/three_pigs/brick_in_mid.webp",
+    "ground": "art/three_pigs/brick_in_ground.webp",
     "near": "art/three_pigs/brick_in_near.webp",
     "frame": "art/three_pigs/brick_in_frame.webp"
    },
@@ -39,7 +63,16 @@
     30
    ],
    "fx": "none",
-   "noMoon": true
+   "noMoon": true,
+   "dk": {
+    "far": 0.12,
+    "far2": 0.2,
+    "mid": 0.32,
+    "ground": 0.62,
+    "dolls": 0.92,
+    "near": 0.84,
+    "frame": 0.93
+   }
   }
  },
  "dolls": {

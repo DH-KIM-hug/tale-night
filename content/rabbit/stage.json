@@ -16,10 +16,11 @@
    ],
    "fx": "fireflies",
    "dk": {
-    "far": 0.14,
-    "far2": 0.32,
-    "mid": 0.54,
-    "ground": 0.72,
+    "far": 0.12,
+    "far2": 0.2,
+    "mid": 0.32,
+    "ground": 0.62,
+    "dolls": 0.92,
     "near": 0.84,
     "frame": 0.93
    }
@@ -39,10 +40,11 @@
    ],
    "fx": "fireflies",
    "dk": {
-    "far": 0.14,
-    "far2": 0.32,
-    "mid": 0.54,
-    "ground": 0.72,
+    "far": 0.12,
+    "far2": 0.2,
+    "mid": 0.32,
+    "ground": 0.62,
+    "dolls": 0.92,
     "near": 0.84,
     "frame": 0.93
    }
@@ -50,20 +52,33 @@
   "shade": {
    "layers": {
     "far": "art/rabbit/shade_far.webp",
+    "far2": "art/rabbit/shade_far2.webp",
     "mid": "art/rabbit/shade_mid.webp",
+    "ground": "art/rabbit/shade_ground.webp",
     "near": "art/rabbit/shade_near.webp",
     "frame": "art/rabbit/shade_frame.webp"
    },
    "glowAt": [
-    28,
-    24
+    33,
+    30
    ],
-   "fx": "fireflies"
+   "fx": "fireflies",
+   "dk": {
+    "far": 0.12,
+    "far2": 0.2,
+    "mid": 0.32,
+    "ground": 0.62,
+    "dolls": 0.92,
+    "near": 0.84,
+    "frame": 0.93
+   }
   },
   "finish": {
    "layers": {
     "far": "art/rabbit/finish_far.webp",
+    "far2": "art/rabbit/finish_far2.webp",
     "mid": "art/rabbit/finish_mid.webp",
+    "ground": "art/rabbit/finish_ground.webp",
     "near": "art/rabbit/finish_near.webp",
     "frame": "art/rabbit/finish_frame.webp"
    },
@@ -71,7 +86,16 @@
     50,
     22
    ],
-   "fx": "fireflies"
+   "fx": "fireflies",
+   "dk": {
+    "far": 0.12,
+    "far2": 0.2,
+    "mid": 0.32,
+    "ground": 0.62,
+    "dolls": 0.92,
+    "near": 0.84,
+    "frame": 0.93
+   }
   }
  },
  "dolls": {
@@ -236,7 +260,7 @@
     "owl": {
      "pose": "perch",
      "x": 66,
-     "y": 80,
+     "y": 70,
      "vis": false
     }
    },
@@ -320,7 +344,7 @@
     "owl": {
      "pose": "perch",
      "x": 66,
-     "y": 80
+     "y": 70
     },
     "turtle": {
      "pose": "walk",
