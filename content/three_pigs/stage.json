@@ -22,8 +22,8 @@
     "frame": "art/three_pigs/lot_frame.webp"
    },
    "glowAt": [
-    24,
-    19
+    36,
+    24
    ],
    "fx": "fireflies"
   },
@@ -38,7 +38,8 @@
     76,
     30
    ],
-   "fx": "none"
+   "fx": "none",
+   "noMoon": true
   }
  },
  "dolls": {

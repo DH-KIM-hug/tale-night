@@ -8,7 +8,7 @@
   position: relative; aspect-ratio: 4 / 3; overflow: hidden; border-radius: 10px; user-select: none; -webkit-user-select: none;
   touch-action: manipulation; background: #e9e2d5; isolation: isolate;
   --paper: #f3eee4; --lt: 2400ms;
-  --light: radial-gradient(circle at var(--gx, 58%) var(--gy, 22%), color-mix(in srgb, var(--glow) 55%, var(--c2)) 0, var(--c2) 26%, color-mix(in srgb, var(--c2) 55%, var(--c1)) 60%, var(--c1) 105%);
+  --light: radial-gradient(ellipse at 50% 64%, color-mix(in srgb, var(--glow) 70%, transparent) 0, transparent 58%), linear-gradient(180deg, var(--c1), var(--c2));
   transition: --c1 2.4s ease, --c2 2.4s ease, --glow 2.4s ease, --power 2.4s ease;
 }
 .lb.lb-instant, .lb.lb-instant * { transition: none !important; }
@@ -16,9 +16,9 @@
 .lb-back { background: linear-gradient(180deg, #f1ece2, #e4ddd0); }
 .lb-back-on {
   opacity: 0; transition: opacity var(--lt) ease;
-  /* 광원은 달·해 하나: 원판 + 거기서 번져 나가는 빛 */
+  /* 광원은 뒤판 전체. 달·해는 그 빛이 더 밝게 비치는 오린 구멍일 뿐이다 */
   background:
-    radial-gradient(circle at var(--gx, 58%) var(--gy, 22%), var(--glow) 0 5.2%, color-mix(in srgb, var(--glow) 60%, transparent) 6%, transparent 8%),
+    radial-gradient(circle at var(--gx, 58%) var(--gy, 22%), var(--glow) 0 5.2%, transparent 5.6%),
     var(--light);
   animation: lb-breathe 7s ease-in-out infinite;
 }

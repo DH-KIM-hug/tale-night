@@ -5,7 +5,7 @@
 (function () {
   const PRESETS = {
     night_forest: { c1: '#2b3bc4', c2: '#ff8f24', glow: '#fff1c4' },
-    dusk:         { c1: '#d9620c', c2: '#ffc21f', glow: '#fff8cf' },
+    dusk:         { c1: '#ee7d06', c2: '#ffcb1f', glow: '#fff6b8' },
     dream:        { c1: '#7b4fd8', c2: '#ff8fc0', glow: '#ffe6f4' },
     moon:         { c1: '#10256e', c2: '#3f8df0', glow: '#eaf4ff' },
     dawn:         { c1: '#c9405f', c2: '#ffa45c', glow: '#fff0d4' },
@@ -14,7 +14,7 @@
     snow:         { c1: '#5a6fa8', c2: '#dfe8f5', glow: '#ffffff' },
   };
   const LAYERS = [ // 이름, 기본 어둡기, 시차(px), 확대
-    ['far', .08, 4, 1], ['mid', .42, 8, 1], ['dolls', .7, 11, 1], ['near', .70, 15, 1], ['fx', 0, 0, 1], ['frame', .86, 22, 1.06],
+    ['far', .2, 4, 1], ['mid', .52, 8, 1], ['dolls', .82, 11, 1], ['near', .8, 15, 1], ['fx', 0, 0, 1], ['frame', .92, 22, 1.06],
   ];
   const BASE = (document.currentScript && document.currentScript.src.replace(/engine\/lightbox\.js.*$/, '')) || './';
   const url = p => BASE + p;
