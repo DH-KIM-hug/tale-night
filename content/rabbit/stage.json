@@ -125,7 +125,15 @@
        "src": "art/v2/rabbit/shade/tab/ground.webp",
        "top": 3.6
       },
-      {"src": "art/v2/rabbit/shade/branch.webp", "at": [58, 21, 30]}, {
+      {
+       "src": "art/v2/rabbit/shade/branch.webp",
+       "at": [
+        58,
+        21,
+        30
+       ]
+      },
+      {
        "src": "art/v2/rabbit/shade/tab/tree.webp"
       }
      ],
@@ -185,29 +193,28 @@
       "rabbit": {
        "sleep": [
         60.4,
-        11.8,
-        28.2
+        12.8
        ],
        "stand": [
         46,
-        11.8,
-        13
+        10.5
        ],
        "jump": [
         60,
-        15,
-        17
+        12.7
        ]
       },
       "turtle": {
        "default": [
         27.75,
-        11.1,
-        20.3
+        13.6
        ]
       },
       "owl": {
-       "default": [70, 75, 6.5]
+       "default": [
+        70,
+        75
+       ]
       }
      }
     },
@@ -235,7 +242,15 @@
        "src": "art/v2/rabbit/shade/land/ground.webp",
        "top": 0
       },
-      {"src": "art/v2/rabbit/shade/branch.webp", "at": [69, 21, 22]}, {
+      {
+       "src": "art/v2/rabbit/shade/branch.webp",
+       "at": [
+        69,
+        21,
+        22
+       ]
+      },
+      {
        "src": "art/v2/rabbit/shade/land/tree.webp"
       }
      ],
@@ -305,29 +320,28 @@
       "rabbit": {
        "sleep": [
         58.4,
-        8.5,
-        22
+        10.5
        ],
        "stand": [
         47,
-        8.5,
-        9.5
+        11.0
        ],
        "jump": [
         58,
-        12,
-        13
+        10.2
        ]
       },
       "turtle": {
        "default": [
         29.7,
-        10.1,
-        15.4
+        10.2
        ]
       },
       "owl": {
-       "default": [79, 74, 4.8]
+       "default": [
+        79,
+        74
+       ]
       }
      }
     },
@@ -355,7 +369,15 @@
        "src": "art/v2/rabbit/shade/port/ground.webp",
        "top": 0
       },
-      {"src": "art/v2/rabbit/shade/branch.webp", "at": [38, 19, 50]}, {
+      {
+       "src": "art/v2/rabbit/shade/branch.webp",
+       "at": [
+        38,
+        19,
+        50
+       ]
+      },
+      {
        "src": "art/v2/rabbit/shade/port/tree.webp"
       }
      ],
@@ -394,32 +416,840 @@
      "dolls": {
       "rabbit": {
        "sleep": [
-        52,
-        26.2,
-        50
+        60,
+        25.7
        ],
        "stand": [
-        40,
-        26.2,
-        25
+        50,
+        25.7
        ],
        "jump": [
-        52,
-        29,
-        32
+        60,
+        25.7
        ]
       },
       "turtle": {
        "default": [
-        15.5,
-        30.5,
-        23
+        18,
+        30.1
        ]
       },
       "owl": {
-       "default": [60, 77.5, 13]
+       "default": [
+        60,
+        77.5
+       ]
       }
      }
+    }
+   }
+  },
+  "village_v2": {
+   "layers": {},
+   "fx": "fireflies",
+   "formats": {
+    "tab": {
+     "ratio": 1.5,
+     "back": [
+      {
+       "src": "art/v2/rabbit/village/tab/sky.webp"
+      },
+      {
+       "src": "art/v2/rabbit/cloud1.webp",
+       "drift": [
+        9,
+        26,
+        150
+       ],
+       "alpha": 0.9
+      },
+      {
+       "src": "art/v2/rabbit/cloud2.webp",
+       "drift": [
+        19,
+        13,
+        110
+       ],
+       "alpha": 0.8
+      },
+      {
+       "src": "art/v2/rabbit/village/tab/ridges.webp"
+      },
+      {
+       "src": "art/v2/rabbit/village/tab/hills.webp"
+      },
+      {
+       "src": "art/v2/rabbit/village/tab/tree.webp",
+       "breeze": true
+      },
+      {
+       "src": "art/v2/rabbit/village/tab/ground.webp"
+      }
+     ],
+     "dolls": {
+      "rabbit": {
+       "stand": [
+        68,
+        15.0
+       ],
+       "sit": [
+        68,
+        15.0
+       ],
+       "run": [
+        68,
+        15.0
+       ]
+      },
+      "turtle": {
+       "walk": [
+        30,
+        15.0
+       ],
+       "stand": [
+        30,
+        14.9
+       ]
+      }
+     },
+     "flutter": [
+      [
+       "art/v2/rabbit/butterfly.webp",
+       38,
+       58,
+       2.4
+      ]
+     ]
+    },
+    "land": {
+     "ratio": 2.1617819460726846,
+     "back": [
+      {
+       "src": "art/v2/rabbit/village/land/sky.webp"
+      },
+      {
+       "src": "art/v2/rabbit/cloud1.webp",
+       "drift": [
+        9,
+        19.5,
+        150
+       ],
+       "alpha": 0.9
+      },
+      {
+       "src": "art/v2/rabbit/cloud2.webp",
+       "drift": [
+        19,
+        9.8,
+        110
+       ],
+       "alpha": 0.8
+      },
+      {
+       "src": "art/v2/rabbit/village/land/ridges.webp"
+      },
+      {
+       "src": "art/v2/rabbit/village/land/hills.webp"
+      },
+      {
+       "src": "art/v2/rabbit/village/land/tree.webp",
+       "breeze": true
+      },
+      {
+       "src": "art/v2/rabbit/village/land/ground.webp"
+      }
+     ],
+     "dolls": {
+      "rabbit": {
+       "stand": [
+        64,
+        12.8
+       ],
+       "sit": [
+        64,
+        12.8
+       ],
+       "run": [
+        64,
+        12.7
+       ]
+      },
+      "turtle": {
+       "walk": [
+        36,
+        12.7
+       ],
+       "stand": [
+        36,
+        12.7
+       ]
+      }
+     },
+     "flutter": [
+      [
+       "art/v2/rabbit/butterfly.webp",
+       44,
+       56,
+       1.9
+      ]
+     ]
+    },
+    "port": {
+     "ratio": 0.4607471575527883,
+     "back": [
+      {
+       "src": "art/v2/rabbit/village/port/sky.webp"
+      },
+      {
+       "src": "art/v2/rabbit/cloud1.webp",
+       "drift": [
+        9,
+        46.8,
+        150
+       ],
+       "alpha": 0.9
+      },
+      {
+       "src": "art/v2/rabbit/cloud2.webp",
+       "drift": [
+        19,
+        23.4,
+        110
+       ],
+       "alpha": 0.8
+      },
+      {
+       "src": "art/v2/rabbit/village/port/ridges.webp"
+      },
+      {
+       "src": "art/v2/rabbit/village/port/hills.webp"
+      },
+      {
+       "src": "art/v2/rabbit/village/port/tree.webp",
+       "breeze": true
+      },
+      {
+       "src": "art/v2/rabbit/village/port/ground.webp"
+      }
+     ],
+     "dolls": {
+      "rabbit": {
+       "stand": [
+        72,
+        27.9
+       ],
+       "sit": [
+        72,
+        27.9
+       ],
+       "run": [
+        70,
+        27.9
+       ]
+      },
+      "turtle": {
+       "walk": [
+        28,
+        28.7
+       ],
+       "stand": [
+        28,
+        28.7
+       ]
+      }
+     },
+     "flutter": [
+      [
+       "art/v2/rabbit/butterfly.webp",
+       44,
+       52,
+       4.5
+      ]
+     ]
+    }
+   }
+  },
+  "hill_v2": {
+   "layers": {},
+   "fx": "fireflies",
+   "formats": {
+    "tab": {
+     "ratio": 1.5,
+     "back": [
+      {
+       "src": "art/v2/rabbit/hill/tab/sky.webp"
+      },
+      {
+       "src": "art/v2/rabbit/cloud1.webp",
+       "drift": [
+        9,
+        26,
+        150
+       ],
+       "alpha": 0.5
+      },
+      {
+       "src": "art/v2/rabbit/cloud2.webp",
+       "drift": [
+        19,
+        13,
+        110
+       ],
+       "alpha": 0.45
+      },
+      {
+       "src": "art/v2/rabbit/hill/tab/ridges.webp"
+      },
+      {
+       "src": "art/v2/rabbit/hill/tab/hills.webp"
+      },
+      {
+       "src": "art/v2/rabbit/hill/tab/ground.webp"
+      }
+     ],
+     "dolls": {
+      "rabbit": {
+       "stand": [
+        60,
+        17.3
+       ],
+       "run": [
+        60,
+        17.3
+       ]
+      },
+      "turtle": {
+       "walk": [
+        60,
+        17.3
+       ],
+       "stand": [
+        60,
+        17.3
+       ]
+      }
+     },
+     "flutter": [
+      [
+       "art/v2/rabbit/butterfly.webp",
+       38,
+       58,
+       2.4
+      ]
+     ]
+    },
+    "land": {
+     "ratio": 2.1617819460726846,
+     "back": [
+      {
+       "src": "art/v2/rabbit/hill/land/sky.webp"
+      },
+      {
+       "src": "art/v2/rabbit/cloud1.webp",
+       "drift": [
+        9,
+        19.5,
+        150
+       ],
+       "alpha": 0.5
+      },
+      {
+       "src": "art/v2/rabbit/cloud2.webp",
+       "drift": [
+        19,
+        9.8,
+        110
+       ],
+       "alpha": 0.45
+      },
+      {
+       "src": "art/v2/rabbit/hill/land/ridges.webp"
+      },
+      {
+       "src": "art/v2/rabbit/hill/land/hills.webp"
+      },
+      {
+       "src": "art/v2/rabbit/hill/land/ground.webp"
+      }
+     ],
+     "dolls": {
+      "rabbit": {
+       "stand": [
+        58,
+        19.1
+       ],
+       "run": [
+        58,
+        19.1
+       ]
+      },
+      "turtle": {
+       "walk": [
+        58,
+        19.1
+       ],
+       "stand": [
+        58,
+        19.1
+       ]
+      }
+     },
+     "flutter": [
+      [
+       "art/v2/rabbit/butterfly.webp",
+       44,
+       56,
+       1.9
+      ]
+     ]
+    },
+    "port": {
+     "ratio": 0.4607471575527883,
+     "back": [
+      {
+       "src": "art/v2/rabbit/hill/port/sky.webp"
+      },
+      {
+       "src": "art/v2/rabbit/cloud1.webp",
+       "drift": [
+        9,
+        46.8,
+        150
+       ],
+       "alpha": 0.5
+      },
+      {
+       "src": "art/v2/rabbit/cloud2.webp",
+       "drift": [
+        19,
+        23.4,
+        110
+       ],
+       "alpha": 0.45
+      },
+      {
+       "src": "art/v2/rabbit/hill/port/ridges.webp"
+      },
+      {
+       "src": "art/v2/rabbit/hill/port/hills.webp"
+      },
+      {
+       "src": "art/v2/rabbit/hill/port/ground.webp"
+      }
+     ],
+     "dolls": {
+      "rabbit": {
+       "stand": [
+        50,
+        31.0
+       ],
+       "run": [
+        50,
+        31.0
+       ]
+      },
+      "turtle": {
+       "walk": [
+        50,
+        31.0
+       ],
+       "stand": [
+        50,
+        31.0
+       ]
+      }
+     },
+     "flutter": [
+      [
+       "art/v2/rabbit/butterfly.webp",
+       44,
+       52,
+       4.5
+      ]
+     ]
+    }
+   }
+  },
+  "finish_v2": {
+   "layers": {},
+   "fx": "fireflies",
+   "formats": {
+    "tab": {
+     "ratio": 1.5,
+     "back": [
+      {
+       "src": "art/v2/rabbit/finish/tab/sky.webp"
+      },
+      {
+       "src": "art/v2/moon.webp",
+       "moon": [
+        36,
+        14,
+        10
+       ]
+      },
+      {
+       "src": "art/v2/rabbit/finish/tab/ridges.webp"
+      },
+      {
+       "src": "art/v2/rabbit/finish/tab/hills.webp"
+      },
+      {
+       "src": "art/v2/rabbit/finish/tab/gate.webp"
+      },
+      {
+       "src": "art/v2/rabbit/finish/tab/trees.webp",
+       "breeze": true
+      },
+      {
+       "src": "art/v2/rabbit/finish/tab/ground.webp"
+      }
+     ],
+     "dolls": {
+      "rabbit": {
+       "run": [
+        24,
+        20.7
+       ],
+       "stand": [
+        24,
+        20.6
+       ],
+       "sit": [
+        62,
+        20.5
+       ]
+      },
+      "turtle": {
+       "walk": [
+        56,
+        20.4
+       ],
+       "stand": [
+        56,
+        20.4
+       ],
+       "sit": [
+        38,
+        20.5
+       ]
+      }
+     },
+     "sway": [
+      [
+       "art/v2/rabbit/finish/tab/flags0.webp",
+       5.79,
+       6.05
+      ],
+      [
+       "art/v2/rabbit/finish/tab/flags1.webp",
+       18.49,
+       6.05
+      ],
+      [
+       "art/v2/rabbit/finish/tab/flags4.webp",
+       52.67,
+       6.05
+      ],
+      [
+       "art/v2/rabbit/finish/tab/flags5.webp",
+       63.87,
+       5.99
+      ],
+      [
+       "art/v2/rabbit/finish/tab/flags6.webp",
+       75.72,
+       6.05
+      ],
+      [
+       "art/v2/rabbit/finish/tab/flags7.webp",
+       88.02,
+       5.99
+      ],
+      [
+       "art/v2/rabbit/finish/tab/lanterns0.webp",
+       4.49,
+       8.72,
+       "hearth"
+      ],
+      [
+       "art/v2/rabbit/finish/tab/lanterns1.webp",
+       24.54,
+       8.27,
+       "hearth"
+      ],
+      [
+       "art/v2/rabbit/finish/tab/lanterns2.webp",
+       44.53,
+       9.18,
+       "hearth"
+      ],
+      [
+       "art/v2/rabbit/finish/tab/lanterns3.webp",
+       63.15,
+       8.33,
+       "hearth"
+      ],
+      [
+       "art/v2/rabbit/finish/tab/lanterns4.webp",
+       85.03,
+       9.05,
+       "hearth"
+      ]
+     ]
+    },
+    "land": {
+     "ratio": 2.1617819460726846,
+     "back": [
+      {
+       "src": "art/v2/rabbit/finish/land/sky.webp"
+      },
+      {
+       "src": "art/v2/moon.webp",
+       "moon": [
+        22,
+        12,
+        7.5
+       ]
+      },
+      {
+       "src": "art/v2/rabbit/finish/land/ridges.webp"
+      },
+      {
+       "src": "art/v2/rabbit/finish/land/hills.webp"
+      },
+      {
+       "src": "art/v2/rabbit/finish/land/gate.webp"
+      },
+      {
+       "src": "art/v2/rabbit/finish/land/trees.webp",
+       "breeze": true
+      },
+      {
+       "src": "art/v2/rabbit/finish/land/ground.webp"
+      }
+     ],
+     "dolls": {
+      "rabbit": {
+       "run": [
+        30,
+        17.7
+       ],
+       "stand": [
+        30,
+        17.6
+       ],
+       "sit": [
+        58,
+        17.6
+       ]
+      },
+      "turtle": {
+       "walk": [
+        53,
+        17.6
+       ],
+       "stand": [
+        53,
+        17.6
+       ],
+       "sit": [
+        42,
+        17.8
+       ]
+      }
+     },
+     "sway": [
+      [
+       "art/v2/rabbit/finish/land/flags0.webp",
+       12.83,
+       5.34
+      ],
+      [
+       "art/v2/rabbit/finish/land/flags2.webp",
+       35.63,
+       5.34
+      ],
+      [
+       "art/v2/rabbit/finish/land/flags3.webp",
+       47.33,
+       5.34
+      ],
+      [
+       "art/v2/rabbit/finish/land/flags4.webp",
+       59.03,
+       5.34
+      ],
+      [
+       "art/v2/rabbit/finish/land/flags5.webp",
+       70.13,
+       5.34
+      ],
+      [
+       "art/v2/rabbit/finish/land/flags6.webp",
+       81.83,
+       5.39
+      ],
+      [
+       "art/v2/rabbit/finish/land/lanterns0.webp",
+       13.32,
+       5.44,
+       "hearth"
+      ],
+      [
+       "art/v2/rabbit/finish/land/lanterns1.webp",
+       30.4,
+       5.61,
+       "hearth"
+      ],
+      [
+       "art/v2/rabbit/finish/land/lanterns2.webp",
+       47.33,
+       5.44,
+       "hearth"
+      ],
+      [
+       "art/v2/rabbit/finish/land/lanterns3.webp",
+       64.1,
+       5.61,
+       "hearth"
+      ],
+      [
+       "art/v2/rabbit/finish/land/lanterns4.webp",
+       82.1,
+       5.39,
+       "hearth"
+      ]
+     ]
+    },
+    "port": {
+     "ratio": 0.4607471575527883,
+     "back": [
+      {
+       "src": "art/v2/rabbit/finish/port/sky.webp"
+      },
+      {
+       "src": "art/v2/moon.webp",
+       "moon": [
+        22,
+        26,
+        18
+       ]
+      },
+      {
+       "src": "art/v2/rabbit/finish/port/ridges.webp"
+      },
+      {
+       "src": "art/v2/rabbit/finish/port/hills.webp"
+      },
+      {
+       "src": "art/v2/rabbit/finish/port/gate.webp"
+      },
+      {
+       "src": "art/v2/rabbit/finish/port/trees.webp",
+       "breeze": true
+      },
+      {
+       "src": "art/v2/rabbit/finish/port/ground.webp"
+      }
+     ],
+     "dolls": {
+      "rabbit": {
+       "run": [
+        34,
+        29.6
+       ],
+       "stand": [
+        34,
+        29.6
+       ],
+       "sit": [
+        66,
+        27.9
+       ]
+      },
+      "turtle": {
+       "walk": [
+        68,
+        27.0
+       ],
+       "stand": [
+        68,
+        27.0
+       ],
+       "sit": [
+        34,
+        28.7
+       ]
+      }
+     },
+     "sway": [
+      [
+       "art/v2/rabbit/finish/port/flags0.webp",
+       2.94,
+       9.05
+      ],
+      [
+       "art/v2/rabbit/finish/port/flags1.webp",
+       17.04,
+       9.05
+      ],
+      [
+       "art/v2/rabbit/finish/port/flags2.webp",
+       31.02,
+       9.05
+      ],
+      [
+       "art/v2/rabbit/finish/port/flags3.webp",
+       45.48,
+       9.05
+      ],
+      [
+       "art/v2/rabbit/finish/port/flags4.webp",
+       59.93,
+       9.05
+      ],
+      [
+       "art/v2/rabbit/finish/port/flags5.webp",
+       74.03,
+       8.93
+      ],
+      [
+       "art/v2/rabbit/finish/port/flags6.webp",
+       88.13,
+       8.93
+      ],
+      [
+       "art/v2/rabbit/finish/port/lanterns0.webp",
+       4.7,
+       11.52,
+       "hearth"
+      ],
+      [
+       "art/v2/rabbit/finish/port/lanterns1.webp",
+       23.85,
+       11.63,
+       "hearth"
+      ],
+      [
+       "art/v2/rabbit/finish/port/lanterns2.webp",
+       43.95,
+       11.99,
+       "hearth"
+      ],
+      [
+       "art/v2/rabbit/finish/port/lanterns3.webp",
+       64.04,
+       11.63,
+       "hearth"
+      ],
+      [
+       "art/v2/rabbit/finish/port/lanterns4.webp",
+       84.96,
+       11.75,
+       "hearth"
+      ]
+     ]
     }
    }
   }
@@ -437,7 +1267,16 @@
    "v2": {
     "sleep": "art/v2/dolls/rabbit_sleep.webp",
     "stand": "art/v2/dolls/rabbit_stand.webp",
+    "sit": "art/v2/dolls/rabbit_sit.webp",
+    "run": "art/v2/dolls/rabbit_run.webp",
     "jump": "art/v2/dolls/rabbit_jump.webp"
+   },
+   "v2w": {
+    "sleep": 28.2,
+    "stand": 13,
+    "sit": 13,
+    "run": 22,
+    "jump": 20
    }
   },
   "turtle": {
@@ -454,7 +1293,14 @@
    "w": 26,
    "frameMs": 420,
    "v2": {
-    "walk": "art/v2/dolls/turtle_walk.webp"
+    "walk": "art/v2/dolls/turtle_walk.webp",
+    "stand": "art/v2/dolls/turtle_stand.webp",
+    "sit": "art/v2/dolls/turtle_sit.webp"
+   },
+   "v2w": {
+    "walk": 20.3,
+    "stand": 17.5,
+    "sit": 20.5
    }
   },
   "owl": {
@@ -463,8 +1309,11 @@
    },
    "w": 11,
    "front": true,
-    "v2": {
+   "v2": {
     "perch": "art/v2/dolls/owl.webp"
+   },
+   "v2w": {
+    "perch": 6.5
    }
   }
  },
@@ -794,5 +1643,10 @@
  },
  "end": {
   "fadeOut": 8000
+ },
+ "v2scale": {
+  "tab": 1,
+  "land": 0.78,
+  "port": 1.5
  }
 }

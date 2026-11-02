@@ -1,0 +1,65 @@
+[
+{
+"id": "village_tab_comp",
+"out": "art/v2/rabbit/village/tab/comp.webp",
+"ref": "art_src/v2_pilot/b_land2.png",
+"sky": true,
+"prompt": "A new scene, a 3:2 picture. Same framing and aspect ratio as the reference. A quiet little Korean mountain village at a very pale clear DAWN: the palest clear blue-grey sky, the lightest picture in the series, soft mist, no moon. Two or three very small round thatched-roof cottages as dark simple shapes with no windows sit far back on the middle hills, on the left and right thirds, none in the centre. One leafy tree mass at the far left edge rises off the top. Empty sky in the upper part for clouds. The dark foreground ground top edge is at about 86% of the image height down from the top, nearly level across the centre; below that solid dark ground. Keep exactly the same art style as the reference: painterly hanji-paper grain, big simple rounded Korean mountain ridges in layers of mist, moonlight indigo blue palette, simple large masses, no lace, no holes, no patterns, no flowers. ABSOLUTELY NO characters, animals or people in this picture: the centre of the foreground stays empty for puppets to be added later."
+},
+{
+"id": "village_land_comp",
+"out": "art/v2/rabbit/village/land/comp.webp",
+"ref": "art_src/v2_pilot/phone/land_raw.png",
+"sky": true,
+"prompt": "A new scene, a very wide 2.17:1 panorama for a phone held sideways. Same framing and aspect ratio as the reference. A quiet little Korean mountain village at a very pale clear DAWN: the palest clear blue-grey sky, the lightest picture in the series, soft mist, no moon. Two or three very small round thatched-roof cottages as dark simple shapes with no windows sit far back on the middle hills, on the left and right thirds, none in the centre. One leafy tree mass at the far left edge rises off the top. Empty sky in the upper part for clouds. The dark foreground ground top edge is at about 89% of the image height down from the top, nearly level across the centre; below that solid dark ground. Keep exactly the same art style as the reference: painterly hanji-paper grain, big simple rounded Korean mountain ridges in layers of mist, moonlight indigo blue palette, simple large masses, no lace, no holes, no patterns, no flowers. ABSOLUTELY NO characters, animals or people in this picture: the centre of the foreground stays empty for puppets to be added later."
+},
+{
+"id": "village_port_comp",
+"out": "art/v2/rabbit/village/port/comp.webp",
+"ref": "art_src/v2_pilot/phone/port_raw.png",
+"sky": true,
+"prompt": "A new scene, a very tall narrow 9:19.5 picture for a phone held upright. Same framing and aspect ratio as the reference. A quiet little Korean mountain village at a very pale clear DAWN: the palest clear blue-grey sky, the lightest picture in the series, soft mist, no moon. Two or three very small round thatched-roof cottages as dark simple shapes with no windows sit far back on the middle hills, on the left and right thirds, none in the centre. One leafy tree mass at the far left edge rises off the top. Empty sky in the upper part for clouds. The dark foreground ground top edge is at about 72% of the image height down from the top, nearly level across the centre; below that solid dark ground down to the bottom edge, about 28% of the height. Keep exactly the same art style as the reference: painterly hanji-paper grain, big simple rounded Korean mountain ridges in layers of mist, moonlight indigo blue palette, simple large masses, no lace, no holes, no patterns, no flowers. ABSOLUTELY NO characters, animals or people in this picture: the centre of the foreground stays empty for puppets to be added later."
+},
+{
+"id": "hill_tab_comp",
+"out": "art/v2/rabbit/hill/tab/comp.webp",
+"ref": "art_src/v2_pilot/b_land2.png",
+"sky": true,
+"prompt": "A new scene, a 3:2 picture. Same framing and aspect ratio as the reference. A long green-less grassy hillside at dusk: medium indigo sky with soft mist, no moon, big rounded ridges far behind, one wide open meadow slope rising very gently from the left to the right in the foreground, with a few short grass tufts along its edge and nothing else. No trees in the foreground. Lots of open sky. The dark foreground ground top edge is at about 86% of the image height down from the top, nearly level across the centre; below that solid dark ground. Keep exactly the same art style as the reference: painterly hanji-paper grain, big simple rounded Korean mountain ridges in layers of mist, moonlight indigo blue palette, simple large masses, no lace, no holes, no patterns, no flowers. ABSOLUTELY NO characters, animals or people in this picture: the centre of the foreground stays empty for puppets to be added later."
+},
+{
+"id": "hill_land_comp",
+"out": "art/v2/rabbit/hill/land/comp.webp",
+"ref": "art_src/v2_pilot/phone/land_raw.png",
+"sky": true,
+"prompt": "A new scene, a very wide 2.17:1 panorama for a phone held sideways. Same framing and aspect ratio as the reference. A long green-less grassy hillside at dusk: medium indigo sky with soft mist, no moon, big rounded ridges far behind, one wide open meadow slope rising very gently from the left to the right in the foreground, with a few short grass tufts along its edge and nothing else. No trees in the foreground. Lots of open sky. The dark foreground ground top edge is at about 89% of the image height down from the top, nearly level across the centre; below that solid dark ground. Keep exactly the same art style as the reference: painterly hanji-paper grain, big simple rounded Korean mountain ridges in layers of mist, moonlight indigo blue palette, simple large masses, no lace, no holes, no patterns, no flowers. ABSOLUTELY NO characters, animals or people in this picture: the centre of the foreground stays empty for puppets to be added later."
+},
+{
+"id": "hill_port_comp",
+"out": "art/v2/rabbit/hill/port/comp.webp",
+"ref": "art_src/v2_pilot/phone/port_raw.png",
+"sky": true,
+"prompt": "A new scene, a very tall narrow 9:19.5 picture for a phone held upright. Same framing and aspect ratio as the reference. A long green-less grassy hillside at dusk: medium indigo sky with soft mist, no moon, big rounded ridges far behind, one wide open meadow slope rising very gently from the left to the right in the foreground, with a few short grass tufts along its edge and nothing else. No trees in the foreground. Lots of open sky. The dark foreground ground top edge is at about 72% of the image height down from the top, nearly level across the centre; below that solid dark ground down to the bottom edge, about 28% of the height. Keep exactly the same art style as the reference: painterly hanji-paper grain, big simple rounded Korean mountain ridges in layers of mist, moonlight indigo blue palette, simple large masses, no lace, no holes, no patterns, no flowers. ABSOLUTELY NO characters, animals or people in this picture: the centre of the foreground stays empty for puppets to be added later."
+},
+{
+"id": "finish_tab_comp",
+"out": "art/v2/rabbit/finish/tab/comp.webp",
+"ref": "art_src/v2_pilot/b_land2.png",
+"sky": true,
+"prompt": "A new scene, a 3:2 picture. Same framing and aspect ratio as the reference. A forest clearing at deep night, the darkest of the series: deep indigo sky with a round pale moon in the upper left part, dark rounded ridges, big rounded dark tree masses at the far left and far right edges framing a clearing. In the back at the centre, a very simple finish gate: two slim wooden posts with one plain blank banner between them, dark silhouette, no writing. On both sides of the gate, small simple solid silhouettes of little forest animals watching are NOT included; keep it empty. The dark foreground ground top edge is at about 86% of the image height down from the top, nearly level across the centre; below that solid dark ground. Keep exactly the same art style as the reference: painterly hanji-paper grain, big simple rounded Korean mountain ridges in layers of mist, moonlight indigo blue palette, simple large masses, no lace, no holes, no patterns, no flowers. ABSOLUTELY NO characters, animals or people in this picture: the centre of the foreground stays empty for puppets to be added later."
+},
+{
+"id": "finish_land_comp",
+"out": "art/v2/rabbit/finish/land/comp.webp",
+"ref": "art_src/v2_pilot/phone/land_raw.png",
+"sky": true,
+"prompt": "A new scene, a very wide 2.17:1 panorama for a phone held sideways. Same framing and aspect ratio as the reference. A forest clearing at deep night, the darkest of the series: deep indigo sky with a round pale moon in the upper left part, dark rounded ridges, big rounded dark tree masses at the far left and far right edges framing a clearing. In the back at the centre, a very simple finish gate: two slim wooden posts with one plain blank banner between them, dark silhouette, no writing. On both sides of the gate, small simple solid silhouettes of little forest animals watching are NOT included; keep it empty. The dark foreground ground top edge is at about 89% of the image height down from the top, nearly level across the centre; below that solid dark ground. Keep exactly the same art style as the reference: painterly hanji-paper grain, big simple rounded Korean mountain ridges in layers of mist, moonlight indigo blue palette, simple large masses, no lace, no holes, no patterns, no flowers. ABSOLUTELY NO characters, animals or people in this picture: the centre of the foreground stays empty for puppets to be added later."
+},
+{
+"id": "finish_port_comp",
+"out": "art/v2/rabbit/finish/port/comp.webp",
+"ref": "art_src/v2_pilot/phone/port_raw.png",
+"sky": true,
+"prompt": "A new scene, a very tall narrow 9:19.5 picture for a phone held upright. Same framing and aspect ratio as the reference. A forest clearing at deep night, the darkest of the series: deep indigo sky with a round pale moon in the upper left part, dark rounded ridges, big rounded dark tree masses at the far left and far right edges framing a clearing. In the back at the centre, a very simple finish gate: two slim wooden posts with one plain blank banner between them, dark silhouette, no writing. On both sides of the gate, small simple solid silhouettes of little forest animals watching are NOT included; keep it empty. The dark foreground ground top edge is at about 72% of the image height down from the top, nearly level across the centre; below that solid dark ground down to the bottom edge, about 28% of the height. Keep exactly the same art style as the reference: painterly hanji-paper grain, big simple rounded Korean mountain ridges in layers of mist, moonlight indigo blue palette, simple large masses, no lace, no holes, no patterns, no flowers. ABSOLUTELY NO characters, animals or people in this picture: the centre of the foreground stays empty for puppets to be added later."
+}
+]

@@ -18,7 +18,7 @@ def generate(job, raw):
     pf = raw + '.prompt.txt'
     open(pf, 'w').write(job['prompt'] + ('' if job.get('sky') else KEY))
     ref = f" Pass this reference image in referenced_image_paths (read-only): {os.path.join(ROOT, job['ref'])} ." if job.get('ref') else ''
-    inst = (f'Use your image generation tool (image_gen.imagegen) to create ONE image in the same aspect ratio as the reference. Read the full prompt from {pf} and pass it VERBATIM.{ref} '
+    inst = (f'Use your image generation tool (image_gen.imagegen) to create ONE image in exactly the same aspect ratio as the reference. Read the full prompt from {pf} and pass it VERBATIM.{ref} '
             f'Save (copy) the generated image to {raw} . No other file changes, no installs, no git. Reply only SAVED or FAILED <reason>.')
     r = subprocess.run([CODEX, 'exec', '-s', 'workspace-write', '--skip-git-repo-check', '-C', ROOT, inst], stdin=subprocess.DEVNULL, capture_output=True, text=True, timeout=420)
     os.remove(pf)

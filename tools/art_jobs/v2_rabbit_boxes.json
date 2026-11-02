@@ -1,0 +1,341 @@
+[
+{
+"id": "village_tab_sky",
+"out": "art/v2/rabbit/village/tab/sky.webp",
+"ref": "art_src/v2/rabbit/village/tab/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the empty sky and glow as one full-bleed painting with the same colour gradient as the reference. No moon, no mountains, no hills, no trees, no cottages, no gate, no clouds. Fill the whole image.",
+"sky": true
+},
+{
+"id": "village_tab_ridges",
+"out": "art/v2/rabbit/village/tab/ridges.webp",
+"ref": "art_src/v2/rabbit/village/tab/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the farthest pale rounded mountain ridges only, extended smoothly across the full width behind everything, continuing down to the bottom edge as a solid area. No trees, no cottages, no moon, no gate, no foreground."
+},
+{
+"id": "village_tab_hills",
+"out": "art/v2/rabbit/village/tab/hills.webp",
+"ref": "art_src/v2/rabbit/village/tab/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the nearer darker rounded bushy hills with their little pines and the small dark thatched cottages and the pale misty meadow below them, extended across the full width, continuing down to the bottom edge as a solid area that fades to pale mist. No far mountains, no sky, no big foreground tree, no gate, no moon."
+},
+{
+"id": "village_tab_tree",
+"out": "art/v2/rabbit/village/tab/tree.webp",
+"ref": "art_src/v2/rabbit/village/tab/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the big dark foreground tree or trees at the side edges with their trunks and leafy crowns, going off the image edges as in the reference, and extending a little below the ground line. No ground, no grass, no hills, no gate, no moon."
+},
+{
+"id": "village_tab_ground",
+"out": "art/v2/rabbit/village/tab/ground.webp",
+"ref": "art_src/v2/rabbit/village/tab/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the dark foreground ground with its grass tufts. One continuous completely opaque dark navy mass, a little lighter than pure black, with no pale patches and no gaps, solid all the way down to the bottom edge and from the left edge to the right edge, extended smoothly under where the trees stand, its top edge at exactly the same height as the reference. No tree trunks, no gate."
+},
+{
+"id": "village_land_sky",
+"out": "art/v2/rabbit/village/land/sky.webp",
+"ref": "art_src/v2/rabbit/village/land/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the empty sky and glow as one full-bleed painting with the same colour gradient as the reference. No moon, no mountains, no hills, no trees, no cottages, no gate, no clouds. Fill the whole image.",
+"sky": true
+},
+{
+"id": "village_land_ridges",
+"out": "art/v2/rabbit/village/land/ridges.webp",
+"ref": "art_src/v2/rabbit/village/land/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the farthest pale rounded mountain ridges only, extended smoothly across the full width behind everything, continuing down to the bottom edge as a solid area. No trees, no cottages, no moon, no gate, no foreground."
+},
+{
+"id": "village_land_hills",
+"out": "art/v2/rabbit/village/land/hills.webp",
+"ref": "art_src/v2/rabbit/village/land/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the nearer darker rounded bushy hills with their little pines and the small dark thatched cottages and the pale misty meadow below them, extended across the full width, continuing down to the bottom edge as a solid area that fades to pale mist. No far mountains, no sky, no big foreground tree, no gate, no moon."
+},
+{
+"id": "village_land_tree",
+"out": "art/v2/rabbit/village/land/tree.webp",
+"ref": "art_src/v2/rabbit/village/land/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the big dark foreground tree or trees at the side edges with their trunks and leafy crowns, going off the image edges as in the reference, and extending a little below the ground line. No ground, no grass, no hills, no gate, no moon."
+},
+{
+"id": "village_land_ground",
+"out": "art/v2/rabbit/village/land/ground.webp",
+"ref": "art_src/v2/rabbit/village/land/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the dark foreground ground with its grass tufts. One continuous completely opaque dark navy mass, a little lighter than pure black, with no pale patches and no gaps, solid all the way down to the bottom edge and from the left edge to the right edge, extended smoothly under where the trees stand, its top edge at exactly the same height as the reference. No tree trunks, no gate."
+},
+{
+"id": "village_port_sky",
+"out": "art/v2/rabbit/village/port/sky.webp",
+"ref": "art_src/v2/rabbit/village/port/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the empty sky and glow as one full-bleed painting with the same colour gradient as the reference. No moon, no mountains, no hills, no trees, no cottages, no gate, no clouds. Fill the whole image.",
+"sky": true
+},
+{
+"id": "village_port_ridges",
+"out": "art/v2/rabbit/village/port/ridges.webp",
+"ref": "art_src/v2/rabbit/village/port/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the farthest pale rounded mountain ridges only, extended smoothly across the full width behind everything, continuing down to the bottom edge as a solid area. No trees, no cottages, no moon, no gate, no foreground."
+},
+{
+"id": "village_port_hills",
+"out": "art/v2/rabbit/village/port/hills.webp",
+"ref": "art_src/v2/rabbit/village/port/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the nearer darker rounded bushy hills with their little pines and the small dark thatched cottages and the pale misty meadow below them, extended across the full width, continuing down to the bottom edge as a solid area that fades to pale mist. No far mountains, no sky, no big foreground tree, no gate, no moon."
+},
+{
+"id": "village_port_tree",
+"out": "art/v2/rabbit/village/port/tree.webp",
+"ref": "art_src/v2/rabbit/village/port/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the big dark foreground tree or trees at the side edges with their trunks and leafy crowns, going off the image edges as in the reference, and extending a little below the ground line. No ground, no grass, no hills, no gate, no moon."
+},
+{
+"id": "village_port_ground",
+"out": "art/v2/rabbit/village/port/ground.webp",
+"ref": "art_src/v2/rabbit/village/port/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the dark foreground ground with its grass tufts. One continuous completely opaque dark navy mass, a little lighter than pure black, with no pale patches and no gaps, solid all the way down to the bottom edge and from the left edge to the right edge, extended smoothly under where the trees stand, its top edge at exactly the same height as the reference. No tree trunks, no gate."
+},
+{
+"id": "hill_tab_sky",
+"out": "art/v2/rabbit/hill/tab/sky.webp",
+"ref": "art_src/v2/rabbit/hill/tab/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the empty sky and glow as one full-bleed painting with the same colour gradient as the reference. No moon, no mountains, no hills, no trees, no cottages, no gate, no clouds. Fill the whole image.",
+"sky": true
+},
+{
+"id": "hill_tab_ridges",
+"out": "art/v2/rabbit/hill/tab/ridges.webp",
+"ref": "art_src/v2/rabbit/hill/tab/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the farthest pale rounded mountain ridges only, extended smoothly across the full width behind everything, continuing down to the bottom edge as a solid area. No trees, no cottages, no moon, no gate, no foreground."
+},
+{
+"id": "hill_tab_hills",
+"out": "art/v2/rabbit/hill/tab/hills.webp",
+"ref": "art_src/v2/rabbit/hill/tab/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the nearer darker rounded bushy hills with their little pines and the pale misty meadow below them, extended across the full width, continuing down to the bottom edge as a solid area that fades to pale mist. No far mountains, no sky, no big foreground tree, no gate, no moon."
+},
+{
+"id": "hill_tab_ground",
+"out": "art/v2/rabbit/hill/tab/ground.webp",
+"ref": "art_src/v2/rabbit/hill/tab/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the dark foreground ground with its grass tufts. One continuous completely opaque dark navy mass, a little lighter than pure black, with no pale patches and no gaps, solid all the way down to the bottom edge and from the left edge to the right edge, extended smoothly under where the trees stand, its top edge at exactly the same height as the reference. No tree trunks, no gate."
+},
+{
+"id": "hill_land_sky",
+"out": "art/v2/rabbit/hill/land/sky.webp",
+"ref": "art_src/v2/rabbit/hill/land/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the empty sky and glow as one full-bleed painting with the same colour gradient as the reference. No moon, no mountains, no hills, no trees, no cottages, no gate, no clouds. Fill the whole image.",
+"sky": true
+},
+{
+"id": "hill_land_ridges",
+"out": "art/v2/rabbit/hill/land/ridges.webp",
+"ref": "art_src/v2/rabbit/hill/land/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the farthest pale rounded mountain ridges only, extended smoothly across the full width behind everything, continuing down to the bottom edge as a solid area. No trees, no cottages, no moon, no gate, no foreground."
+},
+{
+"id": "hill_land_hills",
+"out": "art/v2/rabbit/hill/land/hills.webp",
+"ref": "art_src/v2/rabbit/hill/land/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the nearer darker rounded bushy hills with their little pines and the pale misty meadow below them, extended across the full width, continuing down to the bottom edge as a solid area that fades to pale mist. No far mountains, no sky, no big foreground tree, no gate, no moon."
+},
+{
+"id": "hill_land_ground",
+"out": "art/v2/rabbit/hill/land/ground.webp",
+"ref": "art_src/v2/rabbit/hill/land/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the dark foreground ground with its grass tufts. One continuous completely opaque dark navy mass, a little lighter than pure black, with no pale patches and no gaps, solid all the way down to the bottom edge and from the left edge to the right edge, extended smoothly under where the trees stand, its top edge at exactly the same height as the reference. No tree trunks, no gate."
+},
+{
+"id": "hill_port_sky",
+"out": "art/v2/rabbit/hill/port/sky.webp",
+"ref": "art_src/v2/rabbit/hill/port/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the empty sky and glow as one full-bleed painting with the same colour gradient as the reference. No moon, no mountains, no hills, no trees, no cottages, no gate, no clouds. Fill the whole image.",
+"sky": true
+},
+{
+"id": "hill_port_ridges",
+"out": "art/v2/rabbit/hill/port/ridges.webp",
+"ref": "art_src/v2/rabbit/hill/port/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the farthest pale rounded mountain ridges only, extended smoothly across the full width behind everything, continuing down to the bottom edge as a solid area. No trees, no cottages, no moon, no gate, no foreground."
+},
+{
+"id": "hill_port_hills",
+"out": "art/v2/rabbit/hill/port/hills.webp",
+"ref": "art_src/v2/rabbit/hill/port/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the nearer darker rounded bushy hills with their little pines and the pale misty meadow below them, extended across the full width, continuing down to the bottom edge as a solid area that fades to pale mist. No far mountains, no sky, no big foreground tree, no gate, no moon."
+},
+{
+"id": "hill_port_ground",
+"out": "art/v2/rabbit/hill/port/ground.webp",
+"ref": "art_src/v2/rabbit/hill/port/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the dark foreground ground with its grass tufts. One continuous completely opaque dark navy mass, a little lighter than pure black, with no pale patches and no gaps, solid all the way down to the bottom edge and from the left edge to the right edge, extended smoothly under where the trees stand, its top edge at exactly the same height as the reference. No tree trunks, no gate."
+},
+{
+"id": "finish_tab_sky",
+"out": "art/v2/rabbit/finish/tab/sky.webp",
+"ref": "art_src/v2/rabbit/finish/tab/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the empty sky and glow as one full-bleed painting with the same colour gradient as the reference. No moon, no mountains, no hills, no trees, no cottages, no gate, no clouds. Fill the whole image.",
+"sky": true
+},
+{
+"id": "finish_tab_ridges",
+"out": "art/v2/rabbit/finish/tab/ridges.webp",
+"ref": "art_src/v2/rabbit/finish/tab/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the farthest pale rounded mountain ridges only, extended smoothly across the full width behind everything, continuing down to the bottom edge as a solid area. No trees, no cottages, no moon, no gate, no foreground."
+},
+{
+"id": "finish_tab_hills",
+"out": "art/v2/rabbit/finish/tab/hills.webp",
+"ref": "art_src/v2/rabbit/finish/tab/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the nearer darker rounded bushy hills with their little pines and the pale misty meadow below them, extended across the full width, continuing down to the bottom edge as a solid area that fades to pale mist. No far mountains, no sky, no big foreground tree, no gate, no moon."
+},
+{
+"id": "finish_tab_trees",
+"out": "art/v2/rabbit/finish/tab/trees.webp",
+"ref": "art_src/v2/rabbit/finish/tab/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the big dark foreground tree or trees at the side edges with their trunks and leafy crowns, going off the image edges as in the reference, and extending a little below the ground line. No ground, no grass, no hills, no gate, no moon."
+},
+{
+"id": "finish_tab_gate",
+"out": "art/v2/rabbit/finish/tab/gate.webp",
+"ref": "art_src/v2/rabbit/finish/tab/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the simple finish gate: two slim wooden posts and the one plain blank banner between them, extended a little below the ground line. No writing. No ground, no grass, no hills, no trees."
+},
+{
+"id": "finish_tab_ground",
+"out": "art/v2/rabbit/finish/tab/ground.webp",
+"ref": "art_src/v2/rabbit/finish/tab/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the dark foreground ground with its grass tufts. One continuous completely opaque dark navy mass, a little lighter than pure black, with no pale patches and no gaps, solid all the way down to the bottom edge and from the left edge to the right edge, extended smoothly under where the trees stand, its top edge at exactly the same height as the reference. No tree trunks, no gate."
+},
+{
+"id": "finish_tab_flags",
+"out": "art/v2/rabbit/finish/tab/flags.webp",
+"ref": "art_src/v2/rabbit/finish/tab/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: NEW element to add to this scene: six to eight separate small triangular pennant flags, each hanging on its own short thin cord straight down from the very top edge of the image, like bunting whose string is above the frame, spread evenly across the width between the trees, clear gaps between flags, in a few moonlit blue tones with painted grain. Each flag is attached only to the top edge. Nothing else."
+},
+{
+"id": "finish_tab_lanterns",
+"out": "art/v2/rabbit/finish/tab/lanterns.webp",
+"ref": "art_src/v2/rabbit/finish/tab/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: NEW element to add to this scene: five separate small round paper lanterns glowing warm amber-orange with a soft painted glow inside and a dark cap, each hanging on its own thin dark cord straight down from the very top edge of the image at different lengths, spread across the width with clear gaps. Each is attached only to the top edge. Nothing else.",
+"warm": true
+},
+{
+"id": "finish_land_sky",
+"out": "art/v2/rabbit/finish/land/sky.webp",
+"ref": "art_src/v2/rabbit/finish/land/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the empty sky and glow as one full-bleed painting with the same colour gradient as the reference. No moon, no mountains, no hills, no trees, no cottages, no gate, no clouds. Fill the whole image.",
+"sky": true
+},
+{
+"id": "finish_land_ridges",
+"out": "art/v2/rabbit/finish/land/ridges.webp",
+"ref": "art_src/v2/rabbit/finish/land/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the farthest pale rounded mountain ridges only, extended smoothly across the full width behind everything, continuing down to the bottom edge as a solid area. No trees, no cottages, no moon, no gate, no foreground."
+},
+{
+"id": "finish_land_hills",
+"out": "art/v2/rabbit/finish/land/hills.webp",
+"ref": "art_src/v2/rabbit/finish/land/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the nearer darker rounded bushy hills with their little pines and the pale misty meadow below them, extended across the full width, continuing down to the bottom edge as a solid area that fades to pale mist. No far mountains, no sky, no big foreground tree, no gate, no moon."
+},
+{
+"id": "finish_land_trees",
+"out": "art/v2/rabbit/finish/land/trees.webp",
+"ref": "art_src/v2/rabbit/finish/land/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the big dark foreground tree or trees at the side edges with their trunks and leafy crowns, going off the image edges as in the reference, and extending a little below the ground line. No ground, no grass, no hills, no gate, no moon."
+},
+{
+"id": "finish_land_gate",
+"out": "art/v2/rabbit/finish/land/gate.webp",
+"ref": "art_src/v2/rabbit/finish/land/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the simple finish gate: two slim wooden posts and the one plain blank banner between them, extended a little below the ground line. No writing. No ground, no grass, no hills, no trees."
+},
+{
+"id": "finish_land_ground",
+"out": "art/v2/rabbit/finish/land/ground.webp",
+"ref": "art_src/v2/rabbit/finish/land/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the dark foreground ground with its grass tufts. One continuous completely opaque dark navy mass, a little lighter than pure black, with no pale patches and no gaps, solid all the way down to the bottom edge and from the left edge to the right edge, extended smoothly under where the trees stand, its top edge at exactly the same height as the reference. No tree trunks, no gate."
+},
+{
+"id": "finish_land_flags",
+"out": "art/v2/rabbit/finish/land/flags.webp",
+"ref": "art_src/v2/rabbit/finish/land/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: NEW element to add to this scene: six to eight separate small triangular pennant flags, each hanging on its own short thin cord straight down from the very top edge of the image, like bunting whose string is above the frame, spread evenly across the width between the trees, clear gaps between flags, in a few moonlit blue tones with painted grain. Each flag is attached only to the top edge. Nothing else."
+},
+{
+"id": "finish_land_lanterns",
+"out": "art/v2/rabbit/finish/land/lanterns.webp",
+"ref": "art_src/v2/rabbit/finish/land/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: NEW element to add to this scene: five separate small round paper lanterns glowing warm amber-orange with a soft painted glow inside and a dark cap, each hanging on its own thin dark cord straight down from the very top edge of the image at different lengths, spread across the width with clear gaps. Each is attached only to the top edge. Nothing else.",
+"warm": true
+},
+{
+"id": "finish_port_sky",
+"out": "art/v2/rabbit/finish/port/sky.webp",
+"ref": "art_src/v2/rabbit/finish/port/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the empty sky and glow as one full-bleed painting with the same colour gradient as the reference. No moon, no mountains, no hills, no trees, no cottages, no gate, no clouds. Fill the whole image.",
+"sky": true
+},
+{
+"id": "finish_port_ridges",
+"out": "art/v2/rabbit/finish/port/ridges.webp",
+"ref": "art_src/v2/rabbit/finish/port/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the farthest pale rounded mountain ridges only, extended smoothly across the full width behind everything, continuing down to the bottom edge as a solid area. No trees, no cottages, no moon, no gate, no foreground."
+},
+{
+"id": "finish_port_hills",
+"out": "art/v2/rabbit/finish/port/hills.webp",
+"ref": "art_src/v2/rabbit/finish/port/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the nearer darker rounded bushy hills with their little pines and the pale misty meadow below them, extended across the full width, continuing down to the bottom edge as a solid area that fades to pale mist. No far mountains, no sky, no big foreground tree, no gate, no moon."
+},
+{
+"id": "finish_port_trees",
+"out": "art/v2/rabbit/finish/port/trees.webp",
+"ref": "art_src/v2/rabbit/finish/port/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the big dark foreground tree or trees at the side edges with their trunks and leafy crowns, going off the image edges as in the reference, and extending a little below the ground line. No ground, no grass, no hills, no gate, no moon."
+},
+{
+"id": "finish_port_gate",
+"out": "art/v2/rabbit/finish/port/gate.webp",
+"ref": "art_src/v2/rabbit/finish/port/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the simple finish gate: two slim wooden posts and the one plain blank banner between them, extended a little below the ground line. No writing. No ground, no grass, no hills, no trees."
+},
+{
+"id": "finish_port_ground",
+"out": "art/v2/rabbit/finish/port/ground.webp",
+"ref": "art_src/v2/rabbit/finish/port/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the dark foreground ground with its grass tufts. One continuous completely opaque dark navy mass, a little lighter than pure black, with no pale patches and no gaps, solid all the way down to the bottom edge and from the left edge to the right edge, extended smoothly under where the trees stand, its top edge at exactly the same height as the reference. No tree trunks, no gate."
+},
+{
+"id": "finish_port_flags",
+"out": "art/v2/rabbit/finish/port/flags.webp",
+"ref": "art_src/v2/rabbit/finish/port/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: NEW element to add to this scene: six to eight separate small triangular pennant flags, each hanging on its own short thin cord straight down from the very top edge of the image, like bunting whose string is above the frame, spread evenly across the width between the trees, clear gaps between flags, in a few moonlit blue tones with painted grain. Each flag is attached only to the top edge. Nothing else."
+},
+{
+"id": "finish_port_lanterns",
+"out": "art/v2/rabbit/finish/port/lanterns.webp",
+"ref": "art_src/v2/rabbit/finish/port/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: NEW element to add to this scene: five separate small round paper lanterns glowing warm amber-orange with a soft painted glow inside and a dark cap, each hanging on its own thin dark cord straight down from the very top edge of the image at different lengths, spread across the width with clear gaps. Each is attached only to the top edge. Nothing else.",
+"warm": true
+},
+{
+"id": "cloud1",
+"out": "art/v2/rabbit/cloud1.webp",
+"ref": "art_src/v2/rabbit/village/tab/comp.png",
+"solid": true,
+"prompt": "Same painterly hanji-paper look as the reference. ONE soft rounded long flat cloud, a simple big mass in very pale moonlit blue-white with a slightly darker painted underside. Nothing else."
+},
+{
+"id": "cloud2",
+"out": "art/v2/rabbit/cloud2.webp",
+"ref": "art_src/v2/rabbit/village/tab/comp.png",
+"solid": true,
+"prompt": "Same painterly hanji-paper look as the reference. ONE small puffy rounded cloud with three soft bumps, a simple mass in very pale moonlit blue-white with a slightly darker painted underside. Nothing else."
+},
+{
+"id": "butterfly",
+"out": "art/v2/rabbit/butterfly.webp",
+"ref": "art_src/v2/dolls/rabbit_stand.png",
+"solid": true,
+"prompt": "ONE small butterfly from the side with wings up, solid near-black paper silhouette in the same style as the reference, no patterns inside, no holes. Rounded and simple. Nothing else."
+}
+]

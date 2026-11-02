@@ -95,15 +95,27 @@
       for (const b of F.back) {
         const i = pic(b.src, 'lb-v2full');
         if (b.top) i.style.top = b.top + '%';
+        if (b.breeze) i.classList.add('lb-v2breeze');
+        if (b.drift) { // 하늘을 옆으로 흐르는 구름: [위치%, 너비%, 초]
+          i.className = 'lb-v2drift'; i.style.top = b.drift[0] + '%'; i.style.width = b.drift[1] + '%'; i.style.opacity = b.alpha || 1;
+          i.style.setProperty('--d', b.drift[2] + 's'); i.style.setProperty('--o', -R() * b.drift[2] + 's');
+          continue;
+        }
         const at = b.moon || b.at;
         if (b.moon) i.className = 'lb-v2moon';
         if (at) Object.assign(i.style, { left: at[0] + '%', top: at[1] + '%', width: at[2] + '%', height: 'auto' });
       }
       this.layers.dolls = el('div', 'lb-layer', this.set);
-      for (const [src, x, w] of F.sway || []) { // 위에 매달려 흔들리는 조각
+      for (const [src, x, w, light] of F.sway || []) { // 위에 매달려 흔들리는 조각. light 가 있으면 그 빛 장면에서만 보인다
         const i = pic(src, 'lb-v2sway');
         Object.assign(i.style, { left: x + '%', width: w + '%' });
+        if (light) i.dataset.light = light;
         i.style.setProperty('--d', 4 + R() * 3 + 's'); i.style.setProperty('--o', -R() * 6 + 's'); i.style.setProperty('--a', 1 + R() * 1.4 + 'deg');
+      }
+      for (const [src, x, y, w] of F.flutter || []) { // 제자리에서 팔랑이는 나비
+        const i = pic(src, 'lb-v2flutter');
+        Object.assign(i.style, { left: x + '%', top: y + '%', width: w + '%' });
+        i.style.setProperty('--d', 11 + R() * 5 + 's'); i.style.setProperty('--o', -R() * 8 + 's');
       }
       this.layers.front = el('div', 'lb-layer', this.set); // 흔들리는 가지에 가리면 안 되는 인물(부엉이)
       this.layers.fx = el('div', 'lb-layer lb-fx', this.set);
@@ -121,7 +133,8 @@
       }
     }
     _placeV2(name, d, instant) {
-      const pos = this.v2.formats[this.fmt].dolls[name] || {}, p = pos[d.pose] || pos.default;
+      const F = this.v2.formats[this.fmt], pos = F.dolls[name] || {}, p = pos[d.pose] || pos.default;
+      const size = this.stage.dolls[name].v2w, w = size[d.pose] * this.stage.v2scale[this.fmt]; // 크기는 장면이 아니라 자세별 표 하나로 정한다
       let e = this.dollEls[name];
       if (!e) {
         e = this.dollEls[name] = el('div', 'lb-v2doll', this.stage.dolls[name].front ? this.layers.front : this.layers.dolls);
@@ -131,7 +144,8 @@
       const vis = d.vis !== false && p && e._imgs[d.pose];
       if (instant) e.style.transition = 'none'; else e.style.transition = '';
       for (const [pose, i] of Object.entries(e._imgs)) i.classList.toggle('on', pose === d.pose);
-      if (p) Object.assign(e.style, { left: p[0] + '%', bottom: p[1] + '%', width: p[2] + '%' });
+      if (p) Object.assign(e.style, { left: p[0] + '%', bottom: p[1] + '%', width: w + '%' });
+      e.style.setProperty('--flip', d.flip ? -1 : 1);
       e.style.opacity = vis ? 1 : 0;
     }
 
@@ -209,6 +223,7 @@
       r.setProperty('--c1', P.c1); r.setProperty('--c2', P.c2); r.setProperty('--glow', P.glow);
       r.setProperty('--power', state.power != null ? state.power : 1);
       this._fx(state.fx || 'fireflies');
+      if (this.v2) this.set.querySelectorAll('[data-light]').forEach(i => { i.style.opacity = i.dataset.light === state.light ? 1 : 0; });
       for (const [name, d] of Object.entries(state.dolls || {})) this._placeDoll(name, d, instant ? {} : (hints[name] || {}), instant);
       for (const [name, e] of Object.entries(this.dollEls)) if (!(state.dolls || {})[name]) e.style.opacity = 0;
       if (instant) { void this.root.offsetWidth; this.root.classList.remove('lb-instant'); }
