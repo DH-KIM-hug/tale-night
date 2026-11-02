@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#10132a">
+<meta name="theme-color" content="#fbfaf7">
 <title>쿨쿨 그림자극장</title>
 <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/favicon-192.png">
@@ -18,14 +18,14 @@
   .head-mid { display: grid; gap: 6px; justify-items: center; min-width: 0; }
   header .info { font-size: 14px; font-weight: 600; color: var(--muted); text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
   .dots { display: flex; gap: 5px; }
-  .dots i { width: 5px; height: 5px; border-radius: 50%; background: var(--cream); opacity: .18; transition: opacity .6s, background .6s; }
+  .dots i { width: 5px; height: 5px; border-radius: 50%; background: var(--ink); opacity: .18; transition: opacity .6s, background .6s; }
   .dots i.past { opacity: .42; }
-  .dots i.now { opacity: 1; background: var(--lamp); }
+  .dots i.now { opacity: 1; background: var(--lamp-ink); }
   .main { min-height: 0; display: grid; gap: 16px; align-items: center; justify-items: center; align-content: center; }
   .stage-box { position: relative; width: min(100%, calc((100dvh - 230px) * 4 / 3)); }
-  /* 무대의 빛이 어두운 벽으로 새어 나온다. 장면 빛을 따라 색이 바뀌고, 불이 꺼지면 함께 꺼진다 */
-  .lb { width: 100%; border-radius: 0; box-shadow: 0 0 90px -14px color-mix(in srgb, var(--c2) 42%, transparent); }
-  .lb:not(.lit) { box-shadow: 0 0 90px -14px transparent; }
+  /* 무대 그림자에 장면 빛 색이 살짝 묻어난다. 불이 꺼지면 함께 사라진다 */
+  .lb { width: 100%; border-radius: 0; box-shadow: 0 16px 48px -18px color-mix(in srgb, var(--c2) 55%, rgba(35,38,47,.5)); }
+  .lb:not(.lit) { box-shadow: 0 16px 48px -18px transparent; }
   .lb.spill-fade { transition: box-shadow var(--lt) ease; }
   .start { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 9; min-height: 60px; padding: 0 30px; border-radius: 999px;
     background: var(--lamp); color: var(--on-lamp); font-weight: 700; font-size: 18px; display: inline-flex; align-items: center; gap: .5em; box-shadow: 0 6px 24px rgba(0,0,0,.35); }
@@ -36,7 +36,7 @@
   .controls #pause svg { width: 30px; height: 30px; }
   .controls #skip { width: 56px; height: 56px; background: none; }
   .controls #skip svg { width: 24px; height: 24px; fill: var(--muted); }
-  .caption { min-height: 2.8em; max-width: 34em; padding: 0 var(--gutter); text-align: center; font-size: 18px; line-height: 1.5; color: var(--cream); word-break: keep-all; }
+  .caption { min-height: 2.8em; max-width: 34em; padding: 0 var(--gutter); text-align: center; font-size: 18px; line-height: 1.5; color: var(--ink); word-break: keep-all; }
   .caption:empty { display: none; }
   /* 듣는 동안은 조작부가 물러난다(톡 하면 다시) */
   .quiet header, .quiet .controls { opacity: 0; pointer-events: none; }
@@ -46,24 +46,27 @@
     .auto.wrap { display: block; position: relative; padding: 0; }
     .auto .main { height: 100%; }
     .auto .stage-box { width: min(100vw, calc(100dvh * 4 / 3)); }
-    .auto header { position: absolute; left: 0; right: 0; top: 0; padding-top: calc(8px + env(safe-area-inset-top, 0px)); background: linear-gradient(rgba(8,8,20,.5), transparent); }
-    .auto header .info { color: var(--cream); }
-    .auto .icon-btn svg { fill: var(--cream); }
+    .auto header { position: absolute; left: 0; right: 0; top: 0; padding-top: calc(8px + env(safe-area-inset-top, 0px)); }
+    .auto header .info { color: var(--ink); background: var(--bg); padding: 2px 10px; border-radius: 999px; }
+    .auto .icon-btn { background: var(--stage-chip); }
+    .auto .icon-btn svg { fill: var(--on-stage); }
     .auto .controls { position: absolute; left: 0; right: 0; bottom: calc(14px + env(safe-area-inset-bottom, 0px)); z-index: 10; }
-    .auto .controls .round { background: rgba(16,19,42,.72); }
-    .auto .controls #skip svg { fill: var(--cream); }
+    .auto .controls .round { background: var(--stage-chip); box-shadow: none; }
+    .auto .controls .round svg { fill: var(--on-stage); }
+    .auto .controls #skip { background: var(--stage-chip); }
+    .auto .controls #skip svg { fill: var(--on-stage); }
     .auto .caption { position: absolute; left: 50%; bottom: calc(100px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); width: max-content; max-width: min(34em, 86vw); min-height: 0; z-index: 9;
-      background: rgba(16,19,42,.78); padding: .5em 1.1em; border-radius: 14px; transition: bottom .6s var(--ease); }
+      background: rgba(16,19,42,.78); color: var(--on-stage); padding: .5em 1.1em; border-radius: 14px; transition: bottom .6s var(--ease); }
     .auto.quiet .caption { bottom: calc(20px + env(safe-area-inset-bottom, 0px)); }
   }
 
   /* 함께 읽기: 이 화면만은 글이 주인공 */
   .read-panel { width: min(100%, 860px); display: grid; grid-template-rows: minmax(0, 1fr) auto; gap: 10px; min-height: 0; padding: 0 var(--gutter); }
   .lines { overflow: auto; padding: 4px 0; font-size: var(--fs, 22px); line-height: 1.55; scroll-behavior: smooth; word-break: keep-all; }
-  .lines p { margin: 0 0 .5em; padding-left: 14px; color: var(--cream); opacity: .36; transition: opacity .4s; position: relative; }
-  .lines p.done { opacity: .56; }
+  .lines p { margin: 0 0 .5em; padding-left: 14px; color: var(--ink); opacity: .5; transition: opacity .4s; position: relative; }
+  .lines p.done { opacity: .7; }
   .lines p.now { opacity: 1; font-weight: 600; }
-  .lines p.now::before { content: ""; position: absolute; left: 0; top: .22em; bottom: .22em; width: 4px; border-radius: 2px; background: var(--lamp); }
+  .lines p.now::before { content: ""; position: absolute; left: 0; top: .22em; bottom: .22em; width: 4px; border-radius: 2px; background: var(--lamp-ink); }
   .turn { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
   .turn .where { font-size: 14px; color: var(--muted); text-align: center; min-width: 0; }
   .turn #prev { background: none; }

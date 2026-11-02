@@ -1,30 +1,31 @@
 /* 쿨쿨 그림자극장 — 공통 화면 (남색 밤 종이 바탕, 크림 글자) */
 @font-face { font-family: 'Pretendard'; src: url(assets/fonts/PretendardVariable.woff2) format('woff2'); font-weight: 100 900; font-display: swap; }
 :root {
-  color-scheme: dark;
-  /* 깜깜한 방의 벽. 화면에서 빛나는 건 빛 상자뿐이고, 글자·단추는 그 곁에서 조용히 있는다 */
-  --wall: #10132a; --wall-2: #181c38; --wall-3: #232848; --line: rgba(246,238,221,.13);
-  --cream: #f4ecdc; --muted: #a9a6bd; --faint: #77758f;
+  color-scheme: light;
+  /* 흰 종이 바탕(2026-11-02 사용자 결정). 색은 빛 상자에서 나오고, 글자·단추는 먹색으로 조용히 */
+  --bg: #fbfaf7; --surface: #ffffff; --line: rgba(35,38,47,.13);
+  --ink: #23262f; --muted: #5f626c; --faint: #8a8c94;
   /* 등잔빛: 동화극장의 감빛 자리에 쓰는 이 앱의 색. 화면당 하나만 */
-  --lamp: #f2b366; --lamp-dn: #d9974c; --on-lamp: #2a1a08;
+  --lamp: #f2b366; --lamp-dn: #e3a153; --lamp-ink: #b8651a; --on-lamp: #2a1a08;
+  --on-stage: #f4ecdc; --stage-chip: rgba(16,19,42,.72); /* 무대 위에 뜨는 것은 바탕과 상관없이 어둡게 */
   --gutter: max(16px, env(safe-area-inset-left, 0px));
   --ease: cubic-bezier(.2,.8,.2,1);
 }
 * { box-sizing: border-box; }
 html, body { margin: 0; height: 100%; }
-body { background: var(--wall); color: var(--cream); font-family: 'Pretendard', 'Apple SD Gothic Neo', system-ui, sans-serif; -webkit-font-smoothing: antialiased;
+body { background: var(--bg); color: var(--ink); font-family: 'Pretendard', 'Apple SD Gothic Neo', system-ui, sans-serif; -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent; overscroll-behavior: none; }
 button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; -webkit-tap-highlight-color: transparent; }
-button:focus-visible { outline: 2px solid var(--lamp); outline-offset: 3px; }
+button:focus-visible { outline: 2px solid var(--lamp-ink); outline-offset: 3px; }
 .pill { display: inline-flex; align-items: center; justify-content: center; gap: .5em; min-height: 48px; padding: 0 22px; border-radius: 999px;
-  background: var(--wall-2); box-shadow: inset 0 0 0 1px var(--line); font-size: 16px; font-weight: 500; transition: transform .09s var(--ease), background .16s; white-space: nowrap; }
+  background: var(--surface); box-shadow: inset 0 0 0 1px var(--line); font-size: 16px; font-weight: 500; transition: transform .09s var(--ease), background .16s; white-space: nowrap; }
 .pill:active { transform: scale(.97); }
 .pill svg { width: 1.15em; height: 1.15em; fill: currentColor; flex: none; }
 .pill.primary { background: var(--lamp); box-shadow: none; color: var(--on-lamp); font-weight: 700; }
 .pill.primary:active { background: var(--lamp-dn); }
-.round { width: 64px; height: 64px; border-radius: 50%; background: var(--wall-2); box-shadow: inset 0 0 0 1px var(--line); display: grid; place-items: center; transition: transform .09s var(--ease); }
+.round { width: 64px; height: 64px; border-radius: 50%; background: var(--surface); box-shadow: inset 0 0 0 1px var(--line); display: grid; place-items: center; transition: transform .09s var(--ease); }
 .round:active { transform: scale(.94); }
-.round svg { width: 26px; height: 26px; fill: var(--cream); }
+.round svg { width: 26px; height: 26px; fill: var(--ink); }
 .round.go { background: var(--lamp); box-shadow: none; }
 .round.go svg { fill: var(--on-lamp); }
 .icon-btn { width: 48px; height: 48px; border-radius: 50%; display: grid; place-items: center; }
@@ -33,7 +34,7 @@ button:focus-visible { outline: 2px solid var(--lamp); outline-offset: 3px; }
 /* 달: 앱의 표지판 같은 기호(보호자 설정·잠드는 화면) */
 .crescent { display: block; width: 26px; height: 26px; border-radius: 50%; box-shadow: inset -8px -2px 0 0 var(--muted); transform: rotate(-20deg); }
 .hold-ring { position: relative; }
-.hold-ring::after { content: ""; position: absolute; inset: -4px; border-radius: 50%; border: 3px solid var(--cream); opacity: 0;
+.hold-ring::after { content: ""; position: absolute; inset: -4px; border-radius: 50%; border: 3px solid var(--lamp-ink); opacity: 0;
   -webkit-mask: conic-gradient(#000 calc(var(--p, 0) * 1turn), transparent 0); mask: conic-gradient(#000 calc(var(--p, 0) * 1turn), transparent 0); }
 .hold-ring.holding::after { opacity: .9; }
 
@@ -41,7 +42,7 @@ button:focus-visible { outline: 2px solid var(--lamp); outline-offset: 3px; }
 .sheet-bg { position: fixed; inset: 0; background: rgba(5,5,14,.66); display: none; z-index: 50; }
 .sheet-bg.open { display: block; }
 .sheet { position: fixed; left: 50%; bottom: 0; transform: translateX(-50%); width: min(560px, 100%); max-height: 88vh; overflow: auto; z-index: 51;
-  background: var(--wall-2); border-radius: 24px 24px 0 0; padding: 18px var(--gutter) calc(24px + env(safe-area-inset-bottom, 0px)); display: none; }
+  background: var(--surface); border-radius: 24px 24px 0 0; padding: 18px var(--gutter) calc(24px + env(safe-area-inset-bottom, 0px)); display: none; }
 .sheet.open { display: block; }
 .sheet h2 { font-size: 20px; font-weight: 700; margin: 4px 0 10px; display: flex; justify-content: space-between; align-items: center; }
 .sheet h2 .pill { min-height: 40px; padding: 0 16px; font-size: 14px; background: none; }
@@ -49,7 +50,7 @@ button:focus-visible { outline: 2px solid var(--lamp); outline-offset: 3px; }
 .sheet .row > span { font-size: 15px; font-weight: 500; }
 .sheet .row small { display: block; color: var(--muted); font-size: 13px; font-weight: 400; margin-top: 3px; }
 /* 고르기: 한 판 위의 칸. 고른 칸만 크림 */
-.seg { display: flex; gap: 2px; padding: 3px; border-radius: 999px; background: var(--wall); box-shadow: inset 0 0 0 1px var(--line); }
+.seg { display: flex; gap: 2px; padding: 3px; border-radius: 999px; background: #f1efea; box-shadow: inset 0 0 0 1px var(--line); }
 .seg .pill { min-height: 38px; padding: 0 14px; font-size: 14px; background: none; box-shadow: none; color: var(--muted); }
-.seg .pill[aria-pressed="true"] { background: var(--cream); color: var(--wall); font-weight: 700; }
+.seg .pill[aria-pressed="true"] { background: var(--ink); color: #fff; font-weight: 700; }
 [hidden] { display: none !important; }
