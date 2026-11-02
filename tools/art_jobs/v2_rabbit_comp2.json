@@ -1,0 +1,86 @@
+[
+{
+"id": "lake_tab_comp",
+"out": "art/v2/rabbit/lake/tab/comp.webp",
+"ref": "art_src/v2/rabbit/village/tab/comp.png",
+"sky": true,
+"prompt": "A completely new place, a 3:2 picture. Same framing and aspect ratio as the reference, but not the same landscape. A wide still LAKE in clear soft morning-to-afternoon blue, bright and airy. The lake fills the whole middle of the picture from side to side, pale shining water with long horizontal painted ripples and the soft mirrored reflection of the mountains on it. Big rounded mountains behind the far shore. A large drooping willow tree mass at the far right edge, and tall simple reed clumps at the far left of the near shore. A narrow grassy near shore is the foreground. The dark foreground ground top edge is at about 84% of the image height down from the top. Keep exactly the same art style as the reference: painterly hanji-paper grain, simple large masses, moonlight indigo blue palette, no lace, no holes, no patterns, no flowers, no amber. Make this a rich memorable place, clearly different from the reference. ABSOLUTELY NO characters, animals or people: the foreground centre stays open for puppets to be added later."
+},
+{
+"id": "lake_land_comp",
+"out": "art/v2/rabbit/lake/land/comp.webp",
+"ref": "art_src/v2/rabbit/village/land/comp.png",
+"sky": true,
+"prompt": "A completely new place, a very wide 2.17:1 panorama for a phone held sideways. Same framing and aspect ratio as the reference, but not the same landscape. A wide still LAKE in clear soft morning-to-afternoon blue, bright and airy. The lake fills the whole middle of the picture from side to side, pale shining water with long horizontal painted ripples and the soft mirrored reflection of the mountains on it. Big rounded mountains behind the far shore. A large drooping willow tree mass at the far right edge, and tall simple reed clumps at the far left of the near shore. A narrow grassy near shore is the foreground. The dark foreground ground top edge is at about 86% of the image height down from the top. Keep exactly the same art style as the reference: painterly hanji-paper grain, simple large masses, moonlight indigo blue palette, no lace, no holes, no patterns, no flowers, no amber. Make this a rich memorable place, clearly different from the reference. ABSOLUTELY NO characters, animals or people: the foreground centre stays open for puppets to be added later."
+},
+{
+"id": "lake_port_comp",
+"out": "art/v2/rabbit/lake/port/comp.webp",
+"ref": "art_src/v2/rabbit/village/port/comp.png",
+"sky": true,
+"prompt": "A completely new place, a very tall narrow 9:19.5 picture for a phone held upright. Same framing and aspect ratio as the reference, but not the same landscape. A wide still LAKE in clear soft morning-to-afternoon blue, bright and airy. The lake fills the whole middle of the picture from side to side, pale shining water with long horizontal painted ripples and the soft mirrored reflection of the mountains on it. Big rounded mountains behind the far shore. A large drooping willow tree mass at the far right edge, and tall simple reed clumps at the far left of the near shore. A narrow grassy near shore is the foreground. The dark foreground ground top edge is at about 72% of the image height down from the top, solid dark ground below it to the bottom edge. Keep exactly the same art style as the reference: painterly hanji-paper grain, simple large masses, moonlight indigo blue palette, no lace, no holes, no patterns, no flowers, no amber. Make this a rich memorable place, clearly different from the reference. ABSOLUTELY NO characters, animals or people: the foreground centre stays open for puppets to be added later."
+},
+{
+"id": "start_tab_comp",
+"out": "art/v2/rabbit/start/tab/comp.webp",
+"ref": "art_src/v2/rabbit/village/tab/comp.png",
+"sky": true,
+"prompt": "A completely new place, a 3:2 picture. Same framing and aspect ratio as the reference, but not the same landscape. A forest road starting point in early-evening medium blue: a pale earth road comes from the foreground centre and winds away into a tall forest of big dark Korean pine trees with layered flat crowns on both sides, getting smaller and hazier with distance. Two old wooden Korean guardian totem poles (jangseung) with simple faces and no writing stand side by side at the left of the road a little behind the foreground. Mist between the pine layers. The dark foreground ground top edge is at about 84% of the image height down from the top. Keep exactly the same art style as the reference: painterly hanji-paper grain, simple large masses, moonlight indigo blue palette, no lace, no holes, no patterns, no flowers, no amber. Make this a rich memorable place, clearly different from the reference. ABSOLUTELY NO characters, animals or people: the foreground centre stays open for puppets to be added later."
+},
+{
+"id": "start_land_comp",
+"out": "art/v2/rabbit/start/land/comp.webp",
+"ref": "art_src/v2/rabbit/village/land/comp.png",
+"sky": true,
+"prompt": "A completely new place, a very wide 2.17:1 panorama for a phone held sideways. Same framing and aspect ratio as the reference, but not the same landscape. A forest road starting point in early-evening medium blue: a pale earth road comes from the foreground centre and winds away into a tall forest of big dark Korean pine trees with layered flat crowns on both sides, getting smaller and hazier with distance. Two old wooden Korean guardian totem poles (jangseung) with simple faces and no writing stand side by side at the left of the road a little behind the foreground. Mist between the pine layers. The dark foreground ground top edge is at about 86% of the image height down from the top. Keep exactly the same art style as the reference: painterly hanji-paper grain, simple large masses, moonlight indigo blue palette, no lace, no holes, no patterns, no flowers, no amber. Make this a rich memorable place, clearly different from the reference. ABSOLUTELY NO characters, animals or people: the foreground centre stays open for puppets to be added later."
+},
+{
+"id": "start_port_comp",
+"out": "art/v2/rabbit/start/port/comp.webp",
+"ref": "art_src/v2/rabbit/village/port/comp.png",
+"sky": true,
+"prompt": "A completely new place, a very tall narrow 9:19.5 picture for a phone held upright. Same framing and aspect ratio as the reference, but not the same landscape. A forest road starting point in early-evening medium blue: a pale earth road comes from the foreground centre and winds away into a tall forest of big dark Korean pine trees with layered flat crowns on both sides, getting smaller and hazier with distance. Two old wooden Korean guardian totem poles (jangseung) with simple faces and no writing stand side by side at the left of the road a little behind the foreground. Mist between the pine layers. The dark foreground ground top edge is at about 72% of the image height down from the top, solid dark ground below it to the bottom edge. Keep exactly the same art style as the reference: painterly hanji-paper grain, simple large masses, moonlight indigo blue palette, no lace, no holes, no patterns, no flowers, no amber. Make this a rich memorable place, clearly different from the reference. ABSOLUTELY NO characters, animals or people: the foreground centre stays open for puppets to be added later."
+},
+{
+"id": "road_tab_comp",
+"out": "art/v2/rabbit/road/tab/comp.webp",
+"ref": "art_src/v2/rabbit/village/tab/comp.png",
+"sky": true,
+"prompt": "A completely new place, a 3:2 picture. Same framing and aspect ratio as the reference, but not the same landscape. An open countryside road at dusk, deepening blue: a pale winding dirt road crosses rolling fields in big S-curves to the far horizon, a low old dry-stone wall runs along part of it, one big wind-bent lone pine tree stands on the right third with its crown leaning left, a small round haystack and a few fence posts far away on the left. Wide sky with long streaks of mist, big mountains far behind. The dark foreground ground top edge is at about 84% of the image height down from the top. Keep exactly the same art style as the reference: painterly hanji-paper grain, simple large masses, moonlight indigo blue palette, no lace, no holes, no patterns, no flowers, no amber. Make this a rich memorable place, clearly different from the reference. ABSOLUTELY NO characters, animals or people: the foreground centre stays open for puppets to be added later."
+},
+{
+"id": "road_land_comp",
+"out": "art/v2/rabbit/road/land/comp.webp",
+"ref": "art_src/v2/rabbit/village/land/comp.png",
+"sky": true,
+"prompt": "A completely new place, a very wide 2.17:1 panorama for a phone held sideways. Same framing and aspect ratio as the reference, but not the same landscape. An open countryside road at dusk, deepening blue: a pale winding dirt road crosses rolling fields in big S-curves to the far horizon, a low old dry-stone wall runs along part of it, one big wind-bent lone pine tree stands on the right third with its crown leaning left, a small round haystack and a few fence posts far away on the left. Wide sky with long streaks of mist, big mountains far behind. The dark foreground ground top edge is at about 86% of the image height down from the top. Keep exactly the same art style as the reference: painterly hanji-paper grain, simple large masses, moonlight indigo blue palette, no lace, no holes, no patterns, no flowers, no amber. Make this a rich memorable place, clearly different from the reference. ABSOLUTELY NO characters, animals or people: the foreground centre stays open for puppets to be added later."
+},
+{
+"id": "road_port_comp",
+"out": "art/v2/rabbit/road/port/comp.webp",
+"ref": "art_src/v2/rabbit/village/port/comp.png",
+"sky": true,
+"prompt": "A completely new place, a very tall narrow 9:19.5 picture for a phone held upright. Same framing and aspect ratio as the reference, but not the same landscape. An open countryside road at dusk, deepening blue: a pale winding dirt road crosses rolling fields in big S-curves to the far horizon, a low old dry-stone wall runs along part of it, one big wind-bent lone pine tree stands on the right third with its crown leaning left, a small round haystack and a few fence posts far away on the left. Wide sky with long streaks of mist, big mountains far behind. The dark foreground ground top edge is at about 72% of the image height down from the top, solid dark ground below it to the bottom edge. Keep exactly the same art style as the reference: painterly hanji-paper grain, simple large masses, moonlight indigo blue palette, no lace, no holes, no patterns, no flowers, no amber. Make this a rich memorable place, clearly different from the reference. ABSOLUTELY NO characters, animals or people: the foreground centre stays open for puppets to be added later."
+},
+{
+"id": "hill_tab_comp",
+"out": "art/v2/rabbit/hill/tab/comp.webp",
+"ref": "art_src/v2/rabbit/village/tab/comp.png",
+"sky": true,
+"prompt": "A completely new place, a 3:2 picture. Same framing and aspect ratio as the reference, but not the same landscape. A big steep HILL at deep dusk, darker blue: the dark foreground ground is itself a grand slope climbing clearly from the lower left to the upper right of the picture, its top edge rising from low at the left side to a rounded summit near the right, a stepped narrow path of a few flat stones along the slope edge, a few boulders and short grass tufts. On the summit one small lone pine and a small stone pile cairn. Beyond the hill, a huge view of many layered mountain ranges in mist far below and an early crescent moon high in the left sky. The slope top edge is at about 88% of the height at the left edge and about 58% at the summit near 78% of the width. Keep exactly the same art style as the reference: painterly hanji-paper grain, simple large masses, moonlight indigo blue palette, no lace, no holes, no patterns, no flowers, no amber. Make this a rich memorable place, clearly different from the reference. ABSOLUTELY NO characters, animals or people: the foreground centre stays open for puppets to be added later."
+},
+{
+"id": "hill_land_comp",
+"out": "art/v2/rabbit/hill/land/comp.webp",
+"ref": "art_src/v2/rabbit/village/land/comp.png",
+"sky": true,
+"prompt": "A completely new place, a very wide 2.17:1 panorama for a phone held sideways. Same framing and aspect ratio as the reference, but not the same landscape. A big steep HILL at deep dusk, darker blue: the dark foreground ground is itself a grand slope climbing clearly from the lower left to the upper right of the picture, its top edge rising from low at the left side to a rounded summit near the right, a stepped narrow path of a few flat stones along the slope edge, a few boulders and short grass tufts. On the summit one small lone pine and a small stone pile cairn. Beyond the hill, a huge view of many layered mountain ranges in mist far below and an early crescent moon high in the left sky. The slope top edge is at about 90% of the height at the left edge and about 60% at the summit near 80% of the width. Keep exactly the same art style as the reference: painterly hanji-paper grain, simple large masses, moonlight indigo blue palette, no lace, no holes, no patterns, no flowers, no amber. Make this a rich memorable place, clearly different from the reference. ABSOLUTELY NO characters, animals or people: the foreground centre stays open for puppets to be added later."
+},
+{
+"id": "hill_port_comp",
+"out": "art/v2/rabbit/hill/port/comp.webp",
+"ref": "art_src/v2/rabbit/village/port/comp.png",
+"sky": true,
+"prompt": "A completely new place, a very tall narrow 9:19.5 picture for a phone held upright. Same framing and aspect ratio as the reference, but not the same landscape. A big steep HILL at deep dusk, darker blue: the dark foreground ground is itself a grand slope climbing clearly from the lower left to the upper right of the picture, its top edge rising from low at the left side to a rounded summit near the right, a stepped narrow path of a few flat stones along the slope edge, a few boulders and short grass tufts. On the summit one small lone pine and a small stone pile cairn. Beyond the hill, a huge view of many layered mountain ranges in mist far below and an early crescent moon high in the left sky. The slope top edge is at about 80% of the height at the left edge and about 62% at the right edge; solid dark ground below it to the bottom edge. Keep exactly the same art style as the reference: painterly hanji-paper grain, simple large masses, moonlight indigo blue palette, no lace, no holes, no patterns, no flowers, no amber. Make this a rich memorable place, clearly different from the reference. ABSOLUTELY NO characters, animals or people: the foreground centre stays open for puppets to be added later."
+}
+]

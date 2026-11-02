@@ -10,7 +10,7 @@ import path from 'node:path';
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const PRESETS = ['night_forest', 'dusk', 'dream', 'moon', 'dawn', 'hearth', 'sea', 'snow'];
 const FX = ['fireflies', 'snow', 'leaves', 'stars', 'none'];
-const ACTS = ['in', 'out', 'walk', 'at', 'pose', 'face', 'lantern', 'show', 'hide'];
+const ACTS = ['in', 'out', 'walk', 'at', 'pose', 'face', 'lantern', 'show', 'hide', 'spot'];
 const ids = process.argv.slice(2).length ? process.argv.slice(2) : JSON.parse(fs.readFileSync(path.join(ROOT, 'content/catalog.json'))).tales.map(t => t.id);
 let bad = 0;
 const err = (id, m) => { bad++; console.log(`✗ ${id}: ${m}`); };

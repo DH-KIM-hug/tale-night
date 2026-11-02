@@ -26,6 +26,7 @@
       case 'pose': d.pose = a; d.vis = true; break;
       case 'face': d.flip = a === 'left'; break;
       case 'lantern': d.lantern = a === 'on'; break;
+      case 'spot': d.spot = a; break; // 새 무대: 같은 자세의 다른 자리(상자의 'walk@ahead')
       case 'show': d.vis = true; break;
       case 'hide': d.vis = false; break;
       default: warn(`모르는 동사: ${cmd}`);
@@ -48,13 +49,16 @@
       };
       for (const [name, v] of Object.entries(S.place || {})) st.dolls[name] = parsePlace(v);
       sceneStart[si] = clone(st);
+      let lastLook = null;
       sc.lines.forEach((l, li) => {
         const hints = {};
         for (const c of (S.cues || []).filter(c => c.line === li)) {
           if (c.match && !l.text.startsWith(c.match)) warn(`${sc.key} 줄 ${li} 가 "${c.match}…" 이 아님: "${l.text}"`);
           c.do.forEach(cmd => verb(st, hints, cmd, warn));
         }
-        steps.push({ scene: sc.key, sceneIdx: si, lineIdx: li, card: li === 0 ? sc.card : null, text: l.text, clips: l.clips, dur: l.dur, roles: l.roles, segRoles: l.segRoles || [], state: clone(st), hints });
+        const look = JSON.stringify(Object.entries(st.dolls).map(([n, d]) => [n, d.vis !== false && d.pose, !!d.flip, d.spot])); // 인물이 달라 보이는 줄에서 대사 묶음을 나눈다
+        const beat = li === 0 || look !== lastLook; lastLook = look;
+        steps.push({ beat, scene: sc.key, sceneIdx: si, lineIdx: li, card: li === 0 ? sc.card : null, text: l.text, clips: l.clips, dur: l.dur, roles: l.roles, segRoles: l.segRoles || [], state: clone(st), hints });
       });
     });
     return { id, title: script.title, script, stage, steps, sceneStart, scenes: script.scenes };

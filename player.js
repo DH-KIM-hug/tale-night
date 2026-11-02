@@ -160,7 +160,8 @@
       $('lines').innerHTML = sc.lines.map(l => `<p>${l.text.replace(/</g, '&lt;')}</p>`).join('');
       shownScene = st.sceneIdx;
     }
-    [...$('lines').children].forEach((p, i) => { p.className = i < st.lineIdx ? 'done' : i === st.lineIdx ? 'now' : ''; });
+    if (PAGED) { const end = story.steps[pageEnd(idx)].lineIdx; [...$('lines').children].forEach((p, i) => { p.className = i >= st.lineIdx && i <= end ? 'now' : ''; }); }
+    else [...$('lines').children].forEach((p, i) => { p.className = i < st.lineIdx ? 'done' : i === st.lineIdx ? 'now' : ''; });
     const now = $('lines').children[st.lineIdx]; if (now) now.scrollIntoView({ block: 'nearest' });
     $('where').textContent = sc.card;
     markScene(st.sceneIdx);
@@ -168,17 +169,23 @@
     $('prev').disabled = idx === 0; $('prev').style.opacity = idx === 0 ? .35 : 1;
     Settings.write('kulkul.together', { id: story.id, scene: st.sceneIdx });
   }
+  /* 새 무대의 함께 읽기: 장면과 인물이 바뀌는 단위로 대사를 묶어 한 번에 보여 주고 묶음째 넘긴다 */
+  const PAGED = Q.has('v2');
+  function pageEnd(i) { if (!PAGED) return i; let j = i; while (j + 1 < story.steps.length && !story.steps[j + 1].beat) j++; return j; }
+  function pageBefore(i) { let j = i - 1; while (PAGED && j > 0 && !story.steps[j].beat) j--; return j; }
   async function go(i, forward) {
     const prev = story.steps[idx]; idx = i;
     const st = story.steps[idx];
     Narr.stop();
     if (forward && st.lineIdx === 0) { await lb.apply(story.sceneStart[st.sceneIdx]); lb.showCard(st.card); }
     else if (!forward && prev && prev.sceneIdx !== st.sceneIdx) lb.showCard(story.scenes[st.sceneIdx].card);
-    await lb.apply(st.state, forward ? st.hints : {});
+    await lb.apply(story.steps[pageEnd(idx)].state, forward ? st.hints : {});
     renderLines();
     if (S.roles && forward) { // 인물 대사만 녹음으로
-      const sr = st.segRoles || [];
-      const clips = st.clips.length === sr.length ? st.clips.filter((c, k) => sr[k] !== 'nar') : (sr.length === 1 && sr[0] !== 'nar' ? st.clips : []);
+      const clips = story.steps.slice(idx, pageEnd(idx) + 1).flatMap(s => {
+        const sr = s.segRoles || [];
+        return s.clips.length === sr.length ? s.clips.filter((c, k) => sr[k] !== 'nar') : (sr.length === 1 && sr[0] !== 'nar' ? s.clips : []);
+      });
       if (clips.length) play(clips);
     }
   }
@@ -190,14 +197,14 @@
       while (queue.length && !finished) {
         const dir = queue.shift();
         if (dir > 0) {
-          if (idx < story.steps.length - 1) await go(idx + 1, queue.length === 0);
+          if (pageEnd(idx) < story.steps.length - 1) await go(pageEnd(idx) + 1, queue.length === 0);
           else {
             finished = true; queue.length = 0; Narr.stop();
             Settings.write('kulkul.together', null);
             lb.root.classList.add('spill-fade');
             lb.setLit(false, 8000); await wait(8000); sleepScreen();
           }
-        } else if (idx > 0) await go(idx - 1, false);
+        } else if (idx > 0) await go(pageBefore(idx), false);
       }
     } finally { busy = false; }
   }
@@ -218,7 +225,7 @@
     app.classList.add('reading');
     requestWake();
     lb.showCard(story.scenes[sc].card);
-    await lb.apply(story.steps[idx].state, story.steps[idx].hints);
+    await lb.apply(story.steps[pageEnd(idx)].state, story.steps[idx].hints);
   }
 
   if (MODE === 'auto') auto(); else together();

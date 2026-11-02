@@ -111,25 +111,29 @@
 .lb-v2flutter { height: auto; animation: lb-v2flutter var(--d) ease-in-out var(--o) infinite alternate; }
 @keyframes lb-v2flutter { 0% { transform: translate(0, 0) scaleX(1); } 25% { transform: translate(14px, -10px) scaleX(.55); } 50% { transform: translate(30px, 4px) scaleX(1); } 75% { transform: translate(46px, -14px) scaleX(.55); } 100% { transform: translate(60px, 0) scaleX(1); } }
 .lb-v2sway[data-light] { transition: opacity 1.2s ease; }
-.lb-v2doll { position: absolute; transform: translateX(-50%) scaleX(var(--flip, 1)); transition: opacity .6s ease; }
-.lb-v2doll img { position: absolute; left: 0; bottom: 0; width: 100%; height: auto; opacity: 0; transition: opacity .5s ease; }
+.lb-v2doll { position: absolute; inset: 0; }
+.lb-v2doll img { position: absolute; height: auto; opacity: 0; transition: opacity .7s ease; }
 .lb-v2doll img.on { opacity: 1; }
+.lb-v2doll.lb-instant img { transition: none; }
 .lb-v2 .lb-fx-fireflies { position: absolute; }
 @media (prefers-reduced-motion: reduce) { .lb-v2moon, .lb-v2sway, .lb-v2breeze, .lb-v2drift, .lb-v2flutter { animation: none; } }
 body:has(.lb-v2) #readPanel p { color: #f3efe3; }
-/* 함께 읽기: 그림을 가리지 않도록 글은 아래 띠에 둔다. 세로 폰은 그림 아래쪽 빈 곳에 겹친다 */
-.together:has(.lb-v2) { --v2band: 132px; }
-@media (max-height: 500px) { .together:has(.lb-v2) { --v2band: 84px; } }
+/* 함께 읽기: 그림을 가리지 않도록 대사 묶음은 아래 띠에 둔다. 세로 폰은 그림 아래쪽 빈 땅에 겹친다 */
+.together:has(.lb-v2) { --v2band: 136px; }
+@media (max-height: 500px) { .together:has(.lb-v2) { --v2band: 96px; } }
 .together .lb.lb-v2 { bottom: var(--v2band); }
 .together:has(.lb-v2) .next-band { position: fixed; bottom: var(--v2band); }
-body:has(.lb-v2) #readPanel { position: fixed; left: 0; right: 0; bottom: 0; width: auto; height: var(--v2band); max-height: none; margin: 0; grid-template-columns: minmax(0, 1fr) auto; grid-template-rows: minmax(0, 1fr); align-items: center; gap: 16px; padding: 8px max(20px, env(safe-area-inset-right)) calc(8px + env(safe-area-inset-bottom, 0px)) max(20px, env(safe-area-inset-left)); background: #0a0f2a; border-radius: 0; }
+body:has(.lb-v2) #readPanel { position: fixed; left: 0; right: 0; bottom: 0; width: auto; height: var(--v2band); max-height: none; margin: 0; grid-template-columns: minmax(0, 1fr) auto; grid-template-rows: minmax(0, 1fr); align-items: center; gap: 14px; padding: 8px max(18px, env(safe-area-inset-right)) calc(8px + env(safe-area-inset-bottom, 0px)) max(18px, env(safe-area-inset-left)); background: #0a0f2a; border-radius: 0; }
+body:has(.lb-v2) #readPanel .lines { columns: 2; column-gap: 28px; max-height: 100%; font-size: 18px; line-height: 1.4; }
+@media (max-height: 500px) { body:has(.lb-v2) #readPanel .lines { font-size: 13.5px; column-gap: 18px; } }
+body:has(.lb-v2) #readPanel .lines p { margin: 0 0 .25em; padding: 0; font-weight: 500; break-inside: avoid; color: #f3efe3; }
 body:has(.lb-v2) #readPanel .lines p:not(.now) { display: none; }
-body:has(.lb-v2) #readPanel .lines p { margin: 0; }
+body:has(.lb-v2) #readPanel .lines p.now::before { display: none; }
+body:has(.lb-v2) #readPanel .turn { flex-direction: column-reverse; gap: 4px; }
 body:has(.lb-v2) #readPanel .turn .where { display: none; }
 @media (max-aspect-ratio: 3/5) {
   .together .lb.lb-v2 { bottom: 0; }
-  .together:has(.lb-v2) { --v2band: 26dvh; }
-  .together:has(.lb-v2) .next-band { bottom: 26dvh; }
-  body:has(.lb-v2) #readPanel { grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) auto; background: linear-gradient(transparent, #0a0f2a 16%); }
-  body:has(.lb-v2) #readPanel .turn .where { display: block; }
+  .together:has(.lb-v2) { --v2band: 27dvh; }
+  body:has(.lb-v2) #readPanel { background: linear-gradient(transparent, #0a0f2a 8%); }
+  body:has(.lb-v2) #readPanel .lines { columns: 1; font-size: 15px; }
 }

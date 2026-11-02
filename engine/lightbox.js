@@ -132,21 +132,32 @@
         addEventListener('resize', this._onResize);
       }
     }
+    /* 자세 그림마다 자기 자리와 크기를 따로 가진다. 사라지는 그림은 그 모습 그대로 옅어진다 */
     _placeV2(name, d, instant) {
-      const F = this.v2.formats[this.fmt], pos = F.dolls[name] || {}, p = pos[d.pose] || pos.default;
-      const size = this.stage.dolls[name].v2w, w = size[d.pose] * this.stage.v2scale[this.fmt]; // 크기는 장면이 아니라 자세별 표 하나로 정한다
+      const pos = this.v2.formats[this.fmt].dolls[name] || {};
+      const p = pos[d.pose + '@' + d.spot] || pos[d.pose] || pos.default;
       let e = this.dollEls[name];
       if (!e) {
         e = this.dollEls[name] = el('div', 'lb-v2doll', this.stage.dolls[name].front ? this.layers.front : this.layers.dolls);
         e._imgs = {};
         for (const [pose, src] of Object.entries(this.stage.dolls[name].v2 || {})) { const i = el('img', '', e); i.src = url(src); i.alt = ''; e._imgs[pose] = i; }
       }
-      const vis = d.vis !== false && p && e._imgs[d.pose];
-      if (instant) e.style.transition = 'none'; else e.style.transition = '';
-      for (const [pose, i] of Object.entries(e._imgs)) i.classList.toggle('on', pose === d.pose);
-      if (p) Object.assign(e.style, { left: p[0] + '%', bottom: p[1] + '%', width: w + '%' });
-      e.style.setProperty('--flip', d.flip ? -1 : 1);
-      e.style.opacity = vis ? 1 : 0;
+      const put = (i, pose) => {
+        Object.assign(i.style, { left: p[0] + '%', bottom: p[1] + '%', width: this.stage.dolls[name].v2w[pose] * this.stage.v2scale[this.fmt] + '%', transform: `translateX(-50%) scaleX(${d.flip ? -1 : 1})` });
+      };
+      e.classList.toggle('lb-instant', !!instant);
+      e.style.opacity = 1;
+      const now = e._imgs[d.pose], show = d.vis !== false && p && now, spot = d.spot || '';
+      for (const [pose, i] of Object.entries(e._imgs)) if (i !== now) i.classList.remove('on');
+      if (!now) return;
+      const moved = now.classList.contains('on') && e._spot !== spot;
+      if (moved && show && !instant) { // 같은 자세로 자리만 바뀌면 옛 자리에서 옅어지고 새 자리에 나타난다
+        const old = now.cloneNode(); old.classList.add('on'); now.before(old);
+        void old.offsetWidth; old.classList.remove('on'); setTimeout(() => old.remove(), 900);
+        now.classList.remove('on'); void now.offsetWidth;
+      }
+      if (show) { put(now, d.pose); e._spot = spot; void now.offsetWidth; }
+      now.classList.toggle('on', !!show);
     }
 
     _doll(name) {
