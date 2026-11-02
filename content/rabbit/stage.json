@@ -71,20 +71,20 @@
     "run": "art/dolls/rabbit_run.webp",
     "sleep": "art/dolls/rabbit_sleep.webp"
    },
-   "w": 17.6
+   "w": 25
   },
   "turtle": {
    "poses": {
     "walk": "art/dolls/turtle_walk.webp",
     "stand": "art/dolls/turtle_stand.webp"
    },
-   "w": 12.5
+   "w": 18
   },
   "owl": {
    "poses": {
     "perch": "art/dolls/owl.webp"
    },
-   "w": 9.1
+   "w": 11
   }
  },
  "scenes": {
@@ -111,14 +111,14 @@
      "line": 2,
      "match": "거북이가 엉금",
      "do": [
-      "turtle:in:left"
+      "turtle:show"
      ]
     },
     {
      "line": 4,
      "match": "깡충깡충 토끼",
      "do": [
-      "rabbit:in:right"
+      "rabbit:show"
      ]
     }
    ]
@@ -129,16 +129,17 @@
    "place": {
     "turtle": {
      "pose": "stand",
-     "x": 38,
+     "x": 30,
      "y": 22
     },
     "rabbit": {
      "pose": "stand",
-     "x": 60,
+     "x": 66,
      "y": 22,
      "flip": true
     }
-   }
+   },
+   "cues": []
   },
   "R04_start": {
    "box": "village",
@@ -146,12 +147,12 @@
    "place": {
     "turtle": {
      "pose": "walk",
-     "x": 42,
+     "x": 32,
      "y": 22
     },
     "rabbit": {
      "pose": "stand",
-     "x": 54,
+     "x": 62,
      "y": 22
     }
    },
@@ -161,8 +162,7 @@
      "match": "토끼는 쌩~",
      "do": [
       "rabbit:pose:run",
-      "rabbit:out:right",
-      "turtle:walk:52,22:10"
+      "rabbit:hide"
      ]
     }
    ]
@@ -173,8 +173,8 @@
    "place": {
     "rabbit": {
      "pose": "run",
-     "x": 40,
-     "y": 26,
+     "x": 66,
+     "y": 35,
      "vis": false
     }
    },
@@ -183,14 +183,7 @@
      "line": 0,
      "match": "토끼는 쌩쌩",
      "do": [
-      "rabbit:in:left"
-     ]
-    },
-    {
-     "line": 2,
-     "match": "금세 언덕",
-     "do": [
-      "rabbit:walk:66,35:4"
+      "rabbit:show"
      ]
     },
     {
@@ -232,7 +225,7 @@
      "line": 1,
      "match": "부엉이가 자장가",
      "do": [
-      "owl:in:top"
+      "owl:show"
      ]
     },
     {
@@ -266,30 +259,16 @@
    "place": {
     "turtle": {
      "pose": "walk",
-     "x": 10,
-     "y": 21
+     "x": 26,
+     "y": 23
     }
    },
    "cues": [
     {
-     "line": 0,
-     "match": "토끼가 자는 동안",
-     "do": [
-      "turtle:walk:26,23:9"
-     ]
-    },
-    {
      "line": 2,
      "match": "엉금엉금, 한 발",
      "do": [
-      "turtle:walk:42,27:9"
-     ]
-    },
-    {
-     "line": 4,
-     "match": "영차, 영차",
-     "do": [
-      "turtle:walk:64,35:10"
+      "turtle:walk:64,35:24"
      ]
     },
     {
@@ -318,7 +297,7 @@
     },
     "turtle": {
      "pose": "walk",
-     "x": 20,
+     "x": 16,
      "y": 20,
      "vis": false
     }
@@ -328,21 +307,14 @@
      "line": 0,
      "match": "언덕을 오른",
      "do": [
-      "turtle:in:left"
+      "turtle:show"
      ]
     },
     {
      "line": 1,
      "match": "쉿, 조용히",
      "do": [
-      "turtle:walk:64,20:9"
-     ]
-    },
-    {
-     "line": 2,
-     "match": "와, 거북이가",
-     "do": [
-      "turtle:walk:86,20:6"
+      "turtle:walk:84,20:16"
      ]
     },
     {
@@ -367,12 +339,12 @@
    "place": {
     "turtle": {
      "pose": "walk",
-     "x": 40,
+     "x": 58,
      "y": 22
     },
     "rabbit": {
      "pose": "run",
-     "x": 22,
+     "x": 37,
      "y": 22,
      "vis": false
     }
@@ -382,16 +354,7 @@
      "line": 2,
      "match": "토끼가 쌩쌩",
      "do": [
-      "rabbit:in:left",
-      "turtle:walk:46,22:6"
-     ]
-    },
-    {
-     "line": 4,
-     "match": "거북이는 후우",
-     "do": [
-      "turtle:walk:52,22:3",
-      "rabbit:walk:40,22:3"
+      "rabbit:show"
      ]
     },
     {
@@ -410,7 +373,7 @@
    "place": {
     "turtle": {
      "pose": "stand",
-     "x": 40,
+     "x": 36,
      "y": 22
     },
     "rabbit": {

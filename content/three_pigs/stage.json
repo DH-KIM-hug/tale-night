@@ -48,26 +48,26 @@
     "stand": "art/dolls/pig1_stand.webp",
     "run": "art/dolls/pig1_run.webp"
    },
-   "w": 15
+   "w": 21
   },
   "pig2": {
    "poses": {
     "stand": "art/dolls/pig2_stand.webp",
     "run": "art/dolls/pig2_run.webp"
    },
-   "w": 15
+   "w": 21
   },
   "pig3": {
    "poses": {
     "stand": "art/dolls/pig3_stand.webp"
    },
-   "w": 15
+   "w": 21
   },
   "mom": {
    "poses": {
     "stand": "art/dolls/pig_mom.webp"
    },
-   "w": 19
+   "w": 26
   },
   "wolf": {
    "poses": {
@@ -75,13 +75,13 @@
     "puff": "art/dolls/wolf_puff.webp",
     "sit": "art/dolls/wolf_sit.webp"
    },
-   "w": 24
+   "w": 32
   },
   "pot": {
    "poses": {
     "on": "art/dolls/pot.webp"
    },
-   "w": 18
+   "w": 24
   },
   "straw_house": {
    "poses": {
@@ -130,21 +130,12 @@
    },
    "cues": [
     {
-     "line": 4,
-     "match": "삼 형제는 엄마께",
-     "do": [
-      "pig1:walk:60,20:4",
-      "pig2:walk:74,20:4",
-      "pig3:walk:88,20:4"
-     ]
-    },
-    {
      "line": 5,
      "match": "셋은 나란히",
      "do": [
-      "pig1:out:right",
-      "pig2:out:right",
-      "pig3:out:right"
+      "pig1:hide",
+      "pig2:hide",
+      "pig3:hide"
      ]
     }
    ]
@@ -207,18 +198,18 @@
    "place": {
     "pig3": {
      "pose": "stand",
-     "x": 32,
+     "x": 38,
      "y": 20
     },
     "pig1": {
      "pose": "stand",
-     "x": 14,
+     "x": 16,
      "y": 20,
      "vis": false
     },
     "pig2": {
      "pose": "stand",
-     "x": 20,
+     "x": 27,
      "y": 20,
      "vis": false
     },
@@ -234,8 +225,8 @@
      "line": 2,
      "match": "형들이 놀렸어요",
      "do": [
-      "pig1:in:left",
-      "pig2:in:left"
+      "pig1:show",
+      "pig2:show"
      ]
     },
     {
@@ -243,8 +234,8 @@
      "match": "벽돌을 열 장",
      "do": [
       "brick_house:show",
-      "pig1:out:left",
-      "pig2:out:left"
+      "pig1:hide",
+      "pig2:hide"
      ]
     }
    ]
@@ -256,17 +247,17 @@
    "place": {
     "straw_house": {
      "pose": "on",
-     "x": 62,
+     "x": 56,
      "y": 22
     },
     "pig1": {
      "pose": "stand",
-     "x": 84,
+     "x": 82,
      "y": 20
     },
     "wolf": {
      "pose": "walk",
-     "x": 24,
+     "x": 20,
      "y": 20,
      "vis": false
     }
@@ -276,7 +267,7 @@
      "line": 1,
      "match": "그때 배고픈",
      "do": [
-      "wolf:in:left"
+      "wolf:show"
      ]
     },
     {
@@ -298,7 +289,7 @@
      "match": "첫째는 둘째네",
      "do": [
       "pig1:pose:run",
-      "pig1:out:right"
+      "pig1:hide"
      ]
     }
    ]
@@ -310,22 +301,22 @@
    "place": {
     "wood_house": {
      "pose": "on",
-     "x": 62,
+     "x": 54,
      "y": 22
     },
     "pig1": {
      "pose": "stand",
-     "x": 82,
+     "x": 76,
      "y": 20
     },
     "pig2": {
      "pose": "stand",
-     "x": 92,
+     "x": 87,
      "y": 20
     },
     "wolf": {
      "pose": "walk",
-     "x": 24,
+     "x": 18,
      "y": 20,
      "vis": false
     }
@@ -335,7 +326,7 @@
      "line": 1,
      "match": "늑대가 나무",
      "do": [
-      "wolf:in:left"
+      "wolf:show"
      ]
     },
     {
@@ -358,8 +349,8 @@
      "do": [
       "pig1:pose:run",
       "pig2:pose:run",
-      "pig1:out:right",
-      "pig2:out:right"
+      "pig1:hide",
+      "pig2:hide"
      ]
     }
    ]
@@ -391,8 +382,8 @@
      "line": 2,
      "match": "셋째가 문을",
      "do": [
-      "pig1:in:left",
-      "pig2:in:left"
+      "pig1:show",
+      "pig2:show"
      ]
     }
    ]
@@ -409,7 +400,7 @@
     },
     "wolf": {
      "pose": "walk",
-     "x": 24,
+     "x": 20,
      "y": 20,
      "vis": false
     }
@@ -419,7 +410,7 @@
      "line": 1,
      "match": "늑대가 벽돌",
      "do": [
-      "wolf:in:left"
+      "wolf:show"
      ]
     },
     {
@@ -441,7 +432,7 @@
      "match": "늑대는 지붕으로",
      "do": [
       "wolf:pose:walk",
-      "wolf:walk:62,58:6"
+      "wolf:walk:62,54:3"
      ]
     }
    ]
@@ -452,17 +443,17 @@
    "place": {
     "pig1": {
      "pose": "stand",
-     "x": 24,
+     "x": 20,
      "y": 20
     },
     "pig2": {
      "pose": "stand",
-     "x": 36,
+     "x": 33,
      "y": 20
     },
     "pig3": {
      "pose": "stand",
-     "x": 48,
+     "x": 46,
      "y": 20
     },
     "pot": {
@@ -474,7 +465,7 @@
     "wolf": {
      "pose": "sit",
      "x": 74,
-     "y": 30,
+     "y": 28,
      "vis": false
     }
    },
@@ -513,19 +504,19 @@
     },
     "pig1": {
      "pose": "stand",
-     "x": 18,
+     "x": 14,
      "y": 20,
      "vis": false
     },
     "pig2": {
      "pose": "stand",
-     "x": 30,
+     "x": 26,
      "y": 20,
      "vis": false
     },
     "pig3": {
      "pose": "stand",
-     "x": 42,
+     "x": 38,
      "y": 20,
      "vis": false
     }
@@ -535,9 +526,9 @@
      "line": 0,
      "match": "늑대가 떠난",
      "do": [
-      "pig1:in:right",
-      "pig2:in:right",
-      "pig3:in:right"
+      "pig1:show",
+      "pig2:show",
+      "pig3:show"
      ]
     }
    ]
