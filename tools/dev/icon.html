@@ -1,0 +1,65 @@
+<!doctype html>
+<!-- 앱 아이콘·로고 찍는 판. 그림은 art/icon/ 의 이미지 생성 층뿐이고, 빛은 앱의 Lightbox 엔진 그대로다(PLAN §5-5).
+     ?c=A|B|C  &view=icon(정사각)|arch(아치 마크, 투명)|logo-h|logo-v  &theme=dark|light -->
+<html lang="ko"><head><meta charset="utf-8"><title>아이콘 찍기</title>
+<link rel="stylesheet" href="../../engine/lightbox.css">
+<style>
+  @font-face { font-family: 'Pretendard'; src: url(../../assets/fonts/PretendardVariable.woff2) format('woff2'); font-weight: 100 900; }
+  html, body { margin: 0; background: transparent; }
+  #wrap { width: 1024px; height: 1024px; position: relative; font-family: 'Pretendard'; }
+  .mark { position: relative; width: 100%; height: 100%; overflow: hidden; }
+  .mark .lb { position: absolute; inset: 0; aspect-ratio: auto; width: 100%; height: 100%; border-radius: 0; }
+  /* 달·별 구멍 뒤의 빛: 뒤판을 달빛으로. 하늘 층은 --light 를 그대로 받는다 */
+  .lb .lb-back-on { animation: none; background: radial-gradient(circle at var(--mx) var(--my), #fffbe8 0 26%, #ffe9a8 58%, #ffd27a 100%); }
+  .lb .lb-sheet { filter: drop-shadow(0 6px 10px rgba(10,6,30,.5)); }
+  /* 달무리: 종이를 뚫고 번지는 빛 */
+  .halo { position: absolute; inset: 0; pointer-events: none; z-index: 1; mix-blend-mode: screen;
+    background: radial-gradient(circle at var(--mx) var(--my), rgba(255,226,150,.55) 0, rgba(255,190,110,.2) 30%, transparent 52%); }
+  .lb .lb-frame, .lb .lb-near, .lb .lb-ground { z-index: 2; }
+  .arch .mark { border-radius: 50% 50% 3.5% 3.5% / 42% 42% 3.5% 3.5%; }
+  /* 로고 */
+  .lock { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
+  .lock.h { gap: 44px; } .lock.v { flex-direction: column; gap: 40px; }
+  .lock .sym { position: relative; flex: none; }
+  .lock .sym .mark { position: absolute; left: 0; top: 0; transform-origin: 0 0; width: 1024px; height: 1024px; }
+  .word { font-weight: 800; letter-spacing: -.01em; white-space: nowrap; line-height: 1.12; }
+  .word b { font-weight: 880; color: var(--a); } .word span { color: var(--t); }
+  .h .word b, .h .word span { display: block; }
+</style></head><body><div id="wrap"></div>
+<script src="../../engine/lightbox.js"></script>
+<script>
+const q = new URLSearchParams(location.search);
+const c = q.get('c') || 'A', view = q.get('view') || 'icon', theme = q.get('theme') || 'dark';
+const SET = {
+  A: { far: 'sky_crescent', frame: 'curtain_left', m: [62, 40] },
+  B: { far: 'sky_round', ground: 'rabbit_hill', frame: 'curtain_left', m: [60, 38] },
+  C: { far: 'sky_crescent', frame: 'curtain_both', m: [52, 42] },
+}[c];
+const wrap = document.getElementById('wrap');
+const pal = theme === 'dark' ? { a: '#ffd27a', t: '#f6ecd8' } : { a: '#c9661f', t: '#222b45' };
+wrap.style.setProperty('--a', pal.a); wrap.style.setProperty('--t', pal.t);
+
+function mark(host) {
+  const m = document.createElement('div'); m.className = 'mark'; host.appendChild(m);
+  const r = document.createElement('div'); m.appendChild(r);
+  const layers = {}, dk = { far: .34, ground: .9, frame: .9 };
+  for (const k of ['far', 'ground', 'frame']) if (SET[k]) layers[k] = 'art/icon/' + SET[k] + '.webp';
+  const lb = new Lightbox(r, { static: true, stage: { boxes: { icon: { layers, dk, noMoon: true } }, dolls: {} } });
+  r.style.setProperty('--mx', SET.m[0] + '%'); r.style.setProperty('--my', SET.m[1] + '%');
+  lb.apply({ box: 'icon', light: q.get('light') || 'night_forest', power: 1, fx: 'none', dolls: {} }, {}, { instant: true }).then(() => {
+    lb.setLit(true, 0);
+    const far = lb.layers.far, h = document.createElement('div'); h.className = 'halo'; far.after(h);
+  });
+}
+function lockup(dir) {
+  const k = document.createElement('div'); k.className = 'lock ' + dir; wrap.appendChild(k);
+  const S = dir === 'h' ? 300 : 500, F = dir === 'h' ? 92 : 102;
+  const sym = document.createElement('div'); sym.className = 'sym arch'; sym.style.cssText = `width:${S}px;height:${S}px`; k.appendChild(sym);
+  mark(sym); sym.firstChild.style.transform = `scale(${S / 1024})`;
+  const w = document.createElement('div'); w.className = 'word'; w.style.fontSize = F + 'px';
+  w.innerHTML = '<b>쿨쿨</b> <span>그림자극장</span>'; k.appendChild(w);
+}
+if (view === 'logo-h') { wrap.style.cssText += ';width:1160px;height:420px'; lockup('h'); }
+else if (view === 'logo-v') { wrap.style.cssText += ';width:1024px;height:800px'; lockup('v'); }
+else { if (view === 'arch') wrap.classList.add('arch'); mark(wrap); }
+</script></body></html>

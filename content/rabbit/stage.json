@@ -27,7 +27,9 @@
   "hill": {
    "layers": {
     "far": "art/rabbit/hill_far.webp",
+    "far2": "art/rabbit/hill_far2.webp",
     "mid": "art/rabbit/hill_mid.webp",
+    "ground": "art/rabbit/hill_ground.webp",
     "near": "art/rabbit/hill_near.webp",
     "frame": "art/rabbit/hill_frame.webp"
    },
@@ -35,7 +37,15 @@
     66,
     26
    ],
-   "fx": "fireflies"
+   "fx": "fireflies",
+   "dk": {
+    "far": 0.14,
+    "far2": 0.32,
+    "mid": 0.54,
+    "ground": 0.72,
+    "near": 0.84,
+    "frame": 0.93
+   }
   },
   "shade": {
    "layers": {

@@ -21,9 +21,10 @@ LIMIT_RE = re.compile(r'(usage limit|rate limit|limit reached|too many requests|
 def generate(job, raw):
     os.makedirs(os.path.dirname(raw), exist_ok=True)
     pf = raw + '.prompt.txt'
-    open(pf, 'w').write(job['prompt'] + RULES)
+    rules = RULES.replace('Delicate intricate cut details with many small holes.', 'Very simple bold shapes that stay readable at tiny icon size; no small holes or fine details.') if job.get('kind') == 'mark' else RULES  # 아이콘 층
+    open(pf, 'w').write(job['prompt'] + rules)
     refs = ' '.join([STYLE_REF] + [os.path.join(ROOT, r) for r in job.get('refs', [])])
-    inst = (f"Use your image generation tool (image_gen.imagegen) to create ONE image, {'square 1:1' if job.get('kind') == 'doll' else 'landscape 3:2'}. Read the full prompt from {pf} and pass it VERBATIM. "
+    inst = (f"Use your image generation tool (image_gen.imagegen) to create ONE image, {'square 1:1' if job.get('kind') in ('doll', 'mark') else 'landscape 3:2'}. {'The image MUST be exactly 1024x1024 pixels (size=1024x1024), never landscape. ' if job.get('kind') == 'mark' else ''}Read the full prompt from {pf} and pass it VERBATIM. "
             f"Pass these reference images in referenced_image_paths (read-only): {refs} . "
             f"Save (copy) the generated image to {raw} . No other file changes, no installs, no git. Reply only SAVED or FAILED <reason>.")
     txt = ''
@@ -39,11 +40,14 @@ def generate(job, raw):
         raise RuntimeError(txt[-400:])
 
 
-def key(raw, out, doll=False, fit=None, align=None):
+def key(raw, out, doll=False, fit=None, align=None, mark=False):
     """마젠타 정도(min(R,B)-G)로 알파를 만든다. 종이는 흰색뿐이라 남은 색 번짐은 무채색으로 되돌린다."""
     im = Image.open(raw).convert('RGB')
     w, h = im.size
-    if doll:
+    if mark:  # 아이콘 층: 자리는 그대로, 정사각이 아니면 눌리지 않게 가운데를 자른다
+        s = min(w, h)
+        im = im.crop(((w - s) // 2, (h - s) // 2, (w + s) // 2, (h + s) // 2)).resize(DOLL, Image.LANCZOS)
+    elif doll:
         im = im.resize(DOLL, Image.LANCZOS)
     else:
         nw = int(h * BOX[0] / BOX[1])  # 3:2 원본의 가운데를 4:3 으로
@@ -92,7 +96,7 @@ def main():
         if os.path.exists(out): print('skip', job['id']); continue
         try:
             if not os.path.exists(raw): generate(job, raw)
-            key(raw, out, job.get('kind') == 'doll', job.get('fit'), job.get('alignTo'))
+            key(raw, out, job.get('kind') == 'doll', job.get('fit'), job.get('alignTo'), job.get('kind') == 'mark')
         except Exception as e:
             print(job['id'], 'FAIL', e, flush=True)
 
