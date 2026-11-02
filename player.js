@@ -76,7 +76,7 @@
     if (MODE === 'auto' && started && !paused) quietT = setTimeout(() => app.classList.add('quiet'), FAST ? 999999 : 6000);
     if (!$('night').classList.contains('end')) $('night').classList.remove('show');
     clearTimeout(idleT);
-    if (MODE === 'auto' && started) idleT = setTimeout(() => { $('controls').classList.add('hide'); $('night').classList.add('show'); }, FAST ? 999999 : 60000);
+    if (MODE === 'auto' && started) idleT = setTimeout(() => $('controls').classList.add('hide'), FAST ? 999999 : 60000);
   }
   $('night').addEventListener('pointerdown', () => { if (!$('night').classList.contains('end')) poke(); });
   $('night').querySelector('div').classList.add('hidden');
