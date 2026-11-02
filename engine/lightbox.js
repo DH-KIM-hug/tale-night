@@ -81,7 +81,11 @@
       const bob = el('div', 'lb-bob', e);
       el('div', 'lb-lantern', bob);
       e._sprites = {};
-      for (const [pose, src] of Object.entries(d.poses)) { const s = paper(bob, src, d.dk != null ? d.dk : this.dk.dolls); s.classList.add('lb-pose'); e._sprites[pose] = s; }
+      for (const [pose, src] of Object.entries(d.poses)) { // 걷기·오르기는 그림 여러 장(프레임)
+        const frames = [].concat(src).map(f => { const s = paper(bob, f, d.dk != null ? d.dk : this.dk.dolls); s.classList.add('lb-pose'); if (Array.isArray(src)) s.classList.add('lb-frame'); return s; });
+        e._sprites[pose] = frames;
+      }
+      e._frameMs = d.frameMs || 320;
       e._pose = null; e.style.opacity = 0;
       this.dollEls[name] = e;
       return e;
@@ -155,7 +159,7 @@
       const vis = d.vis !== false;
       const setPos = (x, y) => { e.style.left = x + '%'; e.style.bottom = y + '%'; };
       e.style.setProperty('--flip', d.flip ? -1 : 1);
-      if (d.pose !== e._pose) { for (const [p, s] of Object.entries(e._sprites)) s.classList.toggle('on', p === d.pose); e._pose = d.pose; }
+      if (d.pose !== e._pose) { for (const [p, fr] of Object.entries(e._sprites)) fr.forEach((s, i) => s.classList.toggle('on', p === d.pose && i === 0)); e._pose = d.pose; }
       e.classList.toggle('lantern', !!d.lantern);
       e.style.zIndex = d.z || 1;
       let dur = .6;
@@ -179,8 +183,19 @@
       e.style.opacity = vis ? 1 : 0;
       const moving = !instant && (hint.walk || hint.from);
       e.classList.toggle('walking', !!moving);
-      clearTimeout(e._wt); if (moving) e._wt = setTimeout(() => e.classList.remove('walking'), dur * 1000);
+      this._cycle(e, !!moving);
+      clearTimeout(e._wt); if (moving) e._wt = setTimeout(() => { e.classList.remove('walking'); this._cycle(e, false); }, dur * 1000);
       e._st = { ...d };
+    }
+
+    /* 걷는 동안 자세의 그림을 차례로 바꾼다. 멈추면 첫 장으로 */
+    _cycle(e, on) {
+      clearInterval(e._ft);
+      const fr = e._sprites[e._pose]; if (!fr || fr.length < 2) return;
+      let i = 0; const show = () => fr.forEach((s, k) => s.classList.toggle('on', k === i));
+      show();
+      e.classList.toggle('framing', on);
+      if (on && !reduced()) e._ft = setInterval(() => { if (document.hidden) return; i = (i + 1) % fr.length; show(); }, e._frameMs);
     }
 
     _drift(t) {

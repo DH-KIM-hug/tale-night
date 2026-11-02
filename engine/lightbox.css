@@ -53,6 +53,9 @@
 @keyframes lb-bob { 0%,100% { transform: translateY(0) rotate(-1deg); } 50% { transform: translateY(-4%) rotate(1.5deg); } }
 .lb-pose { opacity: 0; transition: opacity .5s ease; }
 .lb-pose.on { opacity: 1; }
+.lb-frame { transition: none; }
+.lb-frame .lb-off, .lb-frame .lb-on { transition: none; }
+.lb-doll.framing .lb-bob { animation: none; }
 .lb-lantern { position: absolute; width: 120%; aspect-ratio: 1; left: 50%; top: 50%; transform: translate(-50%, -50%); border-radius: 50%; opacity: 0;
   background: radial-gradient(circle, rgba(255,220,140,.7), rgba(255,180,80,.22) 40%, transparent 70%); transition: opacity 2.4s; mix-blend-mode: screen;
   animation: lb-flick 2.2s ease-in-out infinite; }

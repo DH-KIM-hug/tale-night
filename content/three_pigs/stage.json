@@ -46,20 +46,23 @@
   "pig1": {
    "poses": {
     "stand": "art/dolls/pig1_stand.webp",
-    "run": "art/dolls/pig1_run.webp"
+    "run": "art/dolls/pig1_run.webp",
+    "carry": "art/dolls/pig1_carry.webp"
    },
    "w": 21
   },
   "pig2": {
    "poses": {
     "stand": "art/dolls/pig2_stand.webp",
-    "run": "art/dolls/pig2_run.webp"
+    "run": "art/dolls/pig2_run.webp",
+    "hammer": "art/dolls/pig2_hammer.webp"
    },
    "w": 21
   },
   "pig3": {
    "poses": {
-    "stand": "art/dolls/pig3_stand.webp"
+    "stand": "art/dolls/pig3_stand.webp",
+    "brick": "art/dolls/pig3_brick.webp"
    },
    "w": 21
   },
@@ -73,9 +76,16 @@
    "poses": {
     "walk": "art/dolls/wolf_walk.webp",
     "puff": "art/dolls/wolf_puff.webp",
-    "sit": "art/dolls/wolf_sit.webp"
+    "sit": "art/dolls/wolf_sit.webp",
+    "climb": [
+     "art/dolls/wolf_climb1.webp",
+     "art/dolls/wolf_climb2.webp",
+     "art/dolls/wolf_climb3.webp",
+     "art/dolls/wolf_climb4.webp"
+    ]
    },
-   "w": 32
+   "w": 32,
+   "frameMs": 320
   },
   "pot": {
    "poses": {
@@ -98,6 +108,18 @@
   "brick_house": {
    "poses": {
     "on": "art/dolls/brick_house.webp"
+   },
+   "w": 38
+  },
+  "pigs_hug": {
+   "poses": {
+    "on": "art/dolls/pigs_hug.webp"
+   },
+   "w": 28
+  },
+  "pigs_sleep": {
+   "poses": {
+    "on": "art/dolls/pigs_sleep.webp"
    },
    "w": 38
   }
@@ -145,7 +167,7 @@
    "light": "dusk",
    "place": {
     "pig1": {
-     "pose": "stand",
+     "pose": "carry",
      "x": 32,
      "y": 20
     },
@@ -161,7 +183,8 @@
      "line": 2,
      "match": "뚝딱!",
      "do": [
-      "straw_house:show"
+      "straw_house:show",
+      "pig1:pose:stand"
      ]
     }
    ]
@@ -171,7 +194,7 @@
    "light": "dusk",
    "place": {
     "pig2": {
-     "pose": "stand",
+     "pose": "hammer",
      "x": 32,
      "y": 20
     },
@@ -187,7 +210,8 @@
      "line": 2,
      "match": "쿵쾅쿵쾅",
      "do": [
-      "wood_house:show"
+      "wood_house:show",
+      "pig2:pose:stand"
      ]
     }
    ]
@@ -197,7 +221,7 @@
    "light": "dusk",
    "place": {
     "pig3": {
-     "pose": "stand",
+     "pose": "brick",
      "x": 38,
      "y": 20
     },
@@ -235,7 +259,8 @@
      "do": [
       "brick_house:show",
       "pig1:hide",
-      "pig2:hide"
+      "pig2:hide",
+      "pig3:pose:stand"
      ]
     }
    ]
@@ -375,6 +400,12 @@
      "x": 42,
      "y": 20,
      "vis": false
+    },
+    "pigs_hug": {
+     "pose": "on",
+     "x": 32,
+     "y": 20,
+     "vis": false
     }
    },
    "cues": [
@@ -384,6 +415,15 @@
      "do": [
       "pig1:show",
       "pig2:show"
+     ]
+    },
+    {
+     "line": 3,
+     "match": "삼 형제는 문을",
+     "do": [
+      "pig1:hide",
+      "pig2:hide",
+      "pigs_hug:show"
      ]
     }
    ]
@@ -400,7 +440,7 @@
     },
     "wolf": {
      "pose": "walk",
-     "x": 20,
+     "x": 32,
      "y": 20,
      "vis": false
     }
@@ -431,8 +471,8 @@
      "line": 7,
      "match": "늑대는 지붕으로",
      "do": [
-      "wolf:pose:walk",
-      "wolf:walk:62,54:3"
+      "wolf:pose:climb",
+      "wolf:walk:62,54:6"
      ]
     }
    ]
@@ -519,6 +559,12 @@
      "x": 38,
      "y": 20,
      "vis": false
+    },
+    "pigs_sleep": {
+     "pose": "on",
+     "x": 26,
+     "y": 20,
+     "vis": false
     }
    },
    "cues": [
@@ -529,6 +575,16 @@
       "pig1:show",
       "pig2:show",
       "pig3:show"
+     ]
+    },
+    {
+     "line": 3,
+     "match": "튼튼한 집은",
+     "do": [
+      "pig1:hide",
+      "pig2:hide",
+      "pig3:hide",
+      "pigs_sleep:show"
      ]
     }
    ]

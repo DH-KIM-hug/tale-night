@@ -21,7 +21,7 @@ for (const id of ids) {
   const stage = JSON.parse(fs.readFileSync(path.join(ROOT, `content/${id}/stage.json`)));
   let noArt = 0; // 그림은 이미지 생성으로 따로 만든다(docs/ART_LIST.md). 없는 그림은 실패가 아니라 '대기'로 센다
   for (const b of Object.values(stage.boxes)) for (const f of Object.values(b.layers)) if (!has(f)) noArt++;
-  for (const d of Object.values(stage.dolls)) for (const f of Object.values(d.poses)) if (!has(f)) noArt++;
+  for (const d of Object.values(stage.dolls)) for (const f of Object.values(d.poses).flat()) if (!has(f)) noArt++;
   const keys = new Set(script.scenes.map(s => s.key));
   for (const k of Object.keys(stage.scenes)) if (!keys.has(k)) err(id, `대본에 없는 장면이 stage 에 있음: ${k}`);
   let lines = 0;

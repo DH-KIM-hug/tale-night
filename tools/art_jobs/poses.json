@@ -1,0 +1,77 @@
+[
+  {
+    "id": "rabbit_sit",
+    "out": "art/dolls/rabbit_sit.webp",
+    "kind": "doll",
+    "refs": [
+      "art_src/dolls/rabbit_stand.png"
+    ],
+    "prompt": "The same rabbit as the extra reference but clearly SITTING DOWN like a real rabbit on the ground: rounded compact crouched body low to the ground, big hind leg folded flat along the ground, rump and fluffy tail touching the ground, front paws resting on the ground, long ears upright, head turned forward. The body is about as wide as it is tall, NOT upright, not standing on hind legs. A single paper puppet cut-out, side view, facing RIGHT, simple cute children's picture-book silhouette, one piece. It takes about 70% of the frame, centered horizontally, with its feet or base at the very bottom of the frame. Eye is a small round cut-out hole, no drawn face. Nothing else in the image, no ground, no grass. Keep the character's head, body size and hole pattern identical to the extra reference."
+  },
+  {
+    "id": "rabbit_jump",
+    "out": "art/dolls/rabbit_jump.webp",
+    "kind": "doll",
+    "refs": [
+      "art_src/dolls/rabbit_stand.png"
+    ],
+    "prompt": "The same rabbit as the extra reference, startled and leaping straight up in the air with all four legs spread and ears flung up, feet off the ground but the lowest paw touching the bottom of the frame. A single paper puppet cut-out, side view, facing RIGHT, simple cute children's picture-book silhouette, one piece. It takes about 70% of the frame, centered horizontally, with its feet or base at the very bottom of the frame. Eye is a small round cut-out hole, no drawn face. Nothing else in the image, no ground, no grass. Keep the character's head, body size and hole pattern identical to the extra reference."
+  },
+  {
+    "id": "turtle_sit",
+    "out": "art/dolls/turtle_sit.webp",
+    "kind": "doll",
+    "refs": [
+      "art_src/dolls/turtle_stand.png"
+    ],
+    "prompt": "The same turtle as the extra reference, resting on the ground with its shell low and legs tucked, head and neck stretched up contentedly. A single paper puppet cut-out, side view, facing RIGHT, simple cute children's picture-book silhouette, one piece. It takes about 70% of the frame, centered horizontally, with its feet or base at the very bottom of the frame. Eye is a small round cut-out hole, no drawn face. Nothing else in the image, no ground, no grass. Keep the character's head, body size and hole pattern identical to the extra reference."
+  },
+  {
+    "id": "pig1_carry",
+    "out": "art/dolls/pig1_carry.webp",
+    "kind": "doll",
+    "refs": [
+      "art_src/dolls/pig1_stand.png"
+    ],
+    "prompt": "The same piglet with the straw hat as the extra reference, walking hunched forward and carrying a big bundle of straw on its back with both hands. No flute. A single paper puppet cut-out, side view, facing RIGHT, simple cute children's picture-book silhouette, one piece. It takes about 70% of the frame, centered horizontally, with its feet or base at the very bottom of the frame. Eye is a small round cut-out hole, no drawn face. Nothing else in the image, no ground, no grass. Keep the character's head, body size and hole pattern identical to the extra reference."
+  },
+  {
+    "id": "pig2_hammer",
+    "out": "art/dolls/pig2_hammer.webp",
+    "kind": "doll",
+    "refs": [
+      "art_src/dolls/pig2_stand.png"
+    ],
+    "prompt": "The same piglet with the neckerchief as the extra reference, holding a wooden hammer high up with both hands, about to strike, with one wooden plank under its arm. No violin. A single paper puppet cut-out, side view, facing RIGHT, simple cute children's picture-book silhouette, one piece. It takes about 70% of the frame, centered horizontally, with its feet or base at the very bottom of the frame. Eye is a small round cut-out hole, no drawn face. Nothing else in the image, no ground, no grass. Keep the character's head, body size and hole pattern identical to the extra reference."
+  },
+  {
+    "id": "pig3_brick",
+    "out": "art/dolls/pig3_brick.webp",
+    "kind": "doll",
+    "refs": [
+      "art_src/dolls/pig3_stand.png"
+    ],
+    "prompt": "The same piglet with the apron as the extra reference, leaning forward carrying a stack of three bricks in both arms, working hard. No book. A single paper puppet cut-out, side view, facing RIGHT, simple cute children's picture-book silhouette, one piece. It takes about 70% of the frame, centered horizontally, with its feet or base at the very bottom of the frame. Eye is a small round cut-out hole, no drawn face. Nothing else in the image, no ground, no grass. Keep the character's head, body size and hole pattern identical to the extra reference."
+  },
+  {
+    "id": "pigs_hug",
+    "out": "art/dolls/pigs_hug.webp",
+    "kind": "doll",
+    "refs": [
+      "art_src/dolls/pig1_stand.png",
+      "art_src/dolls/pig2_stand.png"
+    ],
+    "prompt": "Two piglets from the extra references, the one with the straw hat and the one with the neckerchief, standing close and hugging each other, shaking with fear, cut as a single connected paper piece. No instruments. A single paper puppet cut-out, side view, facing RIGHT, simple cute children's picture-book silhouette, one piece. It takes about 70% of the frame, centered horizontally, with its feet or base at the very bottom of the frame. Eye is a small round cut-out hole, no drawn face. Nothing else in the image, no ground, no grass. Keep the character's head, body size and hole pattern identical to the extra reference."
+  },
+  {
+    "id": "pigs_sleep",
+    "out": "art/dolls/pigs_sleep.webp",
+    "kind": "doll",
+    "refs": [
+      "art_src/dolls/pig1_stand.png",
+      "art_src/dolls/pig2_stand.png",
+      "art_src/dolls/pig3_stand.png"
+    ],
+    "prompt": "Exactly three piglets from the extra references, each different as follows: LEFT piglet wears a straw hat and no scarf; MIDDLE piglet wears only a neckerchief and NO hat; RIGHT piglet wears only an apron and NO hat, NO scarf. All three are lying down asleep on their sides in a low row, heads resting on each other, with closed eye slits, cut as a single connected paper piece. The group is low and wide, about twice as wide as it is tall. No instruments, no book. Rule: only one straw hat in the whole image. A single paper puppet cut-out, side view, facing RIGHT, simple cute children's picture-book silhouette, one piece. It takes about 70% of the frame, centered horizontally, with its feet or base at the very bottom of the frame. Eye is a small round cut-out hole, no drawn face. Nothing else in the image, no ground, no grass. Keep the character's head, body size and hole pattern identical to the extra reference."
+  }
+]

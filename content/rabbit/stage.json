@@ -69,16 +69,25 @@
    "poses": {
     "stand": "art/dolls/rabbit_stand.webp",
     "run": "art/dolls/rabbit_run.webp",
-    "sleep": "art/dolls/rabbit_sleep.webp"
+    "sleep": "art/dolls/rabbit_sleep.webp",
+    "sit": "art/dolls/rabbit_sit.webp",
+    "jump": "art/dolls/rabbit_jump.webp"
    },
    "w": 25
   },
   "turtle": {
    "poses": {
-    "walk": "art/dolls/turtle_walk.webp",
-    "stand": "art/dolls/turtle_stand.webp"
+    "walk": [
+     "art/dolls/turtle_walk.webp",
+     "art/dolls/turtle_walk2.webp",
+     "art/dolls/turtle_walk3.webp",
+     "art/dolls/turtle_walk4.webp"
+    ],
+    "stand": "art/dolls/turtle_stand.webp",
+    "sit": "art/dolls/turtle_sit.webp"
    },
-   "w": 18
+   "w": 18,
+   "frameMs": 420
   },
   "owl": {
    "poses": {
@@ -139,7 +148,15 @@
      "flip": true
     }
    },
-   "cues": []
+   "cues": [
+    {
+     "line": 1,
+     "match": "토끼는 거북이의",
+     "do": [
+      "rabbit:pose:sit"
+     ]
+    }
+   ]
   },
   "R04_start": {
    "box": "village",
@@ -328,7 +345,7 @@
      "line": 5,
      "match": "토끼가 벌떡",
      "do": [
-      "rabbit:pose:stand"
+      "rabbit:pose:jump"
      ]
     }
    ]
@@ -395,7 +412,9 @@
      "line": 3,
      "match": "밤이 되었어요",
      "do": [
-      "rabbit:lantern:on"
+      "rabbit:lantern:on",
+      "rabbit:pose:sit",
+      "turtle:pose:sit"
      ]
     }
    ]

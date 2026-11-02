@@ -1,0 +1,67 @@
+[
+  {
+    "id": "turtle_walk2",
+    "out": "art/dolls/turtle_walk2.webp",
+    "kind": "doll",
+    "refs": [
+      "art_src/dolls/turtle_walk.png"
+    ],
+    "prompt": "The exact same turtle as the extra reference, same head, shell and size; ONLY the four legs differ, as one frame of a slow walking cycle: the two front-left and rear-right legs are passing under the body, all legs close together, knees bent. A single paper puppet cut-out, side view, facing RIGHT, simple cute children's picture-book silhouette, one piece. It takes about 70% of the frame, centered horizontally, with its feet or base at the very bottom of the frame. Eye is a small round cut-out hole, no drawn face. Nothing else in the image, no ground, no grass. Keep the character's head, body size and hole pattern identical to the extra reference."
+  },
+  {
+    "id": "turtle_walk3",
+    "out": "art/dolls/turtle_walk3.webp",
+    "kind": "doll",
+    "refs": [
+      "art_src/dolls/turtle_walk.png"
+    ],
+    "prompt": "The exact same turtle as the extra reference, same head, shell and size; ONLY the four legs differ, as one frame of a slow walking cycle: the opposite of the reference: the legs that were forward in the reference are now back and the legs that were back are now stretched forward. A single paper puppet cut-out, side view, facing RIGHT, simple cute children's picture-book silhouette, one piece. It takes about 70% of the frame, centered horizontally, with its feet or base at the very bottom of the frame. Eye is a small round cut-out hole, no drawn face. Nothing else in the image, no ground, no grass. Keep the character's head, body size and hole pattern identical to the extra reference."
+  },
+  {
+    "id": "turtle_walk4",
+    "out": "art/dolls/turtle_walk4.webp",
+    "kind": "doll",
+    "refs": [
+      "art_src/dolls/turtle_walk.png",
+      "art_src/dolls/turtle_walk2.png"
+    ],
+    "prompt": "The exact same turtle as the extra reference, same head, shell and size; ONLY the four legs differ, as one frame of a slow walking cycle: the two front-right and rear-left legs are passing under the body, all legs close together, knees bent. A single paper puppet cut-out, side view, facing RIGHT, simple cute children's picture-book silhouette, one piece. It takes about 70% of the frame, centered horizontally, with its feet or base at the very bottom of the frame. Eye is a small round cut-out hole, no drawn face. Nothing else in the image, no ground, no grass. Keep the character's head, body size and hole pattern identical to the extra reference."
+  },
+  {
+    "id": "wolf_climb1",
+    "out": "art/dolls/wolf_climb1.webp",
+    "kind": "doll",
+    "refs": [
+      "art_src/dolls/wolf_walk.png"
+    ],
+    "prompt": "The exact same wolf as the extra reference, same head, body, tail and size, climbing up a steep slope on all fours, body angled upward, as one frame of a slow climbing cycle: front right paw reaching far up, rear left leg pushing straight down behind, the other two limbs bent under the body. A single paper puppet cut-out, side view, facing RIGHT, simple cute children's picture-book silhouette, one piece. It takes about 70% of the frame, centered horizontally, with its feet or base at the very bottom of the frame. Eye is a small round cut-out hole, no drawn face. Nothing else in the image, no ground, no grass. Keep the character's head, body size and hole pattern identical to the extra reference."
+  },
+  {
+    "id": "wolf_climb2",
+    "out": "art/dolls/wolf_climb2.webp",
+    "kind": "doll",
+    "refs": [
+      "art_src/dolls/wolf_climb1.png"
+    ],
+    "prompt": "The exact same wolf as the extra reference, same head, body, tail and size, climbing up a steep slope on all fours, body angled upward, as one frame of a slow climbing cycle: all four limbs gathered close under the body, knees and elbows bent, body low. A single paper puppet cut-out, side view, facing RIGHT, simple cute children's picture-book silhouette, one piece. It takes about 70% of the frame, centered horizontally, with its feet or base at the very bottom of the frame. Eye is a small round cut-out hole, no drawn face. Nothing else in the image, no ground, no grass. Keep the character's head, body size and hole pattern identical to the extra reference."
+  },
+  {
+    "id": "wolf_climb3",
+    "out": "art/dolls/wolf_climb3.webp",
+    "kind": "doll",
+    "refs": [
+      "art_src/dolls/wolf_climb1.png"
+    ],
+    "prompt": "The exact same wolf as the extra reference, same head, body, tail and size, climbing up a steep slope on all fours, body angled upward, as one frame of a slow climbing cycle: front left paw reaching far up, rear right leg pushing straight down behind, the other two limbs bent under the body; the mirror step of the reference. A single paper puppet cut-out, side view, facing RIGHT, simple cute children's picture-book silhouette, one piece. It takes about 70% of the frame, centered horizontally, with its feet or base at the very bottom of the frame. Eye is a small round cut-out hole, no drawn face. Nothing else in the image, no ground, no grass. Keep the character's head, body size and hole pattern identical to the extra reference."
+  },
+  {
+    "id": "wolf_climb4",
+    "out": "art/dolls/wolf_climb4.webp",
+    "kind": "doll",
+    "refs": [
+      "art_src/dolls/wolf_climb1.png",
+      "art_src/dolls/wolf_climb3.png"
+    ],
+    "prompt": "The exact same wolf as the extra reference, same head, body, tail and size, climbing up a steep slope on all fours, body angled upward, as one frame of a slow climbing cycle: all four limbs gathered close under the body with the other limbs in front, knees and elbows bent, body low. A single paper puppet cut-out, side view, facing RIGHT, simple cute children's picture-book silhouette, one piece. It takes about 70% of the frame, centered horizontally, with its feet or base at the very bottom of the frame. Eye is a small round cut-out hole, no drawn face. Nothing else in the image, no ground, no grass. Keep the character's head, body size and hole pattern identical to the extra reference."
+  }
+]
