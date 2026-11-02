@@ -45,6 +45,8 @@ python3 -m http.server 8765
 
 ## 문서
 
+- [`TODO.md`](TODO.md): 할 일(다음 세션은 여기부터)
+
 - [`PLAN.md`](PLAN.md): 앱 기획서 — 두 읽기 모드, 화면, 무대 체계, 동화 고르기, 기술 구성, 판단 필요 항목, 진행 순서
 - [`docs/REUSE.md`](docs/REUSE.md): 동화극장에서 가져오는 대본·녹음·재생 엔진과 동기화 방법
 - [`docs/STORY_EDIT.md`](docs/STORY_EDIT.md): 잠자리 대본 다듬기 — 놀이에서 온 사족 빼기, 첫 출시 4편의 줄별 결정
