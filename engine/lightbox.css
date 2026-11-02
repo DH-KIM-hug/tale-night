@@ -109,6 +109,20 @@
 .lb-v2doll img.on { opacity: 1; }
 .lb-v2 .lb-fx-fireflies { position: absolute; }
 @media (prefers-reduced-motion: reduce) { .lb-v2moon, .lb-v2sway { animation: none; } }
-/* 함께 읽기: 글이 무대 그림 위에 놓이므로 어두운 판을 깐다 */
-body:has(.lb-v2) #readPanel { position: relative; z-index: 2; background: rgba(8,12,34,.72); border-radius: 12px; }
 body:has(.lb-v2) #readPanel p { color: #f3efe3; }
+/* 함께 읽기: 그림을 가리지 않도록 글은 아래 띠에 둔다. 세로 폰은 그림 아래쪽 빈 곳에 겹친다 */
+.together:has(.lb-v2) { --v2band: 132px; }
+@media (max-height: 500px) { .together:has(.lb-v2) { --v2band: 84px; } }
+.together .lb.lb-v2 { bottom: var(--v2band); }
+.together:has(.lb-v2) .next-band { position: fixed; bottom: var(--v2band); }
+body:has(.lb-v2) #readPanel { position: fixed; left: 0; right: 0; bottom: 0; width: auto; height: var(--v2band); max-height: none; margin: 0; grid-template-columns: minmax(0, 1fr) auto; grid-template-rows: minmax(0, 1fr); align-items: center; gap: 16px; padding: 8px max(20px, env(safe-area-inset-right)) calc(8px + env(safe-area-inset-bottom, 0px)) max(20px, env(safe-area-inset-left)); background: #0a0f2a; border-radius: 0; }
+body:has(.lb-v2) #readPanel .lines p:not(.now) { display: none; }
+body:has(.lb-v2) #readPanel .lines p { margin: 0; }
+body:has(.lb-v2) #readPanel .turn .where { display: none; }
+@media (max-aspect-ratio: 3/5) {
+  .together .lb.lb-v2 { bottom: 0; }
+  .together:has(.lb-v2) { --v2band: 26dvh; }
+  .together:has(.lb-v2) .next-band { bottom: 26dvh; }
+  body:has(.lb-v2) #readPanel { grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) auto; background: linear-gradient(transparent, #0a0f2a 16%); }
+  body:has(.lb-v2) #readPanel .turn .where { display: block; }
+}

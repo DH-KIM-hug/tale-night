@@ -125,7 +125,7 @@
        "src": "art/v2/rabbit/shade/tab/ground.webp",
        "top": 3.6
       },
-      {
+      {"src": "art/v2/rabbit/shade/branch.webp", "at": [58, 21, 30]}, {
        "src": "art/v2/rabbit/shade/tab/tree.webp"
       }
      ],
@@ -207,11 +207,7 @@
        ]
       },
       "owl": {
-       "default": [
-        87,
-        74,
-        6.5
-       ]
+       "default": [70, 75, 6.5]
       }
      }
     },
@@ -239,7 +235,7 @@
        "src": "art/v2/rabbit/shade/land/ground.webp",
        "top": 0
       },
-      {
+      {"src": "art/v2/rabbit/shade/branch.webp", "at": [69, 21, 22]}, {
        "src": "art/v2/rabbit/shade/land/tree.webp"
       }
      ],
@@ -331,11 +327,7 @@
        ]
       },
       "owl": {
-       "default": [
-        86,
-        76,
-        4.8
-       ]
+       "default": [79, 74, 4.8]
       }
      }
     },
@@ -363,7 +355,7 @@
        "src": "art/v2/rabbit/shade/port/ground.webp",
        "top": 0
       },
-      {
+      {"src": "art/v2/rabbit/shade/branch.webp", "at": [38, 19, 50]}, {
        "src": "art/v2/rabbit/shade/port/tree.webp"
       }
      ],
@@ -425,11 +417,7 @@
        ]
       },
       "owl": {
-       "default": [
-        82,
-        80,
-        13
-       ]
+       "default": [60, 77.5, 13]
       }
      }
     }

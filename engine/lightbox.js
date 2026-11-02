@@ -95,7 +95,9 @@
       for (const b of F.back) {
         const i = pic(b.src, 'lb-v2full');
         if (b.top) i.style.top = b.top + '%';
-        if (b.moon) i.className = 'lb-v2moon', Object.assign(i.style, { left: b.moon[0] + '%', top: b.moon[1] + '%', width: b.moon[2] + '%' });
+        const at = b.moon || b.at;
+        if (b.moon) i.className = 'lb-v2moon';
+        if (at) Object.assign(i.style, { left: at[0] + '%', top: at[1] + '%', width: at[2] + '%', height: 'auto' });
       }
       this.layers.dolls = el('div', 'lb-layer', this.set);
       for (const [src, x, w] of F.sway || []) { // 위에 매달려 흔들리는 조각
@@ -103,6 +105,7 @@
         Object.assign(i.style, { left: x + '%', width: w + '%' });
         i.style.setProperty('--d', 4 + R() * 3 + 's'); i.style.setProperty('--o', -R() * 6 + 's'); i.style.setProperty('--a', 1 + R() * 1.4 + 'deg');
       }
+      this.layers.front = el('div', 'lb-layer', this.set); // 흔들리는 가지에 가리면 안 되는 인물(부엉이)
       this.layers.fx = el('div', 'lb-layer lb-fx', this.set);
       this.boxEl.replaceChildren(this.set);
       this.boxKey = key;
@@ -121,7 +124,7 @@
       const pos = this.v2.formats[this.fmt].dolls[name] || {}, p = pos[d.pose] || pos.default;
       let e = this.dollEls[name];
       if (!e) {
-        e = this.dollEls[name] = el('div', 'lb-v2doll', this.layers.dolls);
+        e = this.dollEls[name] = el('div', 'lb-v2doll', this.stage.dolls[name].front ? this.layers.front : this.layers.dolls);
         e._imgs = {};
         for (const [pose, src] of Object.entries(this.stage.dolls[name].v2 || {})) { const i = el('img', '', e); i.src = url(src); i.alt = ''; e._imgs[pose] = i; }
       }
