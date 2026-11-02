@@ -9,8 +9,8 @@
     "frame": "art/rabbit/village_frame.webp"
    },
    "glowAt": [
-    60,
-    26
+    50,
+    27
    ],
    "fx": "fireflies"
   },
