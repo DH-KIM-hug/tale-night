@@ -2,10 +2,13 @@
 
 다음 세션은 이 파일과 `CLAUDE.md` 부터 읽는다. 지금 상태는 `README.md` '지금 들어 있는 것'.
 
+## 0. 앱 디자인 — 사용자 확인 대기
+- [`docs/DESIGN_PLAN.md`](docs/DESIGN_PLAN.md) §7 결정 후 표지 2장 시범부터.
+
 ## 1. 그림 88장 — 가장 먼저
+- 토끼와 거북이·아기 돼지 삼형제는 끝. 층마다 따로 생성으로 정함(PLAN §11-9, `tools/gen_art.py`). 남은 것: 해와 바람·미운 아기 오리·커다란 순무, 스플래시.
 - 목록·크기·규칙: [`docs/ART_LIST.md`](docs/ART_LIST.md). 무대 12벌 × 4층(48장) + 종이 인형 36장 + 스플래시 4장.
 - **이미지 생성(ChatGPT·Codex)으로 만든다. 코드로 그리지 않는다**(SVG 제작은 사용자 결정으로 취소).
-- 시범 1편(토끼와 거북이 `village` 상자 4층 + 토끼·거북이)을 먼저 만들어 사용자 확인 → 층마다 따로 생성할지, 한 장 생성 후 층 분리할지 정한다(PLAN §11-9).
 - 넣은 뒤: `node tools/art_list.mjs`, `tools/dev/scenes.html?id=rabbit` 로 확인, 인형 크기·자리는 `content/<동화>/stage.json` 의 `w`·`x,y` 만 고친다.
 - 그림을 받은 뒤 앱 아이콘·잠금 화면 표지를 빛 상자로 찍는다(PLAN §5-5). `index.html` 의 아이콘 링크, `engine/audio.js` Media Session `artwork` 도 그때 다시 넣는다.
 
