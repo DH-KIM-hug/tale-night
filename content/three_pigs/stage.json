@@ -440,7 +440,7 @@
     },
     "wolf": {
      "pose": "walk",
-     "x": 32,
+     "x": 36,
      "y": 20,
      "vis": false
     }
@@ -472,7 +472,7 @@
      "match": "늑대는 지붕으로",
      "do": [
       "wolf:pose:climb",
-      "wolf:walk:62,54:6"
+      "wolf:walk:60,50:6"
      ]
     }
    ]

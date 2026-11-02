@@ -34,7 +34,7 @@
     "refs": [
       "art_src/dolls/wolf_walk.png"
     ],
-    "prompt": "The exact same wolf as the extra reference, same head, body, tail and size, climbing up a steep slope on all fours, body angled upward, as one frame of a slow climbing cycle: front right paw reaching far up, rear left leg pushing straight down behind, the other two limbs bent under the body. A single paper puppet cut-out, side view, facing RIGHT, simple cute children's picture-book silhouette, one piece. It takes about 70% of the frame, centered horizontally, with its feet or base at the very bottom of the frame. Eye is a small round cut-out hole, no drawn face. Nothing else in the image, no ground, no grass. Keep the character's head, body size and hole pattern identical to the extra reference."
+    "prompt": "The exact same wolf as the extra reference, climbing a steep roof on ALL FOURS like a real animal, never rearing up on its hind legs: the whole body lies along a straight 40-degree diagonal, rump lower left, head upper right, belly close to the slope, tail trailing down behind. One frame of a slow climbing cycle. Near front paw stretched far up the slope with the elbow straight; far hind leg stretched far down behind with the knee straight; the far front paw and near hind paw are bent and tucked under the belly. A single paper puppet cut-out, side view, facing RIGHT, simple cute children's picture-book silhouette, one piece. It takes about 70% of the frame, centered horizontally, with its feet or base at the very bottom of the frame. Eye is a small round cut-out hole, no drawn face. Nothing else in the image, no ground, no grass. Keep the head, body, tail, size and hole pattern identical to the reference; the only change between frames is the position of the four legs."
   },
   {
     "id": "wolf_climb2",
@@ -43,7 +43,8 @@
     "refs": [
       "art_src/dolls/wolf_climb1.png"
     ],
-    "prompt": "The exact same wolf as the extra reference, same head, body, tail and size, climbing up a steep slope on all fours, body angled upward, as one frame of a slow climbing cycle: all four limbs gathered close under the body, knees and elbows bent, body low. A single paper puppet cut-out, side view, facing RIGHT, simple cute children's picture-book silhouette, one piece. It takes about 70% of the frame, centered horizontally, with its feet or base at the very bottom of the frame. Eye is a small round cut-out hole, no drawn face. Nothing else in the image, no ground, no grass. Keep the character's head, body size and hole pattern identical to the extra reference."
+    "prompt": "The exact same wolf as the extra reference, climbing a steep roof on ALL FOURS like a real animal, never rearing up on its hind legs: the whole body lies along a straight 40-degree diagonal, rump lower left, head upper right, belly close to the slope, tail trailing down behind. One frame of a slow climbing cycle. All four legs gathered under the belly, every knee and elbow sharply bent, the near front paw and the far hind paw passing each other's side. A single paper puppet cut-out, side view, facing RIGHT, simple cute children's picture-book silhouette, one piece. It takes about 70% of the frame, centered horizontally, with its feet or base at the very bottom of the frame. Eye is a small round cut-out hole, no drawn face. Nothing else in the image, no ground, no grass. Keep the head, body, tail, size and hole pattern identical to the reference; the only change between frames is the position of the four legs.",
+    "alignTo": "art/dolls/wolf_climb1.webp"
   },
   {
     "id": "wolf_climb3",
@@ -52,16 +53,17 @@
     "refs": [
       "art_src/dolls/wolf_climb1.png"
     ],
-    "prompt": "The exact same wolf as the extra reference, same head, body, tail and size, climbing up a steep slope on all fours, body angled upward, as one frame of a slow climbing cycle: front left paw reaching far up, rear right leg pushing straight down behind, the other two limbs bent under the body; the mirror step of the reference. A single paper puppet cut-out, side view, facing RIGHT, simple cute children's picture-book silhouette, one piece. It takes about 70% of the frame, centered horizontally, with its feet or base at the very bottom of the frame. Eye is a small round cut-out hole, no drawn face. Nothing else in the image, no ground, no grass. Keep the character's head, body size and hole pattern identical to the extra reference."
+    "prompt": "The exact same wolf as the extra reference, climbing a steep roof on ALL FOURS like a real animal, never rearing up on its hind legs: the whole body lies along a straight 40-degree diagonal, rump lower left, head upper right, belly close to the slope, tail trailing down behind. One frame of a slow climbing cycle. Far front paw stretched far up the slope with the elbow straight; near hind leg stretched far down behind with the knee straight; the near front paw and far hind paw are bent and tucked under the belly. This is the opposite step of the first frame. A single paper puppet cut-out, side view, facing RIGHT, simple cute children's picture-book silhouette, one piece. It takes about 70% of the frame, centered horizontally, with its feet or base at the very bottom of the frame. Eye is a small round cut-out hole, no drawn face. Nothing else in the image, no ground, no grass. Keep the head, body, tail, size and hole pattern identical to the reference; the only change between frames is the position of the four legs.",
+    "alignTo": "art/dolls/wolf_climb1.webp"
   },
   {
     "id": "wolf_climb4",
     "out": "art/dolls/wolf_climb4.webp",
     "kind": "doll",
     "refs": [
-      "art_src/dolls/wolf_climb1.png",
-      "art_src/dolls/wolf_climb3.png"
+      "art_src/dolls/wolf_climb1.png"
     ],
-    "prompt": "The exact same wolf as the extra reference, same head, body, tail and size, climbing up a steep slope on all fours, body angled upward, as one frame of a slow climbing cycle: all four limbs gathered close under the body with the other limbs in front, knees and elbows bent, body low. A single paper puppet cut-out, side view, facing RIGHT, simple cute children's picture-book silhouette, one piece. It takes about 70% of the frame, centered horizontally, with its feet or base at the very bottom of the frame. Eye is a small round cut-out hole, no drawn face. Nothing else in the image, no ground, no grass. Keep the character's head, body size and hole pattern identical to the extra reference."
+    "prompt": "The exact same wolf as the extra reference, climbing a steep roof on ALL FOURS like a real animal, never rearing up on its hind legs: the whole body lies along a straight 40-degree diagonal, rump lower left, head upper right, belly close to the slope, tail trailing down behind. One frame of a slow climbing cycle. All four legs gathered under the belly, every knee and elbow sharply bent, the far front paw and the near hind paw passing each other's side. A single paper puppet cut-out, side view, facing RIGHT, simple cute children's picture-book silhouette, one piece. It takes about 70% of the frame, centered horizontally, with its feet or base at the very bottom of the frame. Eye is a small round cut-out hole, no drawn face. Nothing else in the image, no ground, no grass. Keep the head, body, tail, size and hole pattern identical to the reference; the only change between frames is the position of the four legs.",
+    "alignTo": "art/dolls/wolf_climb1.webp"
   }
 ]

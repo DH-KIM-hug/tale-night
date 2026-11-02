@@ -68,10 +68,8 @@
     "out": "art/dolls/pigs_sleep.webp",
     "kind": "doll",
     "refs": [
-      "art_src/dolls/pig1_stand.png",
-      "art_src/dolls/pig2_stand.png",
-      "art_src/dolls/pig3_stand.png"
+      "art_src/dolls/pigs_sleep_ref.png"
     ],
-    "prompt": "Exactly three piglets from the extra references, each different as follows: LEFT piglet wears a straw hat and no scarf; MIDDLE piglet wears only a neckerchief and NO hat; RIGHT piglet wears only an apron and NO hat, NO scarf. All three are lying down asleep on their sides in a low row, heads resting on each other, with closed eye slits, cut as a single connected paper piece. The group is low and wide, about twice as wide as it is tall. No instruments, no book. Rule: only one straw hat in the whole image. A single paper puppet cut-out, side view, facing RIGHT, simple cute children's picture-book silhouette, one piece. It takes about 70% of the frame, centered horizontally, with its feet or base at the very bottom of the frame. Eye is a small round cut-out hole, no drawn face. Nothing else in the image, no ground, no grass. Keep the character's head, body size and hole pattern identical to the extra reference."
+    "prompt": "The exact same three sleeping piglets as the extra reference, same design, same heads with closed-eye slits, same straw hat on the left, neckerchief in the middle, apron on the right, same lying-down pose with bellies on the ground and chins low. The ONLY change: they are pulled apart so that no piglet overlaps another, with a clear empty gap between each, about as wide as one ear, joined only by a thin blanket strip along the bottom edge so it stays one paper piece; and each body gets more and larger flower and leaf holes so light shines through. The group spans 92% of the frame width. Base at the very bottom of the frame. Nothing else in the image, no ground, no grass."
   }
 ]

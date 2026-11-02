@@ -36,3 +36,9 @@
 ## 5. 다음 동화
 - 같은 기준으로 대본 다듬기(`docs/STORY_EDIT.md` §1) → `content/<id>/edit.json` → sync → stage.json → 그림.
 - 후보: 팥죽할멈과 호랑이, 별주부전(영어 녹음 있음). 창작 동화는 첫 출시 제외(권장, 미확정).
+
+## 생성 한도가 풀리면 이어서 (2026-11-04 15:48 이후)
+Codex 이미지 한도로 멈췄다. 사이트에는 예전 그림이 그대로 올라가 있다.
+1. **잠든 돼지:** `rm art/dolls/pigs_sleep.webp` 후 `... gen_art.py poses pigs_sleep`. 원본 `art_src/dolls/pigs_sleep_ref.png` 를 참고로 쓴다(사이를 벌리고 구멍을 키움).
+2. **상자 6벌 6층:** hill·shade·finish·meadow·lot·brick_in. 기존 `art/.../<상자>_*.webp` 를 지우고 `... gen_art.py boxes6`(`tools/art_jobs/boxes6.json`, 36장). `hill_far`·`shade_far`·`finish_far` 는 원본이 이미 있어 다시 뽑지 않는다. 한도를 생각해 동시 실행은 3개 이하.
+3. `stage.json` 의 각 상자에 6층 `layers` 와 `dk`(village 와 같은 값)를 넣고, 언덕 모양에 맞게 인형 `y` 를 고친 뒤 `check_stage`·`scenes.html` 로 확인한다.

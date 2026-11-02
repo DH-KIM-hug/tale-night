@@ -39,7 +39,7 @@ def generate(job, raw):
         raise RuntimeError(txt[-400:])
 
 
-def key(raw, out, doll=False, fit=None):
+def key(raw, out, doll=False, fit=None, align=None):
     """마젠타 정도(min(R,B)-G)로 알파를 만든다. 종이는 흰색뿐이라 남은 색 번짐은 무채색으로 되돌린다."""
     im = Image.open(raw).convert('RGB')
     w, h = im.size
@@ -61,6 +61,13 @@ def key(raw, out, doll=False, fit=None):
         moved.paste(pic, ((DOLL[0] - x0 - x1) // 2, DOLL[1] - y1))
         pic = moved
         alpha = np.asarray(pic)[..., 3]
+    if align:  # 걷기·오르기 프레임: 몸통이 첫 장과 가장 많이 겹치도록 옮긴다(다리만 바뀌게)
+        base = np.asarray(Image.open(os.path.join(ROOT, align)).convert('RGBA').getchannel('A').resize((256, 256))) > 128
+        small = np.asarray(pic.getchannel('A').resize((256, 256))) > 128
+        dx, dy = max(((x, y) for x in range(-30, 31) for y in range(-30, 31)), key=lambda o: (np.roll(small, o, (1, 0)) & base).sum())
+        moved = Image.new('RGBA', pic.size, (0, 0, 0, 0))
+        moved.paste(pic, (dx * pic.width // 256, dy * pic.height // 256))
+        pic = moved
     if os.path.basename(out).endswith('_near.webp'):  # 앞 풀숲은 화면 맨 아래에 붙인다(뜨면 뒤 층이 띠처럼 보인다)
         y1 = pic.getchannel('A').point(lambda v: 255 if v > 128 else 0).getbbox()[3]
         moved = Image.new('RGBA', pic.size, (0, 0, 0, 0))
@@ -85,7 +92,7 @@ def main():
         if os.path.exists(out): print('skip', job['id']); continue
         try:
             if not os.path.exists(raw): generate(job, raw)
-            key(raw, out, job.get('kind') == 'doll', job.get('fit'))
+            key(raw, out, job.get('kind') == 'doll', job.get('fit'), job.get('alignTo'))
         except Exception as e:
             print(job['id'], 'FAIL', e, flush=True)
 

@@ -1,0 +1,290 @@
+[
+  {
+    "id": "hill_far",
+    "out": "art/rabbit/hill_far.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "The FARTHEST layer of a paper light box: exactly three very gentle distant mountain ridges with a few tiny pines, occupying only the lower 50% of the frame, bottom edge solid edge to edge. Everything above is empty magenta. Cut delicately with many small holes and thin connected paper bridges."
+  },
+  {
+    "id": "hill_far2",
+    "out": "art/rabbit/hill_far2.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "A second-farthest layer of a paper light box: one lower range of hills running edge to edge with a band of small pine trees with many gaps, rising to at most 38% of the frame height at the left and 44% at the right. Everything above is empty magenta. Cut delicately with many small holes and thin connected paper bridges."
+  },
+  {
+    "id": "hill_mid",
+    "out": "art/rabbit/hill_mid.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "A MIDDLE layer of a paper light box: ONLY two small pine trees and one small round lacy tree in a row with clear gaps, standing on a thin paper strip, with NO hill. The group occupies 50% to 85% of the image width. The strip sits at 30% of the image height above the bottom edge and below it the image is empty magenta. The tallest tree reaches 66% of the image height. Everything else is empty magenta. Cut delicately with many small holes and thin connected paper bridges."
+  },
+  {
+    "id": "hill_ground",
+    "out": "art/rabbit/hill_ground.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "A GROUND layer of a paper light box: one long hill running edge to edge. Its top edge is a straight gentle slope: 14% of the frame height at the left edge, rising evenly to 38% at 70% of the width, then flat to the right edge. A winding road cut as a long hole follows the slope, and rows of small leaf, dot and flower holes are scattered over it. No trees, no houses. Everything above the hill is empty magenta. Cut delicately with many small holes and thin connected paper bridges."
+  },
+  {
+    "id": "hill_near",
+    "out": "art/rabbit/hill_near.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "A NEAR layer of a paper light box: only a low strip along the bottom of the frame: short grasses with a few tall reeds at the far left and far right. The reeds rise to at most 20% of the frame height and stay inside the outer 16% of the width on each side. Across the central 68% only short grass under 8% of the frame height. The strip runs edge to edge along the bottom. Everything above is empty magenta. THE MOST IMPORTANT RULE: this sheet will be BACKLIT, so only the holes glow. Every solid shape is pierced: no solid area wider than about 4% of the image width anywhere. Cut it like delicate lace, leaving thin connected paper bridges between many holes."
+  },
+  {
+    "id": "hill_frame",
+    "out": "art/rabbit/hill_frame.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "The FRONT frame layer of a paper light box: leafy branches hanging from the top edge as a light curtain of lacy leaves, longer at the left and right corners and only a thin fringe in the centre, under 14% of the frame height. A slim trunk on the far left and far right. IMPORTANT: below the middle of the image there is NOTHING but the two slim uprights: NO ferns, NO bushes, NO grass, NO ground. Each upright stays inside the outer 17% of the image width on its side. Everything between them down to the very bottom edge is empty magenta. THE MOST IMPORTANT RULE: this sheet will be BACKLIT, so only the holes glow. Every solid shape is pierced: no solid area wider than about 4% of the image width anywhere. Cut it like delicate lace, leaving thin connected paper bridges between many holes."
+  },
+  {
+    "id": "shade_far",
+    "out": "art/rabbit/shade_far.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "The FARTHEST layer of a paper light box: low gentle rolling hills occupying only the lower 36% of the frame, bottom edge solid, and two small puffy clouds cut as separate floating paper pieces on the right of the sky. Everything else is empty magenta. Cut delicately with many small holes and thin connected paper bridges."
+  },
+  {
+    "id": "shade_far2",
+    "out": "art/rabbit/shade_far2.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "A second-farthest layer of a paper light box: a low band of small round bushes and little trees running edge to edge with many gaps, rising to at most 30% of the frame height. Everything above is empty magenta. Cut delicately with many small holes and thin connected paper bridges."
+  },
+  {
+    "id": "shade_mid",
+    "out": "art/rabbit/shade_mid.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "A MIDDLE layer of a paper light box: ONLY one huge round tree with NO ground. Trunk at 68% of the image width, a big round crown spreading from 45% to 88% of the width and reaching 85% of the frame height. The crown is an open net of branches and leaf-shaped holes you can see straight through. One thick horizontal branch extends to the left at about 78% of the frame height. The trunk ends at 18% of the frame height above the bottom edge. The whole left side of the image is empty magenta. Cut delicately with many small holes and thin connected paper bridges."
+  },
+  {
+    "id": "shade_ground",
+    "out": "art/rabbit/shade_ground.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "A GROUND layer of a paper light box: one low soft grassy mound running edge to edge along the bottom, nearly flat, its top at 22% of the frame height, with rows of small leaf, dot and flower holes. No trees, no tall plants. Everything above is empty magenta. Cut delicately with many small holes and thin connected paper bridges."
+  },
+  {
+    "id": "shade_near",
+    "out": "art/rabbit/shade_near.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "A NEAR layer of a paper light box: only a low strip along the bottom of the frame: short grasses and small daisies, with one small lacy flowering clump at the far left and far right, at most 16% of the frame height, inside the outer 16% of the width. Across the central 68% only short grass under 8% of the frame height. The strip runs edge to edge along the bottom. Everything above is empty magenta. THE MOST IMPORTANT RULE: this sheet will be BACKLIT, so only the holes glow. Every solid shape is pierced: no solid area wider than about 4% of the image width anywhere. Cut it like delicate lace, leaving thin connected paper bridges between many holes."
+  },
+  {
+    "id": "shade_frame",
+    "out": "art/rabbit/shade_frame.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "The FRONT frame layer of a paper light box: lacy leaf clusters only in the two top corners, each at most 30% of the width along the top and 30% of the height down the side, top centre open, on one slim trunk at the far left and far right. IMPORTANT: below the middle of the image there is NOTHING but the two slim uprights: NO ferns, NO bushes, NO grass, NO ground. Each upright stays inside the outer 17% of the image width on its side. Everything between them down to the very bottom edge is empty magenta. THE MOST IMPORTANT RULE: this sheet will be BACKLIT, so only the holes glow. Every solid shape is pierced: no solid area wider than about 4% of the image width anywhere. Cut it like delicate lace, leaving thin connected paper bridges between many holes."
+  },
+  {
+    "id": "finish_far",
+    "out": "art/rabbit/finish_far.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "The FARTHEST layer of a paper light box: a few gentle distant mountains with tiny pines, occupying only the lower 42% of the frame, bottom edge solid. Everything above is empty magenta. Cut delicately with many small holes and thin connected paper bridges."
+  },
+  {
+    "id": "finish_far2",
+    "out": "art/rabbit/finish_far2.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "A second-farthest layer of a paper light box: a lower range of hills running edge to edge with a band of small pines with many gaps, rising to at most 34% of the frame height at the sides and 24% in the middle. Everything above is empty magenta. Cut delicately with many small holes and thin connected paper bridges."
+  },
+  {
+    "id": "finish_mid",
+    "out": "art/rabbit/finish_mid.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "A MIDDLE layer of a paper light box: a finish line with NO ground. Two slim wooden posts at 28% and 72% of the image width, joined at the top by a string of small triangular bunting flags, each flag with a little hole, the string sagging gently at about 62% of the frame height. One round lacy tree outside each post, inside the central 86% of the width, crowns an open net of leaf holes. All posts and trunks end at 18% of the frame height above the bottom edge. Everything else is empty magenta. Cut delicately with many small holes and thin connected paper bridges."
+  },
+  {
+    "id": "finish_ground",
+    "out": "art/rabbit/finish_ground.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "A GROUND layer of a paper light box: a low flat meadow running edge to edge along the bottom, its top at 24% of the frame height, with rows of small leaf, dot and flower holes. No trees or posts. Everything above is empty magenta. Cut delicately with many small holes and thin connected paper bridges."
+  },
+  {
+    "id": "finish_near",
+    "out": "art/rabbit/finish_near.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "A NEAR layer of a paper light box: only a low strip along the bottom of the frame: a row of forest-friend spectators as simple head silhouettes: duck, cow, pig, puppy, sheep, each with one small round eye hole, on a strip of short grass. Three heads at the far left and two at the far right, inside the outer 24% of the width, at most 20% of the frame height. Across the central 52% only short grass under 8% of the frame height. The strip runs edge to edge along the bottom. Everything above is empty magenta. THE MOST IMPORTANT RULE: this sheet will be BACKLIT, so only the holes glow. Every solid shape is pierced: no solid area wider than about 4% of the image width anywhere. Cut it like delicate lace, leaving thin connected paper bridges between many holes."
+  },
+  {
+    "id": "finish_frame",
+    "out": "art/rabbit/finish_frame.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "The FRONT frame layer of a paper light box: two finely cut lacy tree trunks on the far left and far right, whose leafy branches meet across the top as a thin canopy, under 12% of the frame height at the centre, running off the top edge with no gap. IMPORTANT: below the middle of the image there is NOTHING but the two slim uprights: NO ferns, NO bushes, NO grass, NO ground. Each upright stays inside the outer 17% of the image width on its side. Everything between them down to the very bottom edge is empty magenta. THE MOST IMPORTANT RULE: this sheet will be BACKLIT, so only the holes glow. Every solid shape is pierced: no solid area wider than about 4% of the image width anywhere. Cut it like delicate lace, leaving thin connected paper bridges between many holes."
+  },
+  {
+    "id": "meadow_far",
+    "out": "art/three_pigs/meadow_far.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "The FARTHEST layer of a paper light box: gentle distant rolling hills with tiny round trees, occupying only the lower 42% of the frame, bottom edge solid, and two small puffy clouds cut as separate paper pieces on the left of the sky. Everything else is empty magenta. Cut delicately with many small holes and thin connected paper bridges."
+  },
+  {
+    "id": "meadow_far2",
+    "out": "art/three_pigs/meadow_far2.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "A second-farthest layer of a paper light box: a lower range of hills running edge to edge with a band of small round trees with many gaps, rising to at most 34% of the frame height. Everything above is empty magenta. Cut delicately with many small holes and thin connected paper bridges."
+  },
+  {
+    "id": "meadow_mid",
+    "out": "art/three_pigs/meadow_mid.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "A MIDDLE layer of a paper light box with NO ground: a small cozy cottage with a mushroom-round roof, round-arched door and lattice window holes at the far left, and a round tree with an open net crown of leaf holes at the far right. The centre of the image is empty magenta. Their bases end on short thin paper strips at 20% of the image height above the bottom edge. They rise to at most 56% of the frame height. Everything else is empty magenta. Cut delicately with many small holes and thin connected paper bridges."
+  },
+  {
+    "id": "meadow_ground",
+    "out": "art/three_pigs/meadow_ground.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "A GROUND layer of a paper light box: a wide very low flower meadow running edge to edge along the bottom, its top at 24% of the frame height, with rows of small flower, leaf and dot holes. No trees, no houses. Everything above is empty magenta. Cut delicately with many small holes and thin connected paper bridges."
+  },
+  {
+    "id": "meadow_near",
+    "out": "art/three_pigs/meadow_near.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "A NEAR layer of a paper light box: only a low strip along the bottom of the frame: short grasses and small daisies, with one small lacy flowering clump at the far left and far right, at most 16% of the frame height, inside the outer 16% of the width. Across the central 68% only short grass under 8% of the frame height. The strip runs edge to edge along the bottom. Everything above is empty magenta. THE MOST IMPORTANT RULE: this sheet will be BACKLIT, so only the holes glow. Every solid shape is pierced: no solid area wider than about 4% of the image width anywhere. Cut it like delicate lace, leaving thin connected paper bridges between many holes."
+  },
+  {
+    "id": "meadow_frame",
+    "out": "art/three_pigs/meadow_frame.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "The FRONT frame layer of a paper light box: leafy branches hanging from the top edge as a light curtain of lacy leaves, longer at the left and right corners and only a thin fringe in the centre, under 14% of the frame height. A slim trunk on the far left and far right. IMPORTANT: below the middle of the image there is NOTHING but the two slim uprights: NO ferns, NO bushes, NO grass, NO ground. Each upright stays inside the outer 17% of the image width on its side. Everything between them down to the very bottom edge is empty magenta. THE MOST IMPORTANT RULE: this sheet will be BACKLIT, so only the holes glow. Every solid shape is pierced: no solid area wider than about 4% of the image width anywhere. Cut it like delicate lace, leaving thin connected paper bridges between many holes."
+  },
+  {
+    "id": "lot_far",
+    "out": "art/three_pigs/lot_far.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "The FARTHEST layer of a paper light box: gentle distant mountains with tiny pines, occupying only the lower 42% of the frame, bottom edge solid, and one small puffy cloud cut as a separate paper piece on the right of the sky. Everything else is empty magenta. Cut delicately with many small holes and thin connected paper bridges."
+  },
+  {
+    "id": "lot_far2",
+    "out": "art/three_pigs/lot_far2.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "A second-farthest layer of a paper light box: a lower range of hills running edge to edge with a band of small pines with many gaps, rising to at most 34% of the frame height at the sides and 22% in the middle. Everything above is empty magenta. Cut delicately with many small holes and thin connected paper bridges."
+  },
+  {
+    "id": "lot_mid",
+    "out": "art/three_pigs/lot_mid.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "A MIDDLE layer of a paper light box with NO ground and NO buildings: a short low wooden picket fence at the far left, and one small round tree with an open net crown at the far right, with their bases on short thin paper strips at 18% of the image height above the bottom edge. They rise to at most 40% of the frame height. The central 70% of the width is empty magenta. Cut delicately with many small holes and thin connected paper bridges."
+  },
+  {
+    "id": "lot_ground",
+    "out": "art/three_pigs/lot_ground.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "A GROUND layer of a paper light box: wide flat open ground running edge to edge along the bottom, its top at 24% of the frame height, with a winding footpath cut as a long hole and rows of small leaf and dot holes. No houses, no trees. Everything above is empty magenta. Cut delicately with many small holes and thin connected paper bridges."
+  },
+  {
+    "id": "lot_near",
+    "out": "art/three_pigs/lot_near.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "A NEAR layer of a paper light box: only a low strip along the bottom of the frame: short grasses and a few small wildflowers, with one small tuft at the far left and far right, at most 14% of the frame height, inside the outer 14% of the width. Across the central 72% only short grass under 7% of the frame height. The strip runs edge to edge along the bottom. Everything above is empty magenta. THE MOST IMPORTANT RULE: this sheet will be BACKLIT, so only the holes glow. Every solid shape is pierced: no solid area wider than about 4% of the image width anywhere. Cut it like delicate lace, leaving thin connected paper bridges between many holes."
+  },
+  {
+    "id": "lot_frame",
+    "out": "art/three_pigs/lot_frame.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "The FRONT frame layer of a paper light box: two slim lacy tree trunks on the far left and far right, whose leafy branches meet across the top as a thin canopy, under 12% of the frame height at the centre, running off the top edge with no gap. IMPORTANT: below the middle of the image there is NOTHING but the two slim uprights: NO ferns, NO bushes, NO grass, NO ground. Each upright stays inside the outer 17% of the image width on its side. Everything between them down to the very bottom edge is empty magenta. THE MOST IMPORTANT RULE: this sheet will be BACKLIT, so only the holes glow. Every solid shape is pierced: no solid area wider than about 4% of the image width anywhere. Cut it like delicate lace, leaving thin connected paper bridges between many holes."
+  },
+  {
+    "id": "brick_in_far",
+    "out": "art/three_pigs/brick_in_far.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "The FARTHEST layer of a paper light box: the inside back wall of a cozy brick cottage, one full sheet filling the entire frame, covered with a brick pattern of many small slit holes. On the right at about 76% of the width and 30% from the top is a square four-pane window: the panes are large cut-out holes showing magenta, with a thin cross of bars."
+  },
+  {
+    "id": "brick_in_far2",
+    "out": "art/three_pigs/brick_in_far2.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "A second-farthest layer of a paper light box, inside a cottage: a low wall panel running edge to edge along the bottom up to 30% of the frame height, cut with rows of arched and diamond holes; and at the upper left a small shelf with cups and a hanging garland of drying herbs, stopping before 50% of the width. The window area on the upper right stays empty. Everything else is empty magenta. Cut delicately with many small holes and thin connected paper bridges."
+  },
+  {
+    "id": "brick_in_mid",
+    "out": "art/three_pigs/brick_in_mid.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "A MIDDLE layer of a paper light box inside a cottage with NO floor: a brick fireplace on the right part with an open arched firebox hole and a chimney rising to about 62% of the frame height, its bricks cut as many slit holes; and a small table with a stool on the far left, table legs open. Bases end at 18% of the frame height above the bottom edge. The centre between table and fireplace is empty magenta. Everything else is empty magenta. Cut delicately with many small holes and thin connected paper bridges."
+  },
+  {
+    "id": "brick_in_ground",
+    "out": "art/three_pigs/brick_in_ground.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "A GROUND layer of a paper light box: a plain wooden floor running edge to edge along the bottom, its top at 22% of the frame height, cut with a plank pattern of thin long slit holes and small knot holes. Nothing above it: everything above is empty magenta. Cut delicately with many small holes and thin connected paper bridges."
+  },
+  {
+    "id": "brick_in_near",
+    "out": "art/three_pigs/brick_in_near.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "A NEAR layer of a paper light box: only a low strip along the bottom of the frame: a plain wooden floor edge with a plank pattern of thin slits, under 7% of the frame height in the centre, with one small basket of firewood at the far right and one small stool at the far left, inside the outer 14% of the width and at most 14% of the frame height. The strip runs edge to edge along the bottom. Everything above is empty magenta. THE MOST IMPORTANT RULE: this sheet will be BACKLIT, so only the holes glow. Every solid shape is pierced: no solid area wider than about 4% of the image width anywhere. Cut it like delicate lace, leaving thin connected paper bridges between many holes."
+  },
+  {
+    "id": "brick_in_frame",
+    "out": "art/three_pigs/brick_in_frame.webp",
+    "refs": [
+      "art_src/rabbit/village_mid.png"
+    ],
+    "prompt": "The FRONT frame layer of a paper light box: the interior wooden frame of a cottage room: one slim wooden post on the far left and far right, and a roof beam across the top under 10% of the frame height, running off the top edge, all cut with rows of small holes. IMPORTANT: below the middle of the image there is NOTHING but the two slim uprights: NO ferns, NO bushes, NO grass, NO ground. Each upright stays inside the outer 17% of the image width on its side. Everything between them down to the very bottom edge is empty magenta. THE MOST IMPORTANT RULE: this sheet will be BACKLIT, so only the holes glow. Every solid shape is pierced: no solid area wider than about 4% of the image width anywhere. Cut it like delicate lace, leaving thin connected paper bridges between many holes."
+  }
+]
