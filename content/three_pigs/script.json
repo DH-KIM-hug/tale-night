@@ -1,0 +1,854 @@
+{
+ "tale": "three_pigs",
+ "title": "아기 돼지 삼형제",
+ "source": "paper-tale-theater@374756dc42 tales/three_pigs/read_script_el.json + content/three_pigs/edit.json",
+ "scenes": [
+  {
+   "key": "R01_meadow",
+   "card": "삼 형제",
+   "lines": [
+    {
+     "text": "옛날 옛날에 아기 돼지 삼 형제가 살았어요.",
+     "clips": [
+      "audio/three_pigs/nar_edc4cedd8a.mp3"
+     ],
+     "dur": 4.08,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R01_meadow#0"
+    },
+    {
+     "text": "첫째는 피리를 삐리리, 둘째는 바이올린을 깽깽, 셋째는 책을 읽는 걸 좋아했지요.",
+     "clips": [
+      "audio/three_pigs/nar_c2250cb0e1.mp3"
+     ],
+     "dur": 8.24,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R01_meadow#1"
+    },
+    {
+     "text": "엄마 돼지가 말했어요. \"이제 너희도 다 컸구나. 세상에 나가서 각자 집을 지어 보렴.\"",
+     "clips": [
+      "audio/three_pigs/nar_ded3b14616.mp3",
+      "audio/three_pigs/mom_af8eb8966f.mp3"
+     ],
+     "dur": 7.36,
+     "roles": [
+      "nar",
+      "mom"
+     ],
+     "segRoles": [
+      "nar",
+      "mom"
+     ],
+     "from": "R01_meadow#3"
+    },
+    {
+     "text": "\"튼튼하게 지어야 한다!\" 엄마 돼지는 삼 형제를 꼭 안아 주었어요.",
+     "clips": [
+      "audio/three_pigs/mom_766888e78a.mp3",
+      "audio/three_pigs/nar_71bcf4319e.mp3"
+     ],
+     "dur": 5.76,
+     "roles": [
+      "mom",
+      "nar"
+     ],
+     "segRoles": [
+      "mom",
+      "nar"
+     ],
+     "from": "R01_meadow#4"
+    },
+    {
+     "text": "삼 형제는 엄마께 인사하고 길을 떠났어요.",
+     "clips": [
+      "audio/three_pigs/nar_457e5aaa96.mp3"
+     ],
+     "dur": 3.84,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R01_meadow#5"
+    },
+    {
+     "text": "셋은 나란히 총총, 신나게 걸어갔어요.",
+     "clips": [
+      "audio/three_pigs/nar_b275017837.mp3"
+     ],
+     "dur": 3.68,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R01_meadow#6"
+    }
+   ]
+  },
+  {
+   "key": "R03_straw",
+   "card": "첫째 짚 집",
+   "lines": [
+    {
+     "text": "첫째는 짚으로 집을 짓기로 했어요.",
+     "clips": [
+      "audio/three_pigs/nar_3612fe0ac1.mp3"
+     ],
+     "dur": 3.06,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R03_straw#1"
+    },
+    {
+     "text": "사락사락, 짚을 휘리릭 얹으니 금방이었어요.",
+     "clips": [
+      "audio/three_pigs/nar_cfa8503939.mp3"
+     ],
+     "dur": 4.48,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R03_straw#2"
+    },
+    {
+     "text": "뚝딱! 짚 집이 완성됐어요. 첫째는 피리를 불며 놀았어요.",
+     "clips": [
+      "audio/three_pigs/nar_44bcba26d7.mp3"
+     ],
+     "dur": 6.08,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R03_straw#3"
+    }
+   ]
+  },
+  {
+   "key": "R04_wood",
+   "card": "둘째 나무 집",
+   "lines": [
+    {
+     "text": "둘째는 나무로 집을 짓기로 했어요.",
+     "clips": [
+      "audio/three_pigs/nar_ef0748dac0.mp3"
+     ],
+     "dur": 3,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R04_wood#1"
+    },
+    {
+     "text": "뚝딱뚝딱, 망치질 몇 번에 나무 집이 뚝딱 섰어요.",
+     "clips": [
+      "audio/three_pigs/nar_e570220bd6.mp3"
+     ],
+     "dur": 5.12,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R04_wood#2"
+    },
+    {
+     "text": "쿵쾅쿵쾅! 나무 집이 완성됐어요. 둘째는 바이올린을 켜며 놀았어요.",
+     "clips": [
+      "audio/three_pigs/nar_2c32db5271.mp3"
+     ],
+     "dur": 6.64,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R04_wood#3"
+    }
+   ]
+  },
+  {
+   "key": "R05_brick",
+   "card": "셋째 벽돌 집",
+   "lines": [
+    {
+     "text": "셋째는 벽돌로 집을 짓기로 했어요. 벽돌은 무거워서 열 장을 천천히 쌓아요.",
+     "clips": [
+      "audio/three_pigs/nar_506a46173c.mp3"
+     ],
+     "dur": 7.12,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R05_brick#1"
+    },
+    {
+     "text": "영차, 영차. 셋째는 땀을 뻘뻘 흘리며 벽돌을 한 장씩 쌓았어요.",
+     "clips": [
+      "audio/three_pigs/nar_fdb20d2b2a.mp3"
+     ],
+     "dur": 7.28,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R05_brick#2"
+    },
+    {
+     "text": "형들이 놀렸어요. \"아직도 해? 우리랑 놀자!\" 그래도 셋째는 천천히 벽돌을 쌓았어요.",
+     "clips": [
+      "audio/three_pigs/nar_46e2fa81db.mp3",
+      "audio/three_pigs/piga_2446202064.mp3",
+      "audio/three_pigs/nar_e60143ebdb.mp3"
+     ],
+     "dur": 8.24,
+     "roles": [
+      "nar",
+      "piga"
+     ],
+     "segRoles": [
+      "nar",
+      "piga",
+      "nar"
+     ],
+     "from": "R05_brick#3"
+    },
+    {
+     "text": "\"튼튼하게 짓는 게 제일 중요해!\" 셋째는 씩씩하게 말했어요.",
+     "clips": [
+      "audio/three_pigs/pigc_4c6b5fa478.mp3",
+      "audio/three_pigs/nar_f049ddb2f5.mp3"
+     ],
+     "dur": 5.36,
+     "roles": [
+      "pigc",
+      "nar"
+     ],
+     "segRoles": [
+      "pigc",
+      "nar"
+     ],
+     "from": "R05_brick#4"
+    },
+    {
+     "text": "벽돌을 열 장 다 쌓았어요. 튼튼한 벽돌 집이 완성됐어요!",
+     "clips": [
+      "audio/three_pigs/nar_33372fce4a.mp3"
+     ],
+     "dur": 5.44,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R05_brick#5"
+    }
+   ]
+  },
+  {
+   "key": "R06_huff_straw",
+   "card": "후~ 짚 집",
+   "lines": [
+    {
+     "text": "첫째는 짚 집에서 놀고 있었어요.",
+     "clips": [
+      "audio/three_pigs/nar_4a8f8fc78b.mp3"
+     ],
+     "dur": 3.04,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R06_huff_straw#0"
+    },
+    {
+     "text": "그때 배고픈 늑대가 킁킁 냄새를 맡으며 왔어요. \"아기 돼지야, 문 열어라!\"",
+     "clips": [
+      "audio/three_pigs/nar_3b69d3463e.mp3",
+      "audio/three_pigs/wolf_dfcd44f958.mp3"
+     ],
+     "dur": 7.04,
+     "roles": [
+      "nar",
+      "wolf"
+     ],
+     "segRoles": [
+      "nar",
+      "wolf"
+     ],
+     "from": "R06_huff_straw#1"
+    },
+    {
+     "text": "첫째가 말했어요. \"싫어요, 싫어요!\" 늑대가 말했어요. \"그럼 후~ 불어서 날려 버릴 테야!\"",
+     "clips": [
+      "audio/three_pigs/nar_e6d111c017.mp3",
+      "audio/three_pigs/piga_9034aa1032.mp3",
+      "audio/three_pigs/nar_1b98d154fd.mp3",
+      "audio/three_pigs/wolf_2060345d9c.mp3"
+     ],
+     "dur": 10.48,
+     "roles": [
+      "nar",
+      "piga",
+      "wolf"
+     ],
+     "segRoles": [
+      "nar",
+      "piga",
+      "nar",
+      "wolf"
+     ],
+     "from": "R06_huff_straw#2"
+    },
+    {
+     "text": "늑대는 볼을 빵빵하게 부풀렸어요. 후우~!",
+     "clips": [
+      "audio/three_pigs/nar_cefaea189b.mp3"
+     ],
+     "dur": 4.72,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R06_huff_straw#3"
+    },
+    {
+     "text": "짚 집이 훨훨 날아가 버렸어요!",
+     "clips": [
+      "audio/three_pigs/nar_e1e0b6005e.mp3"
+     ],
+     "dur": 3.2,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R06_huff_straw#4"
+    },
+    {
+     "text": "첫째는 둘째네 집으로 달려갔어요.",
+     "clips": [
+      "audio/three_pigs/nar_9d853b1fbb.mp3"
+     ],
+     "dur": 2.88,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R06_huff_straw#5"
+    }
+   ]
+  },
+  {
+   "key": "R07_huff_wood",
+   "card": "후~ 나무 집",
+   "lines": [
+    {
+     "text": "첫째가 나무 집 안으로 후다닥 들어갔어요.",
+     "clips": [
+      "audio/three_pigs/nar_1469774ce0.mp3"
+     ],
+     "dur": 3.44,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R07_huff_wood#0"
+    },
+    {
+     "text": "늑대가 나무 집에도 왔어요. \"아기 돼지야, 문 열어라!\"",
+     "clips": [
+      "audio/three_pigs/nar_f53da4c050.mp3",
+      "audio/three_pigs/wolf_dfcd44f958.mp3"
+     ],
+     "dur": 4.56,
+     "roles": [
+      "nar",
+      "wolf"
+     ],
+     "segRoles": [
+      "nar",
+      "wolf"
+     ],
+     "from": "R07_huff_wood#1"
+    },
+    {
+     "text": "첫째와 둘째가 말했어요. \"싫어요, 싫어요!\" 늑대가 말했어요. \"그럼 후~ 후~ 불어 주지!\"",
+     "clips": [
+      "audio/three_pigs/nar_4e07790b3b.mp3",
+      "audio/three_pigs/pigb_81f94893f9.mp3",
+      "audio/three_pigs/nar_1b98d154fd.mp3",
+      "audio/three_pigs/wolf_61e2f65ffa.mp3"
+     ],
+     "dur": 11.12,
+     "roles": [
+      "nar",
+      "pigb",
+      "wolf"
+     ],
+     "segRoles": [
+      "nar",
+      "pigb",
+      "nar",
+      "wolf"
+     ],
+     "from": "R07_huff_wood#2"
+    },
+    {
+     "text": "후~ 후~! 나무 집이 삐걱삐걱 흔들리더니…",
+     "clips": [
+      "audio/three_pigs/nar_7cbc460574.mp3"
+     ],
+     "dur": 4.96,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R07_huff_wood#3"
+    },
+    {
+     "text": "나무 집이 와르르 무너졌어요!",
+     "clips": [
+      "audio/three_pigs/nar_b21c365f9a.mp3"
+     ],
+     "dur": 2.8,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R07_huff_wood#4"
+    },
+    {
+     "text": "아기 돼지 둘은 막내네 집으로 달려갔어요.",
+     "clips": [
+      "audio/three_pigs/nar_bf1f7eae6d.mp3"
+     ],
+     "dur": 3.36,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R07_huff_wood#5"
+    }
+   ]
+  },
+  {
+   "key": "R08_inside",
+   "card": "벽돌 집 안",
+   "lines": [
+    {
+     "text": "두 형은 셋째의 벽돌 집 문 앞에 도착했어요.",
+     "clips": [
+      "audio/three_pigs/nar_fbd853f0a3.mp3"
+     ],
+     "dur": 3.92,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R08_inside#0"
+    },
+    {
+     "text": "두 형은 숨이 차서 헉헉!",
+     "clips": [
+      "audio/three_pigs/nar_eaad991707.mp3"
+     ],
+     "dur": 2.32,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R08_inside#1"
+    },
+    {
+     "text": "셋째가 문을 활짝 열어 주었어요. 형들은 후다닥 뛰어 들어갔지요.",
+     "clips": [
+      "audio/three_pigs/nar_3c5da7df28.mp3"
+     ],
+     "dur": 5.6,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R08_inside#2"
+    },
+    {
+     "text": "삼 형제는 문을 꼭 닫고 빗장을 철컥 걸었어요.",
+     "clips": [
+      "audio/three_pigs/nar_ae3850e768.mp3"
+     ],
+     "dur": 4.48,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R08_inside#3"
+    },
+    {
+     "text": "\"셋이서 함께라서 무섭지 않아!\"",
+     "clips": [
+      "audio/three_pigs/pigc_20620d6d32.mp3"
+     ],
+     "dur": 3.36,
+     "roles": [
+      "pigc"
+     ],
+     "segRoles": [
+      "pigc"
+     ],
+     "from": "R08_inside#5"
+    }
+   ]
+  },
+  {
+   "key": "R09_knock",
+   "card": "쿵쿵쿵!",
+   "lines": [
+    {
+     "text": "삼 형제가 숨은 벽돌 집 밖에서 발소리가 났어요.",
+     "clips": [
+      "audio/three_pigs/nar_a5257ebfed.mp3"
+     ],
+     "dur": 4.32,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R09_knock#0"
+    },
+    {
+     "text": "늑대가 벽돌 집에 왔어요. \"아기 돼지야, 문 열어라!\"",
+     "clips": [
+      "audio/three_pigs/nar_20cb1b35cc.mp3",
+      "audio/three_pigs/wolf_7899dd3490.mp3"
+     ],
+     "dur": 4.96,
+     "roles": [
+      "nar",
+      "wolf"
+     ],
+     "segRoles": [
+      "nar",
+      "wolf"
+     ],
+     "from": "R09_knock#1"
+    },
+    {
+     "text": "\"싫어요, 싫어요!\" \"그럼 후~ 후~ 불어 주지!\"",
+     "clips": [
+      "audio/three_pigs/pigc_f854716975.mp3",
+      "audio/three_pigs/wolf_61e2f65ffa.mp3"
+     ],
+     "dur": 6.88,
+     "roles": [
+      "pigc",
+      "wolf"
+     ],
+     "segRoles": [
+      "pigc",
+      "wolf"
+     ],
+     "from": "R09_knock#2"
+    },
+    {
+     "text": "후~ 후~ 후~! 늑대는 얼굴이 새빨개지도록 불고 또 불었어요.",
+     "clips": [
+      "audio/three_pigs/nar_2a1f3e11da.mp3"
+     ],
+     "dur": 7.2,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R09_knock#3"
+    },
+    {
+     "text": "후~ 후~ 여덟 번이나 불었지만 벽돌 집은 끄떡없어요!",
+     "clips": [
+      "audio/three_pigs/nar_f451ae4d2a.mp3"
+     ],
+     "dur": 5.92,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R09_knock#4"
+    },
+    {
+     "text": "늑대는 숨이 차서 털썩 주저앉았어요.",
+     "clips": [
+      "audio/three_pigs/nar_ed34ea7a0b.mp3"
+     ],
+     "dur": 3.44,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R09_knock#5"
+    },
+    {
+     "text": "\"흥, 그럼 다른 수를 써야지!\" 늑대는 눈을 데굴데굴 굴렸어요.",
+     "clips": [
+      "audio/three_pigs/wolf_6a6f366c5a.mp3",
+      "audio/three_pigs/nar_e8106c8ddf.mp3"
+     ],
+     "dur": 5.84,
+     "roles": [
+      "wolf",
+      "nar"
+     ],
+     "segRoles": [
+      "wolf",
+      "nar"
+     ],
+     "from": "R09_knock#6"
+    },
+    {
+     "text": "늑대는 지붕으로 살금살금 올라갔어요. 굴뚝으로 몰래 들어가려고요.",
+     "clips": [
+      "audio/three_pigs/nar_2558a8824d.mp3"
+     ],
+     "dur": 6.64,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R09_knock#7"
+    }
+   ]
+  },
+  {
+   "key": "R10_pot",
+   "card": "보글보글",
+   "lines": [
+    {
+     "text": "지붕에서 바스락바스락 소리가 났어요. 삼 형제는 귀를 쫑긋 세웠지요.",
+     "clips": [
+      "audio/three_pigs/nar_698b4f64dc.mp3"
+     ],
+     "dur": 6.48,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R10_pot#0"
+    },
+    {
+     "text": "집 안의 삼 형제는 굴뚝 아래에 솥을 놓았어요.",
+     "clips": [
+      "audio/three_pigs/nar_92454b589c.mp3"
+     ],
+     "dur": 3.92,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R10_pot#1"
+    },
+    {
+     "text": "아기 돼지들은 큰 솥에 물을 팔팔 끓였어요.",
+     "clips": [
+      "audio/three_pigs/nar_2fba6d1646.mp3"
+     ],
+     "dur": 4.08,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R10_pot#2"
+    },
+    {
+     "text": "보글보글 물이 끓어요! 그때 굴뚝에서 늑대가 쑥 내려왔어요.",
+     "clips": [
+      "audio/three_pigs/nar_ed7a174e07.mp3"
+     ],
+     "dur": 6,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R10_pot#4"
+    },
+    {
+     "text": "늑대 엉덩이가 뜨거운 솥에 닿았어요.",
+     "clips": [
+      "audio/three_pigs/nar_59b9c24be5.mp3"
+     ],
+     "dur": 3.12,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R10_pot#5"
+    },
+    {
+     "text": "\"앗, 뜨거워!\"",
+     "clips": [
+      "audio/three_pigs/wolf_4584505897.mp3"
+     ],
+     "dur": 2.32,
+     "roles": [
+      "wolf"
+     ],
+     "segRoles": [
+      "wolf"
+     ],
+     "from": "R10_pot#6"
+    },
+    {
+     "text": "늑대는 굴뚝으로 휙! 날아가서 멀리멀리 도망쳤어요. 다시는 오지 않았어요.",
+     "clips": [
+      "audio/three_pigs/nar_dbe3a96560.mp3"
+     ],
+     "dur": 6.88,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R10_pot#7"
+    }
+   ]
+  },
+  {
+   "key": "R11_village",
+   "card": "오래오래",
+   "lines": [
+    {
+     "text": "늑대가 떠난 뒤, 삼 형제는 집 밖으로 나왔어요.",
+     "clips": [
+      "audio/three_pigs/nar_b6bfef55d5.mp3"
+     ],
+     "dur": 4,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R11_village#0"
+    },
+    {
+     "text": "저녁 해가 뉘엿뉘엿, 굴뚝에서는 연기가 모락모락 피어올랐어요.",
+     "clips": [
+      "audio/three_pigs/nar_c19adab276.mp3"
+     ],
+     "dur": 6.32,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R11_village#4"
+    },
+    {
+     "text": "삼 형제는 튼튼한 집에서 오래오래 행복하게 살았어요.",
+     "clips": [
+      "audio/three_pigs/nar_a9f95a8a82.mp3"
+     ],
+     "dur": 4.88,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R11_village#5"
+    },
+    {
+     "text": "튼튼한 집은 하나씩 정성껏 쌓아서 만든답니다.",
+     "clips": [
+      "audio/three_pigs/nar_ad4465323d.mp3"
+     ],
+     "dur": 4.48,
+     "roles": [
+      "nar"
+     ],
+     "segRoles": [
+      "nar"
+     ],
+     "from": "R11_village#6"
+    }
+   ]
+  }
+ ]
+}

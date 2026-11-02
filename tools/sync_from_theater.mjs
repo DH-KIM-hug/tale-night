@@ -25,8 +25,9 @@ const LINE = {
   sun_wind: '세게 부는 바람과 따뜻한 해님, 누가 나그네의 외투를 벗길까요?',
   turnip: '할아버지부터 아주 작은 생쥐까지, 다 함께 영차!',
   ugly_duckling: '놀림받던 회색 아기 오리가 겨울을 지나 하얀 백조로 자라요.',
+  three_pigs: '짚 집, 나무 집, 벽돌 집. 셋째는 천천히 튼튼하게 쌓아요.',
 };
-const ORDER = ['rabbit', 'sun_wind', 'ugly_duckling', 'turnip'];
+const ORDER = ['rabbit', 'three_pigs', 'sun_wind', 'ugly_duckling', 'turnip'];
 
 const readMap = (file, name) => {
   const s = fs.readFileSync(file, 'utf8');

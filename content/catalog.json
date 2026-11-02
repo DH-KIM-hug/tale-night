@@ -1,11 +1,20 @@
 {
- "source": "paper-tale-theater@aaf8049e7f",
+ "source": "paper-tale-theater@374756dc42",
  "tales": [
   {
    "id": "rabbit",
    "title": "토끼와 거북이",
    "line": "깡충 토끼는 낮잠을 자고, 엉금엉금 거북이는 쉬지 않고 걸어요.",
    "scenes": 9,
+   "lines": 53,
+   "readMin": 5,
+   "standIn": false
+  },
+  {
+   "id": "three_pigs",
+   "title": "아기 돼지 삼형제",
+   "line": "짚 집, 나무 집, 벽돌 집. 셋째는 천천히 튼튼하게 쌓아요.",
+   "scenes": 10,
    "lines": 53,
    "readMin": 5,
    "standIn": false

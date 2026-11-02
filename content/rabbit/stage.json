@@ -68,7 +68,7 @@
     "walk": "art/dolls/turtle_walk.webp",
     "stand": "art/dolls/turtle_stand.webp"
    },
-   "w": 17.6
+   "w": 12.5
   },
   "owl": {
    "poses": {
@@ -358,12 +358,12 @@
     "turtle": {
      "pose": "walk",
      "x": 40,
-     "y": 27
+     "y": 22
     },
     "rabbit": {
      "pose": "run",
      "x": 22,
-     "y": 27,
+     "y": 22,
      "vis": false
     }
    },
@@ -373,15 +373,15 @@
      "match": "토끼가 쌩쌩",
      "do": [
       "rabbit:in:left",
-      "turtle:walk:46,27:6"
+      "turtle:walk:46,22:6"
      ]
     },
     {
      "line": 4,
      "match": "거북이는 후우",
      "do": [
-      "turtle:walk:52,27:3",
-      "rabbit:walk:40,27:3"
+      "turtle:walk:52,22:3",
+      "rabbit:walk:40,22:3"
      ]
     },
     {
@@ -400,13 +400,13 @@
    "place": {
     "turtle": {
      "pose": "stand",
-     "x": 44,
-     "y": 27
+     "x": 40,
+     "y": 22
     },
     "rabbit": {
      "pose": "stand",
-     "x": 60,
-     "y": 27,
+     "x": 62,
+     "y": 22,
      "flip": true
     }
    },

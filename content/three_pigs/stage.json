@@ -1,0 +1,548 @@
+{
+ "tale": "three_pigs",
+ "boxes": {
+  "meadow": {
+   "layers": {
+    "far": "art/three_pigs/meadow_far.webp",
+    "mid": "art/three_pigs/meadow_mid.webp",
+    "near": "art/three_pigs/meadow_near.webp",
+    "frame": "art/three_pigs/meadow_frame.webp"
+   },
+   "glowAt": [
+    74,
+    20
+   ],
+   "fx": "fireflies"
+  },
+  "lot": {
+   "layers": {
+    "far": "art/three_pigs/lot_far.webp",
+    "mid": "art/three_pigs/lot_mid.webp",
+    "near": "art/three_pigs/lot_near.webp",
+    "frame": "art/three_pigs/lot_frame.webp"
+   },
+   "glowAt": [
+    24,
+    19
+   ],
+   "fx": "fireflies"
+  },
+  "brick_in": {
+   "layers": {
+    "far": "art/three_pigs/brick_in_far.webp",
+    "mid": "art/three_pigs/brick_in_mid.webp",
+    "near": "art/three_pigs/brick_in_near.webp",
+    "frame": "art/three_pigs/brick_in_frame.webp"
+   },
+   "glowAt": [
+    76,
+    30
+   ],
+   "fx": "none"
+  }
+ },
+ "dolls": {
+  "pig1": {
+   "poses": {
+    "stand": "art/dolls/pig1_stand.webp",
+    "run": "art/dolls/pig1_run.webp"
+   },
+   "w": 15
+  },
+  "pig2": {
+   "poses": {
+    "stand": "art/dolls/pig2_stand.webp",
+    "run": "art/dolls/pig2_run.webp"
+   },
+   "w": 15
+  },
+  "pig3": {
+   "poses": {
+    "stand": "art/dolls/pig3_stand.webp"
+   },
+   "w": 15
+  },
+  "mom": {
+   "poses": {
+    "stand": "art/dolls/pig_mom.webp"
+   },
+   "w": 19
+  },
+  "wolf": {
+   "poses": {
+    "walk": "art/dolls/wolf_walk.webp",
+    "puff": "art/dolls/wolf_puff.webp",
+    "sit": "art/dolls/wolf_sit.webp"
+   },
+   "w": 24
+  },
+  "pot": {
+   "poses": {
+    "on": "art/dolls/pot.webp"
+   },
+   "w": 18
+  },
+  "straw_house": {
+   "poses": {
+    "on": "art/dolls/straw_house.webp"
+   },
+   "w": 36
+  },
+  "wood_house": {
+   "poses": {
+    "on": "art/dolls/wood_house.webp"
+   },
+   "w": 36
+  },
+  "brick_house": {
+   "poses": {
+    "on": "art/dolls/brick_house.webp"
+   },
+   "w": 38
+  }
+ },
+ "scenes": {
+  "R01_meadow": {
+   "box": "meadow",
+   "light": "dawn",
+   "place": {
+    "mom": {
+     "pose": "stand",
+     "x": 28,
+     "y": 22
+    },
+    "pig1": {
+     "pose": "stand",
+     "x": 46,
+     "y": 20
+    },
+    "pig2": {
+     "pose": "stand",
+     "x": 60,
+     "y": 20
+    },
+    "pig3": {
+     "pose": "stand",
+     "x": 74,
+     "y": 20
+    }
+   },
+   "cues": [
+    {
+     "line": 4,
+     "match": "삼 형제는 엄마께",
+     "do": [
+      "pig1:walk:60,20:4",
+      "pig2:walk:74,20:4",
+      "pig3:walk:88,20:4"
+     ]
+    },
+    {
+     "line": 5,
+     "match": "셋은 나란히",
+     "do": [
+      "pig1:out:right",
+      "pig2:out:right",
+      "pig3:out:right"
+     ]
+    }
+   ]
+  },
+  "R03_straw": {
+   "box": "lot",
+   "light": "dusk",
+   "place": {
+    "pig1": {
+     "pose": "stand",
+     "x": 32,
+     "y": 20
+    },
+    "straw_house": {
+     "pose": "on",
+     "x": 62,
+     "y": 22,
+     "vis": false
+    }
+   },
+   "cues": [
+    {
+     "line": 2,
+     "match": "뚝딱!",
+     "do": [
+      "straw_house:show"
+     ]
+    }
+   ]
+  },
+  "R04_wood": {
+   "box": "lot",
+   "light": "dusk",
+   "place": {
+    "pig2": {
+     "pose": "stand",
+     "x": 32,
+     "y": 20
+    },
+    "wood_house": {
+     "pose": "on",
+     "x": 62,
+     "y": 22,
+     "vis": false
+    }
+   },
+   "cues": [
+    {
+     "line": 2,
+     "match": "쿵쾅쿵쾅",
+     "do": [
+      "wood_house:show"
+     ]
+    }
+   ]
+  },
+  "R05_brick": {
+   "box": "lot",
+   "light": "dusk",
+   "place": {
+    "pig3": {
+     "pose": "stand",
+     "x": 32,
+     "y": 20
+    },
+    "pig1": {
+     "pose": "stand",
+     "x": 14,
+     "y": 20,
+     "vis": false
+    },
+    "pig2": {
+     "pose": "stand",
+     "x": 20,
+     "y": 20,
+     "vis": false
+    },
+    "brick_house": {
+     "pose": "on",
+     "x": 62,
+     "y": 22,
+     "vis": false
+    }
+   },
+   "cues": [
+    {
+     "line": 2,
+     "match": "형들이 놀렸어요",
+     "do": [
+      "pig1:in:left",
+      "pig2:in:left"
+     ]
+    },
+    {
+     "line": 4,
+     "match": "벽돌을 열 장",
+     "do": [
+      "brick_house:show",
+      "pig1:out:left",
+      "pig2:out:left"
+     ]
+    }
+   ]
+  },
+  "R06_huff_straw": {
+   "box": "lot",
+   "light": "night_forest",
+   "power": 0.85,
+   "place": {
+    "straw_house": {
+     "pose": "on",
+     "x": 62,
+     "y": 22
+    },
+    "pig1": {
+     "pose": "stand",
+     "x": 84,
+     "y": 20
+    },
+    "wolf": {
+     "pose": "walk",
+     "x": 24,
+     "y": 20,
+     "vis": false
+    }
+   },
+   "cues": [
+    {
+     "line": 1,
+     "match": "그때 배고픈",
+     "do": [
+      "wolf:in:left"
+     ]
+    },
+    {
+     "line": 3,
+     "match": "늑대는 볼을",
+     "do": [
+      "wolf:pose:puff"
+     ]
+    },
+    {
+     "line": 4,
+     "match": "짚 집이 훨훨",
+     "do": [
+      "straw_house:hide"
+     ]
+    },
+    {
+     "line": 5,
+     "match": "첫째는 둘째네",
+     "do": [
+      "pig1:pose:run",
+      "pig1:out:right"
+     ]
+    }
+   ]
+  },
+  "R07_huff_wood": {
+   "box": "lot",
+   "light": "moon",
+   "power": 0.8,
+   "place": {
+    "wood_house": {
+     "pose": "on",
+     "x": 62,
+     "y": 22
+    },
+    "pig1": {
+     "pose": "stand",
+     "x": 82,
+     "y": 20
+    },
+    "pig2": {
+     "pose": "stand",
+     "x": 92,
+     "y": 20
+    },
+    "wolf": {
+     "pose": "walk",
+     "x": 24,
+     "y": 20,
+     "vis": false
+    }
+   },
+   "cues": [
+    {
+     "line": 1,
+     "match": "늑대가 나무",
+     "do": [
+      "wolf:in:left"
+     ]
+    },
+    {
+     "line": 3,
+     "match": "후~ 후~!",
+     "do": [
+      "wolf:pose:puff"
+     ]
+    },
+    {
+     "line": 4,
+     "match": "나무 집이 와르르",
+     "do": [
+      "wood_house:hide"
+     ]
+    },
+    {
+     "line": 5,
+     "match": "아기 돼지 둘은",
+     "do": [
+      "pig1:pose:run",
+      "pig2:pose:run",
+      "pig1:out:right",
+      "pig2:out:right"
+     ]
+    }
+   ]
+  },
+  "R08_inside": {
+   "box": "brick_in",
+   "light": "hearth",
+   "place": {
+    "pig3": {
+     "pose": "stand",
+     "x": 62,
+     "y": 20
+    },
+    "pig1": {
+     "pose": "stand",
+     "x": 28,
+     "y": 20,
+     "vis": false
+    },
+    "pig2": {
+     "pose": "stand",
+     "x": 42,
+     "y": 20,
+     "vis": false
+    }
+   },
+   "cues": [
+    {
+     "line": 2,
+     "match": "셋째가 문을",
+     "do": [
+      "pig1:in:left",
+      "pig2:in:left"
+     ]
+    }
+   ]
+  },
+  "R09_knock": {
+   "box": "lot",
+   "light": "moon",
+   "power": 0.7,
+   "place": {
+    "brick_house": {
+     "pose": "on",
+     "x": 62,
+     "y": 22
+    },
+    "wolf": {
+     "pose": "walk",
+     "x": 24,
+     "y": 20,
+     "vis": false
+    }
+   },
+   "cues": [
+    {
+     "line": 1,
+     "match": "늑대가 벽돌",
+     "do": [
+      "wolf:in:left"
+     ]
+    },
+    {
+     "line": 3,
+     "match": "후~ 후~ 후~!",
+     "do": [
+      "wolf:pose:puff"
+     ]
+    },
+    {
+     "line": 5,
+     "match": "늑대는 숨이",
+     "do": [
+      "wolf:pose:sit"
+     ]
+    },
+    {
+     "line": 7,
+     "match": "늑대는 지붕으로",
+     "do": [
+      "wolf:pose:walk",
+      "wolf:walk:62,58:6"
+     ]
+    }
+   ]
+  },
+  "R10_pot": {
+   "box": "brick_in",
+   "light": "hearth",
+   "place": {
+    "pig1": {
+     "pose": "stand",
+     "x": 24,
+     "y": 20
+    },
+    "pig2": {
+     "pose": "stand",
+     "x": 36,
+     "y": 20
+    },
+    "pig3": {
+     "pose": "stand",
+     "x": 48,
+     "y": 20
+    },
+    "pot": {
+     "pose": "on",
+     "x": 74,
+     "y": 18,
+     "vis": false
+    },
+    "wolf": {
+     "pose": "sit",
+     "x": 74,
+     "y": 30,
+     "vis": false
+    }
+   },
+   "cues": [
+    {
+     "line": 1,
+     "match": "집 안의",
+     "do": [
+      "pot:show"
+     ]
+    },
+    {
+     "line": 4,
+     "match": "늑대 엉덩이가",
+     "do": [
+      "wolf:show"
+     ]
+    },
+    {
+     "line": 6,
+     "match": "늑대는 굴뚝으로",
+     "do": [
+      "wolf:hide"
+     ]
+    }
+   ]
+  },
+  "R11_village": {
+   "box": "lot",
+   "light": "night_forest",
+   "place": {
+    "brick_house": {
+     "pose": "on",
+     "x": 62,
+     "y": 22
+    },
+    "pig1": {
+     "pose": "stand",
+     "x": 18,
+     "y": 20,
+     "vis": false
+    },
+    "pig2": {
+     "pose": "stand",
+     "x": 30,
+     "y": 20,
+     "vis": false
+    },
+    "pig3": {
+     "pose": "stand",
+     "x": 42,
+     "y": 20,
+     "vis": false
+    }
+   },
+   "cues": [
+    {
+     "line": 0,
+     "match": "늑대가 떠난",
+     "do": [
+      "pig1:in:right",
+      "pig2:in:right",
+      "pig3:in:right"
+     ]
+    }
+   ]
+  }
+ },
+ "end": {
+  "fadeOut": 8000
+ }
+}

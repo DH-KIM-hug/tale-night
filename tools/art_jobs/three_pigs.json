@@ -1,0 +1,168 @@
+[
+  {
+    "id": "meadow_far",
+    "out": "art/three_pigs/meadow_far.webp",
+    "prompt": "The FARTHEST layer of a paper light box: gentle distant rolling hills with tiny round trees, occupying only the lower 40% of the frame, and two small puffy clouds cut as separate paper pieces on the left of the sky. The upper right sky is completely empty magenta, because a light glows there."
+  },
+  {
+    "id": "meadow_mid",
+    "out": "art/three_pigs/meadow_mid.webp",
+    "prompt": "A MIDDLE layer of a paper light box: a wide flower meadow on a very low hill. A small cozy cottage with a round-arched door and window holes on the left, and a round leafy tree with many leaf holes on the right, both inside the central 80% of the width. The center of the meadow is open. The meadow occupies only the lower 26% of the frame except for the cottage and tree, which rise to 48%. Everything else is empty magenta. The meadow runs edge to edge along the bottom."
+  },
+  {
+    "id": "meadow_near",
+    "out": "art/three_pigs/meadow_near.webp",
+    "prompt": "A NEAR layer of a paper light box: only a low strip along the bottom: short grasses and small daisies, with one small flowering clump at the far left and one at the far right. The clumps rise to at most 16% of the frame height and stay inside the outer 16% of the width on each side. Across the central 68% of the width, only short grass under 8% of the frame height. Everything above is empty magenta. The strip runs edge to edge along the bottom."
+  },
+  {
+    "id": "meadow_frame",
+    "out": "art/three_pigs/meadow_frame.webp",
+    "prompt": "The FRONT frame layer of a paper light box: leafy branches hanging from the top edge, a light curtain of finely cut lacy leaves with many small holes, longer at the left and right corners and only a thin fringe in the center (under 14% of the frame height). The trunks or branches stay inside the outer 17% of the image width on each side, and below the middle of the image there is NOTHING but what is stated: NO ferns, NO bushes, NO grass, NO ground. Everything else down to the very bottom edge is empty magenta."
+  },
+  {
+    "id": "lot_far",
+    "out": "art/three_pigs/lot_far.webp",
+    "prompt": "The FARTHEST layer of a paper light box: gentle distant mountains with tiny pine trees, occupying only the lower 40% of the frame, and one small puffy cloud cut as a separate paper piece on the right of the sky. The upper left sky is completely empty magenta, because a light glows there."
+  },
+  {
+    "id": "lot_mid",
+    "out": "art/three_pigs/lot_mid.webp",
+    "prompt": "A MIDDLE layer of a paper light box: a wide, EMPTY, flat open field for building a house. Only low gently rolling ground with a winding footpath cut as a long hole, a low wooden fence at the far left, and one small tree at the far right, inside the central 86% of the width. NO houses and NO buildings. The ground occupies only the lower 24% of the frame; the fence and tree rise to at most 36%. Everything else is empty magenta. The ground runs edge to edge along the bottom."
+  },
+  {
+    "id": "lot_near",
+    "out": "art/three_pigs/lot_near.webp",
+    "prompt": "A NEAR layer of a paper light box: only a low strip along the bottom: short grasses and a few small wildflowers, with one small tuft at the far left and one at the far right. The tufts rise to at most 14% of the frame height and stay inside the outer 14% of the width on each side. Across the central 72% of the width, only short grass under 7% of the frame height. Everything above is empty magenta. The strip runs edge to edge along the bottom."
+  },
+  {
+    "id": "lot_frame",
+    "out": "art/three_pigs/lot_frame.webp",
+    "prompt": "The FRONT frame layer of a paper light box: a tunnel arch of two finely cut slim lacy tree trunks on the far left and far right, whose leafy branches meet across the top as a thin canopy with many small holes, under 12% of the frame height at the center. The canopy runs off the top edge with no gap. The trunks or branches stay inside the outer 17% of the image width on each side, and below the middle of the image there is NOTHING but what is stated: NO ferns, NO bushes, NO grass, NO ground. Everything else down to the very bottom edge is empty magenta."
+  },
+  {
+    "id": "brick_in_far",
+    "out": "art/three_pigs/brick_in_far.webp",
+    "prompt": "The FARTHEST layer of a paper light box: the inside back wall of a cozy brick cottage, one full sheet filling the entire frame, covered with a brick pattern of many small slit holes. On the right at about 76% of the width and 30% from the top is a square four-pane window: the four panes are large cut-out holes showing magenta, with a thin cross of window bars."
+  },
+  {
+    "id": "brick_in_mid",
+    "out": "art/three_pigs/brick_in_mid.webp",
+    "prompt": "A MIDDLE layer of a paper light box: inside a cottage. A brick fireplace on the right part with an open arched firebox hole, with a chimney rising to about 62% of the frame height; a small table with a stool on the far left. A plain floor occupying the lower 22% of the frame runs edge to edge along the bottom. The center between the table and fireplace is clear. Everything else is empty magenta."
+  },
+  {
+    "id": "brick_in_near",
+    "out": "art/three_pigs/brick_in_near.webp",
+    "prompt": "A NEAR layer of a paper light box: only a low strip along the bottom: a plain wooden floor edge with a plank pattern of thin slit holes, under 7% of the frame height at the center, with one small basket of firewood at the far right and one small stool at the far left, inside the outer 14% of the width and at most 14% of the frame height. Everything above is empty magenta. The strip runs edge to edge along the bottom."
+  },
+  {
+    "id": "brick_in_frame",
+    "out": "art/three_pigs/brick_in_frame.webp",
+    "prompt": "The FRONT frame layer of a paper light box: the interior wooden frame of a cottage room: one slim wooden post on the far left and one on the far right, and a horizontal roof beam across the top under 10% of the frame height, cut with simple small holes. The beam runs off the top edge. The trunks or branches stay inside the outer 17% of the image width on each side, and below the middle of the image there is NOTHING but what is stated: NO ferns, NO bushes, NO grass, NO ground. Everything else down to the very bottom edge is empty magenta."
+  },
+  {
+    "id": "pig1_stand",
+    "out": "art/dolls/pig1_stand.webp",
+    "kind": "doll",
+    "prompt": "A small round piglet standing on its hind legs, wearing a little straw hat, playing a small flute; curly tail; small flower-shaped holes on its body. A single paper puppet cut-out, side view, facing RIGHT, simple cute children's picture-book silhouette, one piece. It takes about 70% of the frame, centered horizontally, with its feet at the very bottom of the frame. Eye is a small round cut-out hole, no drawn face. Nothing else in the image, no ground, no grass."
+  },
+  {
+    "id": "pig2_stand",
+    "out": "art/dolls/pig2_stand.webp",
+    "kind": "doll",
+    "prompt": "A small round piglet like the extra reference, same head and body size and same style, but standing playing a tiny violin, with a small neckerchief instead of a hat. A single paper puppet cut-out, side view, facing RIGHT, simple cute children's picture-book silhouette, one piece. It takes about 70% of the frame, centered horizontally, with its feet at the very bottom of the frame. Eye is a small round cut-out hole, no drawn face. Nothing else in the image, no ground, no grass.",
+    "refs": [
+      "art_src/dolls/pig1_stand.png"
+    ]
+  },
+  {
+    "id": "pig3_stand",
+    "out": "art/dolls/pig3_stand.webp",
+    "kind": "doll",
+    "prompt": "A small round piglet like the extra reference, same head and body size and same style, but standing holding an open book, wearing a small work apron with a pocket instead of a hat. A single paper puppet cut-out, side view, facing RIGHT, simple cute children's picture-book silhouette, one piece. It takes about 70% of the frame, centered horizontally, with its feet at the very bottom of the frame. Eye is a small round cut-out hole, no drawn face. Nothing else in the image, no ground, no grass.",
+    "refs": [
+      "art_src/dolls/pig1_stand.png"
+    ]
+  },
+  {
+    "id": "pig1_run",
+    "out": "art/dolls/pig1_run.webp",
+    "kind": "doll",
+    "prompt": "The same piglet with the straw hat as the extra reference, same size, running to the right with legs stretched, no flute. A single paper puppet cut-out, side view, facing RIGHT, simple cute children's picture-book silhouette, one piece. It takes about 70% of the frame, centered horizontally, with its feet at the very bottom of the frame. Eye is a small round cut-out hole, no drawn face. Nothing else in the image, no ground, no grass.",
+    "refs": [
+      "art_src/dolls/pig1_stand.png"
+    ]
+  },
+  {
+    "id": "pig2_run",
+    "out": "art/dolls/pig2_run.webp",
+    "kind": "doll",
+    "prompt": "The same piglet with the neckerchief as the first extra reference, exactly the same large head and body size as the running piglet in the second extra reference, running to the right with legs stretched, no hat, no instrument. A single paper puppet cut-out, side view, facing RIGHT, simple cute children's picture-book silhouette, one piece. It takes about 70% of the frame, centered horizontally, with its feet at the very bottom of the frame. Eye is a small round cut-out hole, no drawn face. Nothing else in the image, no ground, no grass.",
+    "refs": [
+      "art_src/dolls/pig2_stand.png",
+      "art_src/dolls/pig1_run.png"
+    ]
+  },
+  {
+    "id": "pig_mom",
+    "out": "art/dolls/pig_mom.webp",
+    "kind": "doll",
+    "prompt": "A kind plump mother pig standing upright, wearing a dress and a small apron, arms slightly open; same paper-cut style and same kind of piglet as the extra reference, but taller and larger; small flower-shaped holes on her dress. A single paper puppet cut-out, side view, facing RIGHT, simple cute children's picture-book silhouette, one piece. It takes about 70% of the frame, centered horizontally, with its feet at the very bottom of the frame. Eye is a small round cut-out hole, no drawn face. Nothing else in the image, no ground, no grass.",
+    "refs": [
+      "art_src/dolls/pig1_stand.png"
+    ]
+  },
+  {
+    "id": "wolf_walk",
+    "out": "art/dolls/wolf_walk.webp",
+    "kind": "doll",
+    "prompt": "A lanky storybook wolf walking on its hind legs on tiptoe, soft and silly, not scary, closed mouth with no teeth, bushy tail cut with a fur pattern of small holes. A single paper puppet cut-out, side view, facing RIGHT, simple cute children's picture-book silhouette, one piece. It takes about 70% of the frame, centered horizontally, with its feet at the very bottom of the frame. Eye is a small round cut-out hole, no drawn face. Nothing else in the image, no ground, no grass."
+  },
+  {
+    "id": "wolf_puff",
+    "out": "art/dolls/wolf_puff.webp",
+    "kind": "doll",
+    "prompt": "The same wolf as the extra reference, same size, standing with cheeks puffed out like balloons, blowing air to the right; three curling wind ribbons as cut-out strips attached in front of the mouth; soft and silly, no teeth. A single paper puppet cut-out, side view, facing RIGHT, simple cute children's picture-book silhouette, one piece. It takes about 70% of the frame, centered horizontally, with its feet at the very bottom of the frame. Eye is a small round cut-out hole, no drawn face. Nothing else in the image, no ground, no grass.",
+    "refs": [
+      "art_src/dolls/wolf_walk.png"
+    ]
+  },
+  {
+    "id": "wolf_sit",
+    "out": "art/dolls/wolf_sit.webp",
+    "kind": "doll",
+    "prompt": "The same wolf as the extra reference, same head size, sitting down tired on the ground, legs out, tongue slightly out, soft and silly, no teeth. A single paper puppet cut-out, side view, facing RIGHT, simple cute children's picture-book silhouette, one piece. It takes about 70% of the frame, centered horizontally, with its feet at the very bottom of the frame. Eye is a small round cut-out hole, no drawn face. Nothing else in the image, no ground, no grass.",
+    "refs": [
+      "art_src/dolls/wolf_walk.png"
+    ]
+  },
+  {
+    "id": "pot",
+    "out": "art/dolls/pot.webp",
+    "kind": "doll",
+    "prompt": "A big round cooking pot on three short legs, with two side handles, a few curling wisps of steam as cut-out strips attached above it. No face. Base at the very bottom of the frame, taking about 60% of the frame, centered, one piece, nothing else in the image. "
+  },
+  {
+    "id": "straw_house",
+    "out": "art/dolls/straw_house.webp",
+    "kind": "doll",
+    "prompt": "A small round hut with a thick STRAW thatched roof and straw walls, cut with many thin straw-like slits, a little round door hole and a small window hole, a slightly messy charming look. No face. A single paper cut-out of a small storybook house, front view, standing on its base at the very bottom of the frame, taking about 75% of the frame, one piece, nothing else in the image, no ground, no grass. "
+  },
+  {
+    "id": "wood_house",
+    "out": "art/dolls/wood_house.webp",
+    "kind": "doll",
+    "prompt": "A small cabin made of WOODEN planks, with visible plank lines as thin slits, a pitched plank roof, a door hole and a small window hole. Same scale as the extra reference. No face. A single paper cut-out of a small storybook house, front view, standing on its base at the very bottom of the frame, taking about 75% of the frame, one piece, nothing else in the image, no ground, no grass. ",
+    "refs": [
+      "art_src/dolls/straw_house.png"
+    ]
+  },
+  {
+    "id": "brick_house",
+    "out": "art/dolls/brick_house.webp",
+    "kind": "doll",
+    "prompt": "A sturdy small house made of BRICKS, the walls and chimney covered with a brick pattern of many small slit holes, a pitched roof, an arched door, a four-pane window hole, a chimney on the right of the roof. Same scale as the extra reference. No face. A single paper cut-out of a small storybook house, front view, standing on its base at the very bottom of the frame, taking about 75% of the frame, one piece, nothing else in the image, no ground, no grass. ",
+    "refs": [
+      "art_src/dolls/straw_house.png"
+    ]
+  }
+]

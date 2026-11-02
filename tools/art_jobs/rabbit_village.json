@@ -1,0 +1,22 @@
+[
+  {
+    "id": "village_far",
+    "out": "art/rabbit/village_far.webp",
+    "prompt": "The FARTHEST layer of a paper light box: exactly four overlapping gentle rolling distant mountains with a few tiny pine trees along their ridges, plus two small puffy clouds cut as separate floating paper pieces on the left side of the sky. The mountains occupy only the lower 50% of the frame. The upper right sky is completely empty magenta, because a light glows there."
+  },
+  {
+    "id": "village_mid",
+    "out": "art/rabbit/village_mid.webp",
+    "prompt": "A MIDDLE layer of a paper light box: a storybook forest village on a low rolling hill. Three small cottages with big round MUSHROOM-CAP roofs, each roof cut with round spot holes, each cottage with little window and door holes that let light through. Two round leafy trees with many small holes between the leaves stand between the cottages. IMPORTANT composition: all three cottages and both trees sit close together inside the central 68% of the image width; the outer 16% on each side holds only the bare low hill. The layer occupies only the lower 42% of the frame; everything above is empty magenta. The hill runs edge to edge along the bottom."
+  },
+  {
+    "id": "village_near",
+    "out": "art/rabbit/village_near.webp",
+    "prompt": "A NEAR layer of a paper light box: only a low strip along the bottom of the frame: short grasses and small daisies, with one small lacy bush at the far left and one at the far right. The bushes rise to at most 18% of the frame height and stay inside the outer 18% of the width on each side. Between them, across the central 64% of the width, only short grass under 8% of the frame height. Everything above is empty magenta. The strip runs edge to edge along the bottom."
+  },
+  {
+    "id": "village_frame",
+    "out": "art/rabbit/village_frame.webp",
+    "prompt": "The FRONT frame layer of a paper light box: a tunnel arch of two finely cut lacy tree trunks standing on the far left and far right, whose leafy branches knit together across the top into a canopy of leaves with many small holes. IMPORTANT: below the middle of the image there are ONLY the two slim bare trunks going straight down to the bottom edge, with NO ferns, NO bushes, NO grass, NO flowers, NO leaves and NO ground. Each trunk occupies only the outer 17% of the image width on its side and is fully visible inside it, not running off the side. Everything between the trunks, from below the canopy down to the very bottom edge of the image, is empty magenta. The canopy runs off the top edge with no gap."
+  }
+]
