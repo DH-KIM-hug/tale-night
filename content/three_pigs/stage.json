@@ -82,7 +82,7 @@
     "run": "art/dolls/pig1_run.webp",
     "carry": "art/dolls/pig1_carry.webp"
    },
-   "w": 21
+   "w": 28
   },
   "pig2": {
    "poses": {
@@ -90,20 +90,20 @@
     "run": "art/dolls/pig2_run.webp",
     "hammer": "art/dolls/pig2_hammer.webp"
    },
-   "w": 21
+   "w": 28
   },
   "pig3": {
    "poses": {
     "stand": "art/dolls/pig3_stand.webp",
     "brick": "art/dolls/pig3_brick.webp"
    },
-   "w": 21
+   "w": 28
   },
   "mom": {
    "poses": {
     "stand": "art/dolls/pig_mom.webp"
    },
-   "w": 26
+   "w": 34
   },
   "wolf": {
    "poses": {
@@ -117,32 +117,32 @@
      "art/dolls/wolf_climb4.webp"
     ]
    },
-   "w": 32,
+   "w": 38,
    "frameMs": 320
   },
   "pot": {
    "poses": {
     "on": "art/dolls/pot.webp"
    },
-   "w": 24
+   "w": 30
   },
   "straw_house": {
    "poses": {
     "on": "art/dolls/straw_house.webp"
    },
-   "w": 36
+   "w": 44
   },
   "wood_house": {
    "poses": {
     "on": "art/dolls/wood_house.webp"
    },
-   "w": 36
+   "w": 44
   },
   "brick_house": {
    "poses": {
     "on": "art/dolls/brick_house.webp"
    },
-   "w": 38
+   "w": 46
   },
   "pigs_hug": {
    "poses": {
@@ -154,7 +154,7 @@
    "poses": {
     "on": "art/dolls/pigs_sleep.webp"
    },
-   "w": 38
+   "w": 50
   }
  },
  "scenes": {
@@ -164,12 +164,12 @@
    "place": {
     "mom": {
      "pose": "stand",
-     "x": 28,
+     "x": 20,
      "y": 22
     },
     "pig1": {
      "pose": "stand",
-     "x": 46,
+     "x": 44,
      "y": 20
     },
     "pig2": {
@@ -179,7 +179,7 @@
     },
     "pig3": {
      "pose": "stand",
-     "x": 74,
+     "x": 76,
      "y": 20
     }
    },
@@ -201,12 +201,12 @@
    "place": {
     "pig1": {
      "pose": "carry",
-     "x": 32,
+     "x": 26,
      "y": 20
     },
     "straw_house": {
      "pose": "on",
-     "x": 62,
+     "x": 64,
      "y": 22,
      "vis": false
     }
@@ -228,12 +228,12 @@
    "place": {
     "pig2": {
      "pose": "hammer",
-     "x": 32,
+     "x": 26,
      "y": 20
     },
     "wood_house": {
      "pose": "on",
-     "x": 62,
+     "x": 64,
      "y": 22,
      "vis": false
     }
@@ -255,24 +255,24 @@
    "place": {
     "pig3": {
      "pose": "brick",
-     "x": 38,
+     "x": 36,
      "y": 20
     },
     "pig1": {
      "pose": "stand",
-     "x": 16,
+     "x": 14,
      "y": 20,
      "vis": false
     },
     "pig2": {
      "pose": "stand",
-     "x": 27,
+     "x": 25,
      "y": 20,
      "vis": false
     },
     "brick_house": {
      "pose": "on",
-     "x": 62,
+     "x": 68,
      "y": 22,
      "vis": false
     }
@@ -305,17 +305,17 @@
    "place": {
     "straw_house": {
      "pose": "on",
-     "x": 56,
+     "x": 60,
      "y": 22
     },
     "pig1": {
      "pose": "stand",
-     "x": 82,
+     "x": 84,
      "y": 20
     },
     "wolf": {
      "pose": "walk",
-     "x": 20,
+     "x": 24,
      "y": 20,
      "vis": false
     }
@@ -364,17 +364,17 @@
     },
     "pig1": {
      "pose": "stand",
-     "x": 76,
+     "x": 80,
      "y": 20
     },
     "pig2": {
      "pose": "stand",
-     "x": 87,
+     "x": 90,
      "y": 20
     },
     "wolf": {
      "pose": "walk",
-     "x": 18,
+     "x": 24,
      "y": 20,
      "vis": false
     }
@@ -424,13 +424,13 @@
     },
     "pig1": {
      "pose": "stand",
-     "x": 28,
+     "x": 24,
      "y": 20,
      "vis": false
     },
     "pig2": {
      "pose": "stand",
-     "x": 42,
+     "x": 40,
      "y": 20,
      "vis": false
     },
@@ -468,12 +468,12 @@
    "place": {
     "brick_house": {
      "pose": "on",
-     "x": 62,
+     "x": 66,
      "y": 22
     },
     "wolf": {
      "pose": "walk",
-     "x": 36,
+     "x": 30,
      "y": 20,
      "vis": false
     }
@@ -505,7 +505,7 @@
      "match": "늑대는 지붕으로",
      "do": [
       "wolf:pose:climb",
-      "wolf:walk:60,50:6"
+      "wolf:walk:64,48:6"
      ]
     }
    ]
@@ -516,28 +516,28 @@
    "place": {
     "pig1": {
      "pose": "stand",
-     "x": 20,
+     "x": 18,
      "y": 20
     },
     "pig2": {
      "pose": "stand",
-     "x": 33,
+     "x": 34,
      "y": 20
     },
     "pig3": {
      "pose": "stand",
-     "x": 46,
+     "x": 50,
      "y": 20
     },
     "pot": {
      "pose": "on",
-     "x": 74,
+     "x": 76,
      "y": 18,
      "vis": false
     },
     "wolf": {
      "pose": "sit",
-     "x": 74,
+     "x": 76,
      "y": 28,
      "vis": false
     }
@@ -572,7 +572,7 @@
    "place": {
     "brick_house": {
      "pose": "on",
-     "x": 62,
+     "x": 70,
      "y": 22
     },
     "pig1": {
@@ -583,13 +583,13 @@
     },
     "pig2": {
      "pose": "stand",
-     "x": 26,
+     "x": 28,
      "y": 20,
      "vis": false
     },
     "pig3": {
      "pose": "stand",
-     "x": 38,
+     "x": 42,
      "y": 20,
      "vis": false
     },

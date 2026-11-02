@@ -48,7 +48,10 @@ def key(raw, out, doll=False, fit=None, align=None, mark=False):
         s = min(w, h)
         im = im.crop(((w - s) // 2, (h - s) // 2, (w + s) // 2, (h + s) // 2)).resize(DOLL, Image.LANCZOS)
     elif doll:
-        im = im.resize(DOLL, Image.LANCZOS)
+        side = max(w, h)  # 비율을 지키려고 마젠타로 채워 정사각형으로 만든다(눌러서 맞추지 않는다)
+        sq = Image.new('RGB', (side, side), (255, 0, 255))
+        sq.paste(im, ((side - w) // 2, (side - h) // 2))
+        im = sq.resize(DOLL, Image.LANCZOS)
     else:
         nw = int(h * BOX[0] / BOX[1])  # 3:2 원본의 가운데를 4:3 으로
         im = im.crop(((w - nw) // 2, 0, (w - nw) // 2 + nw, h)).resize(BOX, Image.LANCZOS)

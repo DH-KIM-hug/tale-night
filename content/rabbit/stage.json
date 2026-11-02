@@ -107,7 +107,7 @@
     "sit": "art/dolls/rabbit_sit.webp",
     "jump": "art/dolls/rabbit_jump.webp"
    },
-   "w": 25
+   "w": 34
   },
   "turtle": {
    "poses": {
@@ -120,7 +120,7 @@
     "stand": "art/dolls/turtle_stand.webp",
     "sit": "art/dolls/turtle_sit.webp"
    },
-   "w": 18,
+   "w": 26,
    "frameMs": 420
   },
   "owl": {
@@ -390,12 +390,12 @@
    "place": {
     "turtle": {
      "pose": "walk",
-     "x": 58,
+     "x": 64,
      "y": 22
     },
     "rabbit": {
      "pose": "run",
-     "x": 37,
+     "x": 34,
      "y": 22,
      "vis": false
     }
@@ -424,12 +424,12 @@
    "place": {
     "turtle": {
      "pose": "stand",
-     "x": 36,
+     "x": 32,
      "y": 22
     },
     "rabbit": {
      "pose": "stand",
-     "x": 62,
+     "x": 68,
      "y": 22,
      "flip": true
     }
