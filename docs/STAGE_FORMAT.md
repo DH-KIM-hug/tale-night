@@ -33,7 +33,7 @@
 ```
 
 ### 필드
-- `boxes.*.layers`: 흰 종이 층 그림. `far · mid · near · frame` 중 필요한 것만. 크기는 모두 4:3(2048×1536), 알파 포함, 색 없음.
+- `boxes.*.layers`: 흰 종이 층 그림. 뒤에서 앞으로 `far · far2 · mid · ground · near · frame` 중 필요한 것만(`far2`·`ground` 는 6층 시범, `village` 만 사용 중: `far2` = 가까운 산, `mid` = 집·나무만, `ground` = 인형이 서는 낮은 언덕). 크기는 모두 4:3(2048×1536), 알파 포함, 색 없음.
 - `boxes.*.dk`: 불 켜졌을 때 층 어둡기(0=빛 그대로, 1=검정). 없으면 기본값(PLAN.md §5-2 표). 상자마다 조정 가능.
 - `boxes.*.glowAt`: 광원(달·해·등불) 중심, 무대 % 좌표. 꺼졌을 때 그 자리에 흰 달 원판이 보인다(시안 `.moon-off`).
 - `boxes.*.fx`: `fireflies`(기본) · `snow` · `bubbles` · `stars` · `none`.

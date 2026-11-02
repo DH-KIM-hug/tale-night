@@ -2,12 +2,26 @@
   {
     "id": "village_far",
     "out": "art/rabbit/village_far.webp",
-    "prompt": "The FARTHEST layer of a paper light box: exactly four overlapping gentle rolling distant mountains with a few tiny pine trees along their ridges, plus two small puffy clouds cut as separate floating paper pieces on the left side of the sky. The mountains occupy only the lower 50% of the frame. The upper right sky is completely empty magenta, because a light glows there. THE MOST IMPORTANT RULE: this sheet will be BACKLIT, so only the holes glow. Every solid shape is pierced: no solid area wider than about 4% of the image width anywhere. Cut it like delicate lace, leaving thin connected paper bridges between many holes. Each mountain is pierced with rows of tiny pine-shaped and dot holes, and the pines are lacy."
+    "prompt": "The FARTHEST layer of a paper light box: exactly three very gentle, soft rolling distant mountain ridges with only a few tiny pines along them, plus two small puffy clouds cut as separate floating paper pieces on the left side of the sky. The shapes are simple and airy. The mountains occupy only the lower 52% of the frame; the bottom edge is solid edge to edge. Cut delicately with many small holes and thin connected paper bridges."
+  },
+  {
+    "id": "village_far2",
+    "out": "art/rabbit/village_far2.webp",
+    "prompt": "A second-farthest layer of a paper light box: one lower range of hills running edge to edge with a band of small pine trees along the ridge, with many gaps between the trees. It rises to at most 40% of the frame height at the left and right sides, and dips to 26% in the middle, so the light shows through the middle. Everything above is empty magenta. Cut delicately with many small holes and thin connected paper bridges."
   },
   {
     "id": "village_mid",
     "out": "art/rabbit/village_mid.webp",
-    "prompt": "A MIDDLE layer of a paper light box: a storybook forest village on a low rolling hill. Three small cottages with big round MUSHROOM-CAP roofs, each roof cut with round spot holes, each cottage with little window and door holes that let light through. Two round leafy trees with many small holes between the leaves stand between the cottages. IMPORTANT composition: all three cottages and both trees sit close together inside the central 68% of the image width; the outer 16% on each side holds only the bare low hill. The layer occupies only the lower 42% of the frame; everything above is empty magenta. The hill runs edge to edge along the bottom. THE MOST IMPORTANT RULE: this sheet will be BACKLIT, so only the holes glow. Every solid shape is pierced: no solid area wider than about 4% of the image width anywhere. Cut it like delicate lace, leaving thin connected paper bridges between many holes. Cottage walls have many arched windows, round portholes and lattice panes; mushroom caps are covered with big and small round holes; each tree crown is an open net of branches and leaf-shaped holes you can see straight through, not a solid crown; the hill is cut with rows of leaf, dot and flower holes."
+    "prompt": "A MIDDLE layer of a paper light box: ONLY a storybook forest village with NO ground and NO hill. Exactly three small separate cottages with big round MUSHROOM-CAP roofs, roofs cut with many round spot holes, walls with arched windows, round portholes and lattice panes that let light through, side by side in a row: left, centre, right. Two small round trees stand in the gaps between them, whose crowns are an open net of branches and leaf-shaped holes you can see straight through. STRICT composition: the whole group occupies ONLY the central 60% of the image width, every cottage completely visible, the outer 20% on each side is completely empty magenta. Nothing overlaps: clear magenta gaps between each cottage and tree. The bottoms of all cottages and trees stand on one thin horizontal paper strip whose ends stop at the group's edges, and that strip sits at 20% of the image height above the bottom edge. Below that strip the image is empty magenta. The tallest roof reaches 56% of the image height above the bottom edge. Everything else is empty magenta. Cut delicately with many small holes and thin connected paper bridges.",
+    "fit": {
+      "scale": 0.78,
+      "base": 0.22
+    }
+  },
+  {
+    "id": "village_ground",
+    "out": "art/rabbit/village_ground.webp",
+    "prompt": "A GROUND layer of a paper light box: one low soft rolling hill running edge to edge along the bottom, with a winding stepping-stone footpath cut as holes through its centre, and rows of small leaf, dot and flower holes scattered over it. The top of the hill reaches at most 26% of the frame height at its highest and is nearly flat in the centre. No houses, no trees, no tall plants. Everything above the hill is empty magenta. Cut delicately with many small holes and thin connected paper bridges."
   },
   {
     "id": "village_near",

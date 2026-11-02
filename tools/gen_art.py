@@ -39,7 +39,7 @@ def generate(job, raw):
         raise RuntimeError(txt[-400:])
 
 
-def key(raw, out, doll=False):
+def key(raw, out, doll=False, fit=None):
     """마젠타 정도(min(R,B)-G)로 알파를 만든다. 종이는 흰색뿐이라 남은 색 번짐은 무채색으로 되돌린다."""
     im = Image.open(raw).convert('RGB')
     w, h = im.size
@@ -66,6 +66,12 @@ def key(raw, out, doll=False):
         moved = Image.new('RGBA', pic.size, (0, 0, 0, 0))
         moved.paste(pic, (0, pic.size[1] - y1))
         pic = moved
+    if fit:  # 그림을 줄여 가운데에, 아래 끝을 화면 아래에서 base 높이에 둔다(이미지 생성이 구도를 못 지킬 때)
+        small = pic.crop(pic.getchannel('A').point(lambda v: 255 if v > 128 else 0).getbbox())
+        small = small.resize((int(small.width * fit['scale']), int(small.height * fit['scale'])), Image.LANCZOS)
+        moved = Image.new('RGBA', pic.size, (0, 0, 0, 0))
+        moved.paste(small, ((pic.width - small.width) // 2, int(pic.height * (1 - fit['base'])) - small.height))
+        pic = moved
     pic.save(out, 'WEBP', quality=88, alpha_quality=95, method=6)
     print(f'{out}: 투명 {100 * (alpha == 0).mean():.0f}%, {os.path.getsize(out) // 1024}KB', flush=True)
 
@@ -79,7 +85,7 @@ def main():
         if os.path.exists(out): print('skip', job['id']); continue
         try:
             if not os.path.exists(raw): generate(job, raw)
-            key(raw, out, job.get('kind') == 'doll')
+            key(raw, out, job.get('kind') == 'doll', job.get('fit'))
         except Exception as e:
             print(job['id'], 'FAIL', e, flush=True)
 

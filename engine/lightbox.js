@@ -14,7 +14,7 @@
     snow:         { c1: '#5a6fa8', c2: '#dfe8f5', glow: '#ffffff' },
   };
   const LAYERS = [ // 이름, 기본 어둡기, 시차(px), 확대
-    ['far', .2, 4, 1], ['mid', .52, 8, 1], ['dolls', .82, 11, 1], ['near', .8, 15, 1], ['fx', 0, 0, 1], ['frame', .92, 22, 1.06],
+    ['far', .2, 4, 1], ['far2', .36, 6, 1], ['mid', .52, 8, 1], ['ground', .68, 10, 1], ['dolls', .82, 11, 1], ['near', .8, 15, 1], ['fx', 0, 0, 1], ['frame', .92, 22, 1.06],
   ];
   const BASE = (document.currentScript && document.currentScript.src.replace(/engine\/lightbox\.js.*$/, '')) || './';
   const url = p => BASE + p;

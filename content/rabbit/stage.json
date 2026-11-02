@@ -4,7 +4,9 @@
   "village": {
    "layers": {
     "far": "art/rabbit/village_far.webp",
+    "far2": "art/rabbit/village_far2.webp",
     "mid": "art/rabbit/village_mid.webp",
+    "ground": "art/rabbit/village_ground.webp",
     "near": "art/rabbit/village_near.webp",
     "frame": "art/rabbit/village_frame.webp"
    },
@@ -12,7 +14,15 @@
     50,
     27
    ],
-   "fx": "fireflies"
+   "fx": "fireflies",
+   "dk": {
+    "far": 0.14,
+    "far2": 0.32,
+    "mid": 0.54,
+    "ground": 0.72,
+    "near": 0.84,
+    "frame": 0.93
+   }
   },
   "hill": {
    "layers": {
