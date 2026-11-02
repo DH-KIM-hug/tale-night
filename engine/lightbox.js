@@ -18,6 +18,7 @@
   ];
   const BASE = (document.currentScript && document.currentScript.src.replace(/engine\/lightbox\.js.*$/, '')) || './';
   const url = p => BASE + p;
+  const V2 = new URLSearchParams(location.search).has('v2'); // 새 그림 방식 시범(docs/SCENE_PLAN.md). 상자가 다 만들어지면 기본으로 바꾼다
   const reduced = () => { try { return matchMedia('(prefers-reduced-motion: reduce)').matches || JSON.parse(localStorage.getItem('kulkul.settings') || '{}').calm; } catch (e) { return false; } };
 
   function el(tag, cls, parent) { const e = document.createElement(tag); if (cls) e.className = cls; if (parent) parent.appendChild(e); return e; }
@@ -52,8 +53,11 @@
     destroy() { cancelAnimationFrame(this._raf); this.root.innerHTML = ''; }
 
     _buildBox(key) {
-      const box = this.stage.boxes[key];
+      const box = (V2 && this.stage.boxes[key + '_v2']) || this.stage.boxes[key];
       if (!box) throw new Error('상자 없음: ' + key);
+      this.v2 = box.formats ? box : null;
+      this.root.classList.toggle('lb-v2', !!this.v2);
+      if (this.v2) return this._buildV2(key);
       const wrap = el('div', 'lb-boxset');
       this.layers = {}; this.dollEls = {};
       for (const [name, dk0, px, sc] of LAYERS) {
@@ -70,6 +74,62 @@
       this.boxEl.replaceChildren(wrap);
       this.boxKey = key;
       this._fx(null);
+    }
+
+    /* 새 그림 방식: 화면 비율에 맞는 그림을 고르고, 짧은 쪽에 남는 곳은 검정으로 둔다 */
+    _format() {
+      const a = this.root.clientWidth / this.root.clientHeight;
+      return a < .6 ? 'port' : a > 1.8 ? 'land' : 'tab';
+    }
+    _fit() {
+      const F = this.v2.formats[this.fmt], W = this.root.clientWidth, H = this.root.clientHeight;
+      const w = this.fmt === 'port' ? W : this.fmt === 'land' ? H * F.ratio : Math.min(W, H * F.ratio);
+      this.set.style.width = w + 'px'; this.set.style.height = w / F.ratio + 'px';
+    }
+    _buildV2(key) {
+      this.fmt = this._format();
+      const F = this.v2.formats[this.fmt], R = Math.random;
+      this.set = el('div', 'lb-v2set');
+      const pic = (src, cls) => { const i = el('img', cls, this.set); i.src = url(src); i.alt = ''; i.decoding = 'async'; return i; };
+      this.layers = {}; this.dollEls = {};
+      for (const b of F.back) {
+        const i = pic(b.src, 'lb-v2full');
+        if (b.top) i.style.top = b.top + '%';
+        if (b.moon) i.className = 'lb-v2moon', Object.assign(i.style, { left: b.moon[0] + '%', top: b.moon[1] + '%', width: b.moon[2] + '%' });
+      }
+      this.layers.dolls = el('div', 'lb-layer', this.set);
+      for (const [src, x, w] of F.sway || []) { // 위에 매달려 흔들리는 조각
+        const i = pic(src, 'lb-v2sway');
+        Object.assign(i.style, { left: x + '%', width: w + '%' });
+        i.style.setProperty('--d', 4 + R() * 3 + 's'); i.style.setProperty('--o', -R() * 6 + 's'); i.style.setProperty('--a', 1 + R() * 1.4 + 'deg');
+      }
+      this.layers.fx = el('div', 'lb-layer lb-fx', this.set);
+      this.boxEl.replaceChildren(this.set);
+      this.boxKey = key;
+      this._fit();
+      this._fx(null);
+      if (!this._onResize) {
+        this._onResize = () => {
+          if (!this.v2) return;
+          if (this._format() === this.fmt) return this._fit();
+          const st = this.state; this.boxKey = null; this.apply(st, {}, { instant: true });
+        };
+        addEventListener('resize', this._onResize);
+      }
+    }
+    _placeV2(name, d, instant) {
+      const pos = this.v2.formats[this.fmt].dolls[name] || {}, p = pos[d.pose] || pos.default;
+      let e = this.dollEls[name];
+      if (!e) {
+        e = this.dollEls[name] = el('div', 'lb-v2doll', this.layers.dolls);
+        e._imgs = {};
+        for (const [pose, src] of Object.entries(this.stage.dolls[name].v2 || {})) { const i = el('img', '', e); i.src = url(src); i.alt = ''; e._imgs[pose] = i; }
+      }
+      const vis = d.vis !== false && p && e._imgs[d.pose];
+      if (instant) e.style.transition = 'none'; else e.style.transition = '';
+      for (const [pose, i] of Object.entries(e._imgs)) i.classList.toggle('on', pose === d.pose);
+      if (p) Object.assign(e.style, { left: p[0] + '%', bottom: p[1] + '%', width: p[2] + '%' });
+      e.style.opacity = vis ? 1 : 0;
     }
 
     _doll(name) {
@@ -154,6 +214,7 @@
     }
 
     _placeDoll(name, d, hint, instant) {
+      if (this.v2) return this._placeV2(name, d, instant); // 인물은 자리를 옮기지 않는다
       const e = this._doll(name);
       const prev = e._st;
       const vis = d.vis !== false;

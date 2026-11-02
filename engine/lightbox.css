@@ -90,3 +90,25 @@
 
 .lb-static .lb-sheet { filter: drop-shadow(0 1px 2px rgba(46,36,28,.38)); }
 @media (prefers-reduced-motion: reduce) { .lb-back-on, .lb-fx > div, .lb-bob, .lb-lantern { animation: none !important; } }
+
+/* 새 그림 방식(docs/SCENE_PLAN.md): 색을 칠한 층을 겹친다. 화면 전체를 쓰고 남는 곳은 검정 */
+.lb.lb-v2 { position: fixed; inset: 0; width: auto; aspect-ratio: auto; border-radius: 0; background: #000; box-shadow: none; }
+.lb-v2 .lb-back, .lb-v2 .lb-back-on, .lb-v2 .lb-moon { display: none; }
+.lb-v2 .lb-box { display: flex; align-items: center; justify-content: center; overflow: hidden; transition: opacity var(--lt) ease; opacity: 0; }
+.lb-v2.lit .lb-box { opacity: 1; }
+.lb-v2 .lb-box::after { z-index: 1; }
+.lb-v2set { position: relative; flex: none; overflow: hidden; }
+.lb-v2set img { position: absolute; display: block; max-width: none; pointer-events: none; }
+.lb-v2full { left: 0; top: 0; width: 100%; height: 100%; }
+.lb-v2moon { height: auto; animation: lb-v2glow 7s ease-in-out infinite; }
+@keyframes lb-v2glow { 50% { filter: brightness(1.07); } }
+.lb-v2sway { top: 0; height: auto; transform-origin: 50% 0; animation: lb-v2sway var(--d) ease-in-out var(--o) infinite alternate; }
+@keyframes lb-v2sway { from { transform: rotate(calc(var(--a) * -1)); } to { transform: rotate(var(--a)); } }
+.lb-v2doll { position: absolute; transform: translateX(-50%); transition: opacity .6s ease; }
+.lb-v2doll img { position: absolute; left: 0; bottom: 0; width: 100%; height: auto; opacity: 0; transition: opacity .5s ease; }
+.lb-v2doll img.on { opacity: 1; }
+.lb-v2 .lb-fx-fireflies { position: absolute; }
+@media (prefers-reduced-motion: reduce) { .lb-v2moon, .lb-v2sway { animation: none; } }
+/* 함께 읽기: 글이 무대 그림 위에 놓이므로 어두운 판을 깐다 */
+body:has(.lb-v2) #readPanel { position: relative; z-index: 2; background: rgba(8,12,34,.72); border-radius: 12px; }
+body:has(.lb-v2) #readPanel p { color: #f3efe3; }
