@@ -5,5 +5,26 @@
 "ref": "art_src/v2/rabbit/finish/tab/comp.png",
 "sky": true,
 "prompt": "The same forest clearing, same framing, same trees, finish gate, moon and mountains as the reference, same painterly hanji-paper grain, simple large masses, no lace, no patterns. Five round paper lanterns hang on thin cords from the top edge, glowing warm amber. The sky is a rich, clear picture-book dusk wash, a smooth vertical gradient: warm glowing peach-orange at the horizon, through soft coral and rose-red, into a deep dusky blue at the top. Rich and luminous like gouache, colourful but gentle, suitable for bedtime, not neon and not fiery. The far ridges are flat mid-tone shapes in dusky rose-brown, a little darker as they come nearer, with soft mist between them. Foreground trees, gate and ground are very dark near-black with a slightly visible warm dark-brown ground around the centre so puppets standing there still stand out. No glowing outlines on trees. NO purple, NO violet, NO lavender, NO magenta. ABSOLUTELY NO characters, animals or people: the foreground stays open for puppets."
+},
+{
+"id": "party_tab_rich_a",
+"out": "art/v2/rabbit/party/tab/rich_a.webp",
+"ref": "art_src/v2/rabbit/party/tab/comp_mid.png",
+"sky": true,
+"prompt": "Keep exactly the same colour palette, painterly hanji-paper grain, framing, dark foreground trees, moon and finish gate as the reference: peach-orange horizon, coral, rose-red, deep dusky blue at the top, NO purple, NO violet, NO magenta. Simple large cut-paper masses, no lace, no patterns. The central foreground ground stays open and empty for puppets. ABSOLUTELY NO characters, animals or people. Make the background much richer and deeper: long soft layered sunset clouds lit coral from below across the sky; behind the gate a calm winding lake reflecting the sunset colours with shining streaks; on the middle hills a small Korean village of a few tiled-roof houses with tiny glowing amber windows; a thin line of small birds flying home far away; a few more distant ridges with mist between them."
+},
+{
+"id": "party_tab_rich_b",
+"out": "art/v2/rabbit/party/tab/rich_b.webp",
+"ref": "art_src/v2/rabbit/party/tab/comp_mid.png",
+"sky": true,
+"prompt": "Keep exactly the same colour palette, painterly hanji-paper grain, framing, dark foreground trees, moon and finish gate as the reference: peach-orange horizon, coral, rose-red, deep dusky blue at the top, NO purple, NO violet, NO magenta. Simple large cut-paper masses, no lace, no patterns. The central foreground ground stays open and empty for puppets. ABSOLUTELY NO characters, animals or people. Make the scene feel like a festive forest feast: instead of five lanterns on straight cords, several swagging strings of many small round paper lanterns draped from tree to tree and across to the gate at different heights, glowing amber; soft layered sunset clouds in the sky; a low dark silhouette of a long feast table with bowls and baskets at the far left and a small campfire with drifting sparks at the far right, both at the edges so the centre stays open; a few small glowing amber lanterns on poles along a path winding back through the hills; more distant ridges with mist between them."
+},
+{
+"id": "party_tab_mix",
+"out": "art/v2/rabbit/party/tab/mix.webp",
+"ref": "art_src/v2/rabbit/party/tab/rich_b.png",
+"sky": true,
+"prompt": "Keep exactly the same picture as the reference: same colour palette (peach-orange horizon, coral, rose-red, deep dusky blue at the top, NO purple, NO violet, NO magenta), same painterly hanji-paper grain, framing, dark foreground trees, moon, sunset clouds, finish gate, feast table at the far left and campfire at the far right. Two changes only. ONE: in the middle distance behind the gate, between the misty hills, add a calm winding lake that reflects the sunset colours with soft shining streaks of light and the reflections of the hills, like a quiet river lake curving back into the valley; the path with small lanterns on poles may follow its shore. TWO: replace the many tiny bulb-like lights with fewer, larger traditional round Korean hanji paper lanterns, about six to eight on each of two gently swagging cords between the trees and the gate, glowing soft amber with visible paper ribs, not like modern string lights. The central foreground ground stays open and empty for puppets. ABSOLUTELY NO characters, animals or people. Simple large cut-paper masses, no lace, no patterns."
 }
 ]
