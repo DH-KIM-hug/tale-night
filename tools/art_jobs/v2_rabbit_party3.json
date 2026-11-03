@@ -1,0 +1,184 @@
+[
+{
+"id": "party_land_comp",
+"out": "art/v2/rabbit/party/land/comp.webp",
+"ref": "art_src/v2/rabbit/party/land/ref_pad.png",
+"sky": true,
+"prompt": "The reference shows a finished picture in the middle with flat grey bands on the left and right. Make ONE complete seamless very wide 2.17:1 panorama for a phone held sideways: keep the middle picture exactly as it is and fill the grey bands by continuing the scene naturally: more sunset sky and clouds, the misty hills and the lake continuing, and the two big dark framing trees moved out to the far left and far right edges so the open clearing becomes wider. The swagging cords of round hanji paper lanterns continue across, with about the same number of lanterns, evenly spaced. The feast table stays at the left side and the campfire at the right side of the clearing, the central foreground ground stays open and empty for puppets. No grey left anywhere. Same colour palette as the reference: peach-orange horizon, coral, rose-red, deep dusky blue at the top, NO purple, NO violet, NO magenta. Same painterly hanji-paper grain, simple large cut-paper masses, no lace, no patterns. ABSOLUTELY NO characters, animals or people."
+},
+{
+"id": "party_port_comp",
+"out": "art/v2/rabbit/party/port/comp.webp",
+"ref": "art_src/v2/rabbit/party/port/ref_pad.png",
+"sky": true,
+"prompt": "The reference shows a finished picture in the lower middle with flat grey areas above and below. Make ONE complete seamless very tall narrow 9:19.5 picture for a phone held upright: keep the band picture as it is and fill the grey by continuing the scene: above it a tall sunset sky going from coral up to deep dusky blue at the top, with layered sunset clouds and the round pale moon in the upper left part; the dark crowns of the two framing trees reaching up the left and right edges; the cords of round hanji paper lanterns hang a little higher so they cross the upper middle of the picture. Below the band, the dark foreground ground continues down to the bottom edge, plain and open with a few grass tufts at the very edges. The feast table stays at the left edge and the campfire at the right edge, smaller; the central ground stays open and empty for puppets. No grey left anywhere. Same colour palette as the reference: peach-orange horizon, coral, rose-red, deep dusky blue at the top, NO purple, NO violet, NO magenta. Same painterly hanji-paper grain, simple large cut-paper masses, no lace, no patterns. ABSOLUTELY NO characters, animals or people."
+},
+{
+"id": "party_tab_sky",
+"out": "art/v2/rabbit/party/tab/sky.webp",
+"ref": "art_src/v2/rabbit/party/tab/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the empty sunset sky with its layered clouds as one full-bleed painting with the same colour gradient as the reference, continuing smoothly down behind where the mountains are. No moon, no lanterns, no cords, no mountains, no hills, no trees, no gate. Fill the whole image.",
+"sky": true
+},
+{
+"id": "party_tab_ridges",
+"out": "art/v2/rabbit/party/tab/ridges.webp",
+"ref": "art_src/v2/rabbit/party/tab/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the farthest rounded mountain ridges only, in their sunset colours, extended smoothly across the full width behind everything, continuing down to the bottom edge as a solid area. No lake, no trees, no moon, no gate, no lanterns, no foreground.",
+"warm": true
+},
+{
+"id": "party_tab_hills",
+"out": "art/v2/rabbit/party/tab/hills.webp",
+"ref": "art_src/v2/rabbit/party/tab/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the nearer misty rounded hills with their little trees, the calm winding lake with its sunset reflections and shining streaks, and the small lanterns on poles along the shore path, extended across the full width, continuing down to the bottom edge as a solid area of mist. No far mountains, no sky, no big foreground trees, no gate, no hanging lanterns, no feast table, no campfire.",
+"warm": true
+},
+{
+"id": "party_tab_trees",
+"out": "art/v2/rabbit/party/tab/trees.webp",
+"ref": "art_src/v2/rabbit/party/tab/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the big dark foreground trees at the side edges with their trunks and leafy crowns, going off the image edges as in the reference, and extending a little below the ground line. No ground, no grass, no hills, no gate, no lanterns, no cords.",
+"warm": true
+},
+{
+"id": "party_tab_gate",
+"out": "art/v2/rabbit/party/tab/gate.webp",
+"ref": "art_src/v2/rabbit/party/tab/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the simple finish gate: two slim wooden posts and the one plain blank banner between them, extended a little below the ground line. No writing. No ground, no grass, no hills, no trees, no lanterns, no cords.",
+"warm": true
+},
+{
+"id": "party_tab_ground",
+"out": "art/v2/rabbit/party/tab/ground.webp",
+"ref": "art_src/v2/rabbit/party/tab/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the dark foreground ground with its grass tufts and the low feast table with its bowls, baskets and little table lanterns. The ground is one continuous completely opaque very dark warm brown mass, with no gaps, solid all the way down to the bottom edge and from the left edge to the right edge, extended smoothly under where the trees and the campfire stand, its top edge at exactly the same height as the reference. No campfire, no tree trunks, no gate.",
+"warm": true
+},
+{
+"id": "party_tab_fire",
+"out": "art/v2/rabbit/party/tab/fire.webp",
+"ref": "art_src/v2/rabbit/party/tab/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the small campfire only: its flames, the stones around it, the cooking pot and basket beside it, and the rising sparks, at exactly the same place. Nothing else.",
+"warm": true
+},
+{
+"id": "party_tab_lanterns",
+"out": "art/v2/rabbit/party/tab/lanterns.webp",
+"ref": "art_src/v2/rabbit/party/tab/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the swagging thin dark cords with all the round glowing hanji paper lanterns hanging on them, at exactly the same positions. Nothing else: no trees, no moon, no sky.",
+"warm": true
+},
+{
+"id": "party_land_sky",
+"out": "art/v2/rabbit/party/land/sky.webp",
+"ref": "art_src/v2/rabbit/party/land/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the empty sunset sky with its layered clouds as one full-bleed painting with the same colour gradient as the reference, continuing smoothly down behind where the mountains are. No moon, no lanterns, no cords, no mountains, no hills, no trees, no gate. Fill the whole image.",
+"sky": true
+},
+{
+"id": "party_land_ridges",
+"out": "art/v2/rabbit/party/land/ridges.webp",
+"ref": "art_src/v2/rabbit/party/land/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the farthest rounded mountain ridges only, in their sunset colours, extended smoothly across the full width behind everything, continuing down to the bottom edge as a solid area. No lake, no trees, no moon, no gate, no lanterns, no foreground.",
+"warm": true
+},
+{
+"id": "party_land_hills",
+"out": "art/v2/rabbit/party/land/hills.webp",
+"ref": "art_src/v2/rabbit/party/land/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the nearer misty rounded hills with their little trees, the calm winding lake with its sunset reflections and shining streaks, and the small lanterns on poles along the shore path, extended across the full width, continuing down to the bottom edge as a solid area of mist. No far mountains, no sky, no big foreground trees, no gate, no hanging lanterns, no feast table, no campfire.",
+"warm": true
+},
+{
+"id": "party_land_trees",
+"out": "art/v2/rabbit/party/land/trees.webp",
+"ref": "art_src/v2/rabbit/party/land/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the big dark foreground trees at the side edges with their trunks and leafy crowns, going off the image edges as in the reference, and extending a little below the ground line. No ground, no grass, no hills, no gate, no lanterns, no cords.",
+"warm": true
+},
+{
+"id": "party_land_gate",
+"out": "art/v2/rabbit/party/land/gate.webp",
+"ref": "art_src/v2/rabbit/party/land/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the simple finish gate: two slim wooden posts and the one plain blank banner between them, extended a little below the ground line. No writing. No ground, no grass, no hills, no trees, no lanterns, no cords.",
+"warm": true
+},
+{
+"id": "party_land_ground",
+"out": "art/v2/rabbit/party/land/ground.webp",
+"ref": "art_src/v2/rabbit/party/land/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the dark foreground ground with its grass tufts and the low feast table with its bowls, baskets and little table lanterns. The ground is one continuous completely opaque very dark warm brown mass, with no gaps, solid all the way down to the bottom edge and from the left edge to the right edge, extended smoothly under where the trees and the campfire stand, its top edge at exactly the same height as the reference. No campfire, no tree trunks, no gate.",
+"warm": true
+},
+{
+"id": "party_land_fire",
+"out": "art/v2/rabbit/party/land/fire.webp",
+"ref": "art_src/v2/rabbit/party/land/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the small campfire only: its flames, the stones around it, the cooking pot and basket beside it, and the rising sparks, at exactly the same place. Nothing else.",
+"warm": true
+},
+{
+"id": "party_land_lanterns",
+"out": "art/v2/rabbit/party/land/lanterns.webp",
+"ref": "art_src/v2/rabbit/party/land/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the swagging thin dark cords with all the round glowing hanji paper lanterns hanging on them, at exactly the same positions. Nothing else: no trees, no moon, no sky.",
+"warm": true
+},
+{
+"id": "party_port_sky",
+"out": "art/v2/rabbit/party/port/sky.webp",
+"ref": "art_src/v2/rabbit/party/port/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the empty sunset sky with its layered clouds as one full-bleed painting with the same colour gradient as the reference, continuing smoothly down behind where the mountains are. No moon, no lanterns, no cords, no mountains, no hills, no trees, no gate. Fill the whole image.",
+"sky": true
+},
+{
+"id": "party_port_ridges",
+"out": "art/v2/rabbit/party/port/ridges.webp",
+"ref": "art_src/v2/rabbit/party/port/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the farthest rounded mountain ridges only, in their sunset colours, extended smoothly across the full width behind everything, continuing down to the bottom edge as a solid area. No lake, no trees, no moon, no gate, no lanterns, no foreground.",
+"warm": true
+},
+{
+"id": "party_port_hills",
+"out": "art/v2/rabbit/party/port/hills.webp",
+"ref": "art_src/v2/rabbit/party/port/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the nearer misty rounded hills with their little trees, the calm winding lake with its sunset reflections and shining streaks, and the small lanterns on poles along the shore path, extended across the full width, continuing down to the bottom edge as a solid area of mist. No far mountains, no sky, no big foreground trees, no gate, no hanging lanterns, no feast table, no campfire.",
+"warm": true
+},
+{
+"id": "party_port_trees",
+"out": "art/v2/rabbit/party/port/trees.webp",
+"ref": "art_src/v2/rabbit/party/port/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the big dark foreground trees at the side edges with their trunks and leafy crowns, going off the image edges as in the reference, and extending a little below the ground line. No ground, no grass, no hills, no gate, no lanterns, no cords.",
+"warm": true
+},
+{
+"id": "party_port_gate",
+"out": "art/v2/rabbit/party/port/gate.webp",
+"ref": "art_src/v2/rabbit/party/port/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the simple finish gate: two slim wooden posts and the one plain blank banner between them, extended a little below the ground line. No writing. No ground, no grass, no hills, no trees, no lanterns, no cords.",
+"warm": true
+},
+{
+"id": "party_port_ground",
+"out": "art/v2/rabbit/party/port/ground.webp",
+"ref": "art_src/v2/rabbit/party/port/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the dark foreground ground with its grass tufts and the low feast table with its bowls, baskets and little table lanterns. The ground is one continuous completely opaque very dark warm brown mass, with no gaps, solid all the way down to the bottom edge and from the left edge to the right edge, extended smoothly under where the trees and the campfire stand, its top edge at exactly the same height as the reference. No campfire, no tree trunks, no gate.",
+"warm": true
+},
+{
+"id": "party_port_fire",
+"out": "art/v2/rabbit/party/port/fire.webp",
+"ref": "art_src/v2/rabbit/party/port/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the small campfire only: its flames, the stones around it, the cooking pot and basket beside it, and the rising sparks, at exactly the same place. Nothing else.",
+"warm": true
+},
+{
+"id": "party_port_lanterns",
+"out": "art/v2/rabbit/party/port/lanterns.webp",
+"ref": "art_src/v2/rabbit/party/port/comp.png",
+"prompt": "Recreate one single layer taken apart from the reference picture, for a layered light-box animation. Same exact framing and aspect ratio as the reference, same painterly hanji-paper look, same colours. Keep this layer's shapes at exactly the same position and size as in the reference. Include ONLY: the swagging thin dark cords with all the round glowing hanji paper lanterns hanging on them, at exactly the same positions. Nothing else: no trees, no moon, no sky.",
+"warm": true
+}
+]

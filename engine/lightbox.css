@@ -106,6 +106,10 @@
 @keyframes lb-v2sway { from { transform: rotate(calc(var(--a) * -1)); } to { transform: rotate(var(--a)); } }
 .lb-v2breeze { transform-origin: 50% 100%; animation: lb-v2breeze 9s ease-in-out infinite alternate; }
 @keyframes lb-v2breeze { from { transform: rotate(-.3deg); } to { transform: rotate(.3deg); } }
+.lb-v2swing { transform-origin: 50% 0; animation: lb-v2swing 5s ease-in-out infinite alternate; }
+@keyframes lb-v2swing { from { transform: rotate(-.35deg) translateY(0); } to { transform: rotate(.35deg) translateY(.4%); } }
+.lb-v2flicker { animation: lb-v2flicker 1.7s steps(1, end) infinite; }
+@keyframes lb-v2flicker { 0% { filter: brightness(1); } 23% { filter: brightness(1.18); } 41% { filter: brightness(.94); } 62% { filter: brightness(1.12); } 80% { filter: brightness(1.03); } }
 .lb-v2drift { left: 0; height: auto; animation: lb-v2drift var(--d) linear var(--o) infinite; }
 @keyframes lb-v2drift { from { transform: translateX(-40vw); } to { transform: translateX(110vw); } }
 .lb-v2flutter { height: auto; animation: lb-v2flutter var(--d) ease-in-out var(--o) infinite alternate; }
@@ -116,7 +120,7 @@
 .lb-v2doll img.on { opacity: 1; }
 .lb-v2doll.lb-instant img { transition: none; }
 .lb-v2 .lb-fx-fireflies { position: absolute; }
-@media (prefers-reduced-motion: reduce) { .lb-v2moon, .lb-v2sway, .lb-v2breeze, .lb-v2drift, .lb-v2flutter { animation: none; } }
+@media (prefers-reduced-motion: reduce) { .lb-v2moon, .lb-v2sway, .lb-v2breeze, .lb-v2swing, .lb-v2flicker, .lb-v2drift, .lb-v2flutter { animation: none; } }
 body:has(.lb-v2) #readPanel p { color: #f3efe3; }
 /* 함께 읽기: 그림을 가리지 않도록 대사 묶음은 아래 띠에 둔다. 세로 폰은 그림 아래쪽 빈 땅에 겹친다 */
 .together:has(.lb-v2) { --v2band: 136px; }

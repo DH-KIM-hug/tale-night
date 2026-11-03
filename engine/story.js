@@ -15,6 +15,7 @@
     if (p[0] === 'light') { st.light = p[1]; if (p[2]) st.power = +p[2]; return; }
     if (p[0] === 'power') { st.power = +p[1]; return; }
     if (p[0] === 'fx') { st.fx = p[1]; return; }
+    if (p[0] === 'box') { st.box = p[1]; return; } // 장면 가운데서 그림을 바꾼다(숲속 잔치)
     const [name, act, a, b] = p;
     const d = st.dolls[name] || (st.dolls[name] = { pose: null, x: 50, y: 10, vis: false });
     const xy = s => s.split(',').map(Number);
@@ -56,7 +57,7 @@
           if (c.match && !l.text.startsWith(c.match)) warn(`${sc.key} 줄 ${li} 가 "${c.match}…" 이 아님: "${l.text}"`);
           c.do.forEach(cmd => verb(st, hints, cmd, warn));
         }
-        const look = JSON.stringify(Object.entries(st.dolls).map(([n, d]) => [n, d.vis !== false && d.pose, !!d.flip, d.spot])); // 인물이 달라 보이는 줄에서 대사 묶음을 나눈다
+        const look = st.box + JSON.stringify(Object.entries(st.dolls).map(([n, d]) => [n, d.vis !== false && d.pose, !!d.flip, d.spot])); // 인물이 달라 보이는 줄에서 대사 묶음을 나눈다
         const beat = li === 0 || look !== lastLook; lastLook = look;
         steps.push({ beat, scene: sc.key, sceneIdx: si, lineIdx: li, card: li === 0 ? sc.card : null, text: l.text, clips: l.clips, dur: l.dur, roles: l.roles, segRoles: l.segRoles || [], state: clone(st), hints });
       });

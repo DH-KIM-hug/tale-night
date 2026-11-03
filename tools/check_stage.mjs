@@ -43,6 +43,7 @@ for (const id of ids) {
         if (p[0] === 'light') { if (!PRESETS.includes(p[1])) err(id, `${sc.key}: 빛 없음 ${cmd}`); continue; }
         if (p[0] === 'fx') { if (!FX.includes(p[1])) err(id, `${sc.key}: 효과 없음 ${cmd}`); continue; }
         if (p[0] === 'power') continue;
+        if (p[0] === 'box') { if (!stage.boxes[p[1]]) err(id, `${sc.key}: 상자 없음 ${cmd}`); continue; }
         if (!ACTS.includes(p[1])) { err(id, `${sc.key}: 모르는 동사 ${cmd}`); continue; }
         const e = dollOk(p[0], p[1] === 'pose' ? p[2] : null); if (e) err(id, `${sc.key}: ${e} (${cmd})`);
       }

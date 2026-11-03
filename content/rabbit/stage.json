@@ -1732,6 +1732,222 @@
      }
     }
    }
+  },
+  "party": {
+   "layers": {
+    "far": "art/rabbit/finish_far.webp",
+    "far2": "art/rabbit/finish_far2.webp",
+    "mid": "art/rabbit/finish_mid.webp",
+    "ground": "art/rabbit/finish_ground.webp",
+    "near": "art/rabbit/finish_near.webp",
+    "frame": "art/rabbit/finish_frame.webp"
+   },
+   "glowAt": [
+    50,
+    22
+   ],
+   "fx": "fireflies",
+   "dk": {
+    "far": 0.12,
+    "far2": 0.2,
+    "mid": 0.32,
+    "ground": 0.62,
+    "dolls": 0.92,
+    "near": 0.84,
+    "frame": 0.93
+   }
+  },
+  "party_v2": {
+   "layers": {},
+   "fx": "fireflies",
+   "formats": {
+    "tab": {
+     "ratio": 1.5,
+     "back": [
+      {
+       "src": "art/v2/rabbit/party/tab/sky.webp"
+      },
+      {
+       "src": "art/v2/moon.webp",
+       "moon": [
+        18.6,
+        12.7,
+        9.8
+       ]
+      },
+      {
+       "src": "art/v2/rabbit/party/tab/ridges.webp"
+      },
+      {
+       "src": "art/v2/rabbit/party/tab/hills.webp"
+      },
+      {
+       "src": "art/v2/rabbit/party/tab/gate.webp"
+      },
+      {
+       "src": "art/v2/rabbit/party/tab/trees.webp",
+       "breeze": true
+      },
+      {
+       "src": "art/v2/rabbit/party/tab/ground.webp"
+      },
+      {
+       "src": "art/v2/rabbit/party/tab/fire.webp",
+       "flicker": true
+      },
+      {
+       "src": "art/v2/rabbit/party/tab/lanterns.webp",
+       "swing": true
+      }
+     ],
+     "dolls": {
+      "turtle": {
+       "sit": [
+        37,
+        20.3
+       ],
+       "stand": [
+        37,
+        20.3
+       ]
+      },
+      "rabbit": {
+       "sit": [
+        63,
+        20.3
+       ],
+       "stand": [
+        63,
+        20.3
+       ]
+      }
+     }
+    },
+    "land": {
+     "ratio": 2.1617819460726846,
+     "back": [
+      {
+       "src": "art/v2/rabbit/party/land/sky.webp"
+      },
+      {
+       "src": "art/v2/moon.webp",
+       "moon": [
+        27.8,
+        12.3,
+        7.2
+       ]
+      },
+      {
+       "src": "art/v2/rabbit/party/land/ridges.webp"
+      },
+      {
+       "src": "art/v2/rabbit/party/land/hills.webp"
+      },
+      {
+       "src": "art/v2/rabbit/party/land/gate.webp"
+      },
+      {
+       "src": "art/v2/rabbit/party/land/trees.webp",
+       "breeze": true
+      },
+      {
+       "src": "art/v2/rabbit/party/land/ground.webp"
+      },
+      {
+       "src": "art/v2/rabbit/party/land/fire.webp",
+       "flicker": true
+      },
+      {
+       "src": "art/v2/rabbit/party/land/lanterns.webp",
+       "swing": true
+      }
+     ],
+     "dolls": {
+      "turtle": {
+       "sit": [
+        41,
+        20.5
+       ],
+       "stand": [
+        41,
+        20.5
+       ]
+      },
+      "rabbit": {
+       "sit": [
+        59,
+        20.5
+       ],
+       "stand": [
+        59,
+        20.5
+       ]
+      }
+     }
+    },
+    "port": {
+     "ratio": 0.4607471575527883,
+     "back": [
+      {
+       "src": "art/v2/rabbit/party/port/sky.webp"
+      },
+      {
+       "src": "art/v2/moon.webp",
+       "moon": [
+        16.1,
+        14.8,
+        12.2
+       ]
+      },
+      {
+       "src": "art/v2/rabbit/party/port/ridges.webp"
+      },
+      {
+       "src": "art/v2/rabbit/party/port/hills.webp"
+      },
+      {
+       "src": "art/v2/rabbit/party/port/gate.webp"
+      },
+      {
+       "src": "art/v2/rabbit/party/port/trees.webp",
+       "breeze": true
+      },
+      {
+       "src": "art/v2/rabbit/party/port/ground.webp"
+      },
+      {
+       "src": "art/v2/rabbit/party/port/fire.webp",
+       "flicker": true
+      },
+      {
+       "src": "art/v2/rabbit/party/port/lanterns.webp",
+       "swing": true
+      }
+     ],
+     "dolls": {
+      "turtle": {
+       "sit": [
+        33,
+        37.0
+       ],
+       "stand": [
+        33,
+        37.0
+       ]
+      },
+      "rabbit": {
+       "sit": [
+        68,
+        37.0
+       ],
+       "stand": [
+        68,
+        37.0
+       ]
+      }
+     }
+    }
+   }
   }
  },
  "dolls": {
@@ -2121,6 +2337,7 @@
      "line": 3,
      "match": "밤이 되었어요",
      "do": [
+      "box:party",
       "rabbit:lantern:on",
       "rabbit:pose:sit",
       "turtle:pose:sit"

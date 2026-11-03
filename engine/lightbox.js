@@ -96,6 +96,8 @@
         const i = pic(b.src, 'lb-v2full');
         if (b.top) i.style.top = b.top + '%';
         if (b.breeze) i.classList.add('lb-v2breeze');
+        if (b.swing) i.classList.add('lb-v2swing'); // 줄에 걸린 등불: 위를 축으로 살랑
+        if (b.flicker) i.classList.add('lb-v2flicker'); // 모닥불
         if (b.drift) { // 하늘을 옆으로 흐르는 구름: [위치%, 너비%, 초]
           i.className = 'lb-v2drift'; i.style.top = b.drift[0] + '%'; i.style.width = b.drift[1] + '%'; i.style.opacity = b.alpha || 1;
           i.style.setProperty('--d', b.drift[2] + 's'); i.style.setProperty('--o', -R() * b.drift[2] + 's');
