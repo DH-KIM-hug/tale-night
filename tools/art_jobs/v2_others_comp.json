@@ -1,0 +1,72 @@
+[
+ {
+  "id": "sun_wind_sky_tab_comp",
+  "out": "art/v2/sun_wind/sky/tab/comp.webp",
+  "ref": "art_src/v2/rabbit/village/tab/comp.png",
+  "sky": true,
+  "prompt": "A completely new place, a 3:2 picture. Same framing and aspect ratio as the reference, but not the same landscape. High up in the sky ABOVE the clouds: a sea of soft round white-blue clouds filling the lower third, a few distant blue mountain peaks poking through the cloud sea, a huge open clear pale blue sky above with lots of empty space in the upper two thirds for a sun puppet on the left and a wind-cloud puppet on the right. Bright clear daytime, pale and airy. Keep exactly the same art style as the reference: painterly hanji-paper grain, simple large masses, moonlight indigo blue palette, rounded Korean mountain ridges, no lace, no holes, no patterns, no flowers. ABSOLUTELY NO characters, animals or people: the foreground centre stays open for puppets to be added later."
+ },
+ {
+  "id": "sun_wind_road_tab_comp",
+  "out": "art/v2/sun_wind/road/tab/comp.webp",
+  "ref": "art_src/v2/rabbit/village/tab/comp.png",
+  "sky": true,
+  "prompt": "A completely new place, a 3:2 picture. Same framing and aspect ratio as the reference, but not the same landscape. Seen from a little above: a quiet country road winding from the front centre into the distance through gently rolling fields, one big lone round tree on the right, low stone walls, far rounded mountains, and a LARGE open sky taking the upper half for sun and wind puppets. Calm clear daytime, light blue. The dark foreground ground top edge is at about 84% of the image height down from the top, nearly level across the centre. Keep exactly the same art style as the reference: painterly hanji-paper grain, simple large masses, moonlight indigo blue palette, rounded Korean mountain ridges, no lace, no holes, no patterns, no flowers. ABSOLUTELY NO characters, animals or people: the foreground centre stays open for puppets to be added later."
+ },
+ {
+  "id": "ugly_duckling_nest_tab_comp",
+  "out": "art/v2/ugly_duckling/nest/tab/comp.webp",
+  "ref": "art_src/v2/rabbit/village/tab/comp.png",
+  "sky": true,
+  "prompt": "A completely new place, a 3:2 picture. Same framing and aspect ratio as the reference, but not the same landscape. Early summer dawn, the palest clearest blue of the series. The reedy edge of a quiet farm pond: tall reeds and big leaves at the far left and far right, a little still water behind with lily pads, a far farmhouse roof and soft hills in morning mist. The foreground centre is a low grassy bank kept open for a nest puppet. The dark foreground ground top edge is at about 84% of the image height down from the top, nearly level across the centre. Keep exactly the same art style as the reference: painterly hanji-paper grain, simple large masses, moonlight indigo blue palette, rounded Korean mountain ridges, no lace, no holes, no patterns, no flowers. ABSOLUTELY NO characters, animals or people: the foreground centre stays open for puppets to be added later."
+ },
+ {
+  "id": "ugly_duckling_pond_tab_comp",
+  "out": "art/v2/ugly_duckling/pond/tab/comp.webp",
+  "ref": "art_src/v2/rabbit/village/tab/comp.png",
+  "sky": true,
+  "prompt": "A completely new place, a 3:2 picture. Same framing and aspect ratio as the reference, but not the same landscape. Summer day, light clear blue. A wide calm farm pond filling the middle band of the picture, a weeping willow at the right edge leaning over the water, a small wooden jetty at the left, a far barn and rounded hills. The near bank across the bottom is low and dark, nearly level. The dark foreground ground top edge is at about 84% of the image height down from the top, nearly level across the centre. Keep exactly the same art style as the reference: painterly hanji-paper grain, simple large masses, moonlight indigo blue palette, rounded Korean mountain ridges, no lace, no holes, no patterns, no flowers. ABSOLUTELY NO characters, animals or people: the foreground centre stays open for puppets to be added later."
+ },
+ {
+  "id": "ugly_duckling_yard_tab_comp",
+  "out": "art/v2/ugly_duckling/yard/tab/comp.webp",
+  "ref": "art_src/v2/rabbit/village/tab/comp.png",
+  "sky": true,
+  "prompt": "A completely new place, a 3:2 picture. Same framing and aspect ratio as the reference, but not the same landscape. Summer day, light blue. A Korean-style farmyard: a big barn with a thatched roof at the far right partly cut off, a low wooden fence across the middle distance, a round haystack and a stone well at the left, a packed earth yard in front, soft hills behind. The dark foreground ground top edge is at about 84% of the image height down from the top, nearly level across the centre. Keep exactly the same art style as the reference: painterly hanji-paper grain, simple large masses, moonlight indigo blue palette, rounded Korean mountain ridges, no lace, no holes, no patterns, no flowers. ABSOLUTELY NO characters, animals or people: the foreground centre stays open for puppets to be added later."
+ },
+ {
+  "id": "ugly_duckling_swamp_tab_comp",
+  "out": "art/v2/ugly_duckling/swamp/tab/comp.webp",
+  "ref": "art_src/v2/rabbit/village/tab/comp.png",
+  "sky": true,
+  "prompt": "A completely new place, a 3:2 picture. Same framing and aspect ratio as the reference, but not the same landscape. Night, deep moonlit navy, a round pale moon low in the sky. A wide misty marsh: tall dense reed beds rising on both left and right sides, shallow still water with reflections in the middle distance, a few far reed islands, soft mist. The dark foreground ground top edge is at about 84% of the image height down from the top, nearly level across the centre. Keep exactly the same art style as the reference: painterly hanji-paper grain, simple large masses, moonlight indigo blue palette, rounded Korean mountain ridges, no lace, no holes, no patterns, no flowers. ABSOLUTELY NO characters, animals or people: the foreground centre stays open for puppets to be added later."
+ },
+ {
+  "id": "ugly_duckling_autumn_tab_comp",
+  "out": "art/v2/ugly_duckling/autumn/tab/comp.webp",
+  "ref": "art_src/v2/rabbit/village/tab/comp.png",
+  "sky": true,
+  "prompt": "A completely new place, a 3:2 picture. Same framing and aspect ratio as the reference, but not the same landscape. Autumn evening, medium blue. A big quiet lake shore: a few round deciduous trees on the left with loose falling leaves, a wide calm lake across the middle with far rounded mountains reflected, a huge open sky above for a flock of birds. The near shore across the bottom is low. The dark foreground ground top edge is at about 84% of the image height down from the top, nearly level across the centre. Keep exactly the same art style as the reference: painterly hanji-paper grain, simple large masses, moonlight indigo blue palette, rounded Korean mountain ridges, no lace, no holes, no patterns, no flowers. ABSOLUTELY NO characters, animals or people: the foreground centre stays open for puppets to be added later."
+ },
+ {
+  "id": "ugly_duckling_cabin_tab_comp",
+  "out": "art/v2/ugly_duckling/cabin/tab/comp.webp",
+  "ref": "art_src/v2/three_pigs/inside/tab/comp.png",
+  "sky": true,
+  "prompt": "A completely new place, a 3:2 picture. Same framing and aspect ratio as the reference, but not the same landscape. INSIDE a small old country cottage at night, a warm scene: an iron wood stove with a glowing amber fire on the RIGHT, a rocking chair beside it, a small window on the left wall showing the dark blue snowy night, wooden beams, a plain wooden floor. Colours: the room is deep indigo blue in the shadows and warm amber-orange ONLY where the stove light falls. Keep the centre of the floor open. The dark foreground ground top edge is at about 84% of the image height down from the top, nearly level across the centre. Keep exactly the same art style as the reference: painterly hanji-paper grain, simple large masses, moonlight indigo blue palette, rounded Korean mountain ridges, no lace, no holes, no patterns, no flowers. ABSOLUTELY NO characters, animals or people: the foreground centre stays open for puppets to be added later."
+ },
+ {
+  "id": "turnip_garden_tab_comp",
+  "out": "art/v2/turnip/garden/tab/comp.webp",
+  "ref": "art_src/v2/rabbit/village/tab/comp.png",
+  "sky": true,
+  "prompt": "A completely new place, a 3:2 picture. Same framing and aspect ratio as the reference, but not the same landscape. Bright summer day, light clear blue. A grandfather's vegetable garden: neat rows of leafy vegetables, a small thatched-roof cottage at the far LEFT partly cut off, a little wooden barn with a roof at the far RIGHT, a twig fence and a bush behind, soft hills. The centre foreground is open soft earth for a big turnip puppet. The dark foreground ground top edge is at about 84% of the image height down from the top, nearly level across the centre. Keep exactly the same art style as the reference: painterly hanji-paper grain, simple large masses, moonlight indigo blue palette, rounded Korean mountain ridges, no lace, no holes, no patterns, no flowers. ABSOLUTELY NO characters, animals or people: the foreground centre stays open for puppets to be added later."
+ },
+ {
+  "id": "turnip_kitchen_tab_comp",
+  "out": "art/v2/turnip/kitchen/tab/comp.webp",
+  "ref": "art_src/v2/three_pigs/inside/tab/comp.png",
+  "sky": true,
+  "prompt": "A completely new place, a 3:2 picture. Same framing and aspect ratio as the reference, but not the same landscape. INSIDE a cosy country kitchen at night, a warm scene: a low clay stove with a glowing amber fire and a big round cooking pot shelf area on the RIGHT, a wooden table at the LEFT with a candle, a small window showing the dark blue night, hanging dried herbs from a beam. Colours: deep indigo blue shadows and warm amber-orange ONLY where the fire and candle light falls. Keep the centre floor open. The dark foreground ground top edge is at about 84% of the image height down from the top, nearly level across the centre. Keep exactly the same art style as the reference: painterly hanji-paper grain, simple large masses, moonlight indigo blue palette, rounded Korean mountain ridges, no lace, no holes, no patterns, no flowers. ABSOLUTELY NO characters, animals or people: the foreground centre stays open for puppets to be added later."
+ }
+]

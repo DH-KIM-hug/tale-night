@@ -1,0 +1,72 @@
+[
+ {
+  "id": "man_coat",
+  "ref": "art_src/v2/dolls/rabbit_stand.png",
+  "out": "art/v2/dolls/man_coat.webp",
+  "solid": true,
+  "prompt": "Use only the character style of the reference picture. ONE traveller, a gentle old-fashioned Korean country man walking, side view facing RIGHT, wearing a wide-brimmed hat and a thick long heavy coat down to his knees, a walking stick, a small bundle on his back. It fills most of the height of the image, standing at the bottom. One completely SOLID near-black paper silhouette with NO patterns and NO drawn lines inside, only a single tiny round eye hole. Rounded, simple, cute picture-book proportions. No ground, no grass."
+ },
+ {
+  "id": "sun_smile",
+  "ref": "art_src/v2/dolls/rabbit_stand.png",
+  "out": "art/v2/dolls/sun_smile.webp",
+  "solid": true,
+  "prompt": "Use only the character style of the reference picture. ONE friendly sun character for a shadow puppet show: a perfectly ROUND disc in the middle, with about twelve separate short pointed triangular rays evenly spaced all around it with clear gaps between rays, like a classic children's drawing of the sun. On the RIGHT edge of the disc a clear smiling side-profile face cut into the outline: a small round nose bump sticking out and a smiling mouth notch below it, chubby cheek. It fills most of the image. One completely SOLID near-black paper silhouette with NO patterns and NO drawn lines inside, only a single tiny round eye hole. No ground."
+ },
+ {
+  "id": "wind_blow",
+  "ref": "art_src/v2/dolls/rabbit_stand.png",
+  "out": "art/v2/dolls/wind_blow.webp",
+  "solid": true,
+  "prompt": "Use only the character style of the reference picture. ONE wind character: a big puffy round cloud seen in side profile facing RIGHT, with puffed-out round cheeks and pursed lips on the right side blowing, a few curly wind swirls coming out of the lips, floating in the air with NO legs, NO feet and NO body below: only the cloud shape itself. It fills most of the height of the image, standing at the bottom. One completely SOLID near-black paper silhouette with NO patterns and NO drawn lines inside, only a single tiny round eye hole. Rounded, simple, cute picture-book proportions. No ground, no grass."
+ },
+ {
+  "id": "duck_gray",
+  "ref": "art_src/v2/dolls/rabbit_stand.png",
+  "out": "art/v2/dolls/duck_gray.webp",
+  "solid": true,
+  "prompt": "Use only the character style of the reference picture. ONE ugly duckling: a big awkward scruffy baby bird, larger than a normal duckling, long neck, fluffy messy feathers sticking out, big feet, standing, side view facing RIGHT, looking a bit shy. It fills most of the height of the image, standing at the bottom. One completely SOLID near-black paper silhouette with NO patterns and NO drawn lines inside, only a single tiny round eye hole. Rounded, simple, cute picture-book proportions. No ground, no grass."
+ },
+ {
+  "id": "mom_duck",
+  "ref": "art_src/v2/dolls/rabbit_stand.png",
+  "out": "art/v2/dolls/mom_duck.webp",
+  "solid": true,
+  "prompt": "Use only the character style of the reference picture. ONE mother duck standing, side view facing RIGHT, plump body, rounded head, flat bill, short tail feathers, kind and calm. It fills most of the height of the image, standing at the bottom. One completely SOLID near-black paper silhouette with NO patterns and NO drawn lines inside, only a single tiny round eye hole. Rounded, simple, cute picture-book proportions. No ground, no grass."
+ },
+ {
+  "id": "swan",
+  "ref": "art_src/v2/dolls/rabbit_stand.png",
+  "out": "art/v2/dolls/swan.webp",
+  "solid": true,
+  "prompt": "Use only the character style of the reference picture. ONE graceful swan floating on water, side view facing RIGHT, long elegant S-curved neck, wings folded softly, the bottom edge flat like a waterline. It fills most of the height of the image, standing at the bottom. One completely SOLID near-black paper silhouette with NO patterns and NO drawn lines inside, only a single tiny round eye hole. Rounded, simple, cute picture-book proportions. No ground, no grass."
+ },
+ {
+  "id": "grandpa_stand",
+  "ref": "art_src/v2/dolls/rabbit_stand.png",
+  "out": "art/v2/dolls/grandpa_stand.webp",
+  "solid": true,
+  "prompt": "Use only the character style of the reference picture. ONE kind old Korean grandfather standing, side view facing RIGHT, a long beard, a traditional topknot or simple cap, loose trousers and a jacket, slightly bent back. It fills most of the height of the image, standing at the bottom. One completely SOLID near-black paper silhouette with NO patterns and NO drawn lines inside, only a single tiny round eye hole. Rounded, simple, cute picture-book proportions. No ground, no grass."
+ },
+ {
+  "id": "grandma_stand",
+  "ref": "art_src/v2/dolls/rabbit_stand.png",
+  "out": "art/v2/dolls/grandma_stand.webp",
+  "solid": true,
+  "prompt": "Use only the character style of the reference picture. ONE kind old Korean grandmother standing, side view facing RIGHT, hair in a bun, a long skirt with an apron tied with a bow, round and warm. It fills most of the height of the image, standing at the bottom. One completely SOLID near-black paper silhouette with NO patterns and NO drawn lines inside, only a single tiny round eye hole. Rounded, simple, cute picture-book proportions. No ground, no grass."
+ },
+ {
+  "id": "girl_stand",
+  "ref": "art_src/v2/dolls/rabbit_stand.png",
+  "out": "art/v2/dolls/girl_stand.webp",
+  "solid": true,
+  "prompt": "Use only the character style of the reference picture. ONE little girl standing, side view facing RIGHT, two short pigtails, a short dress, cheerful. It fills most of the height of the image, standing at the bottom. One completely SOLID near-black paper silhouette with NO patterns and NO drawn lines inside, only a single tiny round eye hole. Rounded, simple, cute picture-book proportions. No ground, no grass."
+ },
+ {
+  "id": "turnip_big",
+  "ref": "art_src/v2/dolls/rabbit_stand.png",
+  "out": "art/v2/dolls/turnip_big.webp",
+  "solid": true,
+  "prompt": "Use only the character style of the reference picture. ONE gigantic turnip pushing up out of the ground: a huge round bulb with a short pointed root tip, and a big bunch of large leafy stalks on top, as tall as a grown man. The bottom of the bulb sits on a small flat mound of soil. It fills most of the height of the image, standing at the bottom. One completely SOLID near-black paper silhouette with NO patterns and NO drawn lines inside, NO eye, NO face and NO holes at all: it is a vegetable, not a character. Rounded, simple, cute picture-book proportions. No ground, no grass."
+ }
+]

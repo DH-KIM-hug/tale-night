@@ -1,0 +1,44 @@
+[
+ {
+  "id": "sun_wind_roadwind_tab_comp",
+  "out": "art/v2/sun_wind/roadwind/tab/comp.webp",
+  "ref": "art_src/v2/sun_wind/road/tab/comp.png",
+  "sky": true,
+  "prompt": "The SAME place as the reference with exactly the same framing, same shapes and same composition, but now on a WINDY grey day: heavy swirling darker clouds, the lone tree and the grass bent hard to the right by the wind, leaves blowing, a deeper stormier blue. Same painterly hanji-paper grain, simple large masses, moonlight indigo blue palette. ABSOLUTELY NO characters, animals or people."
+ },
+ {
+  "id": "sun_wind_roadsun_tab_comp",
+  "out": "art/v2/sun_wind/roadsun/tab/comp.webp",
+  "ref": "art_src/v2/sun_wind/road/tab/comp.png",
+  "sky": true,
+  "prompt": "The SAME place as the reference with exactly the same framing, same shapes and same composition, but now on the warmest brightest day: a perfectly clear very pale shining sky, soft glowing light rays coming from the upper LEFT, everything calm and still, the palest airy blue. Same painterly hanji-paper grain, simple large masses, moonlight indigo blue palette. ABSOLUTELY NO characters, animals or people."
+ },
+ {
+  "id": "ugly_duckling_winter_tab_comp",
+  "out": "art/v2/ugly_duckling/winter/tab/comp.webp",
+  "ref": "art_src/v2/ugly_duckling/autumn/tab/comp.png",
+  "sky": true,
+  "prompt": "The SAME place as the reference with exactly the same framing, same shapes and same composition, but now in deep WINTER at night: the lake frozen white-blue with ice, snow covering the shore and the bare trees, falling snowflakes, a deep navy sky. Same painterly hanji-paper grain, simple large masses, moonlight indigo blue palette. ABSOLUTELY NO characters, animals or people."
+ },
+ {
+  "id": "ugly_duckling_spring_tab_comp",
+  "out": "art/v2/ugly_duckling/spring/tab/comp.webp",
+  "ref": "art_src/v2/ugly_duckling/autumn/tab/comp.png",
+  "sky": true,
+  "prompt": "The SAME place as the reference with exactly the same framing, same shapes and same composition, but now in early SPRING at dawn: fresh leafy trees, a calm mirror-like lake with perfect soft reflections, a pale clear dawn sky, gentle mist. Only blues and pale blue-white: NO pink, NO purple, NO violet, NO warm glow at the horizon. Same painterly hanji-paper grain, simple large masses, moonlight indigo blue palette. ABSOLUTELY NO characters, animals or people."
+ },
+ {
+  "id": "turnip_gardenspring_tab_comp",
+  "out": "art/v2/turnip/gardenspring/tab/comp.webp",
+  "ref": "art_src/v2/turnip/garden/tab/comp.png",
+  "sky": true,
+  "prompt": "The SAME place as the reference with exactly the same framing, same shapes and same composition, but now in early SPRING: the garden rows are bare freshly dug earth with only tiny sprouts, trees with small fresh leaves, the palest clear morning blue. Same painterly hanji-paper grain, simple large masses, moonlight indigo blue palette. ABSOLUTELY NO characters, animals or people."
+ },
+ {
+  "id": "turnip_gardendusk_tab_comp",
+  "out": "art/v2/turnip/gardendusk/tab/comp.webp",
+  "ref": "art_src/v2/turnip/garden/tab/comp.png",
+  "sky": true,
+  "prompt": "The SAME place as the reference with exactly the same framing, same shapes and same composition, but now at late evening dusk turning to night: a deep navy sky with a round pale moon and first stars, the garden in deep moonlit blue, calm. Same painterly hanji-paper grain, simple large masses, moonlight indigo blue palette. ABSOLUTELY NO characters, animals or people."
+ }
+]

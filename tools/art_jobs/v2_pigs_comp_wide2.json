@@ -1,0 +1,44 @@
+[
+ {
+  "id": "pigs_fieldnight_land_comp",
+  "out": "art/v2/three_pigs/fieldnight/land/comp.webp",
+  "ref": "art_src/v2/three_pigs/field/land/comp.png",
+  "sky": true,
+  "prompt": "The SAME place as the reference with exactly the same framing, same shapes and same composition, but now at deep NIGHT: a dark indigo sky with a round pale moon, a few small stars, the landscape in deep moonlit navy, darker and calmer, soft mist. Same painterly hanji-paper grain, simple large masses. ABSOLUTELY NO characters, animals, people or houses."
+ },
+ {
+  "id": "pigs_fieldnight_port_comp",
+  "out": "art/v2/three_pigs/fieldnight/port/comp.webp",
+  "ref": "art_src/v2/three_pigs/field/port/comp.png",
+  "sky": true,
+  "prompt": "The SAME place as the reference with exactly the same framing, same shapes and same composition, but now at deep NIGHT: a dark indigo sky with a round pale moon, a few small stars, the landscape in deep moonlit navy, darker and calmer, soft mist. Same painterly hanji-paper grain, simple large masses. ABSOLUTELY NO characters, animals, people or houses."
+ },
+ {
+  "id": "pigs_woodsnight_land_comp",
+  "out": "art/v2/three_pigs/woodsnight/land/comp.webp",
+  "ref": "art_src/v2/three_pigs/woods/land/comp.png",
+  "sky": true,
+  "prompt": "The SAME place as the reference with exactly the same framing, same shapes and same composition, but now at deep NIGHT: a dark indigo sky with a round pale moon, a few small stars, the landscape in deep moonlit navy, darker and calmer, soft mist. Same painterly hanji-paper grain, simple large masses. ABSOLUTELY NO characters, animals, people or houses."
+ },
+ {
+  "id": "pigs_woodsnight_port_comp",
+  "out": "art/v2/three_pigs/woodsnight/port/comp.webp",
+  "ref": "art_src/v2/three_pigs/woods/port/comp.png",
+  "sky": true,
+  "prompt": "The SAME place as the reference with exactly the same framing, same shapes and same composition, but now at deep NIGHT: a dark indigo sky with a round pale moon, a few small stars, the landscape in deep moonlit navy, darker and calmer, soft mist. Same painterly hanji-paper grain, simple large masses. ABSOLUTELY NO characters, animals, people or houses."
+ },
+ {
+  "id": "pigs_hillnight_land_comp",
+  "out": "art/v2/three_pigs/hillnight/land/comp.webp",
+  "ref": "art_src/v2/three_pigs/hill/land/comp.png",
+  "sky": true,
+  "prompt": "The SAME place as the reference with exactly the same framing, same shapes and same composition, but now at deep NIGHT: a dark indigo sky with a round pale moon, a few small stars, the landscape in deep moonlit navy, darker and calmer, soft mist. Same painterly hanji-paper grain, simple large masses. ABSOLUTELY NO characters, animals, people or houses."
+ },
+ {
+  "id": "pigs_hillnight_port_comp",
+  "out": "art/v2/three_pigs/hillnight/port/comp.webp",
+  "ref": "art_src/v2/three_pigs/hill/port/comp.png",
+  "sky": true,
+  "prompt": "The SAME place as the reference with exactly the same framing, same shapes and same composition, but now at deep NIGHT: a dark indigo sky with a round pale moon, a few small stars, the landscape in deep moonlit navy, darker and calmer, soft mist. Same painterly hanji-paper grain, simple large masses. ABSOLUTELY NO characters, animals, people or houses."
+ }
+]

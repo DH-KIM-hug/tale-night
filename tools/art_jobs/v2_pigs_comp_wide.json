@@ -1,0 +1,72 @@
+[
+ {
+  "id": "pigs_meadow_land_comp",
+  "out": "art/v2/three_pigs/meadow/land/comp.webp",
+  "ref": "art_src/v2/three_pigs/meadow/land/ref_pad.png",
+  "sky": true,
+  "prompt": "The reference shows a finished picture in the middle with flat grey bands on the left and right. Make ONE complete seamless very wide 2.17:1 panorama for a phone held sideways: keep the middle picture exactly as it is and fill the grey bands by continuing the scene naturally: more sky, the hills, distant mountains and the ground continuing, and any big framing trees or buildings at the sides moved out to the far left and far right edges so the open centre becomes wider. The central foreground ground stays open and empty for puppets. No grey left anywhere. Same colour palette, same painterly hanji-paper grain and simple large cut-paper masses as the reference, no lace, no patterns. ABSOLUTELY NO characters, animals, people or houses in the open centre."
+ },
+ {
+  "id": "pigs_meadow_port_comp",
+  "out": "art/v2/three_pigs/meadow/port/comp.webp",
+  "ref": "art_src/v2/three_pigs/meadow/port/ref_pad.png",
+  "sky": true,
+  "prompt": "The reference shows a finished picture in the lower middle with flat grey areas above and below. Make ONE complete seamless very tall narrow 9:19.5 picture for a phone held upright: keep the band picture as it is and fill the grey by continuing the scene: above it a tall sky continuing upward and getting a little deeper blue at the top, with a few soft clouds (or the ceiling and upper wall if it is a room); tall framing trees or walls reach up the left and right edges. Below the band, the dark foreground ground (or floor) continues down to the bottom edge, plain and open with a few grass tufts only at the very edges. The central ground stays open and empty for puppets. No grey left anywhere. Same colour palette, same painterly hanji-paper grain and simple large cut-paper masses as the reference, no lace, no patterns. ABSOLUTELY NO characters, animals, people or houses in the open centre."
+ },
+ {
+  "id": "pigs_field_land_comp",
+  "out": "art/v2/three_pigs/field/land/comp.webp",
+  "ref": "art_src/v2/three_pigs/field/land/ref_pad.png",
+  "sky": true,
+  "prompt": "The reference shows a finished picture in the middle with flat grey bands on the left and right. Make ONE complete seamless very wide 2.17:1 panorama for a phone held sideways: keep the middle picture exactly as it is and fill the grey bands by continuing the scene naturally: more sky, the hills, distant mountains and the ground continuing, and any big framing trees or buildings at the sides moved out to the far left and far right edges so the open centre becomes wider. The central foreground ground stays open and empty for puppets. No grey left anywhere. Same colour palette, same painterly hanji-paper grain and simple large cut-paper masses as the reference, no lace, no patterns. ABSOLUTELY NO characters, animals, people or houses in the open centre."
+ },
+ {
+  "id": "pigs_field_port_comp",
+  "out": "art/v2/three_pigs/field/port/comp.webp",
+  "ref": "art_src/v2/three_pigs/field/port/ref_pad.png",
+  "sky": true,
+  "prompt": "The reference shows a finished picture in the lower middle with flat grey areas above and below. Make ONE complete seamless very tall narrow 9:19.5 picture for a phone held upright: keep the band picture as it is and fill the grey by continuing the scene: above it a tall sky continuing upward and getting a little deeper blue at the top, with a few soft clouds (or the ceiling and upper wall if it is a room); tall framing trees or walls reach up the left and right edges. Below the band, the dark foreground ground (or floor) continues down to the bottom edge, plain and open with a few grass tufts only at the very edges. The central ground stays open and empty for puppets. No grey left anywhere. Same colour palette, same painterly hanji-paper grain and simple large cut-paper masses as the reference, no lace, no patterns. ABSOLUTELY NO characters, animals, people or houses in the open centre."
+ },
+ {
+  "id": "pigs_woods_land_comp",
+  "out": "art/v2/three_pigs/woods/land/comp.webp",
+  "ref": "art_src/v2/three_pigs/woods/land/ref_pad.png",
+  "sky": true,
+  "prompt": "The reference shows a finished picture in the middle with flat grey bands on the left and right. Make ONE complete seamless very wide 2.17:1 panorama for a phone held sideways: keep the middle picture exactly as it is and fill the grey bands by continuing the scene naturally: more sky, the hills, distant mountains and the ground continuing, and any big framing trees or buildings at the sides moved out to the far left and far right edges so the open centre becomes wider. The central foreground ground stays open and empty for puppets. No grey left anywhere. Same colour palette, same painterly hanji-paper grain and simple large cut-paper masses as the reference, no lace, no patterns. ABSOLUTELY NO characters, animals, people or houses in the open centre."
+ },
+ {
+  "id": "pigs_woods_port_comp",
+  "out": "art/v2/three_pigs/woods/port/comp.webp",
+  "ref": "art_src/v2/three_pigs/woods/port/ref_pad.png",
+  "sky": true,
+  "prompt": "The reference shows a finished picture in the lower middle with flat grey areas above and below. Make ONE complete seamless very tall narrow 9:19.5 picture for a phone held upright: keep the band picture as it is and fill the grey by continuing the scene: above it a tall sky continuing upward and getting a little deeper blue at the top, with a few soft clouds (or the ceiling and upper wall if it is a room); tall framing trees or walls reach up the left and right edges. Below the band, the dark foreground ground (or floor) continues down to the bottom edge, plain and open with a few grass tufts only at the very edges. The central ground stays open and empty for puppets. No grey left anywhere. Same colour palette, same painterly hanji-paper grain and simple large cut-paper masses as the reference, no lace, no patterns. ABSOLUTELY NO characters, animals, people or houses in the open centre."
+ },
+ {
+  "id": "pigs_hill_land_comp",
+  "out": "art/v2/three_pigs/hill/land/comp.webp",
+  "ref": "art_src/v2/three_pigs/hill/land/ref_pad.png",
+  "sky": true,
+  "prompt": "The reference shows a finished picture in the middle with flat grey bands on the left and right. Make ONE complete seamless very wide 2.17:1 panorama for a phone held sideways: keep the middle picture exactly as it is and fill the grey bands by continuing the scene naturally: more sky, the hills, distant mountains and the ground continuing, and any big framing trees or buildings at the sides moved out to the far left and far right edges so the open centre becomes wider. The central foreground ground stays open and empty for puppets. No grey left anywhere. Same colour palette, same painterly hanji-paper grain and simple large cut-paper masses as the reference, no lace, no patterns. ABSOLUTELY NO characters, animals, people or houses in the open centre."
+ },
+ {
+  "id": "pigs_hill_port_comp",
+  "out": "art/v2/three_pigs/hill/port/comp.webp",
+  "ref": "art_src/v2/three_pigs/hill/port/ref_pad.png",
+  "sky": true,
+  "prompt": "The reference shows a finished picture in the lower middle with flat grey areas above and below. Make ONE complete seamless very tall narrow 9:19.5 picture for a phone held upright: keep the band picture as it is and fill the grey by continuing the scene: above it a tall sky continuing upward and getting a little deeper blue at the top, with a few soft clouds (or the ceiling and upper wall if it is a room); tall framing trees or walls reach up the left and right edges. Below the band, the dark foreground ground (or floor) continues down to the bottom edge, plain and open with a few grass tufts only at the very edges. The central ground stays open and empty for puppets. No grey left anywhere. Same colour palette, same painterly hanji-paper grain and simple large cut-paper masses as the reference, no lace, no patterns. ABSOLUTELY NO characters, animals, people or houses in the open centre."
+ },
+ {
+  "id": "pigs_inside_land_comp",
+  "out": "art/v2/three_pigs/inside/land/comp.webp",
+  "ref": "art_src/v2/three_pigs/inside/land/ref_pad.png",
+  "sky": true,
+  "prompt": "The reference shows a finished picture in the middle with flat grey bands on the left and right. Make ONE complete seamless very wide 2.17:1 panorama for a phone held sideways: keep the middle picture exactly as it is and fill the grey bands by continuing the scene naturally: more sky, the hills, distant mountains and the ground continuing, and any big framing trees or buildings at the sides moved out to the far left and far right edges so the open centre becomes wider. The central foreground ground stays open and empty for puppets. No grey left anywhere. Same colour palette, same painterly hanji-paper grain and simple large cut-paper masses as the reference, no lace, no patterns. ABSOLUTELY NO characters, animals, people or houses in the open centre."
+ },
+ {
+  "id": "pigs_inside_port_comp",
+  "out": "art/v2/three_pigs/inside/port/comp.webp",
+  "ref": "art_src/v2/three_pigs/inside/port/ref_pad.png",
+  "sky": true,
+  "prompt": "The reference shows a finished picture in the lower middle with flat grey areas above and below. Make ONE complete seamless very tall narrow 9:19.5 picture for a phone held upright: keep the band picture as it is and fill the grey by continuing the scene: above it a tall sky continuing upward and getting a little deeper blue at the top, with a few soft clouds (or the ceiling and upper wall if it is a room); tall framing trees or walls reach up the left and right edges. Below the band, the dark foreground ground (or floor) continues down to the bottom edge, plain and open with a few grass tufts only at the very edges. The central ground stays open and empty for puppets. No grey left anywhere. Same colour palette, same painterly hanji-paper grain and simple large cut-paper masses as the reference, no lace, no patterns. ABSOLUTELY NO characters, animals, people or houses in the open centre."
+ }
+]
