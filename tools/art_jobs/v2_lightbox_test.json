@@ -1,0 +1,23 @@
+[
+ {
+  "id": "lb_pigs_inside",
+  "out": "art/v2/three_pigs/inside/tab/comp.webp",
+  "ref": "art_src/v2/rabbit/village/tab/comp.png",
+  "sky": true,
+  "prompt": "A paper-cut LIGHT BOX (shadow box) picture, a 3:2 image: the scene is built ONLY from a few flat cut-paper layers stacked from back to front, each layer one flat simple shape with a soft hanji paper grain, lit from BEHIND by a soft light so the farthest layer glows brightest and every nearer layer is a little darker, ending in a near-black silhouette layer at the front. Edges are clean cut-paper edges. NO perspective drawing, NO 3D room, NO rendered light rays, NO particles, NO drawn details or lines inside the shapes. Same moonlight indigo blue palette and the same layered look as the reference. The place: inside a little brick cottage at night, shown as layers: at the back a pale glowing round window with a small moon in it, cut out of a dark indigo back wall layer; a middle layer with the brick fireplace and its chimney as one flat silhouette on the RIGHT, its small fire opening glowing warm amber (the ONLY warm colour, a small area); a front layer of a dark plain floor across the bottom and a low beam silhouette across the top edge. The centre stays open and lit by a pale blue glow behind, so black puppets placed there stand out. ABSOLUTELY NO characters."
+ },
+ {
+  "id": "lb_duck_cabin",
+  "out": "art/v2/ugly_duckling/cabin/tab/comp.webp",
+  "ref": "art_src/v2/rabbit/village/tab/comp.png",
+  "sky": true,
+  "prompt": "A paper-cut LIGHT BOX (shadow box) picture, a 3:2 image: the scene is built ONLY from a few flat cut-paper layers stacked from back to front, each layer one flat simple shape with a soft hanji paper grain, lit from BEHIND by a soft light so the farthest layer glows brightest and every nearer layer is a little darker, ending in a near-black silhouette layer at the front. Edges are clean cut-paper edges. NO perspective drawing, NO 3D room, NO rendered light rays, NO particles, NO drawn details or lines inside the shapes. Same moonlight indigo blue palette and the same layered look as the reference. The place: inside grandmother's small Korean country cottage on a snowy night, shown as layers: at the back a pale glowing paper sliding window (hanji lattice window) with snowy hills beyond; a middle layer with a low clay stove (agungi) and a big iron pot on the RIGHT as one flat silhouette, a small glow of warm amber in the stove mouth only (the ONLY warm colour, a small area); a front layer of a dark plain floor across the bottom and a low wooden beam across the top. The centre stays open and lit by a pale blue glow behind. ABSOLUTELY NO characters, animals or people."
+ },
+ {
+  "id": "lb_sun_roadwind",
+  "out": "art/v2/sun_wind/roadwind/tab/comp.webp",
+  "ref": "art_src/v2/sun_wind/road/tab/comp.png",
+  "sky": true,
+  "prompt": "A paper-cut LIGHT BOX (shadow box) picture, a 3:2 image: the scene is built ONLY from a few flat cut-paper layers stacked from back to front, each layer one flat simple shape with a soft hanji paper grain, lit from BEHIND by a soft light so the farthest layer glows brightest and every nearer layer is a little darker, ending in a near-black silhouette layer at the front. Edges are clean cut-paper edges. NO perspective drawing, NO 3D room, NO rendered light rays, NO particles, NO drawn details or lines inside the shapes. Same moonlight indigo blue palette and the same layered look as the reference. The SAME place as the reference (same framing: the winding country road, the lone tree on the right, the rolling fields), but on a windy grey day: the sky layer is a deeper grey-blue with a few flat cut-paper cloud shapes stretched sideways, the lone tree's crown and the grass tufts leaning to the right as flat shapes. No swirls, no flying leaves, no streaks. ABSOLUTELY NO characters."
+ }
+]
