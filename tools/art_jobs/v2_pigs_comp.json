@@ -1,0 +1,58 @@
+[
+{
+"id": "pigs_meadow_tab_comp",
+"out": "art/v2/three_pigs/meadow/tab/comp.webp",
+"ref": "art_src/v2/rabbit/village/tab/comp.png",
+"sky": true,
+"prompt": "A completely new place, a 3:2 picture. Same framing and aspect ratio as the reference, but not the same landscape. Early morning, the palest clearest blue of the series, soft dawn mist. A gentle meadow in front of mother pig's small old Korean thatched-roof cottage with a low stone wall and a twig fence, standing at the far LEFT edge, partly cut off by the frame. A big round tree at the far right. Soft rolling hills behind, a little winding path leaving to the right toward far mountains. The dark foreground ground top edge is at about 84% of the image height down from the top, nearly level across the centre. Keep exactly the same art style as the reference: painterly hanji-paper grain, simple large masses, moonlight indigo blue palette, rounded Korean mountain ridges, no lace, no holes, no patterns, no flowers. ABSOLUTELY NO characters, animals or people, and NO houses in the open centre: the foreground centre stays open for puppets and a little house puppet to be added later."
+},
+{
+"id": "pigs_field_tab_comp",
+"out": "art/v2/three_pigs/field/tab/comp.webp",
+"ref": "art_src/v2/rabbit/village/tab/comp.png",
+"sky": true,
+"prompt": "A completely new place, a 3:2 picture. Same framing and aspect ratio as the reference, but not the same landscape. Bright daytime, light clear blue. A wide open golden-harvest field now painted in pale moonlit blue: rows of round haystacks and stacked straw sheaves scattered across a gently rolling field, a scarecrow far away on the left, a few willow trees along a small stream in the distance, wide sky with big soft round clouds. The dark foreground ground top edge is at about 84% of the image height down from the top, nearly level across the centre. Keep exactly the same art style as the reference: painterly hanji-paper grain, simple large masses, moonlight indigo blue palette, rounded Korean mountain ridges, no lace, no holes, no patterns, no flowers. ABSOLUTELY NO characters, animals or people, and NO houses in the open centre: the foreground centre stays open for puppets and a little house puppet to be added later."
+},
+{
+"id": "pigs_woods_tab_comp",
+"out": "art/v2/three_pigs/woods/tab/comp.webp",
+"ref": "art_src/v2/rabbit/village/tab/comp.png",
+"sky": true,
+"prompt": "A completely new place, a 3:2 picture. Same framing and aspect ratio as the reference, but not the same landscape. Daytime, medium clear blue. The edge of a bright woodland: tall straight slender tree trunks of a birch and oak grove on both sides with big round crowns, a few freshly cut logs and a tree stump at the left near the front, a sunny clearing in the centre, soft light shafts through the trees, layered woods fading into haze behind. The dark foreground ground top edge is at about 84% of the image height down from the top, nearly level across the centre. Keep exactly the same art style as the reference: painterly hanji-paper grain, simple large masses, moonlight indigo blue palette, rounded Korean mountain ridges, no lace, no holes, no patterns, no flowers. ABSOLUTELY NO characters, animals or people, and NO houses in the open centre: the foreground centre stays open for puppets and a little house puppet to be added later."
+},
+{
+"id": "pigs_hill_tab_comp",
+"out": "art/v2/three_pigs/hill/tab/comp.webp",
+"ref": "art_src/v2/rabbit/village/tab/comp.png",
+"sky": true,
+"prompt": "A completely new place, a 3:2 picture. Same framing and aspect ratio as the reference, but not the same landscape. Late afternoon turning to dusk, deeper blue. A small grassy hilltop plateau above a valley: a neat stack of bricks and a small wheelbarrow at the left near the front, a single sturdy old pine tree at the far right, beyond the edge of the plateau a wide view of a valley with a winding river and layered mountain ranges in mist. The dark foreground ground top edge is at about 84% of the image height down from the top, nearly level across the centre. Keep exactly the same art style as the reference: painterly hanji-paper grain, simple large masses, moonlight indigo blue palette, rounded Korean mountain ridges, no lace, no holes, no patterns, no flowers. ABSOLUTELY NO characters, animals or people, and NO houses in the open centre: the foreground centre stays open for puppets and a little house puppet to be added later."
+},
+{
+"id": "pigs_inside_tab_comp",
+"out": "art/v2/three_pigs/inside/tab/comp.webp",
+"ref": "art_src/v2/rabbit/village/tab/comp.png",
+"sky": true,
+"prompt": "A completely new place, a 3:2 picture. Same framing and aspect ratio as the reference, but not the same landscape. INSIDE a cosy small brick cottage at night, the one warm scene: a big brick fireplace with a glowing amber fire under a wide chimney opening on the RIGHT third, a low wooden beam ceiling, a small round window on the left wall showing the dark blue night and the moon, a wooden table with a candle at the far left, a plain wooden floor. Colours: the room is deep indigo blue in the shadows, and warm amber-orange ONLY where the firelight and candle light falls. Keep the centre of the floor open. The floor top edge is at about 84% of the image height down from the top. Keep exactly the same art style as the reference: painterly hanji-paper grain, simple large masses, moonlight indigo blue palette, rounded Korean mountain ridges, no lace, no holes, no patterns, no flowers. ABSOLUTELY NO characters, animals or people, and NO houses in the open centre: the foreground centre stays open for puppets and a little house puppet to be added later."
+},
+{
+"id": "pigs_fieldnight_tab_comp",
+"out": "art/v2/three_pigs/fieldnight/tab/comp.webp",
+"ref": "art_src/v2/three_pigs/field/tab/comp.png",
+"sky": true,
+"prompt": "The SAME place as the reference with exactly the same framing, same shapes and same composition, but now at deep NIGHT: a dark indigo sky with a round pale moon, a few small stars, the landscape in deep moonlit navy, darker and calmer, soft mist. Same painterly hanji-paper grain, simple large masses. ABSOLUTELY NO characters, animals, people or houses."
+},
+{
+"id": "pigs_woodsnight_tab_comp",
+"out": "art/v2/three_pigs/woodsnight/tab/comp.webp",
+"ref": "art_src/v2/three_pigs/woods/tab/comp.png",
+"sky": true,
+"prompt": "The SAME place as the reference with exactly the same framing, same shapes and same composition, but now at deep NIGHT: a dark indigo sky with a round pale moon, a few small stars, the landscape in deep moonlit navy, darker and calmer, soft mist. Same painterly hanji-paper grain, simple large masses. ABSOLUTELY NO characters, animals, people or houses."
+},
+{
+"id": "pigs_hillnight_tab_comp",
+"out": "art/v2/three_pigs/hillnight/tab/comp.webp",
+"ref": "art_src/v2/three_pigs/hill/tab/comp.png",
+"sky": true,
+"prompt": "The SAME place as the reference with exactly the same framing, same shapes and same composition, but now at deep NIGHT: a dark indigo sky with a round pale moon, a few small stars, the landscape in deep moonlit navy, darker and calmer, soft mist. Same painterly hanji-paper grain, simple large masses. ABSOLUTELY NO characters, animals, people or houses."
+}
+]

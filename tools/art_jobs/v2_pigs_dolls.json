@@ -1,0 +1,37 @@
+[
+{
+"id": "pig1_stand",
+"ref": "art_src/v2/dolls/rabbit_stand.png",
+"out": "art/v2/dolls/pig1_stand.webp",
+"solid": true,
+"prompt": "Use only the character style of the reference picture. ONE little piglet standing upright on its hind legs like a picture-book character, side view facing RIGHT, round body, round snout, small pointy ears, a curly little tail, holding a small straight wooden flute to its snout with both front trotters. It fills most of the height of the image, standing at the bottom. One completely SOLID near-black paper silhouette with NO patterns and NO drawn lines inside, only a single tiny round eye hole. Rounded, simple, cute picture-book proportions. No ground, no grass."
+},
+{
+"id": "pig2_stand",
+"ref": "art_src/v2/dolls/pig1_stand.png",
+"out": "art/v2/dolls/pig2_stand.webp",
+"solid": true,
+"prompt": "The same family of piglet characters as the reference, drawn in exactly the same way: same head shape, snout, ears, body proportions and size, same line quality. ONE little piglet standing upright, side view facing RIGHT, holding a small violin under its chin with a bow in the other trotter. It fills most of the height of the image, standing at the bottom. One completely SOLID near-black paper silhouette with NO patterns and NO drawn lines inside, only a single tiny round eye hole. Rounded, simple, cute picture-book proportions. No ground, no grass."
+},
+{
+"id": "pig3_stand",
+"ref": "art_src/v2/dolls/pig1_stand.png",
+"out": "art/v2/dolls/pig3_stand.webp",
+"solid": true,
+"prompt": "The same family of piglet characters as the reference, drawn in exactly the same way: same head shape, snout, ears, body proportions and size, same line quality. ONE little piglet standing upright, side view facing RIGHT, holding an open book in both front trotters, looking steady and brave. It fills most of the height of the image, standing at the bottom. One completely SOLID near-black paper silhouette with NO patterns and NO drawn lines inside, only a single tiny round eye hole. Rounded, simple, cute picture-book proportions. No ground, no grass."
+},
+{
+"id": "mom_stand",
+"ref": "art_src/v2/dolls/pig1_stand.png",
+"out": "art/v2/dolls/mom_stand.webp",
+"solid": true,
+"prompt": "The same family of piglet characters as the reference, drawn in exactly the same way: same head shape, snout, ears, body proportions and size, same line quality. ONE mother pig, the piglets' mother: clearly bigger, rounder and taller than the piglet in the reference, standing upright, side view facing RIGHT, with a little apron bow sticking out at her back and a soft skirt-like flare at the bottom of her apron, ALL of it part of the same solid black shape: the apron is NOT a white area, NOT a hole, there is NO white inside the body at all, front trotters gently open as if about to hug. It fills most of the height of the image, standing at the bottom. One completely SOLID near-black paper silhouette with NO patterns and NO drawn lines inside, only a single tiny round eye hole. Rounded, simple, cute picture-book proportions. No ground, no grass."
+},
+{
+"id": "wolf_walk",
+"ref": "art_src/v2/dolls/rabbit_stand.png",
+"out": "art/v2/dolls/wolf_walk.webp",
+"solid": true,
+"prompt": "Use only the character style of the reference picture. ONE big hungry wolf walking on all fours, side view facing RIGHT, long snout sniffing forward, pointy ears, a big bushy tail, lanky legs. Cartoonish and silly rather than scary, a bedtime-story villain. Clearly much bigger than a little rabbit. One completely SOLID near-black paper silhouette with NO patterns and NO drawn lines inside, only a single tiny round eye hole. Rounded, simple, cute picture-book proportions. No ground, no grass."
+}
+]
