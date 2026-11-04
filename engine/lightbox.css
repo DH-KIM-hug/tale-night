@@ -83,7 +83,7 @@
 
 /* 장면 카드 글자 */
 .lb-card { position: absolute; left: 50%; top: 7%; transform: translateX(-50%); z-index: 6; pointer-events: none; opacity: 0;
-  background: rgba(30,22,40,.62); color: #fff4e0; padding: .35em 1.1em; border-radius: 999px; font-size: clamp(14px, 2.6cqw, 26px); letter-spacing: .08em; white-space: nowrap; }
+  background: var(--stage-chip, rgba(16,19,42,.72)); color: var(--on-stage, #f4ecdc); padding: .35em 1.1em; border-radius: 999px; font-size: clamp(14px, 2.6cqw, 26px); letter-spacing: .08em; white-space: nowrap; }
 .lb { container-type: inline-size; }
 .lb-card.show { animation: lb-card 4.2s ease forwards; }
 @keyframes lb-card { 0% { opacity: 0; transform: translate(-50%, -8px); } 15%, 75% { opacity: 1; transform: translate(-50%, 0); } 100% { opacity: 0; transform: translate(-50%, 0); } }
@@ -122,22 +122,35 @@
 .lb-v2 .lb-fx-fireflies { position: absolute; }
 @media (prefers-reduced-motion: reduce) { .lb-v2moon, .lb-v2sway, .lb-v2breeze, .lb-v2swing, .lb-v2flicker, .lb-v2drift, .lb-v2flutter { animation: none; } }
 body:has(.lb-v2) #readPanel p { color: #f3efe3; }
-/* 함께 읽기: 그림을 가리지 않도록 대사 묶음은 아래 띠에 둔다. 세로 폰은 그림 아래쪽 빈 땅에 겹친다 */
-.together:has(.lb-v2) { --v2band: 136px; }
-@media (max-height: 500px) { .together:has(.lb-v2) { --v2band: 96px; } }
+/* 장면 이름은 머리줄 알약 아래에 */
+.lb-v2 .lb-card { top: calc(80px + env(safe-area-inset-top, 0px)); }
+/* 그림 위에 뜨는 것은 모두 같은 어두운 알약 하나로(집 단추, 제목과 장면 점) */
+body:has(.lb-v2) header .icon-btn { background: var(--stage-chip); box-shadow: inset 0 0 0 1px rgba(244,236,220,.16); }
+body:has(.lb-v2) header .icon-btn svg { fill: var(--on-stage); }
+body:has(.lb-v2) .head-mid { justify-self: center; gap: 5px; padding: 7px 14px 8px; border-radius: 999px; background: var(--stage-chip); box-shadow: inset 0 0 0 1px rgba(244,236,220,.16); max-width: 100%; }
+body:has(.lb-v2) header .info { color: var(--on-stage); background: none; padding: 0; font-size: 13px; line-height: 1.3; }
+body:has(.lb-v2) .dots i { background: var(--on-stage); opacity: .3; }
+body:has(.lb-v2) .dots i.past { opacity: .55; }
+body:has(.lb-v2) .dots i.now { background: var(--lamp); opacity: 1; }
+/* 함께 읽기: 그림을 가리지 않도록 대사 묶음은 아래 띠에 한 단으로 둔다. 세로 폰은 그림 아래쪽 빈 땅에 겹친다 */
+.together:has(.lb-v2) { --v2band: 172px; }
+@media (max-height: 500px) { .together:has(.lb-v2) { --v2band: 128px; } }
 .together .lb.lb-v2 { bottom: var(--v2band); }
 .together:has(.lb-v2) .next-band { position: fixed; bottom: var(--v2band); }
-body:has(.lb-v2) #readPanel { position: fixed; left: 0; right: 0; bottom: 0; width: auto; height: var(--v2band); max-height: none; margin: 0; grid-template-columns: minmax(0, 1fr) auto; grid-template-rows: minmax(0, 1fr); align-items: center; gap: 14px; padding: 8px max(18px, env(safe-area-inset-right)) calc(8px + env(safe-area-inset-bottom, 0px)) max(18px, env(safe-area-inset-left)); background: #0a0f2a; border-radius: 0; }
-body:has(.lb-v2) #readPanel .lines { columns: 2; column-gap: 28px; max-height: 100%; font-size: 18px; line-height: 1.4; }
-@media (max-height: 500px) { body:has(.lb-v2) #readPanel .lines { font-size: 13.5px; column-gap: 18px; } }
-body:has(.lb-v2) #readPanel .lines p { margin: 0 0 .25em; padding: 0; font-weight: 500; break-inside: avoid; color: #f3efe3; }
+body:has(.lb-v2) #readPanel { position: fixed; left: 0; right: 0; bottom: 0; width: auto; height: var(--v2band); max-height: none; margin: 0; grid-template-columns: minmax(0, 1fr) auto; grid-template-rows: minmax(0, 1fr); align-items: center; gap: 20px; padding: 12px max(24px, env(safe-area-inset-right)) calc(12px + env(safe-area-inset-bottom, 0px)) max(24px, env(safe-area-inset-left)); background: #0a0f2a; border-radius: 0; }
+body:has(.lb-v2) #readPanel .lines { justify-self: center; width: min(100%, 40em); max-height: 100%; font-size: 18px; line-height: 1.45; }
+@media (max-height: 500px) { body:has(.lb-v2) #readPanel .lines { font-size: 13.5px; line-height: 1.3; } }
+body:has(.lb-v2) #readPanel .lines p { margin: 0 0 .2em; padding: 0; font-weight: 500; color: #f3efe3; }
 body:has(.lb-v2) #readPanel .lines p:not(.now) { display: none; }
 body:has(.lb-v2) #readPanel .lines p.now::before { display: none; }
-body:has(.lb-v2) #readPanel .turn { flex-direction: column-reverse; gap: 4px; }
+body:has(.lb-v2) #readPanel .turn { flex-direction: column-reverse; gap: 8px; }
 body:has(.lb-v2) #readPanel .turn .where { display: none; }
+body:has(.lb-v2) #readPanel #prev { width: 48px; height: 48px; justify-self: center; box-shadow: inset 0 0 0 1px rgba(244,236,220,.28); }
+body:has(.lb-v2) #readPanel #prev svg { width: 20px; height: 20px; fill: var(--on-stage); }
+@media (max-height: 500px) { body:has(.lb-v2) #readPanel .turn { flex-direction: row-reverse; } body:has(.lb-v2) #readPanel #next { width: 56px; height: 56px; } }
 @media (max-aspect-ratio: 3/5) {
   .together .lb.lb-v2 { bottom: 0; }
   .together:has(.lb-v2) { --v2band: 27dvh; }
   body:has(.lb-v2) #readPanel { background: linear-gradient(transparent, #0a0f2a 8%); }
-  body:has(.lb-v2) #readPanel .lines { columns: 1; font-size: 15px; }
+  body:has(.lb-v2) #readPanel .lines { font-size: 15px; }
 }

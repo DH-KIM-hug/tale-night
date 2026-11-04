@@ -83,7 +83,8 @@
     }
     _fit() {
       const F = this.v2.formats[this.fmt], W = this.root.clientWidth, H = this.root.clientHeight;
-      const w = this.fmt === 'port' ? W : this.fmt === 'land' ? H * F.ratio : Math.min(W, H * F.ratio);
+      const w = this.opts.static ? Math.max(W, H * F.ratio) // 홈 창문: 검정 띠 없이 꽉 채운다
+        : this.fmt === 'port' ? W : this.fmt === 'land' ? H * F.ratio : Math.min(W, H * F.ratio);
       this.set.style.width = w + 'px'; this.set.style.height = w / F.ratio + 'px';
     }
     _buildV2(key) {

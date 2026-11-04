@@ -62,7 +62,7 @@
   await Promise.all(tales.map(async t => {
     const story = await Story.load(t.id);
     const art = await hasArt(story);
-    if (!art) { tiles[t.id].querySelector('.win').innerHTML = '<small>그림 준비 중</small>'; return; }
+    if (!art) { tiles[t.id].setAttribute('aria-label', `${t.title} (그림 준비 중)`); return; } // 닫힌 창문만 둔다. 같은 말을 칸마다 되풀이하지 않는다
     const show = Math.min(1, story.sceneStart.length - 1); // 첫 장면보다 인물이 나와 있는 장면
     const st = { ...story.steps.filter(s => s.sceneIdx === show).at(-1).state, light: COVER_LIGHT[t.id] || 'dusk', power: 1 };
     loaded[t.id] = { story, st };

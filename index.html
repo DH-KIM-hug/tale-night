@@ -46,18 +46,17 @@
   .shelf-head .pill { min-height: 40px; padding: 0 14px; font-size: 14px; background: none; margin-right: -4px; }
   .row { display: flex; gap: 12px; overflow-x: auto; padding: 6px var(--gutter) 4px; scroll-snap-type: x proximity; scroll-padding: 0 var(--gutter); scrollbar-width: none; }
   .row::-webkit-scrollbar { display: none; }
-  .tile { flex: none; width: 96px; display: grid; gap: 6px; text-align: center; align-content: start; scroll-snap-align: start; transition: transform .09s var(--ease); }
+  .tile { flex: none; width: 108px; display: grid; gap: 6px; text-align: center; align-content: start; scroll-snap-align: start; transition: transform .09s var(--ease); }
   .tile:not(:disabled):active { transform: scale(.96); }
   .tile .win { aspect-ratio: 4 / 5; border-radius: 46% 46% 8px 8px / 36% 36% 8px 8px; }
   .tile .crop { filter: saturate(.8) brightness(.92); transition: filter .4s ease; }
-  .tile b { font-size: 13.5px; font-weight: 500; line-height: 1.3; color: var(--muted); word-break: keep-all; }
+  .tile b { font-size: 13.5px; font-weight: 500; line-height: 1.3; color: var(--muted); white-space: nowrap; }
   .tile[aria-current="true"] .crop { filter: none; }
   .tile[aria-current="true"] .win { box-shadow: 0 0 0 2px var(--bg), 0 0 0 4px var(--lamp-ink); }
   .tile[aria-current="true"] b { color: var(--ink); font-weight: 700; }
   /* 그림이 아직 없는 편: 불 꺼진 빈 창문. 대신하는 그림을 넣지 않는다 */
   .tile:disabled { cursor: default; }
-  .tile:disabled .win { background: none; box-shadow: inset 0 0 0 1px var(--line); display: grid; place-items: center; }
-  .tile:disabled .win small { font-size: 12px; line-height: 1.35; color: var(--faint); word-break: keep-all; padding: 0 10px; }
+  .tile:disabled .win { background: #f1efea; }
   .tile:disabled b { color: var(--faint); }
 
   /* 스플래시: 커튼 그림이 오기 전까지 달과 이름만 */
@@ -76,6 +75,7 @@
     .bill .meta { font-size: 15px; }
     .cta { grid-template-columns: 1fr; max-width: 300px; margin-top: 16px; }
     .cta .pill { min-height: 60px; font-size: 18px; }
+    .shelf-head { justify-content: flex-start; gap: 16px; }
     .tile { width: 118px; }
     .tile b { font-size: 14.5px; }
   }
